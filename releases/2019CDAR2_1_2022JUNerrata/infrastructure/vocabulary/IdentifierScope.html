@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="iso-8859-1"?><!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+      <title>IdentifierScope</title>
+      <link rel="stylesheet" type="text/css" href="../../support/css/V3m.css" /><style type="text/css">
+					td {font-family: Verdana,Arial; text-align: left; vertical-align: top; font-size: 11}
+					th {font-family: Verdana,Arial; FONT-WEIGHT: bold; text-align: left; font-size: 11}
+					</style></head>
+   <body><a href="vocabulary.html#voc-systems">Return to code system index</a><br /><br /><a name="IdentifierScope"></a><table rules="all" border="1px" cellpadding="2" cellspacing="0" class="homepage">
+         <tbody>
+            <tr>
+               <td colspan="4"><font face="Arial" size="3"><strong>IdentifierScope&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong> [2.16.840.1.113883.5.1116]</font><br /><p class="vocDesc"><b>Description:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description: </b>Codes to specify the scope in which the identifier applies to the object with which it is associated, and used in the datatype
+                     property II.
+                  </p>
+               </td>
+            </tr>
+            <tr bgcolor="cornflowerblue">
+               <th>Lvl- Typ</th>
+               <th>Concept&nbsp;Code<br />&nbsp;&nbsp;<i>Head&nbsp;Code-defined&nbsp;Value&nbsp;Set</i></th>
+               <th>Print Name</th>
+               <th>Definition, Properties, Relationships</th>
+            </tr>
+            <tr>
+               <td><a name="BUSN"></a>0-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black"></font><strong>BUSN</strong></td>
+               <td>Business Identifier</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description: </b>An identifier whose scope is defined by the business practices associated with the object. In contrast to the other scope
+                     identifiers, the scope of the use of the id is not necessarily restricted to a single object, but may be reused for other
+                     objects closely associated with the object due to business practice.
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="OBJ"></a>0-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black"></font><strong>OBJ</strong></td>
+               <td>Object Identifier</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description: </b>The identifier associated with a particular object. It remains consistent as the object undergoes state transitions.
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="VER"></a>0-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black"></font><strong>VER</strong></td>
+               <td>Version Identifier</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description: </b>An identifier that references a particular object as it existed at a given point in time. The identifier <b class="vocDesc">SHALL</b> change with each state transition on the object. I.e. The version identifier of an object prior to a 'suspend' state transition
+                     is distinct from the identifier of the object after the state transition. Each version identifier can be tied to exactly one
+                     ControlAct event which brought that version into being (though the control act may never be instantiated).
+                  </p>
+                  <p class="vocDesc"><b class="vocDesc"> NOTE:</b> Applications that do not support versioning of objects must ignore and not persist these ids to avoid confusion resulting
+                     from leaving the same identifier on an object that undergoes changes. 
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="VW"></a>0-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black"></font><strong>VW</strong></td>
+               <td>View Specific Identifier</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description: </b>An identifier that references a particular object as it existed at a given point in time. The identifier <b class="vocDesc">SHALL</b> change with each state transition on the object.
+                  </p>
+                  <p class="vocDesc"><b class="vocDesc">Example</b> The version identifier of an object prior to a 'suspend' state transition is distinct from the identifier of the object after
+                     the state transition. Each version identifier can be tied to exactly one ControlAct event which brought that version into
+                     being (though the control act may never be instantiated).
+                  </p>
+                  <p class="vocDesc"><b class="vocDesc"> NOTE: </b>Applications that do not support versioning of objects must ignore and not persist these ids to avoid confusion resulting
+                     from leaving the same identifier on an object that undergoes changes. 
+                  </p>
+               </td>
+            </tr>
+         </tbody>
+      </table><br /><a href="vocabulary.html#voc-systems">Return to code system index</a><br /><br /><p class="copyright">Last Published:&nbsp;20190729&nbsp;12:04&nbsp;PM</p>
+      <p class="copyright">HL7 &reg; Version 3 Standard, &copy; 2019  Health Level Seven &reg; International. &nbsp;All Rights Reserved.</p>
+      <p class="copyright">HL7 and Health Level Seven are registered trademarks of Health Level Seven International Reg. U.S. Pat &amp; TM Off.<br />Use of these materials is governed by HL7 International's <a href="http://www.hl7.org/legal/ippolicy.cfm">IP Compliance Policy</a>.
+      </p>
+   </body>
+</html>

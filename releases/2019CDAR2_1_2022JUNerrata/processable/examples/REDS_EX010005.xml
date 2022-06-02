@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<knowledgeRequestNotification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:hl7-org:v3 file:///C:/Guilherme/HL7/Infobutton/Documentation/Knowledge%20request%20R2/schemas/knowledgeRequest.xsd" xmlns="urn:hl7-org:v3" classCode="ACT" moodCode="DEF">
+	<effectiveTime value="20120706001023"/>
+	<subject1 typeCode="SBJ">
+		<patientContext classCode="PAT">
+			<patientPerson classCode="PSN" determinerCode="INSTANCE">
+				<administrativeGenderCode code="M" codeSystem="2.16.840.1.113883.5.1" codeSystemName="AdministrativeGender"/>
+			</patientPerson>
+			<subjectOf typeCode="SBJ">
+				<age classCode="OBS" moodCode="DEF">
+					<code code="30525-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LN"/>
+					<value value="39" unit="a"/>
+				</age>
+			</subjectOf>
+		</patientContext>
+	</subject1>
+	<performer typeCode="PRF">
+		<healthCareProvider classCode="PROV">
+			<code code=" 200000000X" codeSystem="2.16.840.1.113883.6.101" codeSystemName="NUCC Health Care Provider Taxonomy">
+				<displayName value="Allopathic &amp; Osteopathic Physicians"/>
+			</code>
+			<healthCarePerson classCode="PSN" determinerCode="INSTANCE">
+				<languageCommunication>
+					<languageCode code="en" codeSystem="2.16.840.1.113883.6.121" codeSystemName="Tags for the Identification of Languages"/>
+				</languageCommunication>
+			</healthCarePerson>
+		</healthCareProvider>
+	</performer>
+	<location typeCode="LOC">
+		<locationOfInterest classCode="EXLOC">
+			<addr>
+				<part code="ZIP" codeSystem="2.16.840.1.113883.5.16" value="02368"/>
+				<part code="CNT" codeSystem="2.16.840.1.113883.5.16" value="USA"/>
+			</addr>
+		</locationOfInterest>
+	</location>
+	<subject2 typeCode="SUBJ">
+		<mainSearchCriteria classCode="OBS" moodCode="DEF">
+			<code code="KSUBJ" codeSystem="2.16.840.1.113883.1.11.20385" codeSystemName="ActCode"/>
+			<value>
+				<originalText value="fever"/>
+			</value>
+		</mainSearchCriteria>
+	</subject2>
+	<subject3 typeCode="SUBJ">
+		<taskContext classCode="ACT" moodCode="DEF">
+			<code code="PROBLISTE" codeSystem="2.16.840.1.113883.1.11.19846" codeSystemName="ActTaskCode"/>
+		</taskContext>
+	</subject3>
+</knowledgeRequestNotification>

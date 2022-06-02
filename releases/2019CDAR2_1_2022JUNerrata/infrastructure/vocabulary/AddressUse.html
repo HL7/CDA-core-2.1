@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="iso-8859-1"?><!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+      <title>AddressUse</title>
+      <link rel="stylesheet" type="text/css" href="../../support/css/V3m.css" /><style type="text/css">
+					td {font-family: Verdana,Arial; text-align: left; vertical-align: top; font-size: 11}
+					th {font-family: Verdana,Arial; FONT-WEIGHT: bold; text-align: left; font-size: 11}
+					</style></head>
+   <body><a href="vocabulary.html#voc-systems">Return to code system index</a><br /><br /><a name="AddressUse"></a><table rules="all" border="1px" cellpadding="2" cellspacing="0" class="homepage">
+         <tbody>
+            <tr>
+               <td colspan="4"><font face="Arial" size="3"><strong>AddressUse&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong> [2.16.840.1.113883.5.1119]</font><br /><p class="vocDesc"><b>Description:</b></p>
+                  <p class="vocDesc">Codes that provide guidance around the circumstances in which a given address should be used.</p>
+               </td>
+            </tr>
+            <tr bgcolor="cornflowerblue">
+               <th>Lvl- Typ</th>
+               <th>Concept&nbsp;Code<br />&nbsp;&nbsp;<i>Head&nbsp;Code-defined&nbsp;Value&nbsp;Set</i></th>
+               <th>Print Name</th>
+               <th>Definition, Properties, Relationships</th>
+            </tr>
+            <tr>
+               <td><a name="_GeneralAddressUse"></a>0-<strong>A</strong></td>
+               <td nowrap="nowrap"><font color="black"></font><strong>_GeneralAddressUse</strong><br /><i><font color="white"></font>
+						&nbsp;<i><a href="vs_AddressUse.html#GeneralAddressUse">v:GeneralAddressUse</a></i></i></td>
+               <td>_GeneralAddressUse</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description:</b> Address uses that can apply to both postal and telecommunication addresses.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> BAD CONF H OLD TMP WP
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="BAD"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>BAD</strong></td>
+               <td>bad address</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description:</b> A flag indicating that the address is bad, in fact, useless.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _GeneralAddressUse
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="CONF"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>CONF</strong></td>
+               <td>confidential address</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description:</b> Indicates that the address is considered sensitive and should only be shared or published in accordance with organizational
+                     controls governing patient demographic information with increased sensitivity. Uses of Addresses.   Lloyd to supply more complete
+                     description.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _GeneralAddressUse
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="H"></a>1-<strong>S</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>H</strong><br /><i><font color="white">.&nbsp;</font>
+						&nbsp;<i><a href="vs_AddressUse.html#HomeAddress">v:HomeAddress</a></i></i></td>
+               <td>home address</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description:</b> A communication address at a home, attempted contacts for business purposes might intrude privacy and chances are one will
+                     contact family or other household members instead of the person one wishes to call. Typically used with urgent cases, or if
+                     no other contacts are available.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _GeneralAddressUse<br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> HP HV
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="HP"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>HP</strong></td>
+               <td>primary home</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description:</b> The primary home, to reach a person after business hours.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> H
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="HV"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>HV</strong></td>
+               <td>vacation home</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description:</b> A vacation home, to reach a person while on vacation.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> H
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="OLD"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>OLD</strong></td>
+               <td>no longer in use</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">This address is no longer in use.</p>
+                  <p class="vocDesc"><i class="vocDesc">Usage Note: </i>Address may also carry valid time ranges. This code is used to cover the situations where it is known that the address is
+                     no longer valid, but no particular time range for its use is known.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _GeneralAddressUse
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="TMP"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>TMP</strong></td>
+               <td>temporary address</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description:</b> A temporary address, may be good for visit or mailing. Note that an address history can provide more detailed information.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _GeneralAddressUse
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="WP"></a>1-<strong>S</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>WP</strong><br /><i><font color="white">.&nbsp;</font>
+						&nbsp;<i><a href="vs_AddressUse.html#WorkPlace">v:WorkPlace</a></i></i></td>
+               <td>work place</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description:</b> An office address. First choice for business related contacts during business hours.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _GeneralAddressUse<br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> DIR PUB
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="DIR"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>DIR</strong></td>
+               <td>direct</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description:</b> Indicates a work place address or telecommunication address that reaches the individual or organization directly without
+                     intermediaries. For phones, often referred to as a 'private line'.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> WP
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="PUB"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>PUB</strong></td>
+               <td>public</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description:</b> Indicates a work place address or telecommunication address that is a 'standard' address which may reach a reception service,
+                     mail-room, or other intermediary prior to the target entity.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> WP
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="_PostalAddressUse"></a>0-<strong>A</strong></td>
+               <td nowrap="nowrap"><font color="black"></font><strong>_PostalAddressUse</strong></td>
+               <td>_PostalAddressUse</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description:</b> Address uses that only apply to postal addresses, not telecommunication addresses.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> PHYS PST
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="PHYS"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>PHYS</strong></td>
+               <td>physical visit address</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description:</b> Used primarily to visit an address.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _PostalAddressUse
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="PST"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>PST</strong></td>
+               <td>postal address</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description:</b> Used to send mail.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _PostalAddressUse
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="_TelecommunicationAddressUse"></a>0-<strong>A</strong></td>
+               <td nowrap="nowrap"><font color="black"></font><strong>_TelecommunicationAddressUse</strong></td>
+               <td>_TelecommunicationAddressUse</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description:</b> Address uses that only apply to telecommunication addresses, not postal addresses.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> AS EC MC PG
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="AS"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>AS</strong></td>
+               <td>answering service</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description:</b> An automated answering machine used for less urgent cases and if the main purpose of contact is to leave a message or access
+                     an automated announcement.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _TelecommunicationAddressUse
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="EC"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>EC</strong></td>
+               <td>emergency contact</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description:</b> A contact specifically designated to be used for emergencies. This is the first choice in emergencies, independent of any
+                     other use codes.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _TelecommunicationAddressUse
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="MC"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>MC</strong></td>
+               <td>mobile contact)</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description:</b> A telecommunication device that moves and stays with its owner. May have characteristics of all other use codes, suitable
+                     for urgent matters, not the first choice for routine business.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _TelecommunicationAddressUse
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="PG"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>PG</strong></td>
+               <td>pager</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description:</b> A paging device suitable to solicit a callback or to leave a very short message.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _TelecommunicationAddressUse
+                  </p>
+               </td>
+            </tr>
+         </tbody>
+      </table><br /><a href="vocabulary.html#voc-systems">Return to code system index</a><br /><br /><p class="copyright">Last Published:&nbsp;20190729&nbsp;12:04&nbsp;PM</p>
+      <p class="copyright">HL7 &reg; Version 3 Standard, &copy; 2019  Health Level Seven &reg; International. &nbsp;All Rights Reserved.</p>
+      <p class="copyright">HL7 and Health Level Seven are registered trademarks of Health Level Seven International Reg. U.S. Pat &amp; TM Off.<br />Use of these materials is governed by HL7 International's <a href="http://www.hl7.org/legal/ippolicy.cfm">IP Compliance Policy</a>.
+      </p>
+   </body>
+</html>

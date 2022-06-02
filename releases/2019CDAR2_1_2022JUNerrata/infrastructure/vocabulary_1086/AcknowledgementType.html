@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="iso-8859-1"?><!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+      <title>AcknowledgementType</title>
+      <link rel="stylesheet" type="text/css" href="../../support/css/V3m.css" /><style type="text/css">
+					td {font-family: Verdana,Arial; text-align: left; vertical-align: top; font-size: 11}
+					th {font-family: Verdana,Arial; FONT-WEIGHT: bold; text-align: left; font-size: 11}
+					</style></head>
+   <body><a href="vocabulary.html#voc-systems">Return to code system index</a><br /><br /><a name="AcknowledgementType"></a><table rules="all" border="1px" cellpadding="2" cellspacing="0" class="homepage">
+         <tbody>
+            <tr>
+               <td colspan="4"><font face="Arial" size="3"><strong>AcknowledgementType&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong> [2.16.840.1.113883.5.18]</font><br /><p class="vocDesc"><b>Description:</b></p>
+                  <p class="vocDesc">This attribute contains an acknowledgement code as described in the HL7 message processing rules.</p>
+                  <p class="vocDesc"><i class="vocDesc">OpenIssue: </i>Description was copied from attribute and needs to be improved to be appropriate for a code system.
+                  </p>
+               </td>
+            </tr>
+            <tr bgcolor="cornflowerblue">
+               <th>Lvl- Typ</th>
+               <th>Concept&nbsp;Code<br />&nbsp;&nbsp;<i>Head&nbsp;Code-defined&nbsp;Value&nbsp;Set</i></th>
+               <th>Print Name</th>
+               <th>Definition, Properties, Relationships</th>
+            </tr>
+            <tr>
+               <td><a name="AA"></a>0-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black"></font><strong>AA</strong></td>
+               <td>Application Acknowledgement Accept</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Receiving application successfully processed message.</p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="AE"></a>0-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black"></font><strong>AE</strong></td>
+               <td>Application Acknowledgement Error</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Receiving application found error in processing message.  Sending error response with additional error detail information.</p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="AR"></a>0-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black"></font><strong>AR</strong></td>
+               <td>Application Acknowledgement Reject</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Receiving application failed to process message for reason unrelated to content or format.  Original message sender must decide
+                     on whether to automatically send message again.
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="CA"></a>0-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black"></font><strong>CA</strong></td>
+               <td>Accept Acknowledgement Commit Accept</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Receiving message handling service accepts responsibility for passing message onto receiving application.</p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="CE"></a>0-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black"></font><strong>CE</strong></td>
+               <td>Accept Acknowledgement Commit Error</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Receiving message handling service cannot accept message for any other reason (e.g. message sequence number, etc.).</p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="CR"></a>0-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black"></font><strong>CR</strong></td>
+               <td>Accept Acknowledgement Commit Reject</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Receiving message handling service rejects message if interaction identifier, version or processing mode is incompatible with
+                     known receiving application role information.
+                  </p>
+               </td>
+            </tr>
+         </tbody>
+      </table><br /><a href="vocabulary.html#voc-systems">Return to code system index</a><br /><br /><p class="copyright">Last Published:&nbsp;20190729&nbsp;12:04&nbsp;PM</p>
+      <p class="copyright">HL7 &reg; Version 3 Standard, &copy; 2019  Health Level Seven &reg; International. &nbsp;All Rights Reserved.</p>
+      <p class="copyright">HL7 and Health Level Seven are registered trademarks of Health Level Seven International Reg. U.S. Pat &amp; TM Off.<br />Use of these materials is governed by HL7 International's <a href="http://www.hl7.org/legal/ippolicy.cfm">IP Compliance Policy</a>.
+      </p>
+   </body>
+</html>

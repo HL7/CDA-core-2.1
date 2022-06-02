@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="iso-8859-1"?><!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+      <title>Confidentiality</title>
+      <link rel="stylesheet" type="text/css" href="../../support/css/V3m.css" /><style type="text/css">
+					td {font-family: Verdana,Arial; text-align: left; vertical-align: top; font-size: 11}
+					th {font-family: Verdana,Arial; FONT-WEIGHT: bold; text-align: left; font-size: 11}
+					</style></head>
+   <body><a href="vocabulary.html#voc-systems">Return to code system index</a><br /><br /><a name="Confidentiality"></a><table rules="all" border="1px" cellpadding="2" cellspacing="0" class="homepage">
+         <tbody>
+            <tr>
+               <td colspan="4"><font face="Arial" size="3"><strong>Confidentiality&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong> [2.16.840.1.113883.5.25]</font><br /><p class="vocDesc"><b>Description:</b></p>
+                  <p class="vocDesc">Values that control disclosure of information.</p>
+                  <p class="vocDesc"><i class="vocDesc">Example:</i> Normal, restricted, substance abuse related.
+                  </p>
+                  <p class="vocDesc"><i class="vocDesc">OpenIssue: </i>Description copied from Concept Domain of same name.  Must be verified.
+                  </p>
+               </td>
+            </tr>
+            <tr bgcolor="cornflowerblue">
+               <th>Lvl- Typ</th>
+               <th>Concept&nbsp;Code<br />&nbsp;&nbsp;<i>Head&nbsp;Code-defined&nbsp;Value&nbsp;Set</i></th>
+               <th>Print Name</th>
+               <th>Definition, Properties, Relationships</th>
+            </tr>
+            <tr>
+               <td><a name="_ConfidentialityByAccessKind"></a>0-<strong>A</strong></td>
+               <td nowrap="nowrap"><font color="black"></font><strong>_ConfidentialityByAccessKind</strong><br /><i><font color="white"></font>
+						&nbsp;<i><a href="vs_Confidentiality.html#ConfidentialityByAccessKind">v:ConfidentialityByAccessKind</a></i></i></td>
+               <td>ConfidentialityByAccessKind</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">By accessing subject / role and relationship based  rights  (These concepts are mutually exclusive, one and only one is required
+                     for a valid confidentiality coding.)
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> B D I L N R V
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="B"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>B</strong></td>
+               <td>business</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Since the service class can represent knowledge structures that may be considered a trade or business secret, there is sometimes
+                     (though rarely) the need to flag those items as of business level confidentiality.  However, no patient related information
+                     may ever be of this confidentiality level.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _ConfidentialityByAccessKind
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="D"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>D</strong></td>
+               <td>clinician</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Only clinicians may see this item, billing and administration persons can not access this item without special permission.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _ConfidentialityByAccessKind
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="I"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>I</strong></td>
+               <td>individual</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Access only to individual persons who are mentioned explicitly as actors of this service and whose actor type warrants that
+                     access (cf. to actor type code).
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _ConfidentialityByAccessKind
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="L"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>L</strong></td>
+               <td>low</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">No patient record item can be of low confidentiality. However, some service objects are not patient related and therefore
+                     may have low confidentiality.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _ConfidentialityByAccessKind
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="N"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>N</strong></td>
+               <td>normal</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Normal confidentiality rules (according to good health care practice) apply, that is, only authorized individuals with a legitimate
+                     medical or business need may access this item.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _ConfidentialityByAccessKind
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="R"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>R</strong></td>
+               <td>restricted</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Restricted access, e.g. only to providers having a current care relationship to the patient.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _ConfidentialityByAccessKind
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="V"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>V</strong></td>
+               <td>very restricted</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Very restricted access as declared by the Privacy Officer of the record holder.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _ConfidentialityByAccessKind
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="_ConfidentialityByInfoType"></a>0-<strong>A</strong></td>
+               <td nowrap="nowrap"><font color="black"></font><strong>_ConfidentialityByInfoType</strong><br /><i><font color="white"></font>
+						&nbsp;<i><a href="vs_Confidentiality.html#ConfidentialityByInfoType">v:ConfidentialityByInfoType</a></i></i></td>
+               <td>ConfidentialityByInfoType</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">By information type, only for service catalog entries (multiples allowed). Not to be used with actual patient data!</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> ETH HIV PSY SDV
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="ETH"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>ETH</strong></td>
+               <td>substance abuse related</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Alcohol/drug-abuse related item</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _ConfidentialityByInfoType
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="HIV"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>HIV</strong></td>
+               <td>HIV related</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">HIV and AIDS related item</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _ConfidentialityByInfoType
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="PSY"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>PSY</strong></td>
+               <td>psychiatry relate</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Psychiatry related item</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _ConfidentialityByInfoType
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="SDV"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>SDV</strong></td>
+               <td>sexual and domestic violence related</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Sexual assault / domestic violence related item</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _ConfidentialityByInfoType
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="_ConfidentialityModifiers"></a>0-<strong>A</strong></td>
+               <td nowrap="nowrap"><font color="black"></font><strong>_ConfidentialityModifiers</strong><br /><i><font color="white"></font>
+						&nbsp;<i><a href="vs_Confidentiality.html#ConfidentialityModifiers">v:ConfidentialityModifiers</a></i></i></td>
+               <td>ConfidentialityModifiers</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Modifiers of role based access rights  (multiple allowed)</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> C S T
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="C"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>C</strong></td>
+               <td>celebrity</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Celebrities are people of public interest (VIP) including employees, whose information require special protection.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _ConfidentialityModifiers
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="S"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>S</strong></td>
+               <td>sensitive</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Information for which the patient seeks heightened confidentiality. Sensitive information is not to be shared with family
+                     members.  Information reported by the patient about family members is sensitive by default. Flag can be set or cleared on
+                     patient's request.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _ConfidentialityModifiers
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="T"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>T</strong></td>
+               <td>taboo</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Information not to be disclosed or discussed with patient except through physician assigned to patient in this case.  This
+                     is usually a temporary constraint only, example use is a new fatal diagnosis or finding, such as malignancy or HIV.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _ConfidentialityModifiers
+                  </p>
+               </td>
+            </tr>
+         </tbody>
+      </table><br /><a href="vocabulary.html#voc-systems">Return to code system index</a><br /><br /><p class="copyright">Last Published:&nbsp;20190729&nbsp;12:04&nbsp;PM</p>
+      <p class="copyright">HL7 &reg; Version 3 Standard, &copy; 2019  Health Level Seven &reg; International. &nbsp;All Rights Reserved.</p>
+      <p class="copyright">HL7 and Health Level Seven are registered trademarks of Health Level Seven International Reg. U.S. Pat &amp; TM Off.<br />Use of these materials is governed by HL7 International's <a href="http://www.hl7.org/legal/ippolicy.cfm">IP Compliance Policy</a>.
+      </p>
+   </body>
+</html>

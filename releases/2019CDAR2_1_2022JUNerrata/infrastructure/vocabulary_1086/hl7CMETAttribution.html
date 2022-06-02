@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="iso-8859-1"?><!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+      <title>HL7CMETAttribution</title>
+      <link rel="stylesheet" type="text/css" href="../../support/css/V3m.css" /><style type="text/css">
+					td {font-family: Verdana,Arial; text-align: left; vertical-align: top; font-size: 11}
+					th {font-family: Verdana,Arial; FONT-WEIGHT: bold; text-align: left; font-size: 11}
+					</style></head>
+   <body><a href="vocabulary.html#voc-systems">Return to code system index</a><br /><br /><a name="hl7CMETAttribution"></a><table rules="all" border="1px" cellpadding="2" cellspacing="0" class="homepage">
+         <tbody>
+            <tr>
+               <td colspan="4"><font face="Arial" size="3"><strong>hl7CMETAttribution&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong> [2.16.840.1.113883.5.1132]</font><br /></td>
+            </tr>
+            <tr bgcolor="cornflowerblue">
+               <th>Lvl- Typ</th>
+               <th>Concept&nbsp;Code<br />&nbsp;&nbsp;<i>Head&nbsp;Code-defined&nbsp;Value&nbsp;Set</i></th>
+               <th>Print Name</th>
+               <th>Definition, Properties, Relationships</th>
+            </tr>
+            <tr>
+               <td><a name="contact"></a>0-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black"></font><strong>contact</strong></td>
+               <td>contact</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description: </b>Provides sufficient information to allow the object identified to be contacted. This is likely to have the content of identified
+                     and confirmable plus telephone number.
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="identified"></a>0-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black"></font><strong>identified</strong></td>
+               <td>identified</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description: </b>This variant is a proper subset of universal and is intended to provide sufficient information to identify the object(s) modeled
+                     by the CMET. This variant is only suitable for use within TIGHTLY COUPLED SYSTEMS ONLY. This variant provides ONLY the ID
+                     (and code where applicable) and Name. Other variants may not be substituted at runtime.
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="identified-confirmable"></a>0-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black"></font><strong>identified-confirmable</strong></td>
+               <td>identified-confirmable</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description: </b>This extends the identified variant by adding just sufficient additional information to allow the identity of object modeled
+                     to be confirmed by a number of corroborating items of data; for instance a patient's date of birth and current address. However,
+                     specific contact information, such as telephone number, are not viewed as confirming information.
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="identified-informational"></a>0-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black"></font><strong>identified-informational</strong></td>
+               <td>identified-informational</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description: </b>Generally the same information content as "contactable" but using new "informational" CMETs as dependant CMETs. This flavor
+                     allows expression of the CMET when non-focal class information is not known.
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="informational"></a>0-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black"></font><strong>informational</strong></td>
+               <td>informational</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description: </b>Generally the same information content as "contactable", but with required (not mandatory) ids on entry point class. This
+                     flavor allows expression of the CMET even when mandatory information is not known.
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="minimal"></a>0-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black"></font><strong>minimal</strong></td>
+               <td>minimal</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description: </b>Provides more than identified, but not as much as universal. There are not expected to be many of these.
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="universal"></a>0-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black"></font><strong>universal</strong></td>
+               <td>universal</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description: </b>This variant includes all attributes and associations present in the R-MIM. Any of non-mandatory and non-required attributes
+                     and/or associations may be present or absent, as permitted in the cardinality constraints.
+                  </p>
+               </td>
+            </tr>
+         </tbody>
+      </table><br /><a href="vocabulary.html#voc-systems">Return to code system index</a><br /><br /><p class="copyright">Last Published:&nbsp;20190729&nbsp;12:04&nbsp;PM</p>
+      <p class="copyright">HL7 &reg; Version 3 Standard, &copy; 2019  Health Level Seven &reg; International. &nbsp;All Rights Reserved.</p>
+      <p class="copyright">HL7 and Health Level Seven are registered trademarks of Health Level Seven International Reg. U.S. Pat &amp; TM Off.<br />Use of these materials is governed by HL7 International's <a href="http://www.hl7.org/legal/ippolicy.cfm">IP Compliance Policy</a>.
+      </p>
+   </body>
+</html>

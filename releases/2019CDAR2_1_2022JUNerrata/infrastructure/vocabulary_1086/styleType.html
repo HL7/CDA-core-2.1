@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="iso-8859-1"?><!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+      <title>Style Type</title>
+      <link rel="stylesheet" type="text/css" href="../../support/css/V3m.css" /><style type="text/css">
+					td {font-family: Verdana,Arial; text-align: left; vertical-align: top; font-size: 11}
+					th {font-family: Verdana,Arial; FONT-WEIGHT: bold; text-align: left; font-size: 11}
+					</style></head>
+   <body><a href="vocabulary.html#voc-systems">Return to code system index</a><br /><br /><a name="styleType"></a><table rules="all" border="1px" cellpadding="2" cellspacing="0" class="homepage">
+         <tbody>
+            <tr>
+               <td colspan="4"><font face="Arial" size="3"><strong>styleType&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong> [2.16.840.1.113883.5.1095]</font><br /><p class="vocDesc"><b>Description:</b></p>
+                  <p class="vocDesc">&lt;ns1:p&gt;The style code is used within the CDA/SPL narrative block to give the instance author some control over various aspects
+                     of style&lt;/ns1:p&gt;
+                  </p>
+               </td>
+            </tr>
+            <tr bgcolor="cornflowerblue">
+               <th>Lvl- Typ</th>
+               <th>Concept&nbsp;Code<br />&nbsp;&nbsp;<i>Head&nbsp;Code-defined&nbsp;Value&nbsp;Set</i></th>
+               <th>Print Name</th>
+               <th>Definition, Properties, Relationships</th>
+            </tr>
+            <tr>
+               <td><a name="_FontStyle"></a>0-<strong>A</strong></td>
+               <td nowrap="nowrap"><font color="black"></font><strong>_FontStyle</strong><br /><i><font color="white"></font>
+						&nbsp;<i><a href="vs_styleType.html#FontStyle">v:FontStyle</a></i></i></td>
+               <td>Font Style</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Defines font rendering characteristics</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> bold emphasis italics underline
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="bold"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>bold</strong></td>
+               <td>Bold Font</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Render with a bold font</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _FontStyle
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="emphasis"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>emphasis</strong></td>
+               <td>Emphasised Font</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Render with with some type of emphasis</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _FontStyle
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="italics"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>italics</strong></td>
+               <td>Italics Font</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Render italicized</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _FontStyle
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="underline"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>underline</strong></td>
+               <td>Underline Font</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Render with an underline font</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _FontStyle
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="_ListStyle"></a>0-<strong>A</strong></td>
+               <td nowrap="nowrap"><font color="black"></font><strong>_ListStyle</strong><br /><i><font color="white"></font>
+						&nbsp;<i><a href="vs_styleType.html#ListStyle">v:ListStyle</a></i></i></td>
+               <td>List Style</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Defines list rendering characteristics</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> _OrderedListStyle _UnorderedListStyle
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="_OrderedListStyle"></a>1-<strong>A</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>_OrderedListStyle</strong><br /><i><font color="white">.&nbsp;</font>
+						&nbsp;<i><a href="vs_styleType.html#OrderedListStyle">v:OrderedListStyle</a></i></i></td>
+               <td>Ordered List Style</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Defines rendering characteristics for ordered lists</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _ListStyle<br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> Arabic BigAlpha BigRoman LittleAlpha LittleRoman
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="Arabic"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>Arabic</strong></td>
+               <td>Arabic</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">List is ordered using Arabic numerals: 1, 2, 3</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _OrderedListStyle
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="BigAlpha"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>BigAlpha</strong></td>
+               <td>Big Alpha</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">List is ordered using big alpha characters: A, B, C</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _OrderedListStyle
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="BigRoman"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>BigRoman</strong></td>
+               <td>Big Roman</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">List is ordered using big Roman numerals: I, II, III</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _OrderedListStyle
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="LittleAlpha"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>LittleAlpha</strong></td>
+               <td>Little Alpha</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">List is order using little alpha characters: a, b, c</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _OrderedListStyle
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="LittleRoman"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>LittleRoman</strong></td>
+               <td>Little Roman</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">List is ordered using little Roman numerals: i, ii, iii</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _OrderedListStyle
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="_UnorderedListStyle"></a>1-<strong>A</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>_UnorderedListStyle</strong><br /><i><font color="white">.&nbsp;</font>
+						&nbsp;<i><a href="vs_styleType.html#UnorderedListStyle">v:UnorderedListStyle</a></i></i></td>
+               <td>Unordered List Style</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Defines rendering characteristics for unordered lists</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _ListStyle<br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> Circle Disc Square
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="Circle"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>Circle</strong></td>
+               <td>Circle</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">List bullets are hollow discs</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _UnorderedListStyle
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="Disc"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>Disc</strong></td>
+               <td>Disc</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">List bullets are simple solid discs</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _UnorderedListStyle
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="Square"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>Square</strong></td>
+               <td>Square</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">List bullets are solid squares</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _UnorderedListStyle
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="_TableRuleStyle"></a>0-<strong>A</strong></td>
+               <td nowrap="nowrap"><font color="black"></font><strong>_TableRuleStyle</strong><br /><i><font color="white"></font>
+						&nbsp;<i><a href="vs_styleType.html#TableRuleStyle">v:TableRuleStyle</a></i></i></td>
+               <td>Table Rule Style</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Defines table cell rendering characteristics</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> Botrule Lrule Rrule Toprule
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="Botrule"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>Botrule</strong></td>
+               <td>Bottom Rule</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Render cell with rule on bottom</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _TableRuleStyle
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="Lrule"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>Lrule</strong></td>
+               <td>Left-sided rule</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Render cell with left-sided rule</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _TableRuleStyle
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="Rrule"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>Rrule</strong></td>
+               <td>Right-sided rule</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Render cell with right-sided rule</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _TableRuleStyle
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="Toprule"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>Toprule</strong></td>
+               <td>Top Rule</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Render cell with rule on top</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _TableRuleStyle
+                  </p>
+               </td>
+            </tr>
+         </tbody>
+      </table><br /><a href="vocabulary.html#voc-systems">Return to code system index</a><br /><br /><p class="copyright">Last Published:&nbsp;20190729&nbsp;12:04&nbsp;PM</p>
+      <p class="copyright">HL7 &reg; Version 3 Standard, &copy; 2019  Health Level Seven &reg; International. &nbsp;All Rights Reserved.</p>
+      <p class="copyright">HL7 and Health Level Seven are registered trademarks of Health Level Seven International Reg. U.S. Pat &amp; TM Off.<br />Use of these materials is governed by HL7 International's <a href="http://www.hl7.org/legal/ippolicy.cfm">IP Compliance Policy</a>.
+      </p>
+   </body>
+</html>

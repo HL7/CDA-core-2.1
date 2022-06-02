@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="iso-8859-1"?><!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+      <title>EntityNamePartQualifier</title>
+      <link rel="stylesheet" type="text/css" href="../../support/css/V3m.css" /><style type="text/css">
+					td {font-family: Verdana,Arial; text-align: left; vertical-align: top; font-size: 11}
+					th {font-family: Verdana,Arial; FONT-WEIGHT: bold; text-align: left; font-size: 11}
+					</style></head>
+   <body><a href="vocabulary.html#voc-systems">Return to code system index</a><br /><br /><a name="EntityNamePartQualifier"></a><table rules="all" border="1px" cellpadding="2" cellspacing="0" class="homepage">
+         <tbody>
+            <tr>
+               <td colspan="4"><font face="Arial" size="3"><strong>EntityNamePartQualifier&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong> [2.16.840.1.113883.5.43]</font><br /><p class="vocDesc"><b>Description:</b></p>
+                  <p class="vocDesc"><i class="vocDesc">OpenIssue: </i>Needs description
+                  </p>
+               </td>
+            </tr>
+            <tr bgcolor="cornflowerblue">
+               <th>Lvl- Typ</th>
+               <th>Concept&nbsp;Code<br />&nbsp;&nbsp;<i>Head&nbsp;Code-defined&nbsp;Value&nbsp;Set</i></th>
+               <th>Print Name</th>
+               <th>Definition, Properties, Relationships</th>
+            </tr>
+            <tr>
+               <td><a name="PharmaceuticalEntityNamePartQualifiers"></a>0-<strong>A</strong></td>
+               <td nowrap="nowrap"><font color="black"></font><strong>PharmaceuticalEntityNamePartQualifiers</strong></td>
+               <td>PharmaceuticalEntityNamePartQualifiers</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description: </b>Medication Name Parts are a means of specifying a range of acceptable "official" forms of the name of a product.  They are
+                     used as patterns against which input name strings may be matched for automatic identification of products from input text
+                     reports.   While they cover the concepts held under "doseForm" or "route" or "strength" the name parts are not the same and
+                     do not fit into a controlled vocabulary in the same way. By specifying up to 8 name parts a much larger range of possible
+                     names can be generated.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> CON DEV FLAV FORMUL FRM INV POPUL SCI STR TIME TMK USE
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="CON"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>CON</strong></td>
+               <td>container name</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description: </b>This refers to the container if present in the medicinal product name.
+                  </p>
+                  <p class="vocDesc">EXAMPLES: </p>
+                  <ul class="vocDesc">
+                     <li class="vocDesc">
+                        <p class="vocDesc">For Optaflu suspension for injection in pre-filled syringe Influenza vaccine (surface antigen, inactivated, prepared in cell
+                           culture) (2007/2008 season): pre-filled syringe
+                        </p>
+                     </li>
+                  </ul>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> PharmaceuticalEntityNamePartQualifiers
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="DEV"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>DEV</strong></td>
+               <td>device name</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description: </b>This refers to the qualifiers in the name for devices and is at the moment mainly applicable to insulins and inhalation products.
+                  </p>
+                  <p class="vocDesc">EXAMPLES: </p>
+                  <ul class="vocDesc">
+                     <li class="vocDesc">
+                        <p class="vocDesc">For the medicinal product Actrapid FlexPen 100 IU/ml Solution for injection Subcutaneous use: FlexPen.</p>
+                     </li>
+                  </ul>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> PharmaceuticalEntityNamePartQualifiers
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="FLAV"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>FLAV</strong></td>
+               <td>FlavorName</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description: </b>This refers to a flavor of the medicinal product if present in the medicinal product name.
+                  </p>
+                  <p class="vocDesc"><b class="vocDesc">Examples:</b></p>
+                  <ul class="vocDesc">
+                     <li class="vocDesc">For 'CoughCure Linctus Orange Flavor', the flavor part is "Orange"</li>
+                     <li class="vocDesc">For 'Wonderdrug Syrup Cherry Flavor', the flavor part is "Cherry"</li>
+                  </ul>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> PharmaceuticalEntityNamePartQualifiers
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="FORMUL"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>FORMUL</strong></td>
+               <td>FormulationPartName</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description: </b>This refers to the formulation of the medicinal product if present in the medicinal product name.
+                  </p>
+                  <p class="vocDesc"><b class="vocDesc">Examples:</b></p>
+                  <ul class="vocDesc">
+                     <li class="vocDesc">For 'SpecialMed Sugar Free Cough Syrup', the formulation name part is "Sugar Free"</li>
+                     <li class="vocDesc">For 'QuickCure Gluten-free Bulk Fibre', the formulation name part is "gluten-free"</li>
+                  </ul>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> PharmaceuticalEntityNamePartQualifiers
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="FRM"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>FRM</strong></td>
+               <td>form name</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description: </b>This refers to the pharmaceutical form/ if present in the medicinal product name.
+                  </p>
+                  <p class="vocDesc">EXAMPLES: </p>
+                  <ul class="vocDesc">
+                     <li class="vocDesc">
+                        <p class="vocDesc">For Agenerase 50 mg soft capsules: Soft Capsules</p>
+                     </li>
+                     <li class="vocDesc">
+                        <p class="vocDesc">For Ludiomil 25mg-Filmtabletten: Filmtabletten</p>
+                     </li>
+                     <li class="vocDesc">
+                        <p class="vocDesc">For Optaflu suspension for injection in pre-filled syringe Influenza vaccine (surface antigen, inactivated, prepared in cell
+                           culture) (2007/2008 season): suspension for injection
+                        </p>
+                     </li>
+                  </ul>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> PharmaceuticalEntityNamePartQualifiers
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="INV"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>INV</strong></td>
+               <td>invented name</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description: </b>This refers to the product name without the trademark or the name of the marketing authorization holder or any other descriptor
+                     reflected in the product name and, if appropriate, whether it is intended e.g. for babies, children or adults. 
+                  </p>
+                  <p class="vocDesc">EXAMPLES: </p>
+                  <ul class="vocDesc">
+                     <li class="vocDesc">
+                        <p class="vocDesc">Agenerase</p>
+                     </li>
+                     <li class="vocDesc">
+                        <p class="vocDesc">Optaflu</p>
+                     </li>
+                     <li class="vocDesc">
+                        <p class="vocDesc">Ludiomil</p>
+                     </li>
+                  </ul>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> PharmaceuticalEntityNamePartQualifiers
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="POPUL"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>POPUL</strong></td>
+               <td>TargetPopulationName</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description: </b>This refers to the target population for the medicinal product if present in the medicinal product name
+                  </p>
+                  <p class="vocDesc"><b class="vocDesc">Examples:</b></p>
+                  <ul class="vocDesc">
+                     <li class="vocDesc">For 'Broncho-Drug 3.5 mg-capsules for children', the target population part is "children"</li>
+                     <li class="vocDesc">For 'Adult Chesty Cough Syrup', the target population part is "adult"</li>
+                  </ul>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> PharmaceuticalEntityNamePartQualifiers
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="SCI"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>SCI</strong></td>
+               <td>scientific name</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description: </b>This refers to the product common or scientific name without the trademark or the name of the marketing authorization holder
+                     or any other descriptor reflected in the product name.
+                  </p>
+                  <p class="vocDesc">EXAMPLES: </p>
+                  <ul class="vocDesc">
+                     <li class="vocDesc">
+                        <p class="vocDesc">For Agenerase: N/A</p>
+                     </li>
+                     <li class="vocDesc">
+                        <p class="vocDesc">For Optaflu: Influenza vaccine (surface antigen, inactivated, prepared in cell culture) (2007/2008 season)</p>
+                     </li>
+                     <li class="vocDesc">
+                        <p class="vocDesc">For Ludiomil: N/A</p>
+                     </li>
+                  </ul>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> PharmaceuticalEntityNamePartQualifiers
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="STR"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>STR</strong></td>
+               <td>strength name</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description: </b>This refers to the strength if present in the medicinal product name. The use of decimal points should be accommodated if
+                     required.
+                  </p>
+                  <p class="vocDesc">EXAMPLES:</p>
+                  <ul class="vocDesc">
+                     <li class="vocDesc">
+                        <p class="vocDesc">For Agenerase 50 mg soft capsules: 50mg</p>
+                     </li>
+                     <li class="vocDesc">
+                        <p class="vocDesc">For Ludiomil 25mg-Filmtabletten: 25 mg</p>
+                     </li>
+                     <li class="vocDesc">
+                        <p class="vocDesc">For Optaflu suspension for injection in pre-filled syringe Influenza vaccine (surface antigen, inactivated, prepared in cell
+                           culture) (2007/2008 season): N/A
+                        </p>
+                     </li>
+                  </ul>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> PharmaceuticalEntityNamePartQualifiers
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="TIME"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>TIME</strong></td>
+               <td>TimeOrPeriodName</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description: </b>This refers to a time or time period that may be specified in the text of the medicinal product name
+                  </p>
+                  <p class="vocDesc"><b class="vocDesc">Example:</b></p>
+                  <ul class="vocDesc">
+                     <li class="vocDesc">For an influenza vaccine 'Drug-FLU season 2008/2009', the time/period part is "2008/2009 season"</li>
+                  </ul>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> PharmaceuticalEntityNamePartQualifiers
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="TMK"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>TMK</strong></td>
+               <td>trademark name</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description: </b>This refers to trademark/company element if present in the medicinal product name.
+                  </p>
+                  <p class="vocDesc">EXAMPLES: </p>
+                  <ul class="vocDesc">
+                     <li class="vocDesc">
+                        <p class="vocDesc">for Insulin Human Winthrop Comb 15: Winthrop</p>
+                     </li>
+                  </ul>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> PharmaceuticalEntityNamePartQualifiers
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="USE"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>USE</strong></td>
+               <td>intended use name</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description: </b>This refers to the intended use if present in the medicinal product name without the trademark or the name of the marketing
+                     authorization holder or any other descriptor reflected in the product name.
+                     
+                  </p>
+                  <p class="vocDesc"><b class="vocDesc">Examples:</b></p>
+                  <ul class="vocDesc">
+                     <li class="vocDesc">For 'Drug-BI Caplets - Heartburn Relief', the intended use part is: "Heartburn Relief"</li>
+                     <li class="vocDesc">For 'Medicine Honey Syrup for Soothing Coughs' the intended use part is "Soothing Coughs"</li>
+                  </ul>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> PharmaceuticalEntityNamePartQualifiers
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="_OrganizationNamePartQualifier"></a>0-<strong>A</strong></td>
+               <td nowrap="nowrap"><font color="black"></font><strong>_OrganizationNamePartQualifier</strong><br /><i><font color="white"></font>
+						&nbsp;<i><a href="vs_EntityNamePartQualifier.html#OrganizationNamePartQualifier">v:OrganizationNamePartQualifier</a></i></i></td>
+               <td>OrganizationNamePartQualifier</td>
+               <td>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> AC AD BR CL IN LS NB PR SP TITLE VV
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="AC"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>AC</strong></td>
+               <td>academic</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Indicates that a prefix like "Dr." or a suffix like "M.D." or "Ph.D." is an academic title.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _OrganizationNamePartQualifier _PersonNamePartAffixTypes
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="AD"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>AD</strong></td>
+               <td>adopted</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">The name the person was given at the time of adoption.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _OrganizationNamePartQualifier _PersonNamePartChangeQualifier
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="BR"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>BR</strong></td>
+               <td>birth</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">A name that a person had shortly after being born. Usually for family names but may be used to mark given names at birth that
+                     may have changed later.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _OrganizationNamePartQualifier _PersonNamePartChangeQualifier
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="CL"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>CL</strong></td>
+               <td>callme</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">A callme name is (usually a given name) that is preferred when a person is directly addressed.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _OrganizationNamePartQualifier _PersonNamePartMiscQualifier
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="IN"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>IN</strong></td>
+               <td>initial</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Indicates that a name part is just an initial. Initials do not imply a trailing period since this would not work with non-Latin
+                     scripts.  Initials may consist of more than one letter, e.g., "Ph." could stand for "Philippe" or "Th." for "Thomas".
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _OrganizationNamePartQualifier _PersonNamePartQualifier
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="LS"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>LS</strong></td>
+               <td>Legal status</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">For organizations a suffix indicating the legal status, e.g., "Inc.", "Co.", "AG", "GmbH", "B.V." "S.A.",  "Ltd." etc.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _OrganizationNamePartQualifier
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="NB"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>NB</strong></td>
+               <td>nobility</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">In Europe and Asia, there are still people with nobility titles (aristocrats).  German "von" is generally a nobility title,
+                     not a mere voorvoegsel.  Others are "Earl of" or "His Majesty King of..." etc.  Rarely used nowadays, but some systems do
+                     keep track of this.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _OrganizationNamePartQualifier _PersonNamePartAffixTypes
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="PR"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>PR</strong></td>
+               <td>professional</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Primarily in the British Imperial culture people tend to have an abbreviation of their professional organization as part of
+                     their credential suffices.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _OrganizationNamePartQualifier _PersonNamePartAffixTypes
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="SP"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>SP</strong></td>
+               <td>spouse</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">The name assumed from the partner in a marital relationship (hence the "SP"). Usually the spouse's family name. Note that
+                     no inference about gender can be made from the existence of spouse names.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _OrganizationNamePartQualifier _PersonNamePartChangeQualifier
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="TITLE"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>TITLE</strong></td>
+               <td>title</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Indicates that a prefix or a suffix is a title that applies to the whole name, not just the adjacent name part.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _OrganizationNamePartQualifier _PersonNamePartQualifier
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="VV"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>VV</strong></td>
+               <td>voorvoegsel</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">A Dutch "voorvoegsel" is something like "van" or "de" that might have indicated nobility in the past but no longer so. Similar
+                     prefixes exist in other languages such as Spanish, French or Portugese.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _OrganizationNamePartQualifier _PersonNamePartAffixTypes
+                  </p>
+               </td>
+            </tr>
+         </tbody>
+      </table><br /><a href="vocabulary.html#voc-systems">Return to code system index</a><br /><br /><p class="copyright">Last Published:&nbsp;20190729&nbsp;12:04&nbsp;PM</p>
+      <p class="copyright">HL7 &reg; Version 3 Standard, &copy; 2019  Health Level Seven &reg; International. &nbsp;All Rights Reserved.</p>
+      <p class="copyright">HL7 and Health Level Seven are registered trademarks of Health Level Seven International Reg. U.S. Pat &amp; TM Off.<br />Use of these materials is governed by HL7 International's <a href="http://www.hl7.org/legal/ippolicy.cfm">IP Compliance Policy</a>.
+      </p>
+   </body>
+</html>

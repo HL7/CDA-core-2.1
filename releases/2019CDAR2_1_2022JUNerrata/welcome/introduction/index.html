@@ -1,0 +1,308 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>HL7 International Version 3 2017 Normative Edition - Standards Publication, Disk 1</title>
+<link rel="stylesheet" type="text/css" media="all" href="../../support/css/v3m.css" />
+<style type="text/css">
+<!--
+.NormalContent
+	{font-size:10.0pt;
+	color:black;}
+.SpellE
+	{}
+.GramE
+	{}
+.Section1
+	{page:Section1;}
+-->
+</style>
+</head>
+<body>
+	<a name="top"/>
+	<table border="0" cellspacing="0" cellpadding="3" width="100%">
+		<tr>
+			<td width="150" align="center" valign="top" style="white-space: nowrap"><img src="../../support/graphics/hl7_logo.jpg" width="101" height="94" alt="" border="0"/> </td>
+			<td width="100%" bgcolor="#800000">&nbsp;</td>
+			<td width="0" valign="top" align="right" bgcolor="#800000"><img src="../../support/graphics/v3_logo.gif" alt="" border="0"/> </td>
+		</tr>
+		<tr>
+      		<td width="150" valign="top">
+	  			<a href="../environment/index.html"><b>Continue on to HL7 International Version 3.0 Edition 2017</b></a>			  <font size="-2">
+					<br/>
+					<br/>
+					<!--These pages are best viewed with Microsoft Internet Explorer 6.x or FireFox 3 with a screen resolution of 1024 x 768. Please ensure that Javascript is enabled.
+					<br/>
+					<br/>-->
+					HL7&reg; Version 3 Standard, &copy; 2017 Health Level Seven International&nbsp;&reg;. All Rights Reserved.<br/>
+					HL7 International and Health Level Seven are registered trademarks of Health Level Seven International. Reg. U.S. Pat &amp; TM Off<br/>
+					<br/>
+					Use of these materials is governed by HL7 International's <a href="http://www.hl7.org/legal/ippolicy.cfm">IP Compliance Policy</a>.
+					<br/>
+					Reproduction of this material in any form is strictly forbidden without the written permission of the publisher.<br/>
+					<br/>
+					Ann Arbor, MI<br/>
+					May 2017
+				</font>
+			</td>
+			<td width="100%" colspan="2" valign="top">
+				<div style="float:right; width:250px; background-color: #EBEBEB; padding: 5px;">
+					<strong><font size="3">Table of Contents</font></strong><br/>
+					<br/><a href="#normativecontent">Normative Content</a><br/>
+					&nbsp;&nbsp;&nbsp;<a href="#artifact_identifiers">Artifact Identifiers</a><br/>
+					&nbsp;&nbsp;&nbsp;<a href="#artifact_dependency">Artifact Dependency</a><br/>
+					&nbsp;&nbsp;&nbsp;<a href="#known_issues">Known Issues</a><br/>
+					<br/><a href="#cd_contents">Contents of CD Set</a><br/>
+					&nbsp;&nbsp;&nbsp;<a href="#directory_structure">Top Level Directory Structure</a><br/>
+					&nbsp;&nbsp;&nbsp;<a href="#domain_directories">Domain Subdirectories</a><br/>
+					&nbsp;&nbsp;&nbsp;<a href="#infrastructure_directories">Infrastructure Subdirectories</a><br/>
+					&nbsp;&nbsp;&nbsp;<a href="#processable_content1">Processable Subdirectory (Disc 1)</a><br/>
+					&nbsp;&nbsp;&nbsp;<a href="#processable_content2">Processable Subdirectory (Disc 2)</a><br/>
+					&nbsp;&nbsp;&nbsp;<a href="#source_content">Source Subdirectory (Disc 2)</a><br/>
+					&nbsp;&nbsp;&nbsp;<a href="#tools_content">Tool Files Subdirectory (Disc 2)</a><br/>
+					<br/>
+					<strong><a href="hl7benefactors.html" target="_blank">Special Thanks to our Benefactors</a></strong>
+					<br/>
+					<br/>
+					<a href="../environment/index.html"><b>Continue on to <br/>&nbsp;&nbsp;&nbsp;HL7 Version 3.0 Edition 2017</b></a>
+				</div>
+
+				<h3>Welcome</h3>
+
+				The HL7 Board of Directors is pleased to release the tenth Normative Edition of HL7 Version 3 Standards.&nbsp; This Normative Edition contains all Version
+				3 Standards that are ANSI approved as of their publication date.&nbsp; <!--In circumstances where the normative specifications
+				have a dependency upon material that is not yet normative, that additional not-yet-normative material is included in this edition. In the current release, this
+				not-yet-normative material is limited to a handful of Common Message Element Types.-->&nbsp;<br/>
+				<br/>
+
+				In the event that a subsequent <b>version of this edition</b> is released it will <b><u>not</u></b> include any changes in the normative or processable
+				content.&nbsp; Version changes will be limited to alterations in the layout and supporting information.&nbsp;  However, this release does contain changes (in
+				the form of later versions of specific artifacts) to content included in the previous Normative Edition Release, Edition 2016.&nbsp;<br/>
+
+				<h3>Normative Content<a name="normativecontent"/></h3>
+				<h4>Ballot and ANSI status</h4>
+				With three exceptions, all of the specifications in this edition completed balloting as either a full 
+				<span class="GramE">standard,</span> or as a Standard for Trial Use (STU). Normative standards have been registered with the 
+				American National Standards Institute (ANSI). Icons within each individual specification provide a confirmatory 
+				display of this status. The exceptions to this statement are:<br/>
+				<ul>
+					<li><b>Vocabulary content</b> &#8211; The Vocabulary release that is the formal basis for this Normative Edition 
+					is Version "1362-20170302". Much of the vocabulary table content in HL7 Version 3 is approved by a Harmonization process rather than by ballot.  
+                    Thus this content is shown with a "reference" icon.  Nevertheless, the 
+					vocabulary content is subject to negative votes whenever it is used in a balloted specification.  Thus, most of the vocabulary 
+					that controls the Reference Information Model was balloted when the RIM was approved as a standard.  Further, individual 
+					vocabulary constraints documented in the vocabulary have been considered when the artifacts within which those constraints 
+					were balloted.&nbsp; </li>
+					<!--li><b>Selected Common Message Element Types (CMETs)</b> &#8211; A few of the message designs in the normative material 
+					reference CMETs that have not completed balloting.  These required CMETs are also published in the CMET domain, but 
+					their ballot status icons (and their identifiers) distinguish them from the normative CMETs. &nbsp; </li-->
+					<li><strong>Informative Documents</strong> &#8211; These documents  passed formal balloting as informative content. 
+                    However, these documents are not considered normative and have not been registered with ANSI. </li>
+				</ul>
+				
+				<h4>Significant notes:</h4>
+				<ul type="disc">
+					
+					<li>In this Edition, the Quality Analysis reports continue the listing of the results of model "validation" 
+					performed in the HL7 RMIM Designer tool that runs in Visio. This was first used last year. Further, it continues the
+					practice of providing schema and instance validation reports on the core design artifacts. Thus, there are now 
+					four independent sources of identifying potential content issues, as listed below.  When reviewing this data be advised that many 
+					errors will show up on more than one report, and indeed many will show up in all four. The sources are:
+					<ul type="square">
+						<li>The integrated analysis of the multiple "xml" sources that define a Normative Edition, including bespoke analyses of 
+						these sources to identify inter-artifact dependency errors; </li>
+						<li>the expression of "derivation errors" that reflect incorrect derivation from the HL7 Reference Information Model, as determined by 
+						analysis in the HL7 RMIM Designer program in Visio;</li>
+						<li>validation of the information model expressions against the representation rules embodied in the HL7 Model Interchange Format (MIF); and</li>
+						<li>validation of the schemas generated from these models, which is the basis for using the designs in communication.</li>
+					</ul>
+					</li>
+				</ul>
+
+		        <a name="artifact_identifiers"></a><h4>Artifact identifiers</h4>
+				<div style="float:right; display:block; padding:2px;"><a href="#top">(go to top)</a></div>
+				Prior to their adoption as part of a normative specification, all artifacts carry a 15-character identifier, such as &quot;COCT_MT987654UV&quot;.&nbsp; These are the identifiers used in
+				developing and publishing ballots.&nbsp; The identifiers for artifacts that are normative are extended with a two-character version such as &quot;COCT_MT987654UV02&quot;.
+				&nbsp; Interpretation of the additional characters is as follows:
+				<ul type="disc">
+					<li><b>Version</b> &#8211; The second two characters represent the version of the artifact.&nbsp; This <b>does not necessarily correspond</b> to the 
+                    ANSI-determined Release of the domain in which the artifact completed balloting.</li>
+				</ul>
+				Note that not-yet-normative artifacts (those still undergoing ballot) included in this edition do not include the full extension, 
+                although they will carry the first two-character, realm &quot;UV&quot; extension. This provides a second method, in addition to the icons for recognizing non-normative artifacts.<br/>
+
+				<a name="artifact_dependency"></a><h4>Artifact dependency</h4>
+				<div style="float:right; display:block; padding:2px;"><a href="#top">(go to top)</a></div>
+				The HL7 Version 3 Methodology defines a set of relationships between artifacts that implies a dependency of one artifact on another.&nbsp; For example, a
+				Domain defines multiple Interactions, and an Interaction includes a message wrapper (Message Type), and the message wrapper design references a CMET.&nbsp;
+				Each of these defines a dependency &#8211; the complete definition of the Domain is dependent upon its complete set of Interactions; each of the Interactions
+				is dependent upon the Message Type that defines the message wrapper; each of the wrapper Message Types may be dependent upon one or more CMETs; and so on.&nbsp;
+				These dependencies may be direct - Domain to Interaction in the example above - or indirect - Domain to CMET in the example above.<br/><br/>
+
+				As part of the assembly of each Edition, all dependencies for each artifact in the Edition have been documented and validated.&nbsp; (Validation is the
+				verification that the artifact that satisfies a particular dependency is, indeed, also <span class="GramE">present</span> in the edition.)&nbsp; The results
+				of this analysis are included in this package in three forms:
+				<ul type="disc">
+					<li><b>Domain dependency display </b>- An HTML rendering of the complete dependencies for each domain is included as an Annex for that
+						domain, and can be reached by a hyperlink from the domain table of contents.
+					</li>
+					<li><b><a href="../../processable/dependencytree/ArtifactDependencyTree.xml">Edition dependency tree</a></b> &#8211; The complete dependency tree for
+						the domain is included as an XML file.&nbsp; Note that this shows the direct dependencies only.&nbsp; In order to see the indirect dependencies,
+						the file must be walked iteratively with X-path, as was done in creating the Interaction-message dependencies (below).&nbsp; The element names in the tree are based on the <a href="../../help/v3guide/v3guide.html#v3msgcompstruct">identifier
+						coding structure</a>, such as element IN for an Interaction.&nbsp; There are two exceptions to this rule:
+						<ul>
+							<li><b>Domain topic</b> &#8211; A topic within a domain is identified with an element &lt;BC/&gt;, where 'BC' derives from base class.</li>
+							<li><b>Dependency</b> &#8211; A dependency is shown as an element &lt;<span class="SpellE">dep</span> kind=&quot;&quot;&gt; where the value of the &quot;kind&quot; attribute shows the type of element that satisfies the dependency.</li>
+						</ul>
+					</li>
+					<li><b><a href="../../processable/dependencytree/ArtifactDependencyTreeErrorReport.xml">Dependency error report</a></b> &#8211; This report results from a transformation that validates all of the dependencies, and lists any detected omissions.&nbsp; 
+					In this edition, this list is limited to a handful of errors in one of the non-normative domains.</li>
+					<li><b>Complete Interaction Dependencies</b> – In prior Normative Editions, this report listed the complete set of "message type" (wrappers, payloads and CMETs) dependencies that exist for each interaction in each domain, and for the domain as a whole. 
+					Unfortunately, as the design suite got more complex, it created an error loop in the transforms used to analyze the dependencies, with the result that <b>this report is not available for this Edition</b>.<br />
+					<br/>
+					An action item to correct this has been logged.  When successful for future Editions, the report will appear as follows. Within a domain, it lists each interaction, finds the interaction's "direct" dependencies, and then searches out the dependencies 
+					of those, until the full list is in hand.  It then sifts the unique set of these and sorts them as MT artifacts first and CT second, ordered by artifact ID within each group.  Finally, it lists the comprehensive list of all such dependencies within 
+					the domain.  These lists are useful in aggregating the complete set of schemas needed to support a particular interaction or domain.</li>
+				</ul>
+				<a name="qa_reports"/><h4>Quality Assessment Reports</h4>
+				<div style="float:right; display:block; padding:2px;"><a href="#top">(go to top)</a></div>
+For this Normative Edition, the Quality Assessment (QA) Reports have been enhanced to guide the reader in recognizing issues in the content.  The changes are as follows:
+					<ul>
+						<li>An individualized QA Report has been created for each content domain, and can be found in the "table of contents" for these for these domains. These domain-specific reports are "filtered" sub sets of the overall QA report found in the <a href="../../welcome/issues/issues.html">Known Issues</a> section. </li>
+						<li>The set of assessments performed has been extended to identify more kinds of issues.</li>
+						<li>Selected issues that are known to cause the schema for a particular model to be either missing or "invalid" are flagged with yellow highlights.</li>
+					</ul>
+				<a name="known_issues"/><h4>Known Issues</h4>
+				<div style="float:right; display:block; padding:2px;"><a href="#top">(go to top)</a></div>
+				It should be noted that each Normative Edition since the January 2011 Version 3 ballot web site was produced with the scripts and transforms 
+				that came into use.  We have done our utmost to ensure that these 
+				transforms correctly present and link the various html, xsd and other content that makes up the Normative Edition.
+			
+				<a name="cd_contents"/>
+				<h3>Contents of CD Set</h3>
+				<div style="float:right; display:block; padding:2px;"><a href="#top">(go to top)</a></div>
+				This Normative Edition is distributed as a two-CD set.&nbsp; The first CD (which includes this file) is the <b>Standards Publication</b> disc and contains the
+				complete documentation for the Edition in a form that supports HTML review of the contents.&nbsp; The second CD, <b>Processable Files and Tools</b>, contains
+				both a set of files (schemas, model design files, etc.) that will benefit an implementer and can be imported, edited and manipulated with software, and
+				a set of HL7-sponsored tools that create and manipulate those files.&nbsp; The contents of the two CDs can be merged.<br/>
+				<a name="directory_structure"/><h4>Top Level Directory Structure of Both CDs</h4>
+				The root of these CD contains the following directories:
+				<ul>
+					<li><b><a href="../../domains"><span class="GramE">domains</span></a></b> (Disc 1 only) &#8211; holds the complete <b>normative</b> expression (HTML, graphics, Excel) for each balloted domain.&nbsp; </li>
+					<li><b><a href="../../infrastructure"><span class="GramE">infrastructure</span></a></b> (Disc 1 only) &#8211; holds the complete <b>normative</b> expression (HTML, graphics, Excel) for standards such as the RIM, data types, ITS, etc.</li>
+					<li><b><a href="../../processable"><span class="GramE">processable</span></a></b> (Both discs) &#8211; contains files that hold computer-processable representations of the <b>normative </b>standards such as schemas, R2B schemas, Visio designs, data bases, XML &quot;MIF&quot; and &quot;<span class="SpellE">hmd</span>&quot; files, etc.&nbsp; (Disc 1 contains only the schemas.)</li>
+					<li><b><a href="../../help"><span class="GramE">help</span></a></b> (Disc 1 only) &#8211; includes content like the V3 guide and style guides.</li>
+					<li><b><a href="../../welcome"><span class="GramE">welcome</span></a></b> (Both discs) &#8211; holds this and related files.</li>
+					<li><b><a href="../../support"><span class="GramE">support</span></a></b> (Disc 1 only) &#8211; are a set of files (style sheets, graphics, etc.) that support the HTML representation of the standard. </li>
+					<li><b><a href="../../source"><span class="GramE">source</span></a></b> (Disc 2 only) &#8211; are a set of files - publication data bases, design repositories and RMIM Designer source files - that define the domain constant for the Edition.</li>
+					<li><b><a href="../../toolfiles"><span class="GramE">toolfiles</span></a></b> (Disc 2 only) &#8211; Installers and ZIP files holding the version of the HL7 Tools that were used to produce this Edition.</li>
+				</ul>
+				<a name="domain_directories"/><h4>Domain Subdirectories (Disc 1 only)</h4>
+				<div style="float:right; display:block; padding:2px;"><a href="#top">(go to top)</a></div>
+				<p>Underneath the <b>'domains'</b> subdirectory there is one subdirectory for each domain.&nbsp; These are identified by the characters "uv" (for universal) followed by the domain's two-character id, yielding, for example
+				&quot;<span class="SpellE"><b>uvab</b></span>&quot; for Accounting and Billing.&nbsp; Each of these domain directories contains the primary domain
+				HTML content and has the following sub-directory structure:</p>
+				<ul>
+					<li><span class="GramE"><b>editable</b></span> &#8211; holds the Excel views of the domain's HMDs and the table-views in html (&quot;*-NoEdit.htm&quot;), for each HMD and Message Type in the domain.
+					<ul>
+						<li><b>images</b> &#8211; the PNG files for the clickable RMIM design views</li>
+					</ul></li>
+					<li><span class="GramE"><b>graphics</b></span> &#8211; graphic material referenced from the domain's HTML renderings.</li>
+				</ul>
+
+				<a name="infrastructure_directories"/><h4>Infrastructure Subdirectories (Disc 1 only)</h4>
+				<div style="float:right;"><a href="#top">(go to top)</a></div>
+				Underneath the 'infrastructure' directory, there is one directory for each of the infrastructure specifications.&nbsp; These directories have further
+				sub-directories, as required by each specification, but each includes a <b>graphics</b> sub-directory for the images referenced in the specifications
+				HTML expression.<br/>
+
+				<a name="processable_content1"/><h4>Processable Content Subdirectory (Disc 1)</h4>
+				<div style="float:right; display:block; padding:2px;"><a href="#top">(go to top)</a></div>
+				In the 'processable' directory of Disc 1, this edition provides the set of schemas and examples needed to understand the specification.&nbsp; The contents
+				of this directory, by sub-directory, are:
+				<ul>
+					<li><b><a href="../../processable/coreschemas"><span class="GramE">coreschemas</span></a></b> &#8211; This directory holds the schemas for data-types and vocabulary which are referenced (included) by all of the other schemas.&nbsp; In order for the reference to work, the referring schema must be in a directory that is a 'sibling' of &quot;coreschemas.&quot;</li>
+					<li><b><a href="../../processable/examples"><span class="GramE">examples</span></a></b> &#8211; Contains instance examples of messages where those have been defined.</li>
+					<li><b><a href="../../processable/multicacheschemas"><span class="GramE">multicacheschemas</span></a></b> &#8211; This directory contains all of the other schemas &#8211; wrappers, CMETs and payloads &#8211; that are defined in the normative edition.</li>
+					<li><b><a href="../../processable/multicacheschemasr2b"><span class="GramE">multicacheschemas R2B</span></a></b> &#8211; This directory contains a select set of R2B schemas &#8211; wrappers, CMETs and payloads &#8211; for the Common Product Model domain and Structured Product Labeling topic in the Regulated Products domain.</li>
+					<li><b><a href="../../processable/dependencytree"><span class="GramE">dependencytree</span></a> &#8211; </b>Contains the generated artifact dependency tree in XML along with an
+					associated error report, if one is needed. The absence of an error report indicates that there are no significant dependency elements that are not specified.</li>
+				</ul>
+				<a name="processable_content2"/><h4>Processable Content Subdirectory (Disc 2)</h4>
+				<div style="float:right; display:block; padding:2px;"><a href="#top">(go to top)</a></div>
+				The 'processable' directory of Disc 2 contains the entire content of the 'processable' directory of Disc 1 with the exception of the multi-cache schemas (due to space limitations), but with the significant additions.&nbsp; Of particular interest are the standard
+				specifications expressed in HL7 Model Interchange Format (MIF).&nbsp; There is a growing suite of tools distributed by HL7 and others that work with MIF files to create, manipulate and implement
+				model artifacts.&nbsp; Among the tools distributed here that use this format are the V3 Generator and RoseTree.&nbsp; 'processable' sub-directories from Disc 2 include:
+				<ul>
+					<li><b><a href="../../processable/combinedPackageMIF"><span class="SpellE"><span class="GramE">combined package mif</span></span></a></b> &#8211; The combined package mif used to generate the html representations of the normative edition contents.</li>
+					<li><b><a href="../../processable/mif"><span class="SpellE"><span class="GramE">mif</span></span></a></b> &#8211; The complete set of designs represented in HL7 Model Interchange Format (MIF) Release 1.</li>
+					<li><b><a href="../../processable/mif1-lite"><span class="SpellE"><span class="GramE">mif-lite</span></span></a></b> &#8211; The complete set of designs represented in HL7 Model Interchange Format (MIF) Release 1, but stripped of their descriptive documentation.&nbsp; This form of MIF files will be distributed with a license that permits them to be used as configuration files for tools.</li>
+					<li><b><a href="../../processable/mif2"><span class="SpellE"><span class="GramE">mif2</span></span></a></b> &#8211; The complete set of designs represented in HL7 Model Interchange Format (MIF) Release 2.1.5.&nbsp; (Schemas for this format are distributed as part of the V3 Generator tool.)</li>
+					<li><b><a href="../../processable/mif2-lite"><span class="SpellE"><span class="GramE">mif2-lite</span></span></a></b> &#8211; The complete set of designs represented in HL7 Model Interchange Format (MIF) Release 2.1.5, but stripped of their descriptive documentation.&nbsp; This form of MIF files will be distributed with a license that permits them to be used as configuration files for tools.</li>
+					<li><b><a href="../../processable/multicacheschemas"><span class="GramE">multicacheschemas</span></a></b> &#8211; This directory contains all of the other schemas &#8211; wrappers, CMETs and payloads &#8211; that are defined in the normative edition, but without their HTML representations.</li>
+					<li><b><a href="../../processable/multicacheschemasr2b"><span class="GramE">multicacheschemasR2b</span></a></b> &#8211; This directory contains all of the other R2B schemas &#8211; wrappers, CMETs and payloads &#8211; that are defined in the normative edition, but without their HTML representations.</li>
+				</ul>
+
+				<a name="source_content"/><h4>Source Subdirectory (Disc 2 only)</h4>
+				<div style="float:right; display:block; padding:2px;"><a href="#top">(go to top)</a></div>
+				In the 'source' directory of Disc 2, this edition provides the complete set of source files used to build this edition, along with the complete set of source
+				files needed to run the V3 Generator.&nbsp; The contents of this directory, by sub-directory, are:
+				<ul>
+					<li><b><a href="../../source/databases"><span class="GramE">databases</span></a> </b>&#8211; Holds the publishing data bases (PubDb) and design-repository
+					databases for all domains.&nbsp; This directory has one domain database zip file for each domain.&nbsp; The files are identified with the six-character
+					code identifying that domain (such as 'amficr' for Claims &amp; Reimbursements).&nbsp; Each zip file contains one pub db, identified with the four-character
+					identifier for the domain and the two-letter code 'PB' for the pub db (such as FICR_PB.mdb).&nbsp; If a domain stores any of its static model designs in a
+					design repository, this zip file will also contain the repository database, identified with the four-character identifier for the domain and the two-letter code 'RP' for the repository
+					(such as FICR_RP.mdb).&nbsp; If a domain stores its model information in the newer XML format saved by the RMIM Designer (in Visio&copy;, then no repository
+					will be present.  Please note one or two domains include model information both in a repository (for the domain's older models) and in the RMIM Designer XML
+					(for the newer models).</li>
+					<li><b><a href="../../source/rmimdesignersource"><span class="GramE">rmimdesignersource</span></a></b> &#8211; Holds a domain graphics zip file for each domain.&nbsp; The files
+					are identified with the six-character code identifying that domain (such as amficr for Claims &amp;amp; Reimbursements).&nbsp; Within the zip file
+					are the DMIM and RMIM Visio&copy; (*.vsd) files, along with the RMIM Designer XML files, for those designs that are not saved in a design repository.&nbsp;</li>
+					<li><b><a href="../../source/generatorinputfiles"><span class="GramE">generatorinputfiles</span></a></b> &#8211; Holds <b><u>all</u></b> of the content necessary to run the V3 Generator for the Edition.&nbsp; The Generator takes a variety of source files and produces Model Interchange Format (MIF) files, design table views, design Excel views and schemas for the Edition.&nbsp; The structure of the content included here is such that it can be copied or moved into the Generator to reproduce the content for the Edition.&nbsp;
+					To conserve space on the CD, this content is in a ZIP archive, and is accompanied by a <b><i>ReadMe</i></b> file detailing how and where to unzip this.&nbsp; 
+					The Generator itself uses Java tools and an ANT-defined processes to apply a suite of HL7-defined transforms that accomplish these goals.</li>
+				</ul>
+				<a name="tools_content"/><h4>Tool Files Subdirectory (Disc 2 only)</h4>
+				<div style="float:right; display:block; padding:2px;"><a href="#top">(go to top)</a></div>
+				<p>The <b><a href="../../toolfiles"><span class="SpellE"><span class="GramE">toolfiles</span></span></a></b> directory holds a set of tool installer files (*.msi) and
+				ZIP archives (*.zip) for installing the four primary tools used to develop and publish this Edition.&nbsp; These are:</p>
+
+				<ul>
+					<li><strong>HL7 Publication Database</strong> &#8211; The Publication Database (PubDb) is an MS Access&copy; database with a set of HL7-designed forms and
+					Visual Basic&copy; for Applications (VBA) code.&nbsp; It serves as a vehicle to document the dynamic or interaction model of a technical committee's design.&nbsp; It allows content developers
+					to create domain content in the form of general domain information and specific topics.&nbsp; It is distributed here as a Windows Installer&copy; "msi"
+					file <b><i>hl7_pubdb-</i></b>.&nbsp; It is the source of the documentation for the various artifacts such as interactions, trigger events, message types,
+					storyboards, etc. that make up a complete domain specification.&nbsp; This tool is designed to "enforce" the HL7 development framework such that each
+					specification is internally consistent and consistent with the methodology/</li>
+					
+					<li><strong>HL7 RMIM Designer</strong>&#8211; The HL7 RMIM Designer is a graphic designer that supports the design of HL7 static information models.&nbsp; It is distributed
+					here as a Windows Installer&copy; "msi" file <b><i>hl7_rmimdesigner_visio-</i></b>.&nbsp; The current variant of this tool is built upon: customized "templates"
+					in Microsoft Visio&copy; (Versions 2002, 2003, 2007 or 2010); a suite of Visual Basic&copy; and VBA software that runs in the application space; and modules
+					(DLL's) from the RoseTree program.&nbsp; The tool provides an interactive design capability for HL7 RMIMs, and is programmed to use data from the RIM,
+					Vocabulary, and Data Types specifications to enforce the model design rules expressed in the HL7 V3 Methodology.</li>
+					
+					<li><strong>RoseTree</strong> &#8211; RoseTree is a Visual Basic&copy; program contributed to HL7 by its developer for use in defining HL7 Version 3 specifications.&nbsp; It
+					is distributed here as a Windows Installer&copy; "msi" file <b><i>hl7_rosetree-</i></b>&nbsp; It serves three functions in support of these specifications:
+					<ol>
+						<li>It provides the primary interface to the HL7 RIM and Vocabulary specifications stored in the design repositories. As such, it supports interactive browsing of
+						this content by the users, as well as programmatic access to the content for the RMIM Designer.</li>
+						<li>It provides the means for storing, editing and exporting "HMD" designs from the RMIM Designer.&nbsp; This means of static model design management
+						is gradually being phased out in favor of direct static model expression in XML, but for now, about two-thirds of the static models in this Edition use
+						this storage.</li>
+						<li>It provides the software for "publishing" the content of the HL7 PubDB in a "domain xml" file that can be processed by the V3 Generator.</li>
+					</ol></li>
+
+				</ul>
+				<p>The install files for these tools are located in the <a href="../../toolfiles">toolfiles directory</a>.  This directory also includes a
+				<b><i><a href="../../toolfiles/SetupAndInstallationOfHL7Tools.htm">Set-Up and Installation Read Me</a></i></b> file for these installers.&nbsp; Complete documentation
+				on setting up your platform and settings, as well as an overview of the tools is on the HL7 Wiki as
+				<a href="http://wiki.hl7.org/index.php?title=Installing_and_Configuring_HL7_Tools">Installing and Configuring HL7 Tools</a> (Wiki UserId:'wiki', passWord:'wikiwiki')&nbsp;
+				It is assumed that the user will already have licensed versions of MS Access&copy; and MS Visio&copy; installed on their systems.  Additional releases of these tools, as well as
+				additional information on them are available on the <a href="http://gforge.hl7.org/gf/" target="_blank">HL7 Project Homebase GForge website</a>.</p>
+			</td>
+		</tr>
+
+	</table>
+</body>
+</html>

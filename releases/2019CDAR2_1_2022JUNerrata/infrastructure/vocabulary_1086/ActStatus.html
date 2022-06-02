@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="iso-8859-1"?><!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+      <title>ActStatus</title>
+      <link rel="stylesheet" type="text/css" href="../../support/css/V3m.css" /><style type="text/css">
+					td {font-family: Verdana,Arial; text-align: left; vertical-align: top; font-size: 11}
+					th {font-family: Verdana,Arial; FONT-WEIGHT: bold; text-align: left; font-size: 11}
+					</style></head>
+   <body><a href="vocabulary.html#voc-systems">Return to code system index</a><br /><br /><a name="ActStatus"></a><table rules="all" border="1px" cellpadding="2" cellspacing="0" class="homepage">
+         <tbody>
+            <tr>
+               <td colspan="4"><font face="Arial" size="3"><strong>ActStatus&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong> [2.16.840.1.113883.5.14]</font><br /><p class="vocDesc"><b>Description:</b></p>
+                  <p class="vocDesc">Codes representing the defined possible states of an Act, as defined by the Act class state machine.</p>
+               </td>
+            </tr>
+            <tr bgcolor="cornflowerblue">
+               <th>Lvl- Typ</th>
+               <th>Concept&nbsp;Code<br />&nbsp;&nbsp;<i>Head&nbsp;Code-defined&nbsp;Value&nbsp;Set</i></th>
+               <th>Print Name</th>
+               <th>Definition, Properties, Relationships</th>
+            </tr>
+            <tr>
+               <td><a name="normal"></a>0-<strong>S</strong></td>
+               <td nowrap="nowrap"><font color="black"></font><strong>normal</strong><br /><i><font color="white"></font>
+						&nbsp;<i><a href="vs_ActStatus.html#ActStatusNormal">v:ActStatusNormal</a></i></i></td>
+               <td>normal</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Encompasses the expected states of an Act, but excludes "nullified" and "obsolete" which represent unusual terminal states
+                     for the life-cycle.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> aborted active cancelled completed held new suspended
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="aborted"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>aborted</strong><br /><i><font color="white">.&nbsp;</font>
+						&nbsp;<i><a href="vs_ActStatus.html#ActStatusAborted">v:ActStatusAborted</a></i></i></td>
+               <td>aborted</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">The Act has been terminated prior to the originally intended completion.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> normal
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="active"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>active</strong><br /><i><font color="white">.&nbsp;</font>
+						&nbsp;<i><a href="vs_ActStatus.html#ActStatusActive">v:ActStatusActive</a></i></i></td>
+               <td>active</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">The Act can be performed or is being performed</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> normal
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="cancelled"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>cancelled</strong><br /><i><font color="white">.&nbsp;</font>
+						&nbsp;<i><a href="vs_ActStatus.html#ActStatusCancelled">v:ActStatusCancelled</a></i></i></td>
+               <td>cancelled</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">The Act has been abandoned before activation.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> normal
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="completed"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>completed</strong><br /><i><font color="white">.&nbsp;</font>
+						&nbsp;<i><a href="vs_ActStatus.html#ActStatusCompleted">v:ActStatusCompleted</a></i></i></td>
+               <td>completed</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">An Act that has terminated normally after all of its constituents have been performed.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> normal
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="held"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>held</strong><br /><i><font color="white">.&nbsp;</font>
+						&nbsp;<i><a href="vs_ActStatus.html#ActStatusHeld">v:ActStatusHeld</a></i></i></td>
+               <td>held</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">An Act that is still in the preparatory stages has been put aside.  No action can occur until the Act is released.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> normal
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="new"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>new</strong><br /><i><font color="white">.&nbsp;</font>
+						&nbsp;<i><a href="vs_ActStatus.html#ActStatusNew">v:ActStatusNew</a></i></i></td>
+               <td>new</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">An Act that is in the preparatory stages and may not yet be acted upon</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> normal
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="suspended"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>suspended</strong><br /><i><font color="white">.&nbsp;</font>
+						&nbsp;<i><a href="vs_ActStatus.html#ActStatusSuspended">v:ActStatusSuspended</a></i></i></td>
+               <td>suspended</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">An Act that has been activated (actions could or have been performed against it), but has been temporarily disabled.  No further
+                     action should be taken against it until it is released
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> normal
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="nullified"></a>0-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black"></font><strong>nullified</strong><br /><i><font color="white"></font>
+						&nbsp;<i><a href="vs_ActStatus.html#ActStatusNullified">v:ActStatusNullified</a></i></i></td>
+               <td>nullified</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">This Act instance was created in error and has been 'removed' and is treated as though it never existed.  A record is retained
+                     for audit purposes only.
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="obsolete"></a>0-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black"></font><strong>obsolete</strong><br /><i><font color="white"></font>
+						&nbsp;<i><a href="vs_ActStatus.html#ActStatusObsolete">v:ActStatusObsolete</a></i></i></td>
+               <td>obsolete</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">This Act instance has been replaced by a new instance.</p>
+               </td>
+            </tr>
+         </tbody>
+      </table><br /><a href="vocabulary.html#voc-systems">Return to code system index</a><br /><br /><p class="copyright">Last Published:&nbsp;20190729&nbsp;12:04&nbsp;PM</p>
+      <p class="copyright">HL7 &reg; Version 3 Standard, &copy; 2019  Health Level Seven &reg; International. &nbsp;All Rights Reserved.</p>
+      <p class="copyright">HL7 and Health Level Seven are registered trademarks of Health Level Seven International Reg. U.S. Pat &amp; TM Off.<br />Use of these materials is governed by HL7 International's <a href="http://www.hl7.org/legal/ippolicy.cfm">IP Compliance Policy</a>.
+      </p>
+   </body>
+</html>

@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="iso-8859-1"?><!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+      <title>Value Sets using code system: ActRelationshipCheckpoint</title>
+      <link rel="stylesheet" type="text/css" href="../../support/css/V3m.css" /><style type="text/css">
+					td {font-family: Verdana,Arial; text-align: left; vertical-align: top; font-size: 11}
+					th {font-family: Verdana,Arial; FONT-WEIGHT: bold; text-align: left; font-size: 11}
+					</style></head>
+   <body>
+      <h2><a name="top"></a> Value sets using code system: ActRelationshipCheckpoint<i> [2.16.840.1.113883.5.10]</i></h2>
+      <table border="0" cellpadding="0" cellspacing="0" width="100%" class="homepage">
+         <tr>
+            <td valign="top" width="32%">
+               <table class="homepage">
+                  <tr>
+                     <td align="left"><a href="vs_ActRelationshipCheckpoint.html#ActRelationshipCheckpoint">ActRelationshipCheckpoint</a></td>
+                  </tr>
+                  <tr>
+                     <td align="left"><a href="vs_ActRelationshipCheckpoint.html#ActRelationshipCheckpointBeginning">ActRelationshipCheckpointBeginning</a></td>
+                  </tr>
+               </table>
+            </td>
+            <td valign="top" width="32%">
+               <table class="homepage">
+                  <tr>
+                     <td align="left"><a href="vs_ActRelationshipCheckpoint.html#ActRelationshipCheckpointEnd">ActRelationshipCheckpointEnd</a></td>
+                  </tr>
+                  <tr>
+                     <td align="left"><a href="vs_ActRelationshipCheckpoint.html#ActRelationshipCheckpointEntry">ActRelationshipCheckpointEntry</a></td>
+                  </tr>
+               </table>
+            </td>
+            <td valign="top" width="32%">
+               <table class="homepage">
+                  <tr>
+                     <td align="left"><a href="vs_ActRelationshipCheckpoint.html#ActRelationshipCheckpointExit">ActRelationshipCheckpointExit</a></td>
+                  </tr>
+                  <tr>
+                     <td align="left"><a href="vs_ActRelationshipCheckpoint.html#ActRelationshipCheckpointThrough">ActRelationshipCheckpointThrough</a></td>
+                  </tr>
+               </table>
+            </td>
+         </tr>
+      </table><br /><a href="vocabulary.html#VS-index">Return to Value Set Group index</a><br /><br /><a name="ActRelationshipCheckpoint"></a><table rules="all" border="1px" cellpadding="2" cellspacing="0" class="homepage">
+         <tbody>
+            <tr>
+               <td colspan="5"><font face="Arial" size="3"><strong>ActRelationshipCheckpoint&nbsp;
+											</strong> [2.16.840.1.113883.1.11.10349]</font><br /><p class="vocDesc"><strong>Content from code system(s): </strong><br /><b>1&nbsp;</b>&nbsp;<a href="ActRelationshipCheckpoint.html">ActRelationshipCheckpoint</a>&nbsp;<i>[2.16.840.1.113883.5.10]</i></p>
+                  <p class="vocDesc"><strong>Context Bindings to concept domain(s):</strong><br />&nbsp;&nbsp;<a href="voc_ConceptDomains.html#ActRelationshipCheckpoint">ActRelationshipCheckpoint</a>&nbsp;in&nbsp;Realm:&nbsp;UV as CNE
+                  </p>
+                  <p class="vocDesc"><b>Description:</b></p>
+                  <p class="vocDesc">A code specifying when in the course of an Act a precondition for the Act is evaluated (e.g., before the Act starts for the
+                     first time, before every repetition, after each repetition but not before the first, or throughout the entire time of the
+                     Act.)
+                  </p>
+                  <p class="vocDesc"><i class="vocDesc">Discussion:</i> This attribute is part of the workflow control suite of attributes. An action plan is a composite Act with component Acts.
+                     In a sequential plan, each component has a sequenceNumber that specifies the ordering of the plan steps. Before each step
+                     is executed and has preconditions these conditions are tested and if the test is positive, the Act has clearance for execution.
+                     The repeatNumber may indicate that an Act may be repeatedly executed. The checkpointCode is specifies when the precondition
+                     is checked and is analogous to the various conditional statements and loop constructs in programming languages "while-do"
+                     vs. "do-while" or "repeat-until" vs. "loop-exit".
+                  </p>
+                  <p class="vocDesc">For all checkpointCodes, except "end", preconditions are being checked at the time when the preceding step of the plan has
+                     terminated and this step would be next in the sequence established by the sequenceNumber attribute. 
+                  </p>
+                  <p class="vocDesc">When the checkpointCode for a criterion of a repeatable Act is "end", the criterion is tested only at the end of each repetition
+                     of that Act. When the condition holds true, the next repetition is ready for execution. 
+                  </p>
+                  <p class="vocDesc">When the checkpointCode is "entry" the criterion is checked at the beginning of each repetition (if any) whereas "beginning"
+                     means the criterion is checked only once before the repetition "loop" starts.
+                  </p>
+                  <p class="vocDesc">The checkpointCode "through" is special in that it requires the condition to hold throughout the execution of the Act, even
+                     throughout a single execution. As soon as the condition turns false, the Act should receive an interrupt event (see interruptibleInd)
+                     and will eventually terminate.
+                  </p>
+                  <p class="vocDesc">The checkpointCode "exit" is only used on a special plan step that represents a loop exit step. This allows an action plan
+                     to exit due to a condition tested inside the execution of this plan. Such exit criteria are sequenced with the other plan
+                     components using the ActRelationship.sequenceNumber.
+                  </p>
+               </td>
+            </tr>
+            <tr bgcolor="cornflowerblue">
+               <th>Lvl</th>
+               <th>Content Type</th>
+               <th>Code System</th>
+               <th>Primary Reference</th>
+               <th>Qualifiers/Identifiers/(External Code Labels)</th>
+            </tr>
+            <tr>
+               <td>0</td>
+               <td nowrap="nowrap"><font color="white"><font color="black"></font></font><strong>content</strong></td>
+               <td><a href="ActRelationshipCheckpoint.html">ActRelationshipCheckpoint</a></td>
+               <td></td>
+               <td></td>
+            </tr>
+         </tbody>
+      </table><br /><a href="#top">Return to value set index</a><hr /><br /><a name="ActRelationshipCheckpointBeginning"></a><table rules="all" border="1px" cellpadding="2" cellspacing="0" class="homepage">
+         <tbody>
+            <tr>
+               <td colspan="5"><font face="Arial" size="3"><strong>ActRelationshipCheckpointBeginning&nbsp;
+											</strong> [2.16.840.1.113883.1.11.19950]</font><br /><p class="vocDesc"><strong>Content from code system(s): </strong><br /><b>1&nbsp;</b>&nbsp;<a href="ActRelationshipCheckpoint.html">ActRelationshipCheckpoint</a>&nbsp;<i>[2.16.840.1.113883.5.10]</i></p>
+                  <p class="vocDesc"><b>Description:</b></p>
+                  <p class="vocDesc">Condition is tested every time before execution of the service (WHILE condition DO service).</p>
+               </td>
+            </tr>
+            <tr bgcolor="cornflowerblue">
+               <th>Lvl</th>
+               <th>Content Type</th>
+               <th>Code System</th>
+               <th>Primary Reference</th>
+               <th>Qualifiers/Identifiers/(External Code Labels)</th>
+            </tr>
+            <tr>
+               <td>0</td>
+               <td nowrap="nowrap"><font color="white"><font color="black"></font></font><strong>content</strong></td>
+               <td><a href="ActRelationshipCheckpoint.html">ActRelationshipCheckpoint</a></td>
+               <td></td>
+               <td></td>
+            </tr>
+            <tr>
+               <td>1</td>
+               <td nowrap="nowrap"><font color="white"><font color="black">.&nbsp;</font></font><strong>codeBasedContent</strong></td>
+               <td></td>
+               <td><a href="ActRelationshipCheckpoint.html#B">B</a></td>
+               <td>Relationship: Generalizes With: TransitiveClosure</td>
+            </tr>
+         </tbody>
+      </table><br /><a href="#top">Return to value set index</a><hr /><br /><a name="ActRelationshipCheckpointEnd"></a><table rules="all" border="1px" cellpadding="2" cellspacing="0" class="homepage">
+         <tbody>
+            <tr>
+               <td colspan="5"><font face="Arial" size="3"><strong>ActRelationshipCheckpointEnd&nbsp;
+											</strong> [2.16.840.1.113883.1.11.19951]</font><br /><p class="vocDesc"><strong>Content from code system(s): </strong><br /><b>1&nbsp;</b>&nbsp;<a href="ActRelationshipCheckpoint.html">ActRelationshipCheckpoint</a>&nbsp;<i>[2.16.840.1.113883.5.10]</i></p>
+                  <p class="vocDesc"><b>Description:</b></p>
+                  <p class="vocDesc">Condition is tested at the end of a repeated service execution.  The service is repeated only if the condition is true (DO
+                     service WHILE condition).
+                  </p>
+               </td>
+            </tr>
+            <tr bgcolor="cornflowerblue">
+               <th>Lvl</th>
+               <th>Content Type</th>
+               <th>Code System</th>
+               <th>Primary Reference</th>
+               <th>Qualifiers/Identifiers/(External Code Labels)</th>
+            </tr>
+            <tr>
+               <td>0</td>
+               <td nowrap="nowrap"><font color="white"><font color="black"></font></font><strong>content</strong></td>
+               <td><a href="ActRelationshipCheckpoint.html">ActRelationshipCheckpoint</a></td>
+               <td></td>
+               <td></td>
+            </tr>
+            <tr>
+               <td>1</td>
+               <td nowrap="nowrap"><font color="white"><font color="black">.&nbsp;</font></font><strong>codeBasedContent</strong></td>
+               <td></td>
+               <td><a href="ActRelationshipCheckpoint.html#E">E</a></td>
+               <td>Relationship: Generalizes With: TransitiveClosure</td>
+            </tr>
+         </tbody>
+      </table><br /><a href="#top">Return to value set index</a><hr /><br /><a name="ActRelationshipCheckpointEntry"></a><table rules="all" border="1px" cellpadding="2" cellspacing="0" class="homepage">
+         <tbody>
+            <tr>
+               <td colspan="5"><font face="Arial" size="3"><strong>ActRelationshipCheckpointEntry&nbsp;
+											</strong> [2.16.840.1.113883.1.11.19952]</font><br /><p class="vocDesc"><strong>Content from code system(s): </strong><br /><b>1&nbsp;</b>&nbsp;<a href="ActRelationshipCheckpoint.html">ActRelationshipCheckpoint</a>&nbsp;<i>[2.16.840.1.113883.5.10]</i></p>
+                  <p class="vocDesc"><b>Description:</b></p>
+                  <p class="vocDesc">Condition is tested once before the service is executed (IF condition THEN service).</p>
+               </td>
+            </tr>
+            <tr bgcolor="cornflowerblue">
+               <th>Lvl</th>
+               <th>Content Type</th>
+               <th>Code System</th>
+               <th>Primary Reference</th>
+               <th>Qualifiers/Identifiers/(External Code Labels)</th>
+            </tr>
+            <tr>
+               <td>0</td>
+               <td nowrap="nowrap"><font color="white"><font color="black"></font></font><strong>content</strong></td>
+               <td><a href="ActRelationshipCheckpoint.html">ActRelationshipCheckpoint</a></td>
+               <td></td>
+               <td></td>
+            </tr>
+            <tr>
+               <td>1</td>
+               <td nowrap="nowrap"><font color="white"><font color="black">.&nbsp;</font></font><strong>codeBasedContent</strong></td>
+               <td></td>
+               <td><a href="ActRelationshipCheckpoint.html#S">S</a></td>
+               <td>Relationship: Generalizes With: TransitiveClosure</td>
+            </tr>
+         </tbody>
+      </table><br /><a href="#top">Return to value set index</a><hr /><br /><a name="ActRelationshipCheckpointExit"></a><table rules="all" border="1px" cellpadding="2" cellspacing="0" class="homepage">
+         <tbody>
+            <tr>
+               <td colspan="5"><font face="Arial" size="3"><strong>ActRelationshipCheckpointExit&nbsp;
+											</strong> [2.16.840.1.113883.1.11.19954]</font><br /><p class="vocDesc"><strong>Content from code system(s): </strong><br /><b>1&nbsp;</b>&nbsp;<a href="ActRelationshipCheckpoint.html">ActRelationshipCheckpoint</a>&nbsp;<i>[2.16.840.1.113883.5.10]</i></p>
+                  <p class="vocDesc"><b>Description:</b></p>
+                  <p class="vocDesc">Condition is a loop checkpoint, i.e. it is a step of an activity plan and, if negative causes the containing loop to exit.</p>
+               </td>
+            </tr>
+            <tr bgcolor="cornflowerblue">
+               <th>Lvl</th>
+               <th>Content Type</th>
+               <th>Code System</th>
+               <th>Primary Reference</th>
+               <th>Qualifiers/Identifiers/(External Code Labels)</th>
+            </tr>
+            <tr>
+               <td>0</td>
+               <td nowrap="nowrap"><font color="white"><font color="black"></font></font><strong>content</strong></td>
+               <td><a href="ActRelationshipCheckpoint.html">ActRelationshipCheckpoint</a></td>
+               <td></td>
+               <td></td>
+            </tr>
+            <tr>
+               <td>1</td>
+               <td nowrap="nowrap"><font color="white"><font color="black">.&nbsp;</font></font><strong>codeBasedContent</strong></td>
+               <td></td>
+               <td><a href="ActRelationshipCheckpoint.html#X">X</a></td>
+               <td>Relationship: Generalizes With: TransitiveClosure</td>
+            </tr>
+         </tbody>
+      </table><br /><a href="#top">Return to value set index</a><hr /><br /><a name="ActRelationshipCheckpointThrough"></a><table rules="all" border="1px" cellpadding="2" cellspacing="0" class="homepage">
+         <tbody>
+            <tr>
+               <td colspan="5"><font face="Arial" size="3"><strong>ActRelationshipCheckpointThrough&nbsp;
+											</strong> [2.16.840.1.113883.1.11.19953]</font><br /><p class="vocDesc"><strong>Content from code system(s): </strong><br /><b>1&nbsp;</b>&nbsp;<a href="ActRelationshipCheckpoint.html">ActRelationshipCheckpoint</a>&nbsp;<i>[2.16.840.1.113883.5.10]</i></p>
+                  <p class="vocDesc"><b>Description:</b></p>
+                  <p class="vocDesc">Condition must be true throughout the execution and the service is interrupted (asynchronously) as soon as the condition turns
+                     false (asynchronous WHILE loop).  The service must be interruptible.
+                  </p>
+               </td>
+            </tr>
+            <tr bgcolor="cornflowerblue">
+               <th>Lvl</th>
+               <th>Content Type</th>
+               <th>Code System</th>
+               <th>Primary Reference</th>
+               <th>Qualifiers/Identifiers/(External Code Labels)</th>
+            </tr>
+            <tr>
+               <td>0</td>
+               <td nowrap="nowrap"><font color="white"><font color="black"></font></font><strong>content</strong></td>
+               <td><a href="ActRelationshipCheckpoint.html">ActRelationshipCheckpoint</a></td>
+               <td></td>
+               <td></td>
+            </tr>
+            <tr>
+               <td>1</td>
+               <td nowrap="nowrap"><font color="white"><font color="black">.&nbsp;</font></font><strong>codeBasedContent</strong></td>
+               <td></td>
+               <td><a href="ActRelationshipCheckpoint.html#T">T</a></td>
+               <td>Relationship: Generalizes With: TransitiveClosure</td>
+            </tr>
+         </tbody>
+      </table><br /><a href="#top">Return to value set index</a><hr /><br /><p class="copyright">Last Published:&nbsp;20190729&nbsp;12:04&nbsp;PM</p>
+      <p class="copyright">HL7 &reg; Version 3 Standard, &copy; 2019  Health Level Seven &reg; International. &nbsp;All Rights Reserved.</p>
+      <p class="copyright">HL7 and Health Level Seven are registered trademarks of Health Level Seven International Reg. U.S. Pat &amp; TM Off.<br />Use of these materials is governed by HL7 International's <a href="http://www.hl7.org/legal/ippolicy.cfm">IP Compliance Policy</a>.
+      </p>
+   </body>
+</html>

@@ -1,0 +1,51 @@
+<validationOutput name="NE 2014 - Validation of Core Schemas for DT R2 and DT R2b">
+	<desc>
+		10 files, all valid
+	</desc>
+	<validateSchema outcome="success">
+		<validator version="Xerces-J 2.11.0">Xerces</validator>
+		<xsd>C:\Develop\BallotPrj\v3-editions\OutputFiles\coreschemas\datatypes-rX-cs.xsd</xsd>
+	</validateSchema>
+	<validateSchema outcome="success">
+		<validator version="Xerces-J 2.11.0">Xerces</validator>
+		<xsd>C:\Develop\BallotPrj\v3-editions\OutputFiles\coreschemas\hl7-r2_datatypes.xsd</xsd>
+		<warning lineNo="1" charNo="214" file="file:///C:/Users/Woody/AppData/Roaming/hl7-XMLvalidation/B4F2CB68-81F0-64F6-580A-D603468E8E94.xml">SchemaLocation: schemaLocation value = 'file:///C:/Develop/BallotPrj/v3-editions/OutputFiles/coreschemas/hl7-r2_datatypes.xsd' must have even number of URI's.</warning>
+	</validateSchema>
+	<validateSchema outcome="success">
+		<validator version="Xerces-J 2.11.0">Xerces</validator>
+		<xsd>C:\Develop\BallotPrj\v3-editions\OutputFiles\coreschemas\infrastructureRoot-r2.xsd</xsd>
+		<warning lineNo="1" charNo="204" file="file:///C:/Users/Woody/AppData/Roaming/hl7-XMLvalidation/B19884DF-F1FC-C4C6-2A08-F90703159B2F.xml">SchemaLocation: schemaLocation value = 'file:///C:/Develop/BallotPrj/v3-editions/OutputFiles/coreschemas/infrastructureRoot-r2.xsd' must have even number of URI's.</warning>
+	</validateSchema>
+	<validateSchema outcome="success">
+		<validator version="Xerces-J 2.11.0">Xerces</validator>
+		<xsd>C:\Develop\BallotPrj\v3-editions\OutputFiles\coreschemas\NarrativeBlock.xsd</xsd>
+	</validateSchema>
+	<validateSchema outcome="success">
+		<validator version="Xerces-J 2.11.0">Xerces</validator>
+		<xsd>C:\Develop\BallotPrj\v3-editions\OutputFiles\coreschemas\voc-r2.xsd</xsd>
+		<warning lineNo="1" charNo="189" file="file:///C:/Users/Woody/AppData/Roaming/hl7-XMLvalidation/029DDFDC-CA98-E48C-CB43-0CA7BDB04321.xml">SchemaLocation: schemaLocation value = 'file:///C:/Develop/BallotPrj/v3-editions/OutputFiles/coreschemas/voc-r2.xsd' must have even number of URI's.</warning>
+	</validateSchema>
+	<validateSchema outcome="success">
+		<validator version="Xerces-J 2.11.0">Xerces</validator>
+		<xsd>C:\Develop\BallotPrj\v3-editions\OutputFiles\SchemasR2b\datatypes-r2b.xsd</xsd>
+	</validateSchema>
+	<validateSchema outcome="success">
+		<validator version="Xerces-J 2.11.0">Xerces</validator>
+		<xsd>C:\Develop\BallotPrj\v3-editions\OutputFiles\SchemasR2b\datatypes-r2b-base.xsd</xsd>
+		<warning lineNo="1" charNo="314" file="file:///C:/Users/Woody/AppData/Roaming/hl7-XMLvalidation/F0BB7711-1481-04E4-9974-6700814D3045.xml">SchemaLocation: schemaLocation value = 'file:///C:/Develop/BallotPrj/v3-editions/OutputFiles/SchemasR2b/datatypes-r2b-base.xsd' must have even number of URI's.</warning>
+	</validateSchema>
+	<validateSchema outcome="success">
+		<validator version="Xerces-J 2.11.0">Xerces</validator>
+		<xsd>C:\Develop\BallotPrj\v3-editions\OutputFiles\SchemasR2b\datatypes-rX-cs.xsd</xsd>
+	</validateSchema>
+	<validateSchema outcome="success">
+		<validator version="Xerces-J 2.11.0">Xerces</validator>
+		<xsd>C:\Develop\BallotPrj\v3-editions\OutputFiles\SchemasR2b\infrastructureRoot-r2b.xsd</xsd>
+		<warning lineNo="1" charNo="204" file="file:///C:/Users/Woody/AppData/Roaming/hl7-XMLvalidation/78906201-1283-040B-1BB8-1F259D8B8B0F.xml">SchemaLocation: schemaLocation value = 'file:///C:/Develop/BallotPrj/v3-editions/OutputFiles/SchemasR2b/infrastructureRoot-r2b.xsd' must have even number of URI's.</warning>
+	</validateSchema>
+	<validateSchema outcome="success">
+		<validator version="Xerces-J 2.11.0">Xerces</validator>
+		<xsd>C:\Develop\BallotPrj\v3-editions\OutputFiles\SchemasR2b\voc.xsd</xsd>
+		<warning lineNo="1" charNo="185" file="file:///C:/Users/Woody/AppData/Roaming/hl7-XMLvalidation/743B123B-B6AE-343B-F88F-14FB8DFF9733.xml">SchemaLocation: schemaLocation value = 'file:///C:/Develop/BallotPrj/v3-editions/OutputFiles/SchemasR2b/voc.xsd' must have even number of URI's.</warning>
+	</validateSchema>
+</validationOutput>

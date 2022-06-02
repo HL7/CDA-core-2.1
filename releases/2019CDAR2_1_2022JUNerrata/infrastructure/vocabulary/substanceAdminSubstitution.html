@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="iso-8859-1"?><!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+      <title>Substance Admin Substitution</title>
+      <link rel="stylesheet" type="text/css" href="../../support/css/V3m.css" /><style type="text/css">
+					td {font-family: Verdana,Arial; text-align: left; vertical-align: top; font-size: 11}
+					th {font-family: Verdana,Arial; FONT-WEIGHT: bold; text-align: left; font-size: 11}
+					</style></head>
+   <body><a href="vocabulary.html#voc-systems">Return to code system index</a><br /><br /><a name="substanceAdminSubstitution"></a><table rules="all" border="1px" cellpadding="2" cellspacing="0" class="homepage">
+         <tbody>
+            <tr>
+               <td colspan="4"><font face="Arial" size="3"><strong>substanceAdminSubstitution&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong> [2.16.840.1.113883.5.1070]</font><br /><p class="vocDesc"><b>Description:</b></p>
+                  <p class="vocDesc">Identifies what sort of change is permitted or has occurred between the therapy that was ordered and the therapy that was/will
+                     be provided.
+                  </p>
+               </td>
+            </tr>
+            <tr bgcolor="cornflowerblue">
+               <th>Lvl- Typ</th>
+               <th>Concept&nbsp;Code<br />&nbsp;&nbsp;<i>Head&nbsp;Code-defined&nbsp;Value&nbsp;Set</i></th>
+               <th>Print Name</th>
+               <th>Definition, Properties, Relationships</th>
+            </tr>
+            <tr>
+               <td><a name="_ActSubstanceAdminSubstitutionCode"></a>0-<strong>A</strong></td>
+               <td nowrap="nowrap"><font color="black"></font><strong>_ActSubstanceAdminSubstitutionCode</strong><br /><i><font color="white"></font>
+						&nbsp;<i><a href="vs_substanceAdminSubstitution.html#ActSubstanceAdminSubstitutionCode">v:ActSubstanceAdminSubstitutionCode</a></i></i></td>
+               <td>ActSubstanceAdminSubstitutionCode</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description: </b>Substitution occurred or is permitted with another product that may potentially have different ingredients, but having the
+                     same biological and therapeutic effects.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> E F N
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="E"></a>1-<strong>S</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>E</strong></td>
+               <td>equivalent</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description: </b>Substitution occurred or is permitted with another bioequivalent and therapeutically equivalent product.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _ActSubstanceAdminSubstitutionCode<br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> EC TE
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="EC"></a>2-<strong>S</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>EC</strong></td>
+               <td>equivalent composition</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description: </b></p>
+                  <p class="vocDesc">Substitution occurred or is permitted with another product that is a:</p>
+                  <ul class="vocDesc">
+                     <li class="vocDesc">pharmaceutical alternative containing the same active ingredient but is formulated with different salt, ester</li>
+                     <li class="vocDesc">pharmaceutical equivalent that has the same active ingredient, strength, dosage form and route of administration</li>
+                  </ul>
+                  <p class="vocDesc"><i class="vocDesc">Examples: </i></p>
+                  <ul class="vocDesc">
+                     <li class="vocDesc"><i class="vocDesc">Pharmaceutical alternative: </i>Erythromycin Ethylsuccinate for Erythromycin Stearate
+                     </li>
+                     <li class="vocDesc"><i class="vocDesc">Pharmaceutical equivalent: </i>Lisonpril for Zestril
+                     </li>
+                  </ul>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> E<br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> BC G
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="BC"></a>3-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;.&nbsp;</font><strong>BC</strong></td>
+               <td>brand composition</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description: </b></p>
+                  <p class="vocDesc">Substitution occurred or is permitted between equivalent Brands but not Generics</p>
+                  <p class="vocDesc"><i class="vocDesc">Examples: </i></p>
+                  <ul class="vocDesc">
+                     <li class="vocDesc">Zestril  for Prinivil</li>
+                     <li class="vocDesc">Coumadin for Jantoven</li>
+                  </ul>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> EC
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="G"></a>3-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;.&nbsp;</font><strong>G</strong><br /><i><font color="white">.&nbsp;.&nbsp;.&nbsp;</font>
+						&nbsp;<i><a href="vs_substanceAdminSubstitution.html#SubstanceAdminGenericSubstitution">v:SubstanceAdminGenericSubstitution</a></i></i></td>
+               <td>generic composition</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description: </b>Substitution occurred or is permitted between equivalent Generics but not Brands
+                  </p>
+                  <p class="vocDesc"><i class="vocDesc">Examples: </i></p>
+                  <ul class="vocDesc">
+                     <li class="vocDesc">Lisnopril (Lupin Corp) for Lisnopril (Wockhardt Corp)</li>
+                  </ul>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> EC
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="TE"></a>2-<strong>S</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>TE</strong></td>
+               <td>therapeutic alternative</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description: </b>Substitution occurred or is permitted with another product having the same therapeutic objective and safety profile.
+                  </p>
+                  <p class="vocDesc"><i class="vocDesc">Examples: </i></p>
+                  <ul class="vocDesc">
+                     <li class="vocDesc">ranitidine for Tagamet</li>
+                  </ul>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> E<br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> TB TG
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="TB"></a>3-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;.&nbsp;</font><strong>TB</strong></td>
+               <td>therapeutic brand</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description: </b>Substitution occurred or is permitted between therapeutically equivalent Brands but not Generics
+                  </p>
+                  <p class="vocDesc"><i class="vocDesc">Examples: </i></p>
+                  <ul class="vocDesc">
+                     <li class="vocDesc">Zantac for Tagamet</li>
+                  </ul>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> TE
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="TG"></a>3-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;.&nbsp;</font><strong>TG</strong></td>
+               <td>therapeutic generic</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description: </b>Substitution occurred or is permitted between therapeutically equivalent Generics but not Brands
+                  </p>
+                  <p class="vocDesc"><i class="vocDesc">Examples: </i></p>
+                  <ul class="vocDesc">
+                     <li class="vocDesc">Ranitidine  for cimetidine</li>
+                  </ul>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> TE
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="F"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>F</strong></td>
+               <td>formulary</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description: </b>This substitution was performed or is permitted based on formulary guidelines. 
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _ActSubstanceAdminSubstitutionCode
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="N"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>N</strong></td>
+               <td>none</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">No substitution occurred or is permitted.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _ActSubstanceAdminSubstitutionCode
+                  </p>
+               </td>
+            </tr>
+         </tbody>
+      </table><br /><a href="vocabulary.html#voc-systems">Return to code system index</a><br /><br /><p class="copyright">Last Published:&nbsp;20190729&nbsp;12:04&nbsp;PM</p>
+      <p class="copyright">HL7 &reg; Version 3 Standard, &copy; 2019  Health Level Seven &reg; International. &nbsp;All Rights Reserved.</p>
+      <p class="copyright">HL7 and Health Level Seven are registered trademarks of Health Level Seven International Reg. U.S. Pat &amp; TM Off.<br />Use of these materials is governed by HL7 International's <a href="http://www.hl7.org/legal/ippolicy.cfm">IP Compliance Policy</a>.
+      </p>
+   </body>
+</html>

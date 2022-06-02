@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="iso-8859-1"?><!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+      <title>AcknowledgementDetailType</title>
+      <link rel="stylesheet" type="text/css" href="../../support/css/V3m.css" /><style type="text/css">
+					td {font-family: Verdana,Arial; text-align: left; vertical-align: top; font-size: 11}
+					th {font-family: Verdana,Arial; FONT-WEIGHT: bold; text-align: left; font-size: 11}
+					</style></head>
+   <body><a href="vocabulary.html#voc-systems">Return to code system index</a><br /><br /><a name="AcknowledgementDetailType"></a><table rules="all" border="1px" cellpadding="2" cellspacing="0" class="homepage">
+         <tbody>
+            <tr>
+               <td colspan="4"><font face="Arial" size="3"><strong>AcknowledgementDetailType&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong> [2.16.840.1.113883.5.1082]</font><br /><p class="vocDesc"><b>Description:</b></p>
+                  <p class="vocDesc">A code identifying the specific message to be provided.</p>
+                  <p class="vocDesc"><i class="vocDesc">Discussion:</i> A textual value may be specified as the print name, or for non-coded messages, as the original text.
+                  </p>
+                  <p class="vocDesc"><i class="vocDesc">Examples:</i> 'Required attribute xxx is missing', 'System will be unavailable March 19 from 0100 to 0300'
+                  </p>
+               </td>
+            </tr>
+            <tr bgcolor="cornflowerblue">
+               <th>Lvl- Typ</th>
+               <th>Concept&nbsp;Code<br />&nbsp;&nbsp;<i>Head&nbsp;Code-defined&nbsp;Value&nbsp;Set</i></th>
+               <th>Print Name</th>
+               <th>Definition, Properties, Relationships</th>
+            </tr>
+            <tr>
+               <td><a name="E"></a>0-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black"></font><strong>E</strong></td>
+               <td>Error</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Definition:</b>An issue which has prevented, or will prevent (unless a management is provided for the issue by the sender), the successful
+                     processing of an interaction.  Response interactions which include an issue which is an Error are a 'rejection', indicating
+                     that the request was not successfully processed. 
+                  </p>
+                  <p class="vocDesc"><b class="vocDesc">Example:</b>Unable to find specified patient.
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="I"></a>0-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black"></font><strong>I</strong></td>
+               <td>Information</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Definition:</b> The message relates to an issue which has no bearing on the successful processing of the request.  Information issues cannot
+                     be overridden by specifying a management.
+                  </p>
+                  <p class="vocDesc"><b class="vocDesc">Example:</b> A Patient's coverage will expire in 5 days.
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="W"></a>0-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black"></font><strong>W</strong></td>
+               <td>Warning</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Definition:</b> The message relates to an issue which cannot prevent the successful processing of a request, but which could result in the
+                     processing not having the ideal or intended effect.  Managing a warning issue is not required for successful processing, but
+                     will suppress the warning from being raised. 
+                  </p>
+                  <p class="vocDesc"><b class="vocDesc">Example:</b></p>
+                  <p class="vocDesc">Unexpected additional repetitions of phone number have been ignored.</p>
+               </td>
+            </tr>
+         </tbody>
+      </table><br /><a href="vocabulary.html#voc-systems">Return to code system index</a><br /><br /><p class="copyright">Last Published:&nbsp;20190729&nbsp;12:04&nbsp;PM</p>
+      <p class="copyright">HL7 &reg; Version 3 Standard, &copy; 2019  Health Level Seven &reg; International. &nbsp;All Rights Reserved.</p>
+      <p class="copyright">HL7 and Health Level Seven are registered trademarks of Health Level Seven International Reg. U.S. Pat &amp; TM Off.<br />Use of these materials is governed by HL7 International's <a href="http://www.hl7.org/legal/ippolicy.cfm">IP Compliance Policy</a>.
+      </p>
+   </body>
+</html>

@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="iso-8859-1"?><!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+      <title>Value Sets using code system: ActRelationshipSplit</title>
+      <link rel="stylesheet" type="text/css" href="../../support/css/V3m.css" /><style type="text/css">
+					td {font-family: Verdana,Arial; text-align: left; vertical-align: top; font-size: 11}
+					th {font-family: Verdana,Arial; FONT-WEIGHT: bold; text-align: left; font-size: 11}
+					</style></head>
+   <body>
+      <h2><a name="top"></a> Value sets using code system: ActRelationshipSplit<i> [2.16.840.1.113883.5.13]</i></h2>
+      <table border="0" cellpadding="0" cellspacing="0" width="100%" class="homepage">
+         <tr>
+            <td valign="top" width="32%">
+               <table class="homepage">
+                  <tr>
+                     <td align="left"><a href="vs_ActRelationshipSplit.html#ActRelationshipSplit">ActRelationshipSplit</a></td>
+                  </tr>
+                  <tr>
+                     <td align="left"><a href="vs_ActRelationshipSplit.html#ActRelationshipSplitExclusiveTryOnce">ActRelationshipSplitExclusiveTryOnce</a></td>
+                  </tr>
+               </table>
+            </td>
+            <td valign="top" width="32%">
+               <table class="homepage">
+                  <tr>
+                     <td align="left"><a href="vs_ActRelationshipSplit.html#ActRelationshipSplitExclusiveWait">ActRelationshipSplitExclusiveWait</a></td>
+                  </tr>
+                  <tr>
+                     <td align="left"><a href="vs_ActRelationshipSplit.html#ActRelationshipSplitInclusiveTryOnce">ActRelationshipSplitInclusiveTryOnce</a></td>
+                  </tr>
+               </table>
+            </td>
+            <td valign="top" width="32%">
+               <table class="homepage">
+                  <tr>
+                     <td align="left"><a href="vs_ActRelationshipSplit.html#ActRelationshipSplitInclusiveWait">ActRelationshipSplitInclusiveWait</a></td>
+                  </tr>
+               </table>
+            </td>
+         </tr>
+      </table><br /><a href="vocabulary.html#VS-index">Return to Value Set Group index</a><br /><br /><a name="ActRelationshipSplit"></a><table rules="all" border="1px" cellpadding="2" cellspacing="0" class="homepage">
+         <tbody>
+            <tr>
+               <td colspan="5"><font face="Arial" size="3"><strong>ActRelationshipSplit&nbsp;
+											</strong> [2.16.840.1.113883.1.11.10355]</font><br /><p class="vocDesc"><strong>Content from code system(s): </strong><br /><b>1&nbsp;</b>&nbsp;<a href="ActRelationshipSplit.html">ActRelationshipSplit</a>&nbsp;<i>[2.16.840.1.113883.5.13]</i></p>
+                  <p class="vocDesc"><strong>Context Bindings to concept domain(s):</strong><br />&nbsp;&nbsp;<a href="voc_ConceptDomains.html#ActRelationshipSplit">ActRelationshipSplit</a>&nbsp;in&nbsp;Realm:&nbsp;UV as CNE
+                  </p>
+                  <p class="vocDesc"><b>Description:</b></p>
+                  <p class="vocDesc">A code specifying how branches in an action plan are selected among other branches.</p>
+                  <p class="vocDesc"><i class="vocDesc">Discussion:</i> This attribute is part of the workflow control suite of attributes. An action plan is a composite Act with component Acts.
+                     In a sequential plan, each component has a sequenceNumber that specifies the ordering of the plan steps. Branches exist when
+                     multiple components have the same sequenceNumber. The splitCode specifies whether a branch is executed exclusively (case-switch)
+                     or inclusively, i.e., in parallel with other branches. 
+                  </p>
+                  <p class="vocDesc">In addition to exlusive and inclusive split the splitCode specifies how the pre-condition (also known as "guard conditions"
+                     on the branch) are evaluated. A guard condition may be evaluated once when the branching step is entered and if the conditions
+                     do not hold at that time, the branch is abandoned. Conversely execution of a branch may wait until the guard condition turns
+                     true.
+                  </p>
+                  <p class="vocDesc">In exclusive wait branches, the first branch whose guard conditions turn true will be executed and all other branches abandoned.
+                     In inclusive wait branches some branches may already be executed while other branches still wait for their guard conditions
+                     to turn true.
+                  </p>
+               </td>
+            </tr>
+            <tr bgcolor="cornflowerblue">
+               <th>Lvl</th>
+               <th>Content Type</th>
+               <th>Code System</th>
+               <th>Primary Reference</th>
+               <th>Qualifiers/Identifiers/(External Code Labels)</th>
+            </tr>
+            <tr>
+               <td>0</td>
+               <td nowrap="nowrap"><font color="white"><font color="black"></font></font><strong>content</strong></td>
+               <td><a href="ActRelationshipSplit.html">ActRelationshipSplit</a></td>
+               <td></td>
+               <td></td>
+            </tr>
+         </tbody>
+      </table><br /><a href="#top">Return to value set index</a><hr /><br /><a name="ActRelationshipSplitExclusiveTryOnce"></a><table rules="all" border="1px" cellpadding="2" cellspacing="0" class="homepage">
+         <tbody>
+            <tr>
+               <td colspan="5"><font face="Arial" size="3"><strong>ActRelationshipSplitExclusiveTryOnce&nbsp;
+											</strong> [2.16.840.1.113883.1.11.19959]</font><br /><p class="vocDesc"><strong>Content from code system(s): </strong><br /><b>1&nbsp;</b>&nbsp;<a href="ActRelationshipSplit.html">ActRelationshipSplit</a>&nbsp;<i>[2.16.840.1.113883.5.13]</i></p>
+                  <p class="vocDesc"><b>Description:</b></p>
+                  <p class="vocDesc">The pre-condition associated with the branch is evaluated once and if true the branch may be entered. All other exclusive
+                     branches compete with each other and only one will be selected. This implements a COND, IF and CASE conditionals, or "XOR-split."
+                     The order in which the branches are considered may be specified in the priorityNumber attribute.
+                  </p>
+               </td>
+            </tr>
+            <tr bgcolor="cornflowerblue">
+               <th>Lvl</th>
+               <th>Content Type</th>
+               <th>Code System</th>
+               <th>Primary Reference</th>
+               <th>Qualifiers/Identifiers/(External Code Labels)</th>
+            </tr>
+            <tr>
+               <td>0</td>
+               <td nowrap="nowrap"><font color="white"><font color="black"></font></font><strong>content</strong></td>
+               <td><a href="ActRelationshipSplit.html">ActRelationshipSplit</a></td>
+               <td></td>
+               <td></td>
+            </tr>
+            <tr>
+               <td>1</td>
+               <td nowrap="nowrap"><font color="white"><font color="black">.&nbsp;</font></font><strong>codeBasedContent</strong></td>
+               <td></td>
+               <td><a href="ActRelationshipSplit.html#E1">E1</a></td>
+               <td>Relationship: Generalizes With: TransitiveClosure</td>
+            </tr>
+         </tbody>
+      </table><br /><a href="#top">Return to value set index</a><hr /><br /><a name="ActRelationshipSplitExclusiveWait"></a><table rules="all" border="1px" cellpadding="2" cellspacing="0" class="homepage">
+         <tbody>
+            <tr>
+               <td colspan="5"><font face="Arial" size="3"><strong>ActRelationshipSplitExclusiveWait&nbsp;
+											</strong> [2.16.840.1.113883.1.11.19960]</font><br /><p class="vocDesc"><strong>Content from code system(s): </strong><br /><b>1&nbsp;</b>&nbsp;<a href="ActRelationshipSplit.html">ActRelationshipSplit</a>&nbsp;<i>[2.16.840.1.113883.5.13]</i></p>
+                  <p class="vocDesc"><b>Description:</b></p>
+                  <p class="vocDesc">A branch is selected as soon as the pre-condition associated with the branch evaluates to true.  If the condition is false,
+                     the branch may be entered later, when the condition turns true.  All other exclusive branches compete with each other and
+                     only one will be selected.  Each waiting branch executes in parallel with the default join code wait  (see below). The order
+                     in which the branches are considered may be specified in the Service_relationship.priority_nmb.
+                  </p>
+               </td>
+            </tr>
+            <tr bgcolor="cornflowerblue">
+               <th>Lvl</th>
+               <th>Content Type</th>
+               <th>Code System</th>
+               <th>Primary Reference</th>
+               <th>Qualifiers/Identifiers/(External Code Labels)</th>
+            </tr>
+            <tr>
+               <td>0</td>
+               <td nowrap="nowrap"><font color="white"><font color="black"></font></font><strong>content</strong></td>
+               <td><a href="ActRelationshipSplit.html">ActRelationshipSplit</a></td>
+               <td></td>
+               <td></td>
+            </tr>
+            <tr>
+               <td>1</td>
+               <td nowrap="nowrap"><font color="white"><font color="black">.&nbsp;</font></font><strong>codeBasedContent</strong></td>
+               <td></td>
+               <td><a href="ActRelationshipSplit.html#EW">EW</a></td>
+               <td>Relationship: Generalizes With: TransitiveClosure</td>
+            </tr>
+         </tbody>
+      </table><br /><a href="#top">Return to value set index</a><hr /><br /><a name="ActRelationshipSplitInclusiveTryOnce"></a><table rules="all" border="1px" cellpadding="2" cellspacing="0" class="homepage">
+         <tbody>
+            <tr>
+               <td colspan="5"><font face="Arial" size="3"><strong>ActRelationshipSplitInclusiveTryOnce&nbsp;
+											</strong> [2.16.840.1.113883.1.11.19961]</font><br /><p class="vocDesc"><strong>Content from code system(s): </strong><br /><b>1&nbsp;</b>&nbsp;<a href="ActRelationshipSplit.html">ActRelationshipSplit</a>&nbsp;<i>[2.16.840.1.113883.5.13]</i></p>
+                  <p class="vocDesc"><b>Description:</b></p>
+                  <p class="vocDesc">A branch is executed if its associated preconditions permit. If associated preconditions do not permit, the branch is dropped.
+                     Inclusive branches are not suppressed and do not suppress other branches.
+                  </p>
+               </td>
+            </tr>
+            <tr bgcolor="cornflowerblue">
+               <th>Lvl</th>
+               <th>Content Type</th>
+               <th>Code System</th>
+               <th>Primary Reference</th>
+               <th>Qualifiers/Identifiers/(External Code Labels)</th>
+            </tr>
+            <tr>
+               <td>0</td>
+               <td nowrap="nowrap"><font color="white"><font color="black"></font></font><strong>content</strong></td>
+               <td><a href="ActRelationshipSplit.html">ActRelationshipSplit</a></td>
+               <td></td>
+               <td></td>
+            </tr>
+            <tr>
+               <td>1</td>
+               <td nowrap="nowrap"><font color="white"><font color="black">.&nbsp;</font></font><strong>codeBasedContent</strong></td>
+               <td></td>
+               <td><a href="ActRelationshipSplit.html#I1">I1</a></td>
+               <td>Relationship: Generalizes With: TransitiveClosure</td>
+            </tr>
+         </tbody>
+      </table><br /><a href="#top">Return to value set index</a><hr /><br /><a name="ActRelationshipSplitInclusiveWait"></a><table rules="all" border="1px" cellpadding="2" cellspacing="0" class="homepage">
+         <tbody>
+            <tr>
+               <td colspan="5"><font face="Arial" size="3"><strong>ActRelationshipSplitInclusiveWait&nbsp;
+											</strong> [2.16.840.1.113883.1.11.19962]</font><br /><p class="vocDesc"><strong>Content from code system(s): </strong><br /><b>1&nbsp;</b>&nbsp;<a href="ActRelationshipSplit.html">ActRelationshipSplit</a>&nbsp;<i>[2.16.840.1.113883.5.13]</i></p>
+                  <p class="vocDesc"><b>Description:</b></p>
+                  <p class="vocDesc">A branch is executed as soon as its associated conditions permit.  If the condition is false, the branch may be entered later,
+                     when the condition turns true.  Inclusive branches are not suppressed and do not suppress other branches.  Each waiting branch
+                     executes in parallel with the default join code wait  (see below).
+                  </p>
+               </td>
+            </tr>
+            <tr bgcolor="cornflowerblue">
+               <th>Lvl</th>
+               <th>Content Type</th>
+               <th>Code System</th>
+               <th>Primary Reference</th>
+               <th>Qualifiers/Identifiers/(External Code Labels)</th>
+            </tr>
+            <tr>
+               <td>0</td>
+               <td nowrap="nowrap"><font color="white"><font color="black"></font></font><strong>content</strong></td>
+               <td><a href="ActRelationshipSplit.html">ActRelationshipSplit</a></td>
+               <td></td>
+               <td></td>
+            </tr>
+            <tr>
+               <td>1</td>
+               <td nowrap="nowrap"><font color="white"><font color="black">.&nbsp;</font></font><strong>codeBasedContent</strong></td>
+               <td></td>
+               <td><a href="ActRelationshipSplit.html#IW">IW</a></td>
+               <td>Relationship: Generalizes With: TransitiveClosure</td>
+            </tr>
+         </tbody>
+      </table><br /><a href="#top">Return to value set index</a><hr /><br /><p class="copyright">Last Published:&nbsp;20190729&nbsp;12:04&nbsp;PM</p>
+      <p class="copyright">HL7 &reg; Version 3 Standard, &copy; 2019  Health Level Seven &reg; International. &nbsp;All Rights Reserved.</p>
+      <p class="copyright">HL7 and Health Level Seven are registered trademarks of Health Level Seven International Reg. U.S. Pat &amp; TM Off.<br />Use of these materials is governed by HL7 International's <a href="http://www.hl7.org/legal/ippolicy.cfm">IP Compliance Policy</a>.
+      </p>
+   </body>
+</html>

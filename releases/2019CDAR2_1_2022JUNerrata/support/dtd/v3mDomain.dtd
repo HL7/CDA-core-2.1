@@ -1,0 +1,400 @@
+<!-- edited with XMLSPY v2004 rel. 3 U (http://www.xmlspy.com) by George W Beeler (Beeler Consulting LLC) -->
+<!-- edited with XML Spy v4.3 U (http://www.xmlspy.com) by George W Beeler (Beeler Consulting LLC) -->
+<!-- EDITOR's NOTE: This DTD builds upon the HL7 V3m.DTD soecification (was V3pub.dtd).  The internal
+	references have been changed to match the new naming.  
+	
+	It has also been suggested that there be a fixed attribute for the root element that declares its version.  
+	What is not clear is how to provide versions for the variations on the base DTD, such as for sections,
+	RIMs, etc.  This DTD and the accompanying version of V3m00.dtd include a proposed method for
+	providing versions for both.
+	
+	This specification adds an enhanced ability to reference artifacts across the section-expression files
+	as considered in the discussion of specRef, below.
+-->
+<!--
+	add local elements to various classes
+	defined in the main DTD
+  -->
+<!ENTITY % local.ref.class "|docref|msgref|arref|teref|cmetref|entpntref|intref|rmimref|hmdref|hmdextref|msgextref|diagref|artref|statransref">
+<!ENTITY % local.tech.class "">
+<!ENTITY % local.p.class "|descriptive|artree">
+<!ENTITY % local.header.mdl ", legalese">
+<!ENTITY % local.body.mdl ", (storydivn | (cmetsubdivn+, indexdivn) | (storydivn, dmimdivn, subdivn+, indexdivn+) | (storydivn, dmimdivn, bcsection+, indexdivn+))">
+<!--	The local.body.mdl defintition above provides the core structure for the various forms of document that 
+	conform to this DTD.  (A commented element below reflects names for some of the repeating structures.)
+	
+	In brief, there are three top-level structure choices.  (Remember that each of these starts with one or 
+	more div1, which holds the introduction.)  After that, the first structure contains only a storydivn.
+	This structure supports the "Section" and "Subsection" content.  
+	
+	The second structure is for CMETs and includes a repeating set of subdivisions, each with just RMIMs 
+	and HMDs plus a closing index section.  The Repeating section will appear once for each domain that 
+	contributes CMETs, while the indexes will list CMETs used, and a list of message types that "use" each
+	CMET.  
+	
+	The third structure is for a complete domain.  After the storyboards and DMIM, there is a repeating cluster 
+	(the dreaded  "subdomain" subdivn) that will occur three times, once each for State-based messages, query 
+	messages and master file messages   (This is equivalent to the "domain" model from Ballot #2, minus the 
+	DMIM and indexes.)  This third structure closed with a repeating set of index divisions.  (Each index 
+	division holds multiple index lists.) There will be two divisions.  The first will hold two index lists for 
+	CMETs, while the second will hold the three interaction index lists by application roles, trigger events 
+	and message types.  
+	
+	The fourth structure is for a complete domain sub-set by base classes.  After the storyboards and DMIM, there 
+	is a repeating cluster element for base-class sub-division, one for eacg base-class declared.  The base-class
+	division is subdivided into a set of three subdivns, once each for State-based messages, query 
+	messages and master file messages   This structure closed with a repeating set of index divisions, just as for
+	the third structure listed above.  
+-->
+<!-- 
+	<!ELEMENT test2 (div1+, (storydivn | (cmetsubdivn+, indexdivn) | (storydivn, dmimdivn, subdivn+, indexdivn+)))>
+	<!ELEMENT cmetdivnEXAMPLE (cmetdomain+, indexdivn)>
+	<!ELEMENT domaindivnEXAMPLE (storydivn, dmimdivn, subdivn+, indexdivn+)>
+-->
+<!ENTITY % local.version.att "domainDTDVersionNum CDATA #FIXED '4'
+	sectionCode NMTOKEN #REQUIRED">
+<!--
+	include the main DTD
+  -->
+<!ENTITY % v3m SYSTEM 'v3m.dtd'>
+%v3m;
+<!--
+	declare new elements/attributes here
+	to be useful, these new elements have to
+	appear in the local classes above
+  -->
+<!ENTITY % sect-common.att "identifier CDATA #REQUIRED
+	name CDATA #REQUIRED
+	familiarName CDATA #IMPLIED
+	sortPrefix CDATA #IMPLIED
+	baseClass CDATA #IMPLIED
+	class (changed | inserted | deleted) #IMPLIED
+	parent IDREF #REQUIRED
+	id ID #REQUIRED">
+<!-- The name is used for to sort all element types.  For triggger events, application roles and 
+	interactions it is formally structured.  For these elements there is also an optional,
+	"familiar" namer (a.k.a. shortName).  
+-->
+<!-- SECTION POINTERS OR REFERENCES 
+	These pointers are ones that refer to artifacts in the realm of "section" content for the HL7
+	Version 3 standards.  Because the artifacts are expressed in independent files, elements
+	being referenced will, in some cases, be in the immediate document (IDREF) or in a sibling
+	XML document.  These pointers support this duality as follows.
+	
+	1) The "ref" attribute is unique across ALL sections.
+	2) The "sectRef" attribute uses the "SSUUDD" terms to identify where the artifacts may be
+		found. (These strings are to be filled with "_" (underscore) when a higher level document is referenced.
+		Thus "HMPO__" refers to the Practice and Operations subsection.)
+	
+	For each XML document, the desingation for the document will be communicated in the 
+	'sectionCode' attribute which will be asserted as a "local" addition to the attributes for 
+	the "spec" element or the base (V3m00.dtd) DTD.
+	
+	These references also commonly use the "role" attribute to indicate their relationship to the element
+	holding the reference.
+-->
+<!ENTITY % sectRef.att "ref NMTOKEN  #REQUIRED
+	sectID NMTOKEN #REQUIRED
+	sectType CDATA #IMPLIED
+	refName CDATA #IMPLIED
+	refFamiliarName CDATA #IMPLIED
+	refIdentifier CDATA #IMPLIED">
+<!ELEMENT docref EMPTY>
+<!ATTLIST docref
+  %common.att; 
+  %sectRef.att; 
+>
+<!ELEMENT arref EMPTY>
+<!ATTLIST arref
+  %common.att; 
+  %sectRef.att; 
+>
+<!ELEMENT teref EMPTY>
+<!ATTLIST teref
+  %common.att; 
+  %sectRef.att; 
+>
+<!ELEMENT cmetref EMPTY>
+<!ATTLIST cmetref
+  %common.att; 
+  %sectRef.att; 
+>
+<!ELEMENT entpntref EMPTY>
+<!ATTLIST entpntref
+  %common.att; 
+  %sectRef.att; 
+>
+<!ELEMENT intref EMPTY>
+<!ATTLIST intref
+  %common.att; 
+  %sectRef.att; 
+  sequence CDATA #IMPLIED
+>
+<!ELEMENT rmimref EMPTY>
+<!ATTLIST rmimref
+  %common.att; 
+  %sectRef.att; 
+>
+<!ELEMENT msgref EMPTY>
+<!ATTLIST msgref
+  %common.att; 
+  %sectRef.att; 
+>
+<!ELEMENT hmdref EMPTY>
+<!ATTLIST hmdref
+  %common.att; 
+  %sectRef.att; 
+>
+<!-- 
+	References or Pointers to elements outside of the section document structure.  This includes pointers
+	to the HMD and Message expressions in tabular form, references to the diagrams, and to elements
+	of the RIM, such as state transitions.
+-->
+<!ELEMENT statransref EMPTY>
+<!ATTLIST statransref
+  %common.att; 
+  ref NMTOKEN #REQUIRED
+>
+<!ELEMENT diagref EMPTY>
+<!ATTLIST diagref
+  %common.att; 
+  ref NMTOKEN #REQUIRED
+>
+<!ELEMENT artref EMPTY>
+<!ATTLIST artref
+  %common.att; 
+  ref NMTOKEN #REQUIRED
+  alt CDATA #REQUIRED
+>
+<!ELEMENT hmdextref EMPTY>
+<!ATTLIST hmdextref
+  %common.att; 
+  ref NMTOKEN #REQUIRED
+>
+<!ELEMENT msgextref EMPTY>
+<!ATTLIST msgextref
+  %common.att; 
+  ref NMTOKEN #REQUIRED
+>
+<!-- 
+	Boiler plate Stuff.  Perhaps this should be part of  v3Pub.dtd?? 
+-->
+<!ELEMENT legalese EMPTY>
+<!ATTLIST legalese
+  copyRightOwner CDATA #IMPLIED
+  copyRightDate CDATA #IMPLIED
+  copyRightNotation CDATA #IMPLIED
+  renderer CDATA #IMPLIED
+  renderNotation CDATA #IMPLIED
+  contactEmail CDATA #IMPLIED
+  contactName CDATA #IMPLIED
+  contactNote CDATA #IMPLIED
+>
+<!ELEMENT descriptive (%div.mix;)*>
+<!-- Description (a.k.a. Annotation) provides a type code ('role') and a set of paragraphs. Roles are:
+	description - Description (default)
+	walkThrough - Walk-through discussion
+	versionRef - Version 2 Reference
+	designComment - Design Note
+	example - Instance Example
+	purpose - Purpose (for story board)
+	storyExample - Story Board example
+	reason - Reason for (invoking) Interaction Responsibility-->
+<!ATTLIST descriptive
+  %sect-common.att; 
+  role (description | walkThrough | versionRef | designComment | example | purpose | storyExample | reason) "description"
+>
+<!-- HERE starts the real stuff
+-->
+<!--
+	Domains and Interaction Categories 
+-->
+<!-- DOMAIN DIED  "body" takes its place
+<!ELEMENT domain (descriptive*)> -->
+<!-- In new content model, the "domain" has threee flavors.  The "base" domain is a child of a 
+subsection, as it was in first version. The "cmet" "mesControl" flavors of domain are variants of domain 
+that actually are positioned at the subsection level. -->
+<!-- DOMAIN DIED  "body" takes its place
+<!ATTLIST domain
+	%sect-common.att; 
+	domainFlavor (base | cmet | msgControl) "base"
+> -->
+<!-- Divisions within sub-sections -->
+<!ELEMENT cmetsubdivn (rmimdivn, hmddivn, msgtypedivn)?>
+<!ATTLIST cmetsubdivn
+  %sect-common.att; 
+  role CDATA #REQUIRED
+>
+<!ELEMENT bcsection (descriptive?, subdivn+)>
+<!ATTLIST bcsection
+  %sect-common.att; 
+  role (BC) #REQUIRED
+>
+<!ELEMENT annexdivn (descriptive)>
+<!ATTLIST annexdivn
+  %sect-common.att; 
+  %ballot.att; 
+  role (IG | AN) #REQUIRED
+  ref NMTOKEN #IMPLIED
+>
+<!ELEMENT subdivn (descriptive?, (storydivn?, approledivn?, triggerdivn?, rmimdivn?, hmddivn?, msgtypedivn?, interactiondivn?)?, annexdivn?)>
+<!ATTLIST subdivn
+  %sect-common.att; 
+  %ballot.att; 
+  role (SB | QU | MF | BC) #REQUIRED
+>
+<!-- Story Boards -->
+<!ELEMENT storydivn (descriptive*, story*)?>
+<!ATTLIST storydivn
+  %sect-common.att; 
+>
+<!ELEMENT story (descriptive*, diagref?, intref*)>
+<!-- 
+	In storyboard, the storyboard purpose and example narratives are captured as descriptive elements
+The Intref roles show the sequence number in the interaction ladder diagram. The sequence number has
+been added as an attribute of intref
+
+The "name" attribute carries the PubDB "TitleName", and the familiarName attribute carries the Pub DB Name
+-->
+<!ATTLIST story
+  %sect-common.att; 
+  %ballot.att; 
+>
+<!-- Application roles -->
+<!ELEMENT approledivn (descriptive*, artree?, approle*)?>
+<!ATTLIST approledivn
+  %sect-common.att; 
+>
+<!ELEMENT artree (artreeitem+)>
+<!ATTLIST artree
+  role CDATA #IMPLIED
+>
+<!ELEMENT artreeitem ((arref | rmimref | hmdref | msgref), artreeitem*)>
+<!ELEMENT approle (descriptive*, arref*, intref*)>
+<!--In the arref's and intref's above, the "role" attribute distinguishes whether arref is pointing to 
+one of the 'parent' ARs or to one of the 'child' ARs and whether the intref is a
+'sends' interaction or a 'receives' interaction
+-->
+<!ATTLIST approle
+  %sect-common.att; 
+  hidden (no | yes) #IMPLIED
+  %ballot.att; 
+>
+<!-- Trigger Events -->
+<!ELEMENT triggerdivn (descriptive*, statemodel?, trigger*)?>
+<!--Descriptive element provides a vehicle in which the TC can discuss the relationship
+	between states and transitions commonly perceived in their domain to the states and
+	transitions documented in the RIM
+-->
+<!ATTLIST triggerdivn
+  %sect-common.att; 
+>
+<!ELEMENT statemodel (descriptive?, diagref?)>
+<!--Trigger intref provides reference to all interactions triggered
+statransref is future pointer to RIM state transition model.  Until then, the transition label
+will be added as one of the descriptive terms-->
+<!ATTLIST statemodel
+  %sect-common.att; 
+>
+<!ELEMENT trigger (descriptive*, statrans*, intref*)>
+<!--Trigger intref provides reference to all interactions triggered
+statransref is future pointer to RIM state transition model.  Until then, the transition label
+will be added as one of the descriptive terms-->
+<!ATTLIST trigger
+  %sect-common.att; 
+  role CDATA #REQUIRED
+  %ballot.att; 
+>
+<!ELEMENT statrans (statransref?, rmimref?)>
+<!-- These are the state transition references from the Trigger Event -->
+<!ATTLIST statrans
+  transitionFQN CDATA #REQUIRED
+  focalClass CDATA #REQUIRED
+>
+<!-- DMIM and Children -->
+<!ELEMENT dmimdivn (descriptive?, dmim+)?>
+<!ATTLIST dmimdivn
+  %sect-common.att; 
+>
+<!ELEMENT dmim (descriptive*, diagref, entpntref*, cmetref*)>
+<!-- In the DMIM, the entpntref builds a list of entry points (expressed on RMIM diagraMS.
+	cmetref is a list of the CMETs used in the DMIM
+-->
+<!ATTLIST dmim
+  %sect-common.att; 
+  %ballot.att; 
+>
+<!ELEMENT rmimdivn (descriptive*, rmim*)?>
+<!ATTLIST rmimdivn
+  %sect-common.att; 
+>
+<!ELEMENT rmim (descriptive*, rmimref?, diagref, cmetref*, hmdref*)>
+<!ATTLIST rmim
+  %sect-common.att; 
+  %ballot.att; 
+>
+<!ELEMENT hmddivn (descriptive*, hmd*)?>
+<!ATTLIST hmddivn
+  %sect-common.att; 
+>
+<!ELEMENT hmd (descriptive?, hmdextref, rmimref, msgref*)>
+<!ATTLIST hmd
+  %sect-common.att; 
+  %ballot.att; 
+>
+<!ELEMENT msgtypedivn (msgtype+)?>
+<!ATTLIST msgtypedivn
+  %sect-common.att; 
+>
+<!ELEMENT msgtype (descriptive*, msgextref, hmdref, intref*)>
+<!--intRef in msgtype lists the interactions that use this message type-->
+<!ATTLIST msgtype
+  %sect-common.att; 
+  %ballot.att; 
+>
+<!-- Interactions -->
+<!ELEMENT interactiondivn (descriptive*, interaction*)?>
+<!ATTLIST interactiondivn
+  %sect-common.att; 
+>
+<!ELEMENT interaction (descriptive*, arref*, teref, msgref+, rcvrresp*)>
+<!--	
+	Within the Interaction element, the role attribute is simply "interaction" 
+	(This is a change as of 7/1/03.  Previously, role carried the interaction type.)
+	Each of thje child elements of interaction uses role values as:
+	"sendrole" for arref - the sending AR
+	"rcvrole" for arref  - the receiving role
+	"trigger" for teref
+	msgref may appear as many as four times, with the following roles:
+	"trnswrap" for the transmission wrapper
+	"cactwrap" for the control act wrapper
+	"msgtype" for the payload message type, and
+	"qrytype" for the query definition in a query response interaction.
+
+	The role attribute is also used for annotation classifications.
+-->
+<!ATTLIST interaction
+  %sect-common.att; 
+  role CDATA #REQUIRED
+  wraptype CDATA #IMPLIED
+  %ballot.att; 
+>
+<!-- 
+	2003-07-01 The "wraptype" attribute has been changed from required to optional
+	in order to maintain validity of older domain files.  Future use of this attribute is
+	officially DEPRECATED because the information about waqpper type is no carried
+	in a "msgref" element.
+-->
+<!ELEMENT rcvrresp (descriptive?, teref?, intref?)>
+<!ATTLIST rcvrresp
+  %sect-common.att; 
+>
+<!-- Indeces - phony division -->
+<!ELEMENT indexdivn (indexlist+)?>
+<!ATTLIST indexdivn
+  %sect-common.att; 
+>
+<!ELEMENT indexlist EMPTY>
+<!ATTLIST indexlist
+  %sect-common.att; 
+>

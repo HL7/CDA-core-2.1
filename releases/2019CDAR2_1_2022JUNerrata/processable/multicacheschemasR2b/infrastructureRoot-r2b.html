@@ -1,0 +1,61 @@
+<html xmlns:sch="http://www.ascc.net/xml/schematron" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style>
+			font {font-size: 14}
+			</style></head>
+   <body><a href="infrastructureRoot-r2b.xsd">Download this file</a><br>
+      <br><font color="white">&nbsp; </font><font size="3" color="blue">&lt;</font><font size="3" color="brown">xs:schema</font>
+      <font size="3" color="red">&nbsp;elementFormDefault</font><font size="3" color="blue">="</font><font size="3" color="black">qualified</font><font size="3" color="blue">"</font><font size="3" color="blue">&gt;</font><font size="3" color="black">
+         
+         
+         
+         
+         
+         </font>
+      <br><font color="white">&nbsp; &nbsp; </font><font size="3" color="blue">&lt;</font><font size="3" color="brown">xs:annotation</font><font size="3" color="blue">&gt;</font><font size="3" color="black">
+         
+         </font>
+      <br><font color="white">&nbsp; &nbsp; &nbsp; </font><font size="3" color="blue">&lt;</font><font size="3" color="brown">xs:documentation</font><font size="3" color="blue">&gt;</font><font size="3" color="black">Source Information
+         Rendered by: HL7 RIM Maintenance Processes
+         Rendered on: 2014-07-21T12:00:00
+         
+         
+         Generated using schema builder version: 3.4.12
+         RIM MIF Infrastructure Root to Schema Transform: $Id: RimInfrastructureRootToXsd.xsl 8419 2010-11-15 00:10:54Z woody_beeler
+         $
+         Static MIF to Schema Transform: $Id: StaticMifToXsd.xsl 8890 2012-11-27 02:38:05Z woody_beeler $
+         Package Id Conversion: $Id: TransformPackageIds.xsl 8398 2010-10-12 01:52:15Z lloyd_mckenzie $</font>
+      <br><font color="white">&nbsp; &nbsp; &nbsp; &nbsp; </font><font size="3" color="blue">&lt;</font><font size="3" color="brown">mif:p</font><font size="3" color="blue">&gt;</font><font size="3" color="black">The primary RIM source is maintained as an Enterprise Architect model used in conjunction with a RIM archive stored in HL7
+         Model Interchange Format (MIF).</font><font size="3" color="blue">&lt;/</font><font size="3" color="brown">mif:p</font><font size="3" color="blue">&gt;</font>
+      <br><font color="white">&nbsp; &nbsp; &nbsp; &nbsp; </font><font size="3" color="blue">&lt;</font><font size="3" color="brown">mif:p</font><font size="3" color="blue">&gt;</font><font size="3" color="black">This model was rendered into MIF using transforms provided to HL7 by Beeler Consulting LLC.</font><font size="3" color="blue">&lt;/</font><font size="3" color="brown">mif:p</font><font size="3" color="blue">&gt;</font><br><font color="white">&nbsp; &nbsp; &nbsp; </font><font size="3" color="blue">&lt;/</font><font size="3" color="brown">xs:documentation</font><font size="3" color="blue">&gt;</font><br><font color="white">&nbsp; &nbsp; </font><font size="3" color="blue">&lt;/</font><font size="3" color="brown">xs:annotation</font><font size="3" color="blue">&gt;</font>
+      <br><font color="white">&nbsp; &nbsp; </font><font size="3" color="blue">&lt;</font><font size="3" color="brown">xs:include</font>
+      <font size="3" color="red">&nbsp;schemaLocation</font><font size="3" color="blue">="</font><font size="3" color="black">voc-r2b.xsd</font><font size="3" color="blue">"</font><font size="3" color="blue">/&gt;</font><font size="3" color="black"></font>
+      <br><font color="white">&nbsp; &nbsp; </font><font size="3" color="blue">&lt;</font><font size="3" color="brown">xs:include</font>
+      <font size="3" color="red">&nbsp;schemaLocation</font><font size="3" color="blue">="</font><font size="3" color="black">datatypes-r2b.xsd</font><font size="3" color="blue">"</font><font size="3" color="blue">/&gt;</font><font size="3" color="black"></font>
+      <br><font color="white">&nbsp; &nbsp; </font><font size="3" color="blue">&lt;</font><font size="3" color="brown">xs:group</font>
+      <font size="3" color="red">&nbsp;name</font><font size="3" color="blue">="</font><font size="3" color="black">InfrastructureRootElements</font><font size="3" color="blue">"</font><font size="3" color="blue">&gt;</font><font size="3" color="black">
+         
+         </font>
+      <br><font color="white">&nbsp; &nbsp; &nbsp; </font><font size="3" color="blue">&lt;</font><font size="3" color="brown">xs:sequence</font><font size="3" color="blue">&gt;</font><font size="3" color="black">
+         
+         
+         
+         </font>
+      <br><font color="white">&nbsp; &nbsp; &nbsp; &nbsp; </font><font size="3" color="blue">&lt;</font><font size="3" color="brown">xs:element</font>
+      <font size="3" color="red">&nbsp;name</font><font size="3" color="blue">="</font><font size="3" color="black">realmCode</font><font size="3" color="blue">"</font>
+      <font size="3" color="red">&nbsp;type</font><font size="3" color="blue">="</font><font size="3" color="black">CS</font><font size="3" color="blue">"</font>
+      <font size="3" color="red">&nbsp;minOccurs</font><font size="3" color="blue">="</font><font size="3" color="black">0</font><font size="3" color="blue">"</font>
+      <font size="3" color="red">&nbsp;maxOccurs</font><font size="3" color="blue">="</font><font size="3" color="black">unbounded</font><font size="3" color="blue">"</font><font size="3" color="blue">/&gt;</font><font size="3" color="black"></font>
+      <br><font color="white">&nbsp; &nbsp; &nbsp; &nbsp; </font><font size="3" color="blue">&lt;</font><font size="3" color="brown">xs:element</font>
+      <font size="3" color="red">&nbsp;name</font><font size="3" color="blue">="</font><font size="3" color="black">typeId</font><font size="3" color="blue">"</font>
+      <font size="3" color="red">&nbsp;type</font><font size="3" color="blue">="</font><font size="3" color="black">II</font><font size="3" color="blue">"</font>
+      <font size="3" color="red">&nbsp;minOccurs</font><font size="3" color="blue">="</font><font size="3" color="black">0</font><font size="3" color="blue">"</font>
+      <font size="3" color="red">&nbsp;maxOccurs</font><font size="3" color="blue">="</font><font size="3" color="black">1</font><font size="3" color="blue">"</font><font size="3" color="blue">/&gt;</font><font size="3" color="black"></font>
+      <br><font color="white">&nbsp; &nbsp; &nbsp; &nbsp; </font><font size="3" color="blue">&lt;</font><font size="3" color="brown">xs:element</font>
+      <font size="3" color="red">&nbsp;name</font><font size="3" color="blue">="</font><font size="3" color="black">templateId</font><font size="3" color="blue">"</font>
+      <font size="3" color="red">&nbsp;type</font><font size="3" color="blue">="</font><font size="3" color="black">II</font><font size="3" color="blue">"</font>
+      <font size="3" color="red">&nbsp;minOccurs</font><font size="3" color="blue">="</font><font size="3" color="black">0</font><font size="3" color="blue">"</font>
+      <font size="3" color="red">&nbsp;maxOccurs</font><font size="3" color="blue">="</font><font size="3" color="black">unbounded</font><font size="3" color="blue">"</font><font size="3" color="blue">/&gt;</font><font size="3" color="black"></font><br><font color="white">&nbsp; &nbsp; &nbsp; </font><font size="3" color="blue">&lt;/</font><font size="3" color="brown">xs:sequence</font><font size="3" color="blue">&gt;</font><br><font color="white">&nbsp; &nbsp; </font><font size="3" color="blue">&lt;/</font><font size="3" color="brown">xs:group</font><font size="3" color="blue">&gt;</font>
+      <br><font color="white">&nbsp; &nbsp; </font><font size="3" color="blue">&lt;</font><font size="3" color="brown">xs:attributeGroup</font>
+      <font size="3" color="red">&nbsp;name</font><font size="3" color="blue">="</font><font size="3" color="black">InfrastructureRootAttributes</font><font size="3" color="blue">"</font><font size="3" color="blue">/&gt;</font><font size="3" color="black"></font><br><font color="white">&nbsp; </font><font size="3" color="blue">&lt;/</font><font size="3" color="brown">xs:schema</font><font size="3" color="blue">&gt;</font></body>
+</html>

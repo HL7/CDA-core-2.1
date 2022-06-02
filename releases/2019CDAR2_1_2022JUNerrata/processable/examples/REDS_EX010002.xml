@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<knowledgeRequestNotification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:hl7-org:v3 file:///C:/Guilherme/HL7/Infobutton/Documentation/Knowledge%20request%20R2/schemas/knowledgeRequest.xsd" xmlns="urn:hl7-org:v3" classCode="ACT" moodCode="DEF">
+	<effectiveTime value="20120706001023"/>
+	<subject1 typeCode="SBJ">
+		<patientContext classCode="PAT">
+			<patientPerson classCode="PSN" determinerCode="INSTANCE">
+				<administrativeGenderCode code="F" codeSystem="2.16.840.1.113883.5.1" codeSystemName="AdministrativeGender"/>
+			</patientPerson>
+			<subjectOf typeCode="SBJ">
+				<age classCode="OBS" moodCode="DEF">
+					<code code="30525-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LN"/>
+					<value value="8" unit="a"/>
+				</age>
+			</subjectOf>
+		</patientContext>
+	</subject1>
+	<performer typeCode="PRF">
+		<healthCareProvider classCode="PROV">
+			<code code="163W00000X" codeSystem="2.16.840.1.113883.6.101" codeSystemName="NUCC Health Care Provider Taxonomy">
+				<displayName value="Registered Nurse"/>
+			</code>
+			<healthCarePerson classCode="PSN" determinerCode="INSTANCE">
+				<languageCommunication>
+					<languageCode code="en" codeSystem="2.16.840.1.113883.6.121" codeSystemName="Tags for the Identification of Languages"/>
+				</languageCommunication>
+			</healthCarePerson>
+		</healthCareProvider>
+	</performer>
+	<informationRecipient typeCode="IRCP">
+		<patient classCode="PAT">
+			<patientPerson classCode="PSN" determinerCode="INSTANCE">
+				<languageCommunication>
+					<languageCode code="es" codeSystem="2.16.840.1.113883.6.121" codeSystemName="Tags for the Identification of Languages"/>
+				</languageCommunication>
+			</patientPerson>
+		</patient>		
+	</informationRecipient>
+	<subject2 typeCode="SUBJ">
+		<mainSearchCriteria classCode="OBS" moodCode="DEF">
+			<code code="KSUBJ" codeSystem="2.16.840.1.113883.1.11.20385" codeSystemName="ActCode"/>
+			<value code="49502-693-03" codeSystem="2.16.840.1.113883.6.69" codeSystemName="NDC">
+				<displayName value="Albuterol sulfate inhalation solution 1.25 mg"/>
+				<originalText value="Albuterol sulfate"/>
+			</value>
+		</mainSearchCriteria>
+	</subject2>
+	<subject3 typeCode="SUBJ">
+		<taskContext classCode="ACT" moodCode="DEF">
+			<code code="MEDLISTREV" codeSystem="2.16.840.1.113883.1.11.19846" codeSystemName="ActTaskCode"/>
+		</taskContext>
+	</subject3>
+	<subject4 typeCode="SUBJ">
+		<subTopic classCode="OBS" moodCode="DEF">
+			<code code="KSUBT" codeSystem="2.16.840.1.113883.1.11.20385" codeSystemName="ActCode"/>
+			<value code="Q000008" codeSystem="2.16.840.1.113883.6.177" codeSystemName="MSH">
+				<displayName value="administration and dosage"/>
+			</value>
+		</subTopic>
+	</subject4>
+</knowledgeRequestNotification>

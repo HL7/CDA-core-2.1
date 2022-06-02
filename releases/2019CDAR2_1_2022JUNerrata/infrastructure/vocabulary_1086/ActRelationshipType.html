@@ -1,0 +1,1929 @@
+<?xml version="1.0" encoding="iso-8859-1"?><!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+      <title>ActRelationshipType</title>
+      <link rel="stylesheet" type="text/css" href="../../support/css/V3m.css" /><style type="text/css">
+					td {font-family: Verdana,Arial; text-align: left; vertical-align: top; font-size: 11}
+					th {font-family: Verdana,Arial; FONT-WEIGHT: bold; text-align: left; font-size: 11}
+					</style></head>
+   <body><a href="vocabulary.html#voc-systems">Return to code system index</a><br /><br /><a name="ActRelationshipType"></a><table rules="all" border="1px" cellpadding="2" cellspacing="0" class="homepage">
+         <tbody>
+            <tr>
+               <td colspan="4"><font face="Arial" size="3"><strong>ActRelationshipType&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong> [2.16.840.1.113883.5.1002]</font><br /><p class="vocDesc"><b>Description:</b></p>
+                  <p class="vocDesc">The source is an excerpt from the target.</p>
+               </td>
+            </tr>
+            <tr bgcolor="cornflowerblue">
+               <th>Lvl- Typ</th>
+               <th>Concept&nbsp;Code<br />&nbsp;&nbsp;<i>Head&nbsp;Code-defined&nbsp;Value&nbsp;Set</i></th>
+               <th>Print Name</th>
+               <th>Definition, Properties, Relationships</th>
+            </tr>
+            <tr>
+               <td><a name="ART"></a>0-<strong>S</strong></td>
+               <td nowrap="nowrap"><font color="black"></font><strong>ART</strong></td>
+               <td>act relationship type</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description: </b>A directed association between a source Act and a target Act.
+                  </p>
+                  <p class="vocDesc"><b class="vocDesc">Usage Note: </b>This code should never be transmitted in an instance as the value of ActRelationship.typeCode (attribute)
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> COMP OUTC PERT SEQL _ActRelationshipConditional
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="COMP"></a>1-<strong>S</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>COMP</strong><br /><i><font color="white">.&nbsp;</font>
+						&nbsp;<i><a href="vs_ActRelationshipType.html#ActRelationshipHasComponent">v:ActRelationshipHasComponent</a></i></i></td>
+               <td>has component</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">A collection of sub-services as steps or subtasks performed for the source service. Services may be performed sequentially
+                     or concurrently.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> ART<br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> ARR CTRLV DEP
+                  </p>
+                  <p class="vocDesc"><strong>Concept Properties: </strong>
+							&nbsp;&nbsp;<strong><i>conductible:&nbsp;</i></strong>false 
+							&nbsp;&nbsp;<strong><i>isDocumentCharacteristic:&nbsp;</i></strong>false 
+							&nbsp;&nbsp;<strong><i>Name:Act:outboundRelationship:ActRelationship:&nbsp;</i></strong>component 
+							&nbsp;&nbsp;<strong><i>Sort:Act:outboundRelationship:ActRelationship:&nbsp;</i></strong>E________ 
+							&nbsp;&nbsp;<strong><i>Name:Act:inboundRelationship:ActRelationship:&nbsp;</i></strong>componentOf 
+							&nbsp;&nbsp;<strong><i>Sort:Act:inboundRelationship:ActRelationship:&nbsp;</i></strong>E________ 
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="ARR"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>ARR</strong><br /><i><font color="white">.&nbsp;.&nbsp;</font>
+						&nbsp;<i><a href="vs_ActRelationshipType.html#ActRelationshipArrival">v:ActRelationshipArrival</a></i></i></td>
+               <td>arrival</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">The relationship that links to a Transportation Act (target) from another Act (source) indicating that the subject of the
+                     source Act entered into the source Act by means of the target Transportation act.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> COMP
+                  </p>
+                  <p class="vocDesc"><strong>Concept Properties: </strong>
+							&nbsp;&nbsp;<strong><i>isDocumentCharacteristic:&nbsp;</i></strong>false 
+							&nbsp;&nbsp;<strong><i>Name:Act:outboundRelationship:ActRelationship:&nbsp;</i></strong>arrivedBy 
+							&nbsp;&nbsp;<strong><i>Sort:Act:outboundRelationship:ActRelationship:&nbsp;</i></strong>EB_______ 
+							&nbsp;&nbsp;<strong><i>Name:Act:inboundRelationship:ActRelationship:&nbsp;</i></strong>arrivalFor 
+							&nbsp;&nbsp;<strong><i>Sort:Act:inboundRelationship:ActRelationship:&nbsp;</i></strong>EB_______ 
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="CTRLV"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>CTRLV</strong><br /><i><font color="white">.&nbsp;.&nbsp;</font>
+						&nbsp;<i><a href="vs_ActRelationshipType.html#ActRelationshipHasControlVariable">v:ActRelationshipHasControlVariable</a></i></i></td>
+               <td>has control variable</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">A relationship from an Act to a Control Variable.  For example, if a Device makes an Observation, this relates the Observation
+                     to its Control Variables documenting  the device's settings that influenced the observation.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> COMP
+                  </p>
+                  <p class="vocDesc"><strong>Concept Properties: </strong>
+							&nbsp;&nbsp;<strong><i>isDocumentCharacteristic:&nbsp;</i></strong>false 
+							&nbsp;&nbsp;<strong><i>Name:Act:outboundRelationship:ActRelationship:&nbsp;</i></strong>controlVariable 
+							&nbsp;&nbsp;<strong><i>Sort:Act:outboundRelationship:ActRelationship:&nbsp;</i></strong>EA_______ 
+							&nbsp;&nbsp;<strong><i>Name:Act:inboundRelationship:ActRelationship:&nbsp;</i></strong>controlVariableFor 
+							&nbsp;&nbsp;<strong><i>Sort:Act:inboundRelationship:ActRelationship:&nbsp;</i></strong>EA_______ 
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="DEP"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>DEP</strong><br /><i><font color="white">.&nbsp;.&nbsp;</font>
+						&nbsp;<i><a href="vs_ActRelationshipType.html#ActRelationshipDeparture">v:ActRelationshipDeparture</a></i></i></td>
+               <td>departure</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">The relationship that links to a Transportation Act (target) from another Act (source) indicating that the subject of the
+                     source Act departed from the source Act by means of the target Transportation act.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> COMP
+                  </p>
+                  <p class="vocDesc"><strong>Concept Properties: </strong>
+							&nbsp;&nbsp;<strong><i>isDocumentCharacteristic:&nbsp;</i></strong>false 
+							&nbsp;&nbsp;<strong><i>Name:Act:outboundRelationship:ActRelationship:&nbsp;</i></strong>departedBy 
+							&nbsp;&nbsp;<strong><i>Sort:Act:outboundRelationship:ActRelationship:&nbsp;</i></strong>EC_______ 
+							&nbsp;&nbsp;<strong><i>Name:Act:inboundRelationship:ActRelationship:&nbsp;</i></strong>departureFor 
+							&nbsp;&nbsp;<strong><i>Sort:Act:inboundRelationship:ActRelationship:&nbsp;</i></strong>EC_______ 
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="OUTC"></a>1-<strong>S</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>OUTC</strong><br /><i><font color="white">.&nbsp;</font>
+						&nbsp;<i><a href="vs_ActRelationshipType.html#ActRelationshipOutcome">v:ActRelationshipOutcome</a></i></i></td>
+               <td>has outcome</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">An observation that should follow or does actually follow as a result or consequence of a condition or action (sometimes called
+                     "post-conditional".) Target must be an observation as a goal, risk or any criterion. For complex outcomes a conjunction attribute
+                     (AND, OR, XOR) can be used.  An outcome link is often inverted to describe an outcome assessment.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> ART<br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> GOAL RISK _ActRelationsipObjective
+                  </p>
+                  <p class="vocDesc"><strong>Concept Properties: </strong>
+							&nbsp;&nbsp;<strong><i>appliesTo:&nbsp;</i></strong>condition or action 
+							&nbsp;&nbsp;<strong><i>conductible:&nbsp;</i></strong>false 
+							&nbsp;&nbsp;<strong><i>howApplies:&nbsp;</i></strong>outcome 
+							&nbsp;&nbsp;<strong><i>isDocumentCharacteristic:&nbsp;</i></strong>true 
+							&nbsp;&nbsp;<strong><i>Name:Act:outboundRelationship:ActRelationship:&nbsp;</i></strong>outcome 
+							&nbsp;&nbsp;<strong><i>Sort:Act:outboundRelationship:ActRelationship:&nbsp;</i></strong>A________ 
+							&nbsp;&nbsp;<strong><i>Name:Act:inboundRelationship:ActRelationship:&nbsp;</i></strong>outcomeOf 
+							&nbsp;&nbsp;<strong><i>Sort:Act:inboundRelationship:ActRelationship:&nbsp;</i></strong>A________ 
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="GOAL"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>GOAL</strong><br /><i><font color="white">.&nbsp;.&nbsp;</font>
+						&nbsp;<i><a href="vs_ActRelationshipType.html#ActRelationshipHasGoal">v:ActRelationshipHasGoal</a></i></i></td>
+               <td>has goal</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">A goal that one defines given a patient's health condition.  Subsequently planned actions aim to meet that goal.  Source is
+                     an observation or condition node, target must be an observation in goal mood.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> OUTC
+                  </p>
+                  <p class="vocDesc"><strong>Concept Properties: </strong>
+							&nbsp;&nbsp;<strong><i>appliesTo:&nbsp;</i></strong>observation, condition 
+							&nbsp;&nbsp;<strong><i>howApplies:&nbsp;</i></strong>goal 
+							&nbsp;&nbsp;<strong><i>isDocumentCharacteristic:&nbsp;</i></strong>true 
+							&nbsp;&nbsp;<strong><i>Name:Act:outboundRelationship:ActRelationship:&nbsp;</i></strong>goal 
+							&nbsp;&nbsp;<strong><i>Sort:Act:outboundRelationship:ActRelationship:&nbsp;</i></strong>AB_______ 
+							&nbsp;&nbsp;<strong><i>Name:Act:inboundRelationship:ActRelationship:&nbsp;</i></strong>goalOf 
+							&nbsp;&nbsp;<strong><i>Sort:Act:inboundRelationship:ActRelationship:&nbsp;</i></strong>AB_______ 
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="RISK"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>RISK</strong><br /><i><font color="white">.&nbsp;.&nbsp;</font>
+						&nbsp;<i><a href="vs_ActRelationshipType.html#ActRelationshipHasRisk">v:ActRelationshipHasRisk</a></i></i></td>
+               <td>has risk</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">A noteworthy undesired outcome of a patient's condition that is either likely enough to become an issue or is less likely
+                     but dangerous enough to be addressed.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> OUTC
+                  </p>
+                  <p class="vocDesc"><strong>Concept Properties: </strong>
+							&nbsp;&nbsp;<strong><i>appliesTo:&nbsp;</i></strong>observation, condition 
+							&nbsp;&nbsp;<strong><i>howApplies:&nbsp;</i></strong>risk 
+							&nbsp;&nbsp;<strong><i>isDocumentCharacteristic:&nbsp;</i></strong>true 
+							&nbsp;&nbsp;<strong><i>Name:Act:outboundRelationship:ActRelationship:&nbsp;</i></strong>risk 
+							&nbsp;&nbsp;<strong><i>Sort:Act:outboundRelationship:ActRelationship:&nbsp;</i></strong>AA_______ 
+							&nbsp;&nbsp;<strong><i>Name:Act:inboundRelationship:ActRelationship:&nbsp;</i></strong>riskOf 
+							&nbsp;&nbsp;<strong><i>Sort:Act:inboundRelationship:ActRelationship:&nbsp;</i></strong>AA_______ 
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="_ActRelationsipObjective"></a>2-<strong>A</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>_ActRelationsipObjective</strong><br /><i><font color="white">.&nbsp;.&nbsp;</font>
+						&nbsp;<i><a href="vs_ActRelationshipType.html#ActRelationshipObjective">v:ActRelationshipObjective</a></i></i></td>
+               <td>Act Relationsip Objective</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">The target act is a desired outcome of the source act. Source is any act (typically an intervention). Target must be an observation
+                     in criterion mood.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> OUTC<br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> OBJC OBJF
+                  </p>
+                  <p class="vocDesc"><strong>Concept Properties: </strong>
+							&nbsp;&nbsp;<strong><i>isDocumentCharacteristic:&nbsp;</i></strong>true 
+							&nbsp;&nbsp;<strong><i>Name:Act:outboundRelationship:ActRelationship:&nbsp;</i></strong>goal 
+							&nbsp;&nbsp;<strong><i>Sort:Act:outboundRelationship:ActRelationship:&nbsp;</i></strong>AC_______ 
+							&nbsp;&nbsp;<strong><i>Name:Act:inboundRelationship:ActRelationship:&nbsp;</i></strong>goalOf 
+							&nbsp;&nbsp;<strong><i>Sort:Act:inboundRelationship:ActRelationship:&nbsp;</i></strong>AC_______ 
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="OBJC"></a>3-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;.&nbsp;</font><strong>OBJC</strong><br /><i><font color="white">.&nbsp;.&nbsp;.&nbsp;</font>
+						&nbsp;<i><a href="vs_ActRelationshipType.html#ActRelationshipHasContinuingObjective">v:ActRelationshipHasContinuingObjective</a></i></i></td>
+               <td>has continuing objective</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">A desired state that a service action aims to maintain.  E.g., keep systolic blood pressure between 90 and 110 mm Hg.  Source
+                     is an intervention service.  Target must be an observation in criterion mood.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _ActRelationsipObjective
+                  </p>
+                  <p class="vocDesc"><strong>Concept Properties: </strong>
+							&nbsp;&nbsp;<strong><i>appliesTo:&nbsp;</i></strong>service 
+							&nbsp;&nbsp;<strong><i>howApplies:&nbsp;</i></strong>criterion 
+							&nbsp;&nbsp;<strong><i>isDocumentCharacteristic:&nbsp;</i></strong>true 
+							&nbsp;&nbsp;<strong><i>Name:Act:outboundRelationship:ActRelationship:&nbsp;</i></strong>maintenanceGoal 
+							&nbsp;&nbsp;<strong><i>Sort:Act:outboundRelationship:ActRelationship:&nbsp;</i></strong>ACA______ 
+							&nbsp;&nbsp;<strong><i>Name:Act:inboundRelationship:ActRelationship:&nbsp;</i></strong>maintenanceGoalOf 
+							&nbsp;&nbsp;<strong><i>Sort:Act:inboundRelationship:ActRelationship:&nbsp;</i></strong>ACA______ 
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="OBJF"></a>3-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;.&nbsp;</font><strong>OBJF</strong><br /><i><font color="white">.&nbsp;.&nbsp;.&nbsp;</font>
+						&nbsp;<i><a href="vs_ActRelationshipType.html#ActRelationshipHasFinalObjective">v:ActRelationshipHasFinalObjective</a></i></i></td>
+               <td>has final objective</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">A desired outcome that a service action aims to meet finally.  Source is any service (typically an intervention).  Target
+                     must be an observation in criterion mood.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _ActRelationsipObjective
+                  </p>
+                  <p class="vocDesc"><strong>Concept Properties: </strong>
+							&nbsp;&nbsp;<strong><i>appliesTo:&nbsp;</i></strong>service 
+							&nbsp;&nbsp;<strong><i>howApplies:&nbsp;</i></strong>criterion 
+							&nbsp;&nbsp;<strong><i>isDocumentCharacteristic:&nbsp;</i></strong>true 
+							&nbsp;&nbsp;<strong><i>Name:Act:outboundRelationship:ActRelationship:&nbsp;</i></strong>finalGoal 
+							&nbsp;&nbsp;<strong><i>Sort:Act:outboundRelationship:ActRelationship:&nbsp;</i></strong>ACB______ 
+							&nbsp;&nbsp;<strong><i>Name:Act:inboundRelationship:ActRelationship:&nbsp;</i></strong>finalGoalOf 
+							&nbsp;&nbsp;<strong><i>Sort:Act:inboundRelationship:ActRelationship:&nbsp;</i></strong>ACB______ 
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="PERT"></a>1-<strong>S</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>PERT</strong><br /><i><font color="white">.&nbsp;</font>
+						&nbsp;<i><a href="vs_ActRelationshipType.html#ActRelationshipPertains">v:ActRelationshipPertains</a></i></i></td>
+               <td>has pertinent information</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">This is a very unspecific relationship from one item of clinical information to another.  It does not judge about the role
+                     the pertinent information plays.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> ART<br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> AUTH CAUS COVBY DRIV ELNK EVID EXACBY EXPL ITEMSLOC LIMIT META MFST NAME PREV REFR REFV RELVBY SPRT SUBJ SUMM _ActClassTemporallyPertains _ActRelationshipAccounting
+                  </p>
+                  <p class="vocDesc"><strong>Concept Properties: </strong>
+							&nbsp;&nbsp;<strong><i>appliesTo:&nbsp;</i></strong>any service 
+							&nbsp;&nbsp;<strong><i>conductible:&nbsp;</i></strong>true 
+							&nbsp;&nbsp;<strong><i>howApplies:&nbsp;</i></strong>any service 
+							&nbsp;&nbsp;<strong><i>isDocumentCharacteristic:&nbsp;</i></strong>true 
+							&nbsp;&nbsp;<strong><i>Name:Act:outboundRelationship:ActRelationship:&nbsp;</i></strong>pertinentInformation 
+							&nbsp;&nbsp;<strong><i>Sort:Act:outboundRelationship:ActRelationship:&nbsp;</i></strong>D________ 
+							&nbsp;&nbsp;<strong><i>Name:Act:inboundRelationship:ActRelationship:&nbsp;</i></strong>pertainsTo 
+							&nbsp;&nbsp;<strong><i>Sort:Act:inboundRelationship:ActRelationship:&nbsp;</i></strong>D________ 
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="AUTH"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>AUTH</strong><br /><i><font color="white">.&nbsp;.&nbsp;</font>
+						&nbsp;<i><a href="vs_ActRelationshipType.html#ActRelationshipAuthorizedBy">v:ActRelationshipAuthorizedBy</a></i></i></td>
+               <td>authorized by</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">A relationship in which the target act authorizes or certifies the source act.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> PERT
+                  </p>
+                  <p class="vocDesc"><strong>Concept Properties: </strong>
+							&nbsp;&nbsp;<strong><i>isDocumentCharacteristic:&nbsp;</i></strong>true 
+							&nbsp;&nbsp;<strong><i>Name:Act:outboundRelationship:ActRelationship:&nbsp;</i></strong>authorization 
+							&nbsp;&nbsp;<strong><i>Sort:Act:outboundRelationship:ActRelationship:&nbsp;</i></strong>DH_______ 
+							&nbsp;&nbsp;<strong><i>Name:Act:inboundRelationship:ActRelationship:&nbsp;</i></strong>authorizationOf 
+							&nbsp;&nbsp;<strong><i>Sort:Act:inboundRelationship:ActRelationship:&nbsp;</i></strong>DH_______ 
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="CAUS"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>CAUS</strong><br /><i><font color="white">.&nbsp;.&nbsp;</font>
+						&nbsp;<i><a href="vs_ActRelationshipType.html#ActRelationshipIsEtiologyFor">v:ActRelationshipIsEtiologyFor</a></i></i></td>
+               <td>is etiology for</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description: </b>An assertion that an act was the cause of another act.This is stronger and more specific than the support link. The source
+                     (cause) is typically an observation, but may be any act, while the target may be any act.
+                  </p>
+                  <p class="vocDesc"><b class="vocDesc">Examples:</b></p>
+                  <ul class="vocDesc">
+                     <li class="vocDesc">a growth of Staphylococcus aureus may be considered the cause of an abscess</li>
+                     <li class="vocDesc">contamination of the infusion bag was deemed to be the cause of the infection that the patient experienced</li>
+                     <li class="vocDesc">lack of staff on the shift was deemed to be a supporting factor (proximal factor) causing the patient safety incident where
+                        the patient fell out of bed because the  bed-sides had not been put up which caused the night patient to fall out of bed
+                     </li>
+                  </ul>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> PERT
+                  </p>
+                  <p class="vocDesc"><strong>Concept Properties: </strong>
+							&nbsp;&nbsp;<strong><i>appliesTo:&nbsp;</i></strong>cause 
+							&nbsp;&nbsp;<strong><i>howApplies:&nbsp;</i></strong>effect 
+							&nbsp;&nbsp;<strong><i>isDocumentCharacteristic:&nbsp;</i></strong>true 
+							&nbsp;&nbsp;<strong><i>Name:Act:outboundRelationship:ActRelationship:&nbsp;</i></strong>causeOf 
+							&nbsp;&nbsp;<strong><i>Sort:Act:outboundRelationship:ActRelationship:&nbsp;</i></strong>DD_______ 
+							&nbsp;&nbsp;<strong><i>Name:Act:inboundRelationship:ActRelationship:&nbsp;</i></strong>cause 
+							&nbsp;&nbsp;<strong><i>Sort:Act:inboundRelationship:ActRelationship:&nbsp;</i></strong>DD_______ 
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="COVBY"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>COVBY</strong><br /><i><font color="white">.&nbsp;.&nbsp;</font>
+						&nbsp;<i><a href="vs_ActRelationshipType.html#ActRelationshipCoveredBy">v:ActRelationshipCoveredBy</a></i></i></td>
+               <td>covered by</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">A relationship in which the source act is covered by or is under the authority of a target act.  A financial instrument such
+                     as an Invoice Element is covered by one or more specific instances of an Insurance Policy.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> PERT
+                  </p>
+                  <p class="vocDesc"><strong>Concept Properties: </strong>
+							&nbsp;&nbsp;<strong><i>isDocumentCharacteristic:&nbsp;</i></strong>true 
+							&nbsp;&nbsp;<strong><i>Name:Act:outboundRelationship:ActRelationship:&nbsp;</i></strong>coverage 
+							&nbsp;&nbsp;<strong><i>Sort:Act:outboundRelationship:ActRelationship:&nbsp;</i></strong>DP_______ 
+							&nbsp;&nbsp;<strong><i>Name:Act:inboundRelationship:ActRelationship:&nbsp;</i></strong>coverageOf 
+							&nbsp;&nbsp;<strong><i>Sort:Act:inboundRelationship:ActRelationship:&nbsp;</i></strong>DP_______ 
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="DRIV"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>DRIV</strong><br /><i><font color="white">.&nbsp;.&nbsp;</font>
+						&nbsp;<i><a href="vs_ActRelationshipType.html#ActRelationshipIsDerivedFrom">v:ActRelationshipIsDerivedFrom</a></i></i></td>
+               <td>is derived from</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Associates a derived Act with its input parameters. E.G., an anion-gap observation can be associated as being derived from
+                     given sodium-, (potassium-,), chloride-, and bicarbonate-observations. The narrative content (Act.text) of a source act is
+                     wholly machine-derived from the collection of target acts.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> PERT
+                  </p>
+                  <p class="vocDesc"><strong>Concept Properties: </strong>
+							&nbsp;&nbsp;<strong><i>appliesTo:&nbsp;</i></strong>output parameter 
+							&nbsp;&nbsp;<strong><i>howApplies:&nbsp;</i></strong>input parameter 
+							&nbsp;&nbsp;<strong><i>isDocumentCharacteristic:&nbsp;</i></strong>true 
+							&nbsp;&nbsp;<strong><i>Name:Act:outboundRelationship:ActRelationship:&nbsp;</i></strong>derivedFrom 
+							&nbsp;&nbsp;<strong><i>Sort:Act:outboundRelationship:ActRelationship:&nbsp;</i></strong>DF_______ 
+							&nbsp;&nbsp;<strong><i>Name:Act:inboundRelationship:ActRelationship:&nbsp;</i></strong>derivation 
+							&nbsp;&nbsp;<strong><i>Sort:Act:inboundRelationship:ActRelationship:&nbsp;</i></strong>DF_______ 
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="ELNK"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>ELNK</strong><br /><i><font color="white">.&nbsp;.&nbsp;</font>
+						&nbsp;<i><a href="vs_ActRelationshipType.html#ActRelationshipEpisodelink">v:ActRelationshipEpisodelink</a></i></i></td>
+               <td>episodeLink</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Expresses an association that links two instances of the same act over time, indicating that the instance are part of the
+                     same episode, e.g. linking two condition nodes for episode of illness; linking two encounters for episode of encounter.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> PERT
+                  </p>
+                  <p class="vocDesc"><strong>Concept Properties: </strong>
+							&nbsp;&nbsp;<strong><i>isDocumentCharacteristic:&nbsp;</i></strong>true 
+							&nbsp;&nbsp;<strong><i>Name:Act:outboundRelationship:ActRelationship:&nbsp;</i></strong>links 
+							&nbsp;&nbsp;<strong><i>Sort:Act:outboundRelationship:ActRelationship:&nbsp;</i></strong>BG_______ 
+							&nbsp;&nbsp;<strong><i>Name:Act:inboundRelationship:ActRelationship:&nbsp;</i></strong>linkedBy 
+							&nbsp;&nbsp;<strong><i>Sort:Act:inboundRelationship:ActRelationship:&nbsp;</i></strong>BG_______ 
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="EVID"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>EVID</strong><br /><i><font color="white">.&nbsp;.&nbsp;</font>
+						&nbsp;<i><a href="vs_ActRelationshipType.html#ActRelationshipProvidesEvidenceFor">v:ActRelationshipProvidesEvidenceFor</a></i></i></td>
+               <td>provides evidence for</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Indicates that the target Act provides evidence in support of the action represented by the source Act. The target is not
+                     a 'reason' for the source act, but rather gives supporting information on why the source act is an appropriate course of action.
+                     Possible targets might be clinical trial results, journal articles, similar successful therapies, etc.
+                  </p>
+                  <p class="vocDesc"><i class="vocDesc">Rationale:</i> Provides a mechanism for conveying clinical justification for non-approved or otherwise non-traditional therapies.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> PERT
+                  </p>
+                  <p class="vocDesc"><strong>Concept Properties: </strong>
+							&nbsp;&nbsp;<strong><i>isDocumentCharacteristic:&nbsp;</i></strong>true 
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="EXACBY"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>EXACBY</strong><br /><i><font color="white">.&nbsp;.&nbsp;</font>
+						&nbsp;<i><a href="vs_ActRelationshipType.html#ActRelationshipExacerbatredBy">v:ActRelationshipExacerbatredBy</a></i></i></td>
+               <td>exacerbated by</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description:</b>The source act is aggravated by the target act. (Example "chest pain" EXACBY "exercise")
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> PERT
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="EXPL"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>EXPL</strong><br /><i><font color="white">.&nbsp;.&nbsp;</font>
+						&nbsp;<i><a href="vs_ActRelationshipType.html#ActRelationshipHasExplanation">v:ActRelationshipHasExplanation</a></i></i></td>
+               <td>has explanation</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">This is the inversion of support.  Used to indicate that a given observation is explained by another observation or condition.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> PERT
+                  </p>
+                  <p class="vocDesc"><strong>Concept Properties: </strong>
+							&nbsp;&nbsp;<strong><i>howApplies:&nbsp;</i></strong>explaining observation or condition 
+							&nbsp;&nbsp;<strong><i>isDocumentCharacteristic:&nbsp;</i></strong>true 
+							&nbsp;&nbsp;<strong><i>Name:Act:outboundRelationship:ActRelationship:&nbsp;</i></strong>explanation 
+							&nbsp;&nbsp;<strong><i>Sort:Act:outboundRelationship:ActRelationship:&nbsp;</i></strong>DI_______ 
+							&nbsp;&nbsp;<strong><i>Name:Act:inboundRelationship:ActRelationship:&nbsp;</i></strong>explanationFor 
+							&nbsp;&nbsp;<strong><i>Sort:Act:inboundRelationship:ActRelationship:&nbsp;</i></strong>DI_______ 
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="ITEMSLOC"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>ITEMSLOC</strong><br /><i><font color="white">.&nbsp;.&nbsp;</font>
+						&nbsp;<i><a href="vs_ActRelationshipType.html#ActRelationshipItemsLocated">v:ActRelationshipItemsLocated</a></i></i></td>
+               <td>items located</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Items located</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> PERT
+                  </p>
+                  <p class="vocDesc"><strong>Concept Properties: </strong>
+							&nbsp;&nbsp;<strong><i>isDocumentCharacteristic:&nbsp;</i></strong>true 
+							&nbsp;&nbsp;<strong><i>Name:Act:outboundRelationship:ActRelationship:&nbsp;</i></strong>itemStorage 
+							&nbsp;&nbsp;<strong><i>Sort:Act:outboundRelationship:ActRelationship:&nbsp;</i></strong>DR_______ 
+							&nbsp;&nbsp;<strong><i>Name:Act:inboundRelationship:ActRelationship:&nbsp;</i></strong>itemStorageFor 
+							&nbsp;&nbsp;<strong><i>Sort:Act:inboundRelationship:ActRelationship:&nbsp;</i></strong>DR_______ 
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="LIMIT"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>LIMIT</strong><br /><i><font color="white">.&nbsp;.&nbsp;</font>
+						&nbsp;<i><a href="vs_ActRelationshipType.html#ActRelationshipLimitedBy">v:ActRelationshipLimitedBy</a></i></i></td>
+               <td>limited by</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">A relationship that limits or restricts the source act by the elements of the target act.  For example, an authorization may
+                     be limited by a financial amount (up to $500). Target Act must be in EVN.CRIT mood.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> PERT
+                  </p>
+                  <p class="vocDesc"><strong>Concept Properties: </strong>
+							&nbsp;&nbsp;<strong><i>isDocumentCharacteristic:&nbsp;</i></strong>true 
+							&nbsp;&nbsp;<strong><i>Name:Act:outboundRelationship:ActRelationship:&nbsp;</i></strong>limitation 
+							&nbsp;&nbsp;<strong><i>Sort:Act:outboundRelationship:ActRelationship:&nbsp;</i></strong>DQ_______ 
+							&nbsp;&nbsp;<strong><i>Name:Act:inboundRelationship:ActRelationship:&nbsp;</i></strong>limitationOf 
+							&nbsp;&nbsp;<strong><i>Sort:Act:inboundRelationship:ActRelationship:&nbsp;</i></strong>DQ_______ 
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="META"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>META</strong></td>
+               <td>has metadata</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Definition:</b> Indicates that the attributes and associations of the target act provide metadata (for example, identifiers, authorship,
+                     etc.) for the source act.
+                  </p>
+                  <p class="vocDesc"><b class="vocDesc">Constraint: </b>Source act must have the Act.isCriterion attribute set to true.  Target act must be an Act with a moodCode of EVN.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> PERT
+                  </p>
+                  <p class="vocDesc"><strong>Concept Properties: </strong>
+							&nbsp;&nbsp;<strong><i>conductible:&nbsp;</i></strong>false 
+							&nbsp;&nbsp;<strong><i>isDocumentCharacteristic:&nbsp;</i></strong>true 
+							&nbsp;&nbsp;<strong><i>Name:Act:inboundRelationship:ActRelationship:&nbsp;</i></strong>metadataFor 
+							&nbsp;&nbsp;<strong><i>Name:Act:outboundRelationship:ActRelationship:&nbsp;</i></strong>metadata 
+							&nbsp;&nbsp;<strong><i>Sort:Act:inboundRelationship:ActRelationship:&nbsp;</i></strong>DZ_______ 
+							&nbsp;&nbsp;<strong><i>Sort:Act:outboundRelationship:ActRelationship:&nbsp;</i></strong>AA_______ 
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="MFST"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>MFST</strong><br /><i><font color="white">.&nbsp;.&nbsp;</font>
+						&nbsp;<i><a href="vs_ActRelationshipType.html#ActRelationshipIsManifestationOf">v:ActRelationshipIsManifestationOf</a></i></i></td>
+               <td>is manifestation of</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">An assertion that a new observation may be the manifestation of another existing observation or action.  This assumption is
+                     attributed to the same actor who asserts the manifestation.  This is stronger and more specific than an inverted support link.
+                     For example, an agitated appearance can be asserted to be the manifestation (effect) of a known hyperthyroxia.  This expresses
+                     that one might not have realized a symptom if it would not be a common manifestation of a known condition.  The target (cause)
+                     may be any service, while the source (manifestation) must be an observation.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> PERT
+                  </p>
+                  <p class="vocDesc"><strong>Concept Properties: </strong>
+							&nbsp;&nbsp;<strong><i>appliesTo:&nbsp;</i></strong>manifestation 
+							&nbsp;&nbsp;<strong><i>howApplies:&nbsp;</i></strong>cause 
+							&nbsp;&nbsp;<strong><i>isDocumentCharacteristic:&nbsp;</i></strong>true 
+							&nbsp;&nbsp;<strong><i>Name:Act:outboundRelationship:ActRelationship:&nbsp;</i></strong>manifestationOf 
+							&nbsp;&nbsp;<strong><i>Sort:Act:outboundRelationship:ActRelationship:&nbsp;</i></strong>DE_______ 
+							&nbsp;&nbsp;<strong><i>Name:Act:inboundRelationship:ActRelationship:&nbsp;</i></strong>manifestation 
+							&nbsp;&nbsp;<strong><i>Sort:Act:inboundRelationship:ActRelationship:&nbsp;</i></strong>DE_______ 
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="NAME"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>NAME</strong><br /><i><font color="white">.&nbsp;.&nbsp;</font>
+						&nbsp;<i><a href="vs_ActRelationshipType.html#ActRelationshipAssignsName">v:ActRelationshipAssignsName</a></i></i></td>
+               <td>assigns name</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Used to assign a "name" to a condition thread. Source is a condition node, target can be any service.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> PERT
+                  </p>
+                  <p class="vocDesc"><strong>Concept Properties: </strong>
+							&nbsp;&nbsp;<strong><i>appliesTo:&nbsp;</i></strong>condition thread 
+							&nbsp;&nbsp;<strong><i>howApplies:&nbsp;</i></strong>name 
+							&nbsp;&nbsp;<strong><i>isDocumentCharacteristic:&nbsp;</i></strong>true 
+							&nbsp;&nbsp;<strong><i>Name:Act:outboundRelationship:ActRelationship:&nbsp;</i></strong>conditionNamed 
+							&nbsp;&nbsp;<strong><i>Sort:Act:outboundRelationship:ActRelationship:&nbsp;</i></strong>DJ_______ 
+							&nbsp;&nbsp;<strong><i>Name:Act:inboundRelationship:ActRelationship:&nbsp;</i></strong>assignedConditionName 
+							&nbsp;&nbsp;<strong><i>Sort:Act:inboundRelationship:ActRelationship:&nbsp;</i></strong>DJ_______ 
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="PREV"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>PREV</strong><br /><i><font color="white">.&nbsp;.&nbsp;</font>
+						&nbsp;<i><a href="vs_ActRelationshipType.html#ActRelationshipHasPreviousInstance">v:ActRelationshipHasPreviousInstance</a></i></i></td>
+               <td>has previous instance<br />Previous instance
+               </td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">A relationship in which the target act is a predecessor instance to the source act.  Generally each of these instances is
+                     similar, but no identical.  In healthcare coverage it is used to link a claim item to a previous claim item that might have
+                     claimed for the same set of services.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> PERT
+                  </p>
+                  <p class="vocDesc"><strong>Concept Properties: </strong>
+							&nbsp;&nbsp;<strong><i>isDocumentCharacteristic:&nbsp;</i></strong>true 
+							&nbsp;&nbsp;<strong><i>Name:Act:outboundRelationship:ActRelationship:&nbsp;</i></strong>predecessor 
+							&nbsp;&nbsp;<strong><i>Sort:Act:outboundRelationship:ActRelationship:&nbsp;</i></strong>DC_______ 
+							&nbsp;&nbsp;<strong><i>Name:Act:inboundRelationship:ActRelationship:&nbsp;</i></strong>successor 
+							&nbsp;&nbsp;<strong><i>Sort:Act:inboundRelationship:ActRelationship:&nbsp;</i></strong>DC_______ 
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="REFR"></a>2-<strong>S</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>REFR</strong><br /><i><font color="white">.&nbsp;.&nbsp;</font>
+						&nbsp;<i><a href="vs_ActRelationshipType.html#ActRelationshipRefersTo">v:ActRelationshipRefersTo</a></i></i></td>
+               <td>refers to</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">A relationship in which the target act is referred to by the source act.  This permits a simple reference relationship that
+                     distinguishes between the referent and the referee.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> PERT<br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> USE
+                  </p>
+                  <p class="vocDesc"><strong>Concept Properties: </strong>
+							&nbsp;&nbsp;<strong><i>isDocumentCharacteristic:&nbsp;</i></strong>true 
+							&nbsp;&nbsp;<strong><i>Name:Act:outboundRelationship:ActRelationship:&nbsp;</i></strong>reference 
+							&nbsp;&nbsp;<strong><i>Sort:Act:outboundRelationship:ActRelationship:&nbsp;</i></strong>DK_______ 
+							&nbsp;&nbsp;<strong><i>Name:Act:inboundRelationship:ActRelationship:&nbsp;</i></strong>referencedBy 
+							&nbsp;&nbsp;<strong><i>Sort:Act:inboundRelationship:ActRelationship:&nbsp;</i></strong>DK_______ 
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="USE"></a>3-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;.&nbsp;</font><strong>USE</strong><br /><i><font color="white">.&nbsp;.&nbsp;.&nbsp;</font>
+						&nbsp;<i><a href="vs_ActRelationshipType.html#ActRelationshipUses">v:ActRelationshipUses</a></i></i></td>
+               <td>uses</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Indicates that the source act makes use of (or will make use of) the information content of the target act.</p>
+                  <p class="vocDesc"><i class="vocDesc">UsageNotes: </i>A usage relationship only makes sense if the target act is authored and occurs independently of the source act.  Otherwise
+                     a simpler relationship such as COMP would be appropriate.
+                  </p>
+                  <p class="vocDesc"><i class="vocDesc">Rationale: </i>There is a need when defining a clinical trial protocol to indicate that the protocol makes use of other protocol or treatment
+                     specifications.  This is stronger than the assertion of "references".  References may exist without usage, and in a clinical
+                     trial protocol is common to assert both: what other specifications does this trial use and what other specifications does
+                     it merely reference.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> REFR
+                  </p>
+                  <p class="vocDesc"><strong>Concept Properties: </strong>
+							&nbsp;&nbsp;<strong><i>Name:Act:inboundRelationship:ActRelationship:&nbsp;</i></strong>usedBy 
+							&nbsp;&nbsp;<strong><i>Name:Act:outboundRelationship:ActRelationship:&nbsp;</i></strong>uses 
+							&nbsp;&nbsp;<strong><i>Sort:Act:inboundRelationship:ActRelationship:&nbsp;</i></strong>DKA______ 
+							&nbsp;&nbsp;<strong><i>Sort:Act:outboundRelationship:ActRelationship:&nbsp;</i></strong>DKA______ 
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="REFV"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>REFV</strong><br /><i><font color="white">.&nbsp;.&nbsp;</font>
+						&nbsp;<i><a href="vs_ActRelationshipType.html#ActRelationshipHasReferenceValues">v:ActRelationshipHasReferenceValues</a></i></i></td>
+               <td>has reference values</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Reference ranges are essentially descriptors of a class of result values assumed to be "normal", "abnormal", or "critical."
+                     Those can vary by sex, age, or any other criterion. Source and target are observations, the target is in criterion mood. 
+                     This link type can act as a trigger in case of alarms being triggered by critical results.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> PERT
+                  </p>
+                  <p class="vocDesc"><strong>Concept Properties: </strong>
+							&nbsp;&nbsp;<strong><i>howApplies:&nbsp;</i></strong>range 
+							&nbsp;&nbsp;<strong><i>isDocumentCharacteristic:&nbsp;</i></strong>true 
+							&nbsp;&nbsp;<strong><i>Name:Act:outboundRelationship:ActRelationship:&nbsp;</i></strong>referenceRange 
+							&nbsp;&nbsp;<strong><i>Sort:Act:outboundRelationship:ActRelationship:&nbsp;</i></strong>DL_______ 
+							&nbsp;&nbsp;<strong><i>Name:Act:inboundRelationship:ActRelationship:&nbsp;</i></strong>referenceRangeFor 
+							&nbsp;&nbsp;<strong><i>Sort:Act:inboundRelationship:ActRelationship:&nbsp;</i></strong>DL_______ 
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="RELVBY"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>RELVBY</strong><br /><i><font color="white">.&nbsp;.&nbsp;</font>
+						&nbsp;<i><a href="vs_ActRelationshipType.html#ActRelationshipRelievedBy">v:ActRelationshipRelievedBy</a></i></i></td>
+               <td>relieved by</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description:</b>The source act is wholly or partially alleviated by the target act. (Example "chest pain" RELVBY "sublingual nitroglycerin
+                     administration")
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> PERT
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="SPRT"></a>2-<strong>S</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>SPRT</strong><br /><i><font color="white">.&nbsp;.&nbsp;</font>
+						&nbsp;<i><a href="vs_ActRelationshipType.html#ActRelationshipHasSupport">v:ActRelationshipHasSupport</a></i></i></td>
+               <td>has support</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Used to indicate that an existing service is suggesting evidence for a new observation. The assumption of support is attributed
+                     to the same actor who asserts the observation. Source must be an observation, target may be any service  (e.g., to indicate
+                     a status post).
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> PERT<br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> SPRTBND
+                  </p>
+                  <p class="vocDesc"><strong>Concept Properties: </strong>
+							&nbsp;&nbsp;<strong><i>howApplies:&nbsp;</i></strong>supporting evidence 
+							&nbsp;&nbsp;<strong><i>isDocumentCharacteristic:&nbsp;</i></strong>true 
+							&nbsp;&nbsp;<strong><i>Name:Act:outboundRelationship:ActRelationship:&nbsp;</i></strong>support 
+							&nbsp;&nbsp;<strong><i>Sort:Act:outboundRelationship:ActRelationship:&nbsp;</i></strong>DA_______ 
+							&nbsp;&nbsp;<strong><i>Name:Act:inboundRelationship:ActRelationship:&nbsp;</i></strong>supportOf 
+							&nbsp;&nbsp;<strong><i>Sort:Act:inboundRelationship:ActRelationship:&nbsp;</i></strong>DA_______ 
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="SPRTBND"></a>3-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;.&nbsp;</font><strong>SPRTBND</strong><br /><i><font color="white">.&nbsp;.&nbsp;.&nbsp;</font>
+						&nbsp;<i><a href="vs_ActRelationshipType.html#ActRelationshipHasBoundedSupport">v:ActRelationshipHasBoundedSupport</a></i></i></td>
+               <td>has bounded support</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">A specialization of "has support" (SPRT), used to relate a secondary observation to a Region of Interest on a multidimensional
+                     observation, if the ROI specifies the true boundaries of the secondary observation as opposed to only marking the approximate
+                     area.  For example, if the start and end of an ST elevation episode is visible in an EKG, this relation would indicate the
+                     ROI bounds the  "ST elevation" observation -- the ROI defines the true beginning and ending of the episode.  Conversely, if
+                     a ROI simply contains ST elevation, but it does not define the bounds (start and end) of the episode, the more general "has
+                     support" relation is used.  Likewise, if a ROI on an image defines the true bounds of a "1st degree burn", the relation "has
+                     bounded support" is used; but if the ROI only points to the approximate area of the burn, the general "has support" relation
+                     is used.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> SPRT
+                  </p>
+                  <p class="vocDesc"><strong>Concept Properties: </strong>
+							&nbsp;&nbsp;<strong><i>isDocumentCharacteristic:&nbsp;</i></strong>true 
+							&nbsp;&nbsp;<strong><i>Name:Act:outboundRelationship:ActRelationship:&nbsp;</i></strong>boundedSupport 
+							&nbsp;&nbsp;<strong><i>Sort:Act:outboundRelationship:ActRelationship:&nbsp;</i></strong>DAA______ 
+							&nbsp;&nbsp;<strong><i>Name:Act:inboundRelationship:ActRelationship:&nbsp;</i></strong>boundedSupportOf 
+							&nbsp;&nbsp;<strong><i>Sort:Act:inboundRelationship:ActRelationship:&nbsp;</i></strong>DAA______ 
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="SUBJ"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>SUBJ</strong><br /><i><font color="white">.&nbsp;.&nbsp;</font>
+						&nbsp;<i><a href="vs_ActRelationshipType.html#ActRelationshipHasSubject">v:ActRelationshipHasSubject</a></i></i></td>
+               <td>has subject</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Relates an Act to its subject Act that the first Act is primarily concerned with.</p>
+                  <p class="vocDesc">Examples</p>
+                  <ol class="vocDesc">
+                     <li class="vocDesc">
+                        <p class="vocDesc">The first Act may be a ControlAct manipulating the subject Act </p>
+                     </li>
+                     <li class="vocDesc">
+                        <p class="vocDesc">The first act is a region of interest (ROI) that defines a region within the subject Act.</p>
+                     </li>
+                     <li class="vocDesc">
+                        <p class="vocDesc">The first act is a reporting or notification Act, that echos the subject Act for a specific new purpose.</p>
+                     </li>
+                  </ol>
+                  <p class="vocDesc">Constraints</p>
+                  <p class="vocDesc">An Act may have multiple subject acts.</p>
+                  <p class="vocDesc">Rationale</p>
+                  <p class="vocDesc">The ActRelationshipType "has subject" is similar to the ParticipationType "subject", Acts that primarily operate on physical
+                     subjects use the Participation, those Acts that primarily operate on other Acts (other information) use the ActRelationship.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> PERT
+                  </p>
+                  <p class="vocDesc"><strong>Concept Properties: </strong>
+							&nbsp;&nbsp;<strong><i>isDocumentCharacteristic:&nbsp;</i></strong>true 
+							&nbsp;&nbsp;<strong><i>Name:Act:outboundRelationship:ActRelationship:&nbsp;</i></strong>subject 
+							&nbsp;&nbsp;<strong><i>Sort:Act:outboundRelationship:ActRelationship:&nbsp;</i></strong>DB_______ 
+							&nbsp;&nbsp;<strong><i>Name:Act:inboundRelationship:ActRelationship:&nbsp;</i></strong>subjectOf 
+							&nbsp;&nbsp;<strong><i>Sort:Act:inboundRelationship:ActRelationship:&nbsp;</i></strong>DB_______ 
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="SUMM"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>SUMM</strong><br /><i><font color="white">.&nbsp;.&nbsp;</font>
+						&nbsp;<i><a href="vs_ActRelationshipType.html#ActRelationshipSummarizedBy">v:ActRelationshipSummarizedBy</a></i></i></td>
+               <td>summarized by</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">An act that contains summary values for a list or set of subordinate acts.  For example, a summary of transactions for a particular
+                     accounting period.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> PERT
+                  </p>
+                  <p class="vocDesc"><strong>Concept Properties: </strong>
+							&nbsp;&nbsp;<strong><i>isDocumentCharacteristic:&nbsp;</i></strong>true 
+							&nbsp;&nbsp;<strong><i>Name:Act:outboundRelationship:ActRelationship:&nbsp;</i></strong>summary 
+							&nbsp;&nbsp;<strong><i>Sort:Act:outboundRelationship:ActRelationship:&nbsp;</i></strong>DM_______ 
+							&nbsp;&nbsp;<strong><i>Name:Act:inboundRelationship:ActRelationship:&nbsp;</i></strong>summaryOf 
+							&nbsp;&nbsp;<strong><i>Sort:Act:inboundRelationship:ActRelationship:&nbsp;</i></strong>DM_______ 
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="_ActClassTemporallyPertains"></a>2-<strong>A</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>_ActClassTemporallyPertains</strong><br /><i><font color="white">.&nbsp;.&nbsp;</font>
+						&nbsp;<i><a href="vs_ActRelationshipType.html#ActRelationshipTemporallyPertains">v:ActRelationshipTemporallyPertains</a></i></i></td>
+               <td>ActClassTemporallyPertains</td>
+               <td>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> PERT<br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> DURING OVERLAP _ActRelationshipTemporallyPertainsEnd _ActRelationshipTemporallyPertainsStart
+                  </p>
+                  <p class="vocDesc"><strong>Concept Properties: </strong>
+							&nbsp;&nbsp;<strong><i>isDocumentCharacteristic:&nbsp;</i></strong>true 
+							&nbsp;&nbsp;<strong><i>Name:Act:outboundRelationship:ActRelationship:&nbsp;</i></strong>temporallyRelatedInformation 
+							&nbsp;&nbsp;<strong><i>Sort:Act:outboundRelationship:ActRelationship:&nbsp;</i></strong>DN_______ 
+							&nbsp;&nbsp;<strong><i>Name:Act:inboundRelationship:ActRelationship:&nbsp;</i></strong>temporallyRelatesTo 
+							&nbsp;&nbsp;<strong><i>Sort:Act:inboundRelationship:ActRelationship:&nbsp;</i></strong>DN_______ 
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="DURING"></a>3-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;.&nbsp;</font><strong>DURING</strong><br /><i><font color="white">.&nbsp;.&nbsp;.&nbsp;</font>
+						&nbsp;<i><a href="vs_ActRelationshipType.html#ActRelationshipDuring">v:ActRelationshipDuring</a></i></i></td>
+               <td>occurs during</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">A relationship in which the source act's effective time is wholly within the target act's effective time.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> TemporallyPertains _ActClassTemporallyPertains
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="OVERLAP"></a>3-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;.&nbsp;</font><strong>OVERLAP</strong><br /><i><font color="white">.&nbsp;.&nbsp;.&nbsp;</font>
+						&nbsp;<i><a href="vs_ActRelationshipType.html#ActRelationshipOverlapsWith">v:ActRelationshipOverlapsWith</a></i></i></td>
+               <td>overlaps with</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">A relationship in which the source act's effective time overlaps the target act's effective time in any way.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> TemporallyPertains _ActClassTemporallyPertains
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td>3-<strong>A</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;.&nbsp;</font><strong>_ActRelationshipTemporallyPertainsEnd</strong><br /><i><font color="white">.&nbsp;.&nbsp;.&nbsp;</font>
+						&nbsp;<i><a href="vs_ActRelationshipType.html#ActRelationshipTemporallyPertainsEnd">v:ActRelationshipTemporallyPertainsEnd</a></i></i></td>
+               <td>ActRelationshipTemporallyPertainsEnd</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> TemporallyPertains _ActClassTemporallyPertains<br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> EAE EAS EBS ECW
+                  </p>
+                  <p class="vocDesc"><strong>Concept Properties: </strong>
+							&nbsp;&nbsp;<strong><i>Name:Act:inboundRelationship:ActRelationship:&nbsp;</i></strong>endTemporallyRelatedTo 
+							&nbsp;&nbsp;<strong><i>Name:Act:outboundRelationship:ActRelationship:&nbsp;</i></strong>temporallyRelatedEndInformation 
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td>4-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;.&nbsp;.&nbsp;</font><strong>EAE</strong><br /><i><font color="white">.&nbsp;.&nbsp;.&nbsp;.&nbsp;</font>
+						&nbsp;<i><a href="vs_ActRelationshipType.html#ActRelationshipEndsAfterEndOf">v:ActRelationshipEndsAfterEndOf</a></i></i></td>
+               <td>ends after end of</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _ActRelationshipTemporallyPertainsEnd
+                  </p>
+                  <p class="vocDesc"><strong>Concept Properties: </strong>
+							&nbsp;&nbsp;<strong><i>Name:Act:inboundRelationship:ActRelationship:&nbsp;</i></strong>endsBeforeEndOf 
+							&nbsp;&nbsp;<strong><i>Name:Act:outboundRelationship:ActRelationship:&nbsp;</i></strong>endsAfterEndOf 
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td>4-<strong>S</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;.&nbsp;.&nbsp;</font><strong>EAS</strong><br /><i><font color="white">.&nbsp;.&nbsp;.&nbsp;.&nbsp;</font>
+						&nbsp;<i><a href="vs_ActRelationshipType.html#ActRelationshipEndsAfterStartOf">v:ActRelationshipEndsAfterStartOf</a></i></i></td>
+               <td>ends after start of</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _ActRelationshipTemporallyPertainsEnd<br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> EDU
+                  </p>
+                  <p class="vocDesc"><strong>Concept Properties: </strong>
+							&nbsp;&nbsp;<strong><i>Name:Act:inboundRelationship:ActRelationship:&nbsp;</i></strong>startsBeforeEndOf 
+							&nbsp;&nbsp;<strong><i>Name:Act:outboundRelationship:ActRelationship:&nbsp;</i></strong>endsAfterStartOf 
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td>5-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;.&nbsp;.&nbsp;.&nbsp;</font><strong>EDU</strong><br /><i><font color="white">.&nbsp;.&nbsp;.&nbsp;.&nbsp;.&nbsp;</font>
+						&nbsp;<i><a href="vs_ActRelationshipType.html#ActRelationshipEndsDuring">v:ActRelationshipEndsDuring</a></i></i></td>
+               <td>ends during</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> EAS
+                  </p>
+                  <p class="vocDesc"><strong>Concept Properties: </strong>
+							&nbsp;&nbsp;<strong><i>Name:Act:inboundRelationship:ActRelationship:&nbsp;</i></strong>encompassesEndOf 
+							&nbsp;&nbsp;<strong><i>Name:Act:outboundRelationship:ActRelationship:&nbsp;</i></strong>endsDuring 
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td>4-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;.&nbsp;.&nbsp;</font><strong>EBS</strong><br /><i><font color="white">.&nbsp;.&nbsp;.&nbsp;.&nbsp;</font>
+						&nbsp;<i><a href="vs_ActRelationshipType.html#ActRelationshipEndsBeforeStartOf">v:ActRelationshipEndsBeforeStartOf</a></i></i></td>
+               <td>ends before start of</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _ActRelationshipTemporallyPertainsEnd
+                  </p>
+                  <p class="vocDesc"><strong>Concept Properties: </strong>
+							&nbsp;&nbsp;<strong><i>Name:Act:inboundRelationship:ActRelationship:&nbsp;</i></strong>startsAfterEndOf 
+							&nbsp;&nbsp;<strong><i>Name:Act:outboundRelationship:ActRelationship:&nbsp;</i></strong>endsBeforeStartOf 
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td>4-<strong>S</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;.&nbsp;.&nbsp;</font><strong>ECW</strong><br /><i><font color="white">.&nbsp;.&nbsp;.&nbsp;.&nbsp;</font>
+						&nbsp;<i><a href="vs_ActRelationshipType.html#ActRelationshipEndsConcurrentWith">v:ActRelationshipEndsConcurrentWith</a></i></i></td>
+               <td>ends concurrent with</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">A relationship in which the source act's effective time ends with the end of the target act's effective time.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _ActRelationshipTemporallyPertainsEnd<br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> CONCURRENT
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td>5-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;.&nbsp;.&nbsp;.&nbsp;</font><strong>CONCURRENT</strong><br /><i><font color="white">.&nbsp;.&nbsp;.&nbsp;.&nbsp;.&nbsp;</font>
+						&nbsp;<i><a href="vs_ActRelationshipType.html#ActRelationshipConcurrentWith">v:ActRelationshipConcurrentWith</a></i></i></td>
+               <td>concurrent with</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">A relationship in which the source act's effective time is the same as the target act's effective time.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> ECW SCW
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td>3-<strong>A</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;.&nbsp;</font><strong>_ActRelationshipTemporallyPertainsStart</strong><br /><i><font color="white">.&nbsp;.&nbsp;.&nbsp;</font>
+						&nbsp;<i><a href="vs_ActRelationshipType.html#ActRelationshipTemporallyPertainsStart">v:ActRelationshipTemporallyPertainsStart</a></i></i></td>
+               <td>ActRelationshipTemporallyPertainsStart</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> TemporallyPertains _ActClassTemporallyPertains<br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> SAE SAS SBS SCW
+                  </p>
+                  <p class="vocDesc"><strong>Concept Properties: </strong>
+							&nbsp;&nbsp;<strong><i>Name:Act:inboundRelationship:ActRelationship:&nbsp;</i></strong>startTemporallyRelatedTo 
+							&nbsp;&nbsp;<strong><i>Name:Act:outboundRelationship:ActRelationship:&nbsp;</i></strong>temporallyRelatedStartInformation 
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td>4-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;.&nbsp;.&nbsp;</font><strong>SAE</strong><br /><i><font color="white">.&nbsp;.&nbsp;.&nbsp;.&nbsp;</font>
+						&nbsp;<i><a href="vs_ActRelationshipType.html#ActRelationshipStartsAfterEndOf">v:ActRelationshipStartsAfterEndOf</a></i></i></td>
+               <td>starts after end of</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _ActRelationshipTemporallyPertainsStart
+                  </p>
+                  <p class="vocDesc"><strong>Concept Properties: </strong>
+							&nbsp;&nbsp;<strong><i>isDocumentCharacteristic:&nbsp;</i></strong>true 
+							&nbsp;&nbsp;<strong><i>Name:Act:inboundRelationship:ActRelationship:&nbsp;</i></strong>endsBeforeStartof 
+							&nbsp;&nbsp;<strong><i>Name:Act:outboundRelationship:ActRelationship:&nbsp;</i></strong>startsAfterEndOf 
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td>4-<strong>S</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;.&nbsp;.&nbsp;</font><strong>SAS</strong><br /><i><font color="white">.&nbsp;.&nbsp;.&nbsp;.&nbsp;</font>
+						&nbsp;<i><a href="vs_ActRelationshipType.html#ActRelationshipStartsAfterStartOf">v:ActRelationshipStartsAfterStartOf</a></i></i></td>
+               <td>starts after start of</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">The source Act starts after the start of the target Act (i.e. if we say "ActOne SAS ActTwo", it means that ActOne starts after
+                     the start of ActTwo, therefore ActOne is the source and ActTwo is the target).
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _ActRelationshipTemporallyPertainsStart<br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> SDU
+                  </p>
+                  <p class="vocDesc"><strong>Concept Properties: </strong>
+							&nbsp;&nbsp;<strong><i>isDocumentCharacteristic:&nbsp;</i></strong>true 
+							&nbsp;&nbsp;<strong><i>Name:Act:inboundRelationship:ActRelationship:&nbsp;</i></strong>startsBeforeStartOf 
+							&nbsp;&nbsp;<strong><i>Name:Act:outboundRelationship:ActRelationship:&nbsp;</i></strong>startsAfterStartOf 
+							&nbsp;&nbsp;<strong><i>Sort:Act:outboundRelationship:ActRelationship:&nbsp;</i></strong>DNA______ 
+							&nbsp;&nbsp;<strong><i>Sort:Act:inboundRelationship:ActRelationship:&nbsp;</i></strong>DNA______ 
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td>5-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;.&nbsp;.&nbsp;.&nbsp;</font><strong>SDU</strong><br /><i><font color="white">.&nbsp;.&nbsp;.&nbsp;.&nbsp;.&nbsp;</font>
+						&nbsp;<i><a href="vs_ActRelationshipType.html#ActRelationshipStartsDuring">v:ActRelationshipStartsDuring</a></i></i></td>
+               <td>starts during</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> SAS
+                  </p>
+                  <p class="vocDesc"><strong>Concept Properties: </strong>
+							&nbsp;&nbsp;<strong><i>Name:Act:inboundRelationship:ActRelationship:&nbsp;</i></strong>encompassesStartOf 
+							&nbsp;&nbsp;<strong><i>Name:Act:outboundRelationship:ActRelationship:&nbsp;</i></strong>startsDuring 
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td>4-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;.&nbsp;.&nbsp;</font><strong>SBS</strong><br /><i><font color="white">.&nbsp;.&nbsp;.&nbsp;.&nbsp;</font>
+						&nbsp;<i><a href="vs_ActRelationshipType.html#ActRelationshipStartsBeforeStartOf">v:ActRelationshipStartsBeforeStartOf</a></i></i></td>
+               <td>starts before start of</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _ActRelationshipTemporallyPertainsStart
+                  </p>
+                  <p class="vocDesc"><strong>Concept Properties: </strong>
+							&nbsp;&nbsp;<strong><i>Name:Act:inboundRelationship:ActRelationship:&nbsp;</i></strong>startsAfterStartOf 
+							&nbsp;&nbsp;<strong><i>Name:Act:outboundRelationship:ActRelationship:&nbsp;</i></strong>startsBeforeStartOf 
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td>4-<strong>S</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;.&nbsp;.&nbsp;</font><strong>SCW</strong><br /><i><font color="white">.&nbsp;.&nbsp;.&nbsp;.&nbsp;</font>
+						&nbsp;<i><a href="vs_ActRelationshipType.html#ActRelationshipStartsConcurrentWith">v:ActRelationshipStartsConcurrentWith</a></i></i></td>
+               <td>starts concurrent with</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">A relationship in which the source act's effective time starts with the start of the target act's effective time.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _ActRelationshipTemporallyPertainsStart<br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> CONCURRENT
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td>5-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;.&nbsp;.&nbsp;.&nbsp;</font><strong>CONCURRENT</strong><br /><i><font color="white">.&nbsp;.&nbsp;.&nbsp;.&nbsp;.&nbsp;</font>
+						&nbsp;<i><a href="vs_ActRelationshipType.html#ActRelationshipConcurrentWith">v:ActRelationshipConcurrentWith</a></i></i></td>
+               <td>concurrent with</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">A relationship in which the source act's effective time is the same as the target act's effective time.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> ECW SCW
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="_ActRelationshipAccounting"></a>2-<strong>A</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>_ActRelationshipAccounting</strong><br /><i><font color="white">.&nbsp;.&nbsp;</font>
+						&nbsp;<i><a href="vs_ActRelationshipType.html#ActRelationshipAccounting">v:ActRelationshipAccounting</a></i></i></td>
+               <td>ActRelationshipAccounting</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Codes that describe the relationship between an Act and a financial instrument such as a financial transaction, account or
+                     invoice element.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> PERT<br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> _ActRelationshipCostTracking _ActRelationshipPosting
+                  </p>
+                  <p class="vocDesc"><strong>Concept Properties: </strong>
+							&nbsp;&nbsp;<strong><i>isDocumentCharacteristic:&nbsp;</i></strong>true 
+							&nbsp;&nbsp;<strong><i>Name:Act:outboundRelationship:ActRelationship:&nbsp;</i></strong>accounting 
+							&nbsp;&nbsp;<strong><i>Sort:Act:outboundRelationship:ActRelationship:&nbsp;</i></strong>DO_______ 
+							&nbsp;&nbsp;<strong><i>Name:Act:inboundRelationship:ActRelationship:&nbsp;</i></strong>accountingFor 
+							&nbsp;&nbsp;<strong><i>Sort:Act:inboundRelationship:ActRelationship:&nbsp;</i></strong>DO_______ 
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td>3-<strong>A</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;.&nbsp;</font><strong>_ActRelationshipCostTracking</strong><br /><i><font color="white">.&nbsp;.&nbsp;.&nbsp;</font>
+						&nbsp;<i><a href="vs_ActRelationshipType.html#ActRelationshipCostTracking">v:ActRelationshipCostTracking</a></i></i></td>
+               <td>ActRelationshipCostTracking</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Expresses values for describing the relationship relationship between an InvoiceElement or InvoiceElementGroup and a billable
+                     act.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _ActRelationshipAccounting _ActRelationshipPosts<br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> CHRG COST
+                  </p>
+                  <p class="vocDesc"><strong>Concept Properties: </strong>
+							&nbsp;&nbsp;<strong><i>isDocumentCharacteristic:&nbsp;</i></strong>true 
+							&nbsp;&nbsp;<strong><i>Name:Act:outboundRelationship:ActRelationship:&nbsp;</i></strong>costTracking 
+							&nbsp;&nbsp;<strong><i>Sort:Act:outboundRelationship:ActRelationship:&nbsp;</i></strong>DOB______ 
+							&nbsp;&nbsp;<strong><i>Name:Act:inboundRelationship:ActRelationship:&nbsp;</i></strong>costTrackingOf 
+							&nbsp;&nbsp;<strong><i>Sort:Act:inboundRelationship:ActRelationship:&nbsp;</i></strong>DOB______ 
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td>4-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;.&nbsp;.&nbsp;</font><strong>CHRG</strong><br /><i><font color="white">.&nbsp;.&nbsp;.&nbsp;.&nbsp;</font>
+						&nbsp;<i><a href="vs_ActRelationshipType.html#ActRelationshipHasCharge">v:ActRelationshipHasCharge</a></i></i></td>
+               <td>has charge</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">A relationship that provides an ability to associate a financial transaction (target) as a charge to a clinical act (source).
+                     A clinical act may have a charge associated with the execution or delivery of the service.
+                  </p>
+                  <p class="vocDesc">The financial transaction will define the charge (bill) for delivery or performance of the service.</p>
+                  <p class="vocDesc">Charges and costs are distinct terms.  A charge defines what is charged or billed to another organization or entity within
+                     an organization.  The cost defines what it costs an organization to perform or deliver a service or product.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _ActRelationshipCostTracking
+                  </p>
+                  <p class="vocDesc"><strong>Concept Properties: </strong>
+							&nbsp;&nbsp;<strong><i>isDocumentCharacteristic:&nbsp;</i></strong>true 
+							&nbsp;&nbsp;<strong><i>Name:Act:outboundRelationship:ActRelationship:&nbsp;</i></strong>charge 
+							&nbsp;&nbsp;<strong><i>Sort:Act:outboundRelationship:ActRelationship:&nbsp;</i></strong>DOBA_____ 
+							&nbsp;&nbsp;<strong><i>Name:Act:inboundRelationship:ActRelationship:&nbsp;</i></strong>chargeFor 
+							&nbsp;&nbsp;<strong><i>Sort:Act:inboundRelationship:ActRelationship:&nbsp;</i></strong>DOBA_____ 
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td>4-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;.&nbsp;.&nbsp;</font><strong>COST</strong><br /><i><font color="white">.&nbsp;.&nbsp;.&nbsp;.&nbsp;</font>
+						&nbsp;<i><a href="vs_ActRelationshipType.html#ActRelationshipHasCost">v:ActRelationshipHasCost</a></i></i></td>
+               <td>has cost</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">A relationship that provides an ability to associate a financial transaction (target) as a cost to a clinical act (source).
+                     A clinical act may have an inherit cost associated with the execution or delivery of the service.
+                  </p>
+                  <p class="vocDesc">The financial transaction will define the cost of delivery or performance of the service.</p>
+                  <p class="vocDesc">Charges and costs are distinct terms.  A charge defines what is charged or billed to another organization or entity within
+                     an organization.  The cost defines what it costs an organization to perform or deliver a service or product.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _ActRelationshipCostTracking
+                  </p>
+                  <p class="vocDesc"><strong>Concept Properties: </strong>
+							&nbsp;&nbsp;<strong><i>isDocumentCharacteristic:&nbsp;</i></strong>true 
+							&nbsp;&nbsp;<strong><i>Name:Act:outboundRelationship:ActRelationship:&nbsp;</i></strong>cost 
+							&nbsp;&nbsp;<strong><i>Sort:Act:outboundRelationship:ActRelationship:&nbsp;</i></strong>DOBB_____ 
+							&nbsp;&nbsp;<strong><i>Name:Act:inboundRelationship:ActRelationship:&nbsp;</i></strong>costOf 
+							&nbsp;&nbsp;<strong><i>Sort:Act:inboundRelationship:ActRelationship:&nbsp;</i></strong>DOBB_____ 
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td>3-<strong>A</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;.&nbsp;</font><strong>_ActRelationshipPosting</strong><br /><i><font color="white">.&nbsp;.&nbsp;.&nbsp;</font>
+						&nbsp;<i><a href="vs_ActRelationshipType.html#ActRelationshipPosting">v:ActRelationshipPosting</a></i></i></td>
+               <td>ActRelationshipPosting</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Expresses values for describing the relationship between a FinancialTransaction and an Account.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _ActRelationshipAccounting _ActRelationshipPosts<br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> CREDIT DEBIT
+                  </p>
+                  <p class="vocDesc"><strong>Concept Properties: </strong>
+							&nbsp;&nbsp;<strong><i>isDocumentCharacteristic:&nbsp;</i></strong>true 
+							&nbsp;&nbsp;<strong><i>Name:Act:outboundRelationship:ActRelationship:&nbsp;</i></strong>posting 
+							&nbsp;&nbsp;<strong><i>Sort:Act:outboundRelationship:ActRelationship:&nbsp;</i></strong>DOA______ 
+							&nbsp;&nbsp;<strong><i>Name:Act:inboundRelationship:ActRelationship:&nbsp;</i></strong>postingTo 
+							&nbsp;&nbsp;<strong><i>Sort:Act:inboundRelationship:ActRelationship:&nbsp;</i></strong>DOA______ 
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td>4-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;.&nbsp;.&nbsp;</font><strong>CREDIT</strong><br /><i><font color="white">.&nbsp;.&nbsp;.&nbsp;.&nbsp;</font>
+						&nbsp;<i><a href="vs_ActRelationshipType.html#ActRelationshipHasCredit">v:ActRelationshipHasCredit</a></i></i></td>
+               <td>has credit</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">A credit relationship ties a financial transaction (target) to an account (source). A credit, once applied (posted), may have
+                     either a positive or negative effect on the account balance, depending on the type of account. An asset account credit will
+                     decrease the account balance. A non-asset account credit will decrease the account balance.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _ActRelationshipPosting
+                  </p>
+                  <p class="vocDesc"><strong>Concept Properties: </strong>
+							&nbsp;&nbsp;<strong><i>isDocumentCharacteristic:&nbsp;</i></strong>true 
+							&nbsp;&nbsp;<strong><i>Name:Act:outboundRelationship:ActRelationship:&nbsp;</i></strong>credit 
+							&nbsp;&nbsp;<strong><i>Sort:Act:outboundRelationship:ActRelationship:&nbsp;</i></strong>DOAA_____ 
+							&nbsp;&nbsp;<strong><i>Name:Act:inboundRelationship:ActRelationship:&nbsp;</i></strong>creditTo 
+							&nbsp;&nbsp;<strong><i>Sort:Act:inboundRelationship:ActRelationship:&nbsp;</i></strong>DOAA_____ 
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td>4-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;.&nbsp;.&nbsp;</font><strong>DEBIT</strong><br /><i><font color="white">.&nbsp;.&nbsp;.&nbsp;.&nbsp;</font>
+						&nbsp;<i><a href="vs_ActRelationshipType.html#ActRelationshipHasDebit">v:ActRelationshipHasDebit</a></i></i></td>
+               <td>has debit</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">A debit relationship ties a financial transaction (target) to an account (source).  A debit, once applied (posted), may have
+                     either a positive or negative effect on the account balance, depending on the type of account.  An asset account debit will
+                     increase the account balance.  A non-asset account debit will decrease the account balance.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _ActRelationshipPosting
+                  </p>
+                  <p class="vocDesc"><strong>Concept Properties: </strong>
+							&nbsp;&nbsp;<strong><i>isDocumentCharacteristic:&nbsp;</i></strong>true 
+							&nbsp;&nbsp;<strong><i>Name:Act:outboundRelationship:ActRelationship:&nbsp;</i></strong>debit 
+							&nbsp;&nbsp;<strong><i>Sort:Act:outboundRelationship:ActRelationship:&nbsp;</i></strong>DOAB_____ 
+							&nbsp;&nbsp;<strong><i>Name:Act:inboundRelationship:ActRelationship:&nbsp;</i></strong>debitTo 
+							&nbsp;&nbsp;<strong><i>Sort:Act:inboundRelationship:ActRelationship:&nbsp;</i></strong>DOAB_____ 
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="SEQL"></a>1-<strong>S</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>SEQL</strong><br /><i><font color="white">.&nbsp;</font>
+						&nbsp;<i><a href="vs_ActRelationshipType.html#ActRelationshipSequel">v:ActRelationshipSequel</a></i></i></td>
+               <td>is sequel</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">An act relationship indicating that the source act follows the target act. The source act should in principle represent the
+                     same kind of act as the target. Source and target need not have the same mood code (mood will often differ). The target of
+                     a sequel is called antecedent. Examples for sequel relationships are: revision, transformation, derivation from a prototype
+                     (as a specialization is a derivation of a generalization), followup, realization, instantiation.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> ART<br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> APND BSLN COMPLY DOC FLFS GEN GEVL INST MOD MTCH OPTN RCHAL REV RPLC SUCC UPDT XCRPT XFRM
+                  </p>
+                  <p class="vocDesc"><strong>Concept Properties: </strong>
+							&nbsp;&nbsp;<strong><i>conductible:&nbsp;</i></strong>false 
+							&nbsp;&nbsp;<strong><i>isDocumentCharacteristic:&nbsp;</i></strong>true 
+							&nbsp;&nbsp;<strong><i>Name:Act:outboundRelationship:ActRelationship:&nbsp;</i></strong>sequelTo 
+							&nbsp;&nbsp;<strong><i>Sort:Act:outboundRelationship:ActRelationship:&nbsp;</i></strong>B________ 
+							&nbsp;&nbsp;<strong><i>Name:Act:inboundRelationship:ActRelationship:&nbsp;</i></strong>sequel 
+							&nbsp;&nbsp;<strong><i>Sort:Act:inboundRelationship:ActRelationship:&nbsp;</i></strong>B________ 
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="APND"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>APND</strong><br /><i><font color="white">.&nbsp;.&nbsp;</font>
+						&nbsp;<i><a href="vs_ActRelationshipType.html#ActRelationshipIsAppendage">v:ActRelationshipIsAppendage</a></i></i></td>
+               <td>is appendage</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">An addendum (source) to an existing service object (target), containing supplemental information.  The addendum is itself
+                     an original service object linked to the supplemented service object.  The supplemented service object remains in place and
+                     its content and status are unaltered.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> SEQL
+                  </p>
+                  <p class="vocDesc"><strong>Concept Properties: </strong>
+							&nbsp;&nbsp;<strong><i>isDocumentCharacteristic:&nbsp;</i></strong>true 
+							&nbsp;&nbsp;<strong><i>Name:Act:outboundRelationship:ActRelationship:&nbsp;</i></strong>appendage 
+							&nbsp;&nbsp;<strong><i>Sort:Act:outboundRelationship:ActRelationship:&nbsp;</i></strong>BJ_______ 
+							&nbsp;&nbsp;<strong><i>Name:Act:inboundRelationship:ActRelationship:&nbsp;</i></strong>appendageOf 
+							&nbsp;&nbsp;<strong><i>Sort:Act:inboundRelationship:ActRelationship:&nbsp;</i></strong>BJ_______ 
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="BSLN"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>BSLN</strong><br /><i><font color="white">.&nbsp;.&nbsp;</font>
+						&nbsp;<i><a href="vs_ActRelationshipType.html#ActRelationshipHasBaseline">v:ActRelationshipHasBaseline</a></i></i></td>
+               <td>has baseline</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Indicates that the target observation(s) provide an initial reference for the source observation or observation group.</p>
+                  <p class="vocDesc"><i class="vocDesc">UsageConstraints: </i>Both source and target must be Observations or specializations thereof.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> SEQL
+                  </p>
+                  <p class="vocDesc"><strong>Concept Properties: </strong>
+							&nbsp;&nbsp;<strong><i>Name:Act:inboundRelationship:ActRelationship:&nbsp;</i></strong>baselineFor 
+							&nbsp;&nbsp;<strong><i>Name:Act:outboundRelationship:ActRelationship:&nbsp;</i></strong>baseline 
+							&nbsp;&nbsp;<strong><i>Sort:Act:inboundRelationship:ActRelationship:&nbsp;</i></strong>BG_______ 
+							&nbsp;&nbsp;<strong><i>Sort:Act:outboundRelationship:ActRelationship:&nbsp;</i></strong>BG_______ 
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="COMPLY"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>COMPLY</strong><br /><i><font color="white">.&nbsp;.&nbsp;</font>
+						&nbsp;<i><a href="vs_ActRelationshipType.html#ActRelationshipCompliesWith">v:ActRelationshipCompliesWith</a></i></i></td>
+               <td>complies with</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description:</b>The source act complies with, adheres to, conforms to, or is permissible under (in whole or in part) the policy, contract,
+                     agreement, law, conformance criteria, certification guidelines or requirement conveyed by the target act.
+                  </p>
+                  <p class="vocDesc">Examples for compliance relationships are: audits of adherence with a security policy, certificate of conformance to system
+                     certification requirements, or consent directive in compliance with or permissible under a privacy policy.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> SEQL
+                  </p>
+                  <p class="vocDesc"><strong>Concept Properties: </strong>
+							&nbsp;&nbsp;<strong><i>isDocumentCharacteristic:&nbsp;</i></strong>true 
+							&nbsp;&nbsp;<strong><i>Name:Act:inboundRelationship:ActRelationship:&nbsp;</i></strong>compliesWith 
+							&nbsp;&nbsp;<strong><i>Name:Act:outboundRelationship:ActRelationship:&nbsp;</i></strong>compliance 
+							&nbsp;&nbsp;<strong><i>Sort:Act:inboundRelationship:ActRelationship:&nbsp;</i></strong>BO_______ 
+							&nbsp;&nbsp;<strong><i>Sort:Act:outboundRelationship:ActRelationship:&nbsp;</i></strong>BO_______ 
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="DOC"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>DOC</strong><br /><i><font color="white">.&nbsp;.&nbsp;</font>
+						&nbsp;<i><a href="vs_ActRelationshipType.html#ActRelationshipDocuments">v:ActRelationshipDocuments</a></i></i></td>
+               <td>documents</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">The source act documents the target act.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> SEQL
+                  </p>
+                  <p class="vocDesc"><strong>Concept Properties: </strong>
+							&nbsp;&nbsp;<strong><i>isDocumentCharacteristic:&nbsp;</i></strong>true 
+							&nbsp;&nbsp;<strong><i>Name:Act:outboundRelationship:ActRelationship:&nbsp;</i></strong>documentationOf 
+							&nbsp;&nbsp;<strong><i>Sort:Act:outboundRelationship:ActRelationship:&nbsp;</i></strong>BH_______ 
+							&nbsp;&nbsp;<strong><i>Name:Act:inboundRelationship:ActRelationship:&nbsp;</i></strong>documentation 
+							&nbsp;&nbsp;<strong><i>Sort:Act:inboundRelationship:ActRelationship:&nbsp;</i></strong>BH_______ 
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="FLFS"></a>2-<strong>S</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>FLFS</strong><br /><i><font color="white">.&nbsp;.&nbsp;</font>
+						&nbsp;<i><a href="vs_ActRelationshipType.html#ActRelationshipFulfills">v:ActRelationshipFulfills</a></i></i></td>
+               <td>fulfills</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">The source act fulfills (in whole or in part) the target act. Source act must be in a mood equal or more actual than the target
+                     act.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> SEQL<br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> OCCR OREF SCH
+                  </p>
+                  <p class="vocDesc"><strong>Concept Properties: </strong>
+							&nbsp;&nbsp;<strong><i>isDocumentCharacteristic:&nbsp;</i></strong>true 
+							&nbsp;&nbsp;<strong><i>Name:Act:outboundRelationship:ActRelationship:&nbsp;</i></strong>inFulfillmentOf 
+							&nbsp;&nbsp;<strong><i>Sort:Act:outboundRelationship:ActRelationship:&nbsp;</i></strong>BA_______ 
+							&nbsp;&nbsp;<strong><i>Name:Act:inboundRelationship:ActRelationship:&nbsp;</i></strong>fulfillment 
+							&nbsp;&nbsp;<strong><i>Sort:Act:inboundRelationship:ActRelationship:&nbsp;</i></strong>BA_______ 
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="OCCR"></a>3-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;.&nbsp;</font><strong>OCCR</strong><br /><i><font color="white">.&nbsp;.&nbsp;.&nbsp;</font>
+						&nbsp;<i><a href="vs_ActRelationshipType.html#ActRelationshipOccurrence">v:ActRelationshipOccurrence</a></i></i></td>
+               <td>occurrence<br />is occurrence of
+               </td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">The source act is a single occurrence of a repeatable target act. The source and target act can be in any mood on the "completion
+                     track" but the source act must be as far as or further along the track than the target act (i.e., the occurrence of an intent
+                     can be an event but not vice versa).
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> FLFS
+                  </p>
+                  <p class="vocDesc"><strong>Concept Properties: </strong>
+							&nbsp;&nbsp;<strong><i>isDocumentCharacteristic:&nbsp;</i></strong>true 
+							&nbsp;&nbsp;<strong><i>Name:Act:outboundRelationship:ActRelationship:&nbsp;</i></strong>occurrenceOf 
+							&nbsp;&nbsp;<strong><i>Sort:Act:outboundRelationship:ActRelationship:&nbsp;</i></strong>BAA______ 
+							&nbsp;&nbsp;<strong><i>Name:Act:inboundRelationship:ActRelationship:&nbsp;</i></strong>occurrence 
+							&nbsp;&nbsp;<strong><i>Sort:Act:inboundRelationship:ActRelationship:&nbsp;</i></strong>BAA______ 
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="OREF"></a>3-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;.&nbsp;</font><strong>OREF</strong><br /><i><font color="white">.&nbsp;.&nbsp;.&nbsp;</font>
+						&nbsp;<i><a href="vs_ActRelationshipType.html#ActRelationshipReferencesOrder">v:ActRelationshipReferencesOrder</a></i></i></td>
+               <td>references order</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Relates either an appointment request or an appointment to the order for the service being scheduled.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> FLFS
+                  </p>
+                  <p class="vocDesc"><strong>Concept Properties: </strong>
+							&nbsp;&nbsp;<strong><i>appliesTo:&nbsp;</i></strong>ActMood = ARQ or APT and ActMood = ORD 
+							&nbsp;&nbsp;<strong><i>isDocumentCharacteristic:&nbsp;</i></strong>true 
+							&nbsp;&nbsp;<strong><i>Name:Act:outboundRelationship:ActRelationship:&nbsp;</i></strong>referencedOrder 
+							&nbsp;&nbsp;<strong><i>Sort:Act:outboundRelationship:ActRelationship:&nbsp;</i></strong>BAB______ 
+							&nbsp;&nbsp;<strong><i>Name:Act:inboundRelationship:ActRelationship:&nbsp;</i></strong>referencedBy 
+							&nbsp;&nbsp;<strong><i>Sort:Act:inboundRelationship:ActRelationship:&nbsp;</i></strong>BAB______ 
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="SCH"></a>3-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;.&nbsp;</font><strong>SCH</strong><br /><i><font color="white">.&nbsp;.&nbsp;.&nbsp;</font>
+						&nbsp;<i><a href="vs_ActRelationshipType.html#ActRelationshipSchedulesRequest">v:ActRelationshipSchedulesRequest</a></i></i></td>
+               <td>schedules request<br />schedules
+               </td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Associates a specific time (and associated resources) with a scheduling request or other intent.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> FLFS
+                  </p>
+                  <p class="vocDesc"><strong>Concept Properties: </strong>
+							&nbsp;&nbsp;<strong><i>isDocumentCharacteristic:&nbsp;</i></strong>true 
+							&nbsp;&nbsp;<strong><i>Name:Act:outboundRelationship:ActRelationship:&nbsp;</i></strong>scheduleRequest 
+							&nbsp;&nbsp;<strong><i>Sort:Act:outboundRelationship:ActRelationship:&nbsp;</i></strong>BAC______ 
+							&nbsp;&nbsp;<strong><i>Name:Act:inboundRelationship:ActRelationship:&nbsp;</i></strong>requestedBy 
+							&nbsp;&nbsp;<strong><i>Sort:Act:inboundRelationship:ActRelationship:&nbsp;</i></strong>BAC______ 
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="GEN"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>GEN</strong><br /><i><font color="white">.&nbsp;.&nbsp;</font>
+						&nbsp;<i><a href="vs_ActRelationshipType.html#ActRelationshipHasGeneralization">v:ActRelationshipHasGeneralization</a></i></i></td>
+               <td>has generalization</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">The generalization relationship can be used to express categorical knowledge about services (e.g., amilorid, triamterene,
+                     and spironolactone have the common generalization potassium sparing diuretic).
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> SEQL
+                  </p>
+                  <p class="vocDesc"><strong>Concept Properties: </strong>
+							&nbsp;&nbsp;<strong><i>appliesTo:&nbsp;</i></strong>specialization 
+							&nbsp;&nbsp;<strong><i>howApplies:&nbsp;</i></strong>generalization 
+							&nbsp;&nbsp;<strong><i>isDocumentCharacteristic:&nbsp;</i></strong>true 
+							&nbsp;&nbsp;<strong><i>Name:Act:outboundRelationship:ActRelationship:&nbsp;</i></strong>generalization 
+							&nbsp;&nbsp;<strong><i>Sort:Act:outboundRelationship:ActRelationship:&nbsp;</i></strong>BC_______ 
+							&nbsp;&nbsp;<strong><i>Name:Act:inboundRelationship:ActRelationship:&nbsp;</i></strong>specialization 
+							&nbsp;&nbsp;<strong><i>Sort:Act:inboundRelationship:ActRelationship:&nbsp;</i></strong>BC_______ 
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="GEVL"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>GEVL</strong><br /><i><font color="white">.&nbsp;.&nbsp;</font>
+						&nbsp;<i><a href="vs_ActRelationshipType.html#ActRelationshipEvaluatesGoal">v:ActRelationshipEvaluatesGoal</a></i></i></td>
+               <td>evaluates (goal)</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">A goal-evaluation links an observation (intent or actual) to a goal to indicate that the observation evaluates the goal. Given
+                     the goal and the observation, a "goal distance" (e.g., goal to observation) can be "calculated" and need not be sent explicitly.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> SEQL
+                  </p>
+                  <p class="vocDesc"><strong>Concept Properties: </strong>
+							&nbsp;&nbsp;<strong><i>appliesTo:&nbsp;</i></strong>evaluation 
+							&nbsp;&nbsp;<strong><i>howApplies:&nbsp;</i></strong>goal 
+							&nbsp;&nbsp;<strong><i>isDocumentCharacteristic:&nbsp;</i></strong>true 
+							&nbsp;&nbsp;<strong><i>Name:Act:outboundRelationship:ActRelationship:&nbsp;</i></strong>evaluationOf 
+							&nbsp;&nbsp;<strong><i>Sort:Act:outboundRelationship:ActRelationship:&nbsp;</i></strong>BD_______ 
+							&nbsp;&nbsp;<strong><i>Name:Act:inboundRelationship:ActRelationship:&nbsp;</i></strong>evaluation 
+							&nbsp;&nbsp;<strong><i>Sort:Act:inboundRelationship:ActRelationship:&nbsp;</i></strong>BD_______ 
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="INST"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>INST</strong><br /><i><font color="white">.&nbsp;.&nbsp;</font>
+						&nbsp;<i><a href="vs_ActRelationshipType.html#ActRelationshipInstantiatesMaster">v:ActRelationshipInstantiatesMaster</a></i></i></td>
+               <td>instantiates (master)</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Used to capture the link between a potential service ("master" or plan) and an actual service, where the actual service instantiates
+                     the potential service. The instantiation may override the master's defaults.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> SEQL
+                  </p>
+                  <p class="vocDesc"><strong>Concept Properties: </strong>
+							&nbsp;&nbsp;<strong><i>appliesTo:&nbsp;</i></strong>instance 
+							&nbsp;&nbsp;<strong><i>howApplies:&nbsp;</i></strong>master 
+							&nbsp;&nbsp;<strong><i>isDocumentCharacteristic:&nbsp;</i></strong>true 
+							&nbsp;&nbsp;<strong><i>Name:Act:outboundRelationship:ActRelationship:&nbsp;</i></strong>definition 
+							&nbsp;&nbsp;<strong><i>Sort:Act:outboundRelationship:ActRelationship:&nbsp;</i></strong>BB_______ 
+							&nbsp;&nbsp;<strong><i>Name:Act:inboundRelationship:ActRelationship:&nbsp;</i></strong>instantiation 
+							&nbsp;&nbsp;<strong><i>Sort:Act:inboundRelationship:ActRelationship:&nbsp;</i></strong>BB_______ 
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="MOD"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>MOD</strong><br /><i><font color="white">.&nbsp;.&nbsp;</font>
+						&nbsp;<i><a href="vs_ActRelationshipType.html#ActRelationshipModifies">v:ActRelationshipModifies</a></i></i></td>
+               <td>modifies</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Definition: Used to link a newer version or 'snapshot' of a business object (source) to an older version or 'snapshot' of
+                     the same business object (target).
+                  </p>
+                  <p class="vocDesc"><i class="vocDesc">Usage:</i>The identifier of the Act should be the same for both source and target. If the identifiers are distinct, RPLC should be used
+                     instead.
+                  </p>
+                  <p class="vocDesc">Name from source to target = "modifiesPrior"</p>
+                  <p class="vocDesc">Name from target to source = "modifiesByNew"</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> SEQL
+                  </p>
+                  <p class="vocDesc"><strong>Concept Properties: </strong>
+							&nbsp;&nbsp;<strong><i>isDocumentCharacteristic:&nbsp;</i></strong>true 
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="MTCH"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>MTCH</strong><br /><i><font color="white">.&nbsp;.&nbsp;</font>
+						&nbsp;<i><a href="vs_ActRelationshipType.html#ActRelationshipMatchesTrigger">v:ActRelationshipMatchesTrigger</a></i></i></td>
+               <td>matches (trigger)</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">A trigger-match links an actual service (e.g., an observation or procedure that took place) with a service in criterion mood.
+                     For example if the trigger is "observation of pain" and pain is actually observed, and if that pain-observation caused the
+                     trigger to fire, that pain-observation can be linked with the trigger.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> SEQL
+                  </p>
+                  <p class="vocDesc"><strong>Concept Properties: </strong>
+							&nbsp;&nbsp;<strong><i>appliesTo:&nbsp;</i></strong>matching service 
+							&nbsp;&nbsp;<strong><i>howApplies:&nbsp;</i></strong>trigger 
+							&nbsp;&nbsp;<strong><i>isDocumentCharacteristic:&nbsp;</i></strong>true 
+							&nbsp;&nbsp;<strong><i>Name:Act:outboundRelationship:ActRelationship:&nbsp;</i></strong>matchOf 
+							&nbsp;&nbsp;<strong><i>Sort:Act:outboundRelationship:ActRelationship:&nbsp;</i></strong>BF_______ 
+							&nbsp;&nbsp;<strong><i>Name:Act:inboundRelationship:ActRelationship:&nbsp;</i></strong>match 
+							&nbsp;&nbsp;<strong><i>Sort:Act:inboundRelationship:ActRelationship:&nbsp;</i></strong>BF_______ 
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="OPTN"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>OPTN</strong><br /><i><font color="white">.&nbsp;.&nbsp;</font>
+						&nbsp;<i><a href="vs_ActRelationshipType.html#ActRelationshipHasOption">v:ActRelationshipHasOption</a></i></i></td>
+               <td>has option</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">A relationship between a source Act that provides more detailed properties to the target Act.</p>
+                  <p class="vocDesc">The source act thus is a specialization of the target act, but instead of mentioning all the inherited properties it only
+                     mentions new property bindings or refinements.
+                  </p>
+                  <p class="vocDesc">The typical use case is to specify certain alternative variants of one kind of Act. The priorityNumber attribute is used to
+                     weigh refinements as preferred over other alternative refinements.
+                  </p>
+                  <p class="vocDesc">Example: several routing options for a drug are specified as one SubstanceAdministration for the general treatment with attached
+                     refinements for the various routing options.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> SEQL
+                  </p>
+                  <p class="vocDesc"><strong>Concept Properties: </strong>
+							&nbsp;&nbsp;<strong><i>isDocumentCharacteristic:&nbsp;</i></strong>true 
+							&nbsp;&nbsp;<strong><i>Name:Act:outboundRelationship:ActRelationship:&nbsp;</i></strong>option 
+							&nbsp;&nbsp;<strong><i>Sort:Act:outboundRelationship:ActRelationship:&nbsp;</i></strong>BN_______ 
+							&nbsp;&nbsp;<strong><i>Name:Act:inboundRelationship:ActRelationship:&nbsp;</i></strong>optionFor 
+							&nbsp;&nbsp;<strong><i>Sort:Act:inboundRelationship:ActRelationship:&nbsp;</i></strong>BN_______ 
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="RCHAL"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>RCHAL</strong><br /><i><font color="white">.&nbsp;.&nbsp;</font>
+						&nbsp;<i><a href="vs_ActRelationshipType.html#ActRelationshipRe-challenge">v:ActRelationshipRe-challenge</a></i></i></td>
+               <td>re-challenge</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description:</b>A relationship in which the target act is carried out to determine whether an effect attributed to the source act can be recreated.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> SEQL
+                  </p>
+                  <p class="vocDesc"><strong>Concept Properties: </strong>
+							&nbsp;&nbsp;<strong><i>isDocumentCharacteristic:&nbsp;</i></strong>true 
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="REV"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>REV</strong><br /><i><font color="white">.&nbsp;.&nbsp;</font>
+						&nbsp;<i><a href="vs_ActRelationshipType.html#ActRelationshipReverses">v:ActRelationshipReverses</a></i></i></td>
+               <td>reverses</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">A relationship between a source Act that seeks to reverse or undo the action of the prior target Act.</p>
+                  <p class="vocDesc">Example: A posted financial transaction (e.g., a debit transaction) was applied in error and must be reversed (e.g., by a
+                     credit transaction) the credit transaction is identified as an undo (or reversal) of the prior target transaction.
+                  </p>
+                  <p class="vocDesc">Constraints: the "completion track" mood of the target Act must be equally or more "actual" than the source act. I.e., when
+                     the target act is EVN the source act can be EVN, or any INT. If the target act is INT, the source act can be INT.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> SEQL
+                  </p>
+                  <p class="vocDesc"><strong>Concept Properties: </strong>
+							&nbsp;&nbsp;<strong><i>isDocumentCharacteristic:&nbsp;</i></strong>true 
+							&nbsp;&nbsp;<strong><i>Name:Act:outboundRelationship:ActRelationship:&nbsp;</i></strong>reversalOf 
+							&nbsp;&nbsp;<strong><i>Sort:Act:outboundRelationship:ActRelationship:&nbsp;</i></strong>BK_______ 
+							&nbsp;&nbsp;<strong><i>Name:Act:inboundRelationship:ActRelationship:&nbsp;</i></strong>reversal 
+							&nbsp;&nbsp;<strong><i>Sort:Act:inboundRelationship:ActRelationship:&nbsp;</i></strong>BK_______ 
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="RPLC"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>RPLC</strong><br /><i><font color="white">.&nbsp;.&nbsp;</font>
+						&nbsp;<i><a href="vs_ActRelationshipType.html#ActRelationshipReplaces">v:ActRelationshipReplaces</a></i></i></td>
+               <td>replaces</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">A replacement source act replaces an existing target act. The state of the target act being replaced becomes obselete, but
+                     the act is typically still retained in the system for historical reference.  The source and target must be of the same type.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> SEQL
+                  </p>
+                  <p class="vocDesc"><strong>Concept Properties: </strong>
+							&nbsp;&nbsp;<strong><i>isDocumentCharacteristic:&nbsp;</i></strong>true 
+							&nbsp;&nbsp;<strong><i>Name:Act:outboundRelationship:ActRelationship:&nbsp;</i></strong>replacementOf 
+							&nbsp;&nbsp;<strong><i>Sort:Act:outboundRelationship:ActRelationship:&nbsp;</i></strong>BI_______ 
+							&nbsp;&nbsp;<strong><i>Name:Act:inboundRelationship:ActRelationship:&nbsp;</i></strong>replacement 
+							&nbsp;&nbsp;<strong><i>Sort:Act:inboundRelationship:ActRelationship:&nbsp;</i></strong>BI_______ 
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="SUCC"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>SUCC</strong><br /><i><font color="white">.&nbsp;.&nbsp;</font>
+						&nbsp;<i><a href="vs_ActRelationshipType.html#ActRelationshipSucceeds">v:ActRelationshipSucceeds</a></i></i></td>
+               <td>succeeds</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Definition:</b>  A new act that carries forward the intention of the original act, but does not completely replace it.  The status of the
+                     predecessor act must be 'completed'.  The original act is the target act and the successor is the source act.
+                  </p>
+                  <p class="vocDesc"><b>OpenIssue:</b></p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> SEQL
+                  </p>
+                  <p class="vocDesc"><strong>Concept Properties: </strong>
+							&nbsp;&nbsp;<strong><i>isDocumentCharacteristic:&nbsp;</i></strong>true 
+							&nbsp;&nbsp;<strong><i>Name:Act:outboundRelationship:ActRelationship:&nbsp;</i></strong>predecessor 
+							&nbsp;&nbsp;<strong><i>Sort:Act:outboundRelationship:ActRelationship:&nbsp;</i></strong>BIA______ 
+							&nbsp;&nbsp;<strong><i>Name:Act:inboundRelationship:ActRelationship:&nbsp;</i></strong>successor 
+							&nbsp;&nbsp;<strong><i>Sort:Act:inboundRelationship:ActRelationship:&nbsp;</i></strong>BIA______ 
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="UPDT"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>UPDT</strong><br /><i><font color="white">.&nbsp;.&nbsp;</font>
+						&nbsp;<i><a href="vs_ActRelationshipType.html#ActRelationshipUpdatesCondition">v:ActRelationshipUpdatesCondition</a></i></i></td>
+               <td>updates (condition)</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">A condition thread relationship specifically links condition nodes together to form a condition thread. The source is the
+                     new condition node and the target links to the most recent node of the existing condition thread.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> SEQL
+                  </p>
+                  <p class="vocDesc"><strong>Concept Properties: </strong>
+							&nbsp;&nbsp;<strong><i>appliesTo:&nbsp;</i></strong>new head of thread 
+							&nbsp;&nbsp;<strong><i>howApplies:&nbsp;</i></strong>old head of thread 
+							&nbsp;&nbsp;<strong><i>isDocumentCharacteristic:&nbsp;</i></strong>true 
+							&nbsp;&nbsp;<strong><i>Name:Act:outboundRelationship:ActRelationship:&nbsp;</i></strong>updateOf 
+							&nbsp;&nbsp;<strong><i>Sort:Act:outboundRelationship:ActRelationship:&nbsp;</i></strong>BE_______ 
+							&nbsp;&nbsp;<strong><i>Name:Act:inboundRelationship:ActRelationship:&nbsp;</i></strong>update 
+							&nbsp;&nbsp;<strong><i>Sort:Act:inboundRelationship:ActRelationship:&nbsp;</i></strong>BE_______ 
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="XCRPT"></a>2-<strong>S</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>XCRPT</strong><br /><i><font color="white">.&nbsp;.&nbsp;</font>
+						&nbsp;<i><a href="vs_ActRelationshipType.html#ActRelationshipExcerpt">v:ActRelationshipExcerpt</a></i></i></td>
+               <td>Excerpts</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">The source is an excerpt from the target.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> SEQL<br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> VRXCRPT
+                  </p>
+                  <p class="vocDesc"><strong>Concept Properties: </strong>
+							&nbsp;&nbsp;<strong><i>isDocumentCharacteristic:&nbsp;</i></strong>true 
+							&nbsp;&nbsp;<strong><i>Name:Act:outboundRelationship:ActRelationship:&nbsp;</i></strong>excerptFrom 
+							&nbsp;&nbsp;<strong><i>Sort:Act:outboundRelationship:ActRelationship:&nbsp;</i></strong>BM_______ 
+							&nbsp;&nbsp;<strong><i>Name:Act:inboundRelationship:ActRelationship:&nbsp;</i></strong>excerpt 
+							&nbsp;&nbsp;<strong><i>Sort:Act:inboundRelationship:ActRelationship:&nbsp;</i></strong>BM_______ 
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="VRXCRPT"></a>3-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;.&nbsp;</font><strong>VRXCRPT</strong><br /><i><font color="white">.&nbsp;.&nbsp;.&nbsp;</font>
+						&nbsp;<i><a href="vs_ActRelationshipType.html#ActRelationshipExcerptVerbatim">v:ActRelationshipExcerptVerbatim</a></i></i></td>
+               <td>Excerpt verbatim</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">The source is a direct quote from the target.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> XCRPT
+                  </p>
+                  <p class="vocDesc"><strong>Concept Properties: </strong>
+							&nbsp;&nbsp;<strong><i>isDocumentCharacteristic:&nbsp;</i></strong>true 
+							&nbsp;&nbsp;<strong><i>Name:Act:outboundRelationship:ActRelationship:&nbsp;</i></strong>verbatimExcerptFrom 
+							&nbsp;&nbsp;<strong><i>Sort:Act:outboundRelationship:ActRelationship:&nbsp;</i></strong>BMA______ 
+							&nbsp;&nbsp;<strong><i>Name:Act:inboundRelationship:ActRelationship:&nbsp;</i></strong>verbatimExcerpt 
+							&nbsp;&nbsp;<strong><i>Sort:Act:inboundRelationship:ActRelationship:&nbsp;</i></strong>BMA______ 
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="XFRM"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>XFRM</strong><br /><i><font color="white">.&nbsp;.&nbsp;</font>
+						&nbsp;<i><a href="vs_ActRelationshipType.html#ActRelationshipTransformation">v:ActRelationshipTransformation</a></i></i></td>
+               <td>transformation</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Used when the target Act is a transformation of the source Act. (For instance, used to show that a CDA document is a transformation
+                     of a DICOM SR document.)
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> SEQL
+                  </p>
+                  <p class="vocDesc"><strong>Concept Properties: </strong>
+							&nbsp;&nbsp;<strong><i>isDocumentCharacteristic:&nbsp;</i></strong>true 
+							&nbsp;&nbsp;<strong><i>Name:Act:outboundRelationship:ActRelationship:&nbsp;</i></strong>transformationOf 
+							&nbsp;&nbsp;<strong><i>Sort:Act:outboundRelationship:ActRelationship:&nbsp;</i></strong>BL_______ 
+							&nbsp;&nbsp;<strong><i>Name:Act:inboundRelationship:ActRelationship:&nbsp;</i></strong>transformation 
+							&nbsp;&nbsp;<strong><i>Sort:Act:inboundRelationship:ActRelationship:&nbsp;</i></strong>BL_______ 
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="_ActRelationshipConditional"></a>1-<strong>A</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>_ActRelationshipConditional</strong><br /><i><font color="white">.&nbsp;</font>
+						&nbsp;<i><a href="vs_ActRelationshipType.html#ActRelationshipConditional">v:ActRelationshipConditional</a></i></i></td>
+               <td>ActRelationshipConditional</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Specifies under what circumstances (target Act) the source-Act may, must, must not or has occurred</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> ART<br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> CIND PRCN RSON TRIG
+                  </p>
+                  <p class="vocDesc"><strong>Concept Properties: </strong>
+							&nbsp;&nbsp;<strong><i>conductible:&nbsp;</i></strong>true 
+							&nbsp;&nbsp;<strong><i>isDocumentCharacteristic:&nbsp;</i></strong>true 
+							&nbsp;&nbsp;<strong><i>Name:Act:outboundRelationship:ActRelationship:&nbsp;</i></strong>conditions 
+							&nbsp;&nbsp;<strong><i>Sort:Act:outboundRelationship:ActRelationship:&nbsp;</i></strong>C________ 
+							&nbsp;&nbsp;<strong><i>Name:Act:inboundRelationship:ActRelationship:&nbsp;</i></strong>conditionedBy 
+							&nbsp;&nbsp;<strong><i>Sort:Act:inboundRelationship:ActRelationship:&nbsp;</i></strong>C________ 
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="CIND"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>CIND</strong><br /><i><font color="white">.&nbsp;.&nbsp;</font>
+						&nbsp;<i><a href="vs_ActRelationshipType.html#ActRelationshipHasContra-indication">v:ActRelationshipHasContra-indication</a></i></i></td>
+               <td>has contra-indication</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">A contraindication is just a negation of a reason, i.e. it gives a condition under which the action is not to be done. Both,
+                     source and target can be any kind of service; target service is in criterion mood. How the strength of a contraindication
+                     is expressed (e.g., relative, absolute) is left as an open issue. The priorityNumber attribute could be used.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _ActRelationshipConditional
+                  </p>
+                  <p class="vocDesc"><strong>Concept Properties: </strong>
+							&nbsp;&nbsp;<strong><i>appliesTo:&nbsp;</i></strong>action 
+							&nbsp;&nbsp;<strong><i>howApplies:&nbsp;</i></strong>contra-indication 
+							&nbsp;&nbsp;<strong><i>isDocumentCharacteristic:&nbsp;</i></strong>true 
+							&nbsp;&nbsp;<strong><i>Name:Act:outboundRelationship:ActRelationship:&nbsp;</i></strong>contraindication 
+							&nbsp;&nbsp;<strong><i>Sort:Act:outboundRelationship:ActRelationship:&nbsp;</i></strong>CC_______ 
+							&nbsp;&nbsp;<strong><i>Name:Act:inboundRelationship:ActRelationship:&nbsp;</i></strong>contraindicationFor 
+							&nbsp;&nbsp;<strong><i>Sort:Act:inboundRelationship:ActRelationship:&nbsp;</i></strong>CC_______ 
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="PRCN"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>PRCN</strong><br /><i><font color="white">.&nbsp;.&nbsp;</font>
+						&nbsp;<i><a href="vs_ActRelationshipType.html#ActRelationshipHasPre-condition">v:ActRelationshipHasPre-condition</a></i></i></td>
+               <td>has pre-condition</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">A requirement to be true before a service is performed. The target can be any service in criterion mood.  For multiple pre-conditions
+                     a conjunction attribute (AND, OR, XOR) is applicable.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _ActRelationshipConditional
+                  </p>
+                  <p class="vocDesc"><strong>Concept Properties: </strong>
+							&nbsp;&nbsp;<strong><i>appliesTo:&nbsp;</i></strong>action 
+							&nbsp;&nbsp;<strong><i>howApplies:&nbsp;</i></strong>pre-condition 
+							&nbsp;&nbsp;<strong><i>isDocumentCharacteristic:&nbsp;</i></strong>true 
+							&nbsp;&nbsp;<strong><i>Name:Act:outboundRelationship:ActRelationship:&nbsp;</i></strong>precondition 
+							&nbsp;&nbsp;<strong><i>Sort:Act:outboundRelationship:ActRelationship:&nbsp;</i></strong>CD_______ 
+							&nbsp;&nbsp;<strong><i>Name:Act:inboundRelationship:ActRelationship:&nbsp;</i></strong>preconditionFor 
+							&nbsp;&nbsp;<strong><i>Sort:Act:inboundRelationship:ActRelationship:&nbsp;</i></strong>CD_______ 
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="RSON"></a>2-<strong>S</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>RSON</strong><br /><i><font color="white">.&nbsp;.&nbsp;</font>
+						&nbsp;<i><a href="vs_ActRelationshipType.html#ActRelationshipReason">v:ActRelationshipReason</a></i></i></td>
+               <td>has reason</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">The reason or rationale for a service.  A reason link is weaker than a trigger, it only suggests that some service may be
+                     or might have been a reason for some action, but not that this reason requires/required the action to be taken.  Also, as
+                     opposed to the trigger, there is no strong timely relation between the reason and the action.
+                  </p>
+                  <p class="vocDesc"><i class="vocDesc">Discussion: </i>In prior releases, the code "SUGG" (suggests) was expressed as "an inversion of the reason link." That code has been retired
+                     in favor of the inversion indicator that is an attribute of ActRelationship.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _ActRelationshipConditional<br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> BLOCK CURE CURE.ADJ DIAG MITGT MTGT.ADJ SYMP
+                  </p>
+                  <p class="vocDesc"><strong>Concept Properties: </strong>
+							&nbsp;&nbsp;<strong><i>appliesTo:&nbsp;</i></strong>action 
+							&nbsp;&nbsp;<strong><i>howApplies:&nbsp;</i></strong>reason 
+							&nbsp;&nbsp;<strong><i>isDocumentCharacteristic:&nbsp;</i></strong>true 
+							&nbsp;&nbsp;<strong><i>Name:Act:outboundRelationship:ActRelationship:&nbsp;</i></strong>reason 
+							&nbsp;&nbsp;<strong><i>Sort:Act:outboundRelationship:ActRelationship:&nbsp;</i></strong>CA_______ 
+							&nbsp;&nbsp;<strong><i>Name:Act:inboundRelationship:ActRelationship:&nbsp;</i></strong>reasonOf 
+							&nbsp;&nbsp;<strong><i>Sort:Act:inboundRelationship:ActRelationship:&nbsp;</i></strong>CA_______ 
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="BLOCK"></a>3-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;.&nbsp;</font><strong>BLOCK</strong><br /><i><font color="white">.&nbsp;.&nbsp;.&nbsp;</font>
+						&nbsp;<i><a href="vs_ActRelationshipType.html#ActRelationshipBlocks">v:ActRelationshipBlocks</a></i></i></td>
+               <td>Blocks</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Definition: </b>The source act is performed to block the effects of the target act.  This act relationship should be used when describing
+                     near miss type incidents where potential harm could have occurred, but the action described in the source act blocked the
+                     potential harmful effects of the incident actually occurring.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> RSON
+                  </p>
+                  <p class="vocDesc"><strong>Concept Properties: </strong>
+							&nbsp;&nbsp;<strong><i>isDocumentCharacteristic:&nbsp;</i></strong>true 
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="CURE"></a>3-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;.&nbsp;</font><strong>CURE</strong><br /><i><font color="white">.&nbsp;.&nbsp;.&nbsp;</font>
+						&nbsp;<i><a href="vs_ActRelationshipType.html#ActRelationshipCurativeIndication">v:ActRelationshipCurativeIndication</a></i></i></td>
+               <td>curative indication</td>
+               <td>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> RSON
+                  </p>
+                  <p class="vocDesc"><strong>Concept Properties: </strong>
+							&nbsp;&nbsp;<strong><i>isDocumentCharacteristic:&nbsp;</i></strong>true 
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="CURE.ADJ"></a>3-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;.&nbsp;</font><strong>CURE.ADJ</strong><br /><i><font color="white">.&nbsp;.&nbsp;.&nbsp;</font>
+						&nbsp;<i><a href="vs_ActRelationshipType.html#ActRelationshipAdjunctCurativeIndication">v:ActRelationshipAdjunctCurativeIndication</a></i></i></td>
+               <td>adjunct curative indication</td>
+               <td>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> RSON
+                  </p>
+                  <p class="vocDesc"><strong>Concept Properties: </strong>
+							&nbsp;&nbsp;<strong><i>isDocumentCharacteristic:&nbsp;</i></strong>true 
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="DIAG"></a>3-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;.&nbsp;</font><strong>DIAG</strong><br /><i><font color="white">.&nbsp;.&nbsp;.&nbsp;</font>
+						&nbsp;<i><a href="vs_ActRelationshipType.html#ActRelationshipDiagnosis">v:ActRelationshipDiagnosis</a></i></i></td>
+               <td>diagnosis</td>
+               <td>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> RSON
+                  </p>
+                  <p class="vocDesc"><strong>Concept Properties: </strong>
+							&nbsp;&nbsp;<strong><i>isDocumentCharacteristic:&nbsp;</i></strong>true 
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="MITGT"></a>3-<strong>S</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;.&nbsp;</font><strong>MITGT</strong><br /><i><font color="white">.&nbsp;.&nbsp;.&nbsp;</font>
+						&nbsp;<i><a href="vs_ActRelationshipType.html#ActRelationshipMitigates">v:ActRelationshipMitigates</a></i></i></td>
+               <td>mitigates</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">The source act removes or lessens the occurrence or effect of the target act.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> RSON<br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> RCVY
+                  </p>
+                  <p class="vocDesc"><strong>Concept Properties: </strong>
+							&nbsp;&nbsp;<strong><i>isDocumentCharacteristic:&nbsp;</i></strong>true 
+							&nbsp;&nbsp;<strong><i>Name:Act:outboundRelationship:ActRelationship:&nbsp;</i></strong>mitigates 
+							&nbsp;&nbsp;<strong><i>Sort:Act:outboundRelationship:ActRelationship:&nbsp;</i></strong>CAA______ 
+							&nbsp;&nbsp;<strong><i>Name:Act:inboundRelationship:ActRelationship:&nbsp;</i></strong>mitigatedBy 
+							&nbsp;&nbsp;<strong><i>Sort:Act:inboundRelationship:ActRelationship:&nbsp;</i></strong>CAA______ 
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="RCVY"></a>4-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;.&nbsp;.&nbsp;</font><strong>RCVY</strong><br /><i><font color="white">.&nbsp;.&nbsp;.&nbsp;.&nbsp;</font>
+						&nbsp;<i><a href="vs_ActRelationshipType.html#ActRelationshipRecovery">v:ActRelationshipRecovery</a></i></i></td>
+               <td>Recovery</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Definition: </b>The source act is performed to recover from the effects of the target act.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> MITGT
+                  </p>
+                  <p class="vocDesc"><strong>Concept Properties: </strong>
+							&nbsp;&nbsp;<strong><i>isDocumentCharacteristic:&nbsp;</i></strong>true 
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="MTGT.ADJ"></a>3-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;.&nbsp;</font><strong>MTGT.ADJ</strong><br /><i><font color="white">.&nbsp;.&nbsp;.&nbsp;</font>
+						&nbsp;<i><a href="vs_ActRelationshipType.html#ActRelationshipAdjunctMitigation">v:ActRelationshipAdjunctMitigation</a></i></i></td>
+               <td>adjunct mitigation</td>
+               <td>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> RSON
+                  </p>
+                  <p class="vocDesc"><strong>Concept Properties: </strong>
+							&nbsp;&nbsp;<strong><i>isDocumentCharacteristic:&nbsp;</i></strong>true 
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="SYMP"></a>3-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;.&nbsp;</font><strong>SYMP</strong><br /><i><font color="white">.&nbsp;.&nbsp;.&nbsp;</font>
+						&nbsp;<i><a href="vs_ActRelationshipType.html#ActRelationshipSymptomaticRelief">v:ActRelationshipSymptomaticRelief</a></i></i></td>
+               <td>symptomatic relief</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Used in the diagnosis of the indicated disease.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> RSON
+                  </p>
+                  <p class="vocDesc"><strong>Concept Properties: </strong>
+							&nbsp;&nbsp;<strong><i>isDocumentCharacteristic:&nbsp;</i></strong>true 
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="TRIG"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>TRIG</strong><br /><i><font color="white">.&nbsp;.&nbsp;</font>
+						&nbsp;<i><a href="vs_ActRelationshipType.html#ActRelationshipHasTrigger">v:ActRelationshipHasTrigger</a></i></i></td>
+               <td>has trigger</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">A pre-condition that if true should result in the source Act being executed.  The target is in typically in criterion mood.
+                     When reported after the fact (i.e. the criterion has been met) it may be in Event mood.  A delay between the trigger and the
+                     triggered action can be specified.
+                  </p>
+                  <p class="vocDesc"><i class="vocDesc">Discussion: </i>This includes the concept of a  required act for a service or financial instrument such as an insurance plan or policy. In
+                     such cases, the trigger is the occurrence of a specific condition such as coverage limits being exceeded.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _ActRelationshipConditional
+                  </p>
+                  <p class="vocDesc"><strong>Concept Properties: </strong>
+							&nbsp;&nbsp;<strong><i>appliesTo:&nbsp;</i></strong>action 
+							&nbsp;&nbsp;<strong><i>howApplies:&nbsp;</i></strong>trigger 
+							&nbsp;&nbsp;<strong><i>isDocumentCharacteristic:&nbsp;</i></strong>true 
+							&nbsp;&nbsp;<strong><i>Name:Act:outboundRelationship:ActRelationship:&nbsp;</i></strong>trigger 
+							&nbsp;&nbsp;<strong><i>Sort:Act:outboundRelationship:ActRelationship:&nbsp;</i></strong>CB_______ 
+							&nbsp;&nbsp;<strong><i>Name:Act:inboundRelationship:ActRelationship:&nbsp;</i></strong>triggerFor 
+							&nbsp;&nbsp;<strong><i>Sort:Act:inboundRelationship:ActRelationship:&nbsp;</i></strong>CB_______ 
+                  </p>
+               </td>
+            </tr>
+         </tbody>
+      </table><br /><a href="vocabulary.html#voc-systems">Return to code system index</a><br /><br /><p class="copyright">Last Published:&nbsp;20190729&nbsp;12:04&nbsp;PM</p>
+      <p class="copyright">HL7 &reg; Version 3 Standard, &copy; 2019  Health Level Seven &reg; International. &nbsp;All Rights Reserved.</p>
+      <p class="copyright">HL7 and Health Level Seven are registered trademarks of Health Level Seven International Reg. U.S. Pat &amp; TM Off.<br />Use of these materials is governed by HL7 International's <a href="http://www.hl7.org/legal/ippolicy.cfm">IP Compliance Policy</a>.
+      </p>
+   </body>
+</html>

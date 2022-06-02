@@ -1,0 +1,725 @@
+/*
+ * the following styles have been added by Paul V. Biron (paul.v.biron@kp.org)
+ * to demonstrate that the pubs HTML could be vastly simplified by replacing
+ * the layout-oriented tables with divs/spans and appropriate CSS
+ */
+
+a.lhnMenuItem{
+	text-decoration: none;
+	color:black !important;
+}
+
+
+a.custombutton {
+	border: 1px solid silver;
+	background-color: #990000 !important;
+	color: white !important;
+	font-weight: bold;
+	padding: 5px;
+}
+
+a.custombutton:hover{
+	border: 1px solid silver;
+	background-color: black !important;
+	color: white;
+	font-weight: bold;
+	padding: 5px;
+} 
+
+a.custombuttonhide {
+    display:none;
+}
+
+
+span.icon {
+	vertical-align : top ;
+	display: table-cell ;
+	width: 20px ;
+	}
+span.number {
+	vertical-align : top ;
+	display: table-cell ;
+	min-width: 49px ;
+	padding-right: .4em;
+	}
+span.glossaryShortcut {
+	border: 1px solid black;
+	background: #f8f8f8;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	font-weight: bold ;
+}
+span.title {
+	vertical-align : top ;
+	display: table-cell ;
+	}
+span.glosslink {
+	display: inline  ; /* Replace "inline" with "none" to remove the glossary internal links */
+   }
+span.smalltext {
+	font-size: 85% ;
+   }
+span.inlineGlossaryDef {
+	font-family: Times, serif ;
+	font-size: 110% ;
+	font-style: italic ;
+	font-weight: bold ;
+	color: black;
+}
+div.section div.header {
+	text-align: left ;
+	font-family: Arial, Helvetica, sans-serif ;
+	font-size: 150% ;
+	font-weight: bold ;
+	color: maroon ;
+	margin-bottom: 5px ;
+	}
+div.subSection div.header {
+	font-size: 130% ;
+	}
+div.subSubSection div.header {
+	font-size: 130% ;
+	}
+div.reducedHeadFont div.header {
+	font-size: 100%
+	}
+div.subSubSubSection div.header {
+	font-size: 100% ;
+	}
+div.heading {
+	color: maroon ;
+	font-weight: bold ;
+	}
+div.subheading {
+	font-weight: bold ;
+	}
+div.body {
+	margin-left: 70px ;
+	vertical-align : top ;
+	}
+div.subSection {
+	margin-top: 10px ;
+	margin-left: -70px ;
+	}
+div.subSubSection {
+	margin-top: 10px ;
+	margin-left: -70px ;
+	}
+div.subSubSubSection {
+	margin-top: 10px ;
+	margin-left: -70px ;
+	}
+/*
+ * the following style (inserted into Paul V. Biron's list) was added by
+ * Woody Beeler (20060225) to hide the display of deleted items
+ */
+*.deleted {
+display: none;  
+	}
+
+div.foundationtoc {
+	margin-left: -70px ;
+	vertical-align : top ;
+}
+
+div.toc {
+	margin-bottom: 10px ;
+}
+
+div.toc2{
+padding-left: 10px;
+}
+
+div.toc3{
+padding-left: 20px;
+}
+
+td.artifactList_code {
+	padding-right: 5px ;
+	}
+p.structType {
+	font-style: italic ;
+	margin-left: 30px ;
+	}
+table.structType {
+	font-style: italic ;
+	}
+table.structType td {
+	vertical-align: top ;
+	}
+td.structType_name {
+	width: 155px ;
+	text-align: right ;
+	}
+img.icon {
+	border: none ;
+	}
+/*
+body {
+	width: 700px ;
+	}
+*/
+table.artifactList {
+	margin-bottom: 10px ;
+	border: thin solid #c8d999 ;
+	width: 635px ;
+	}
+/*pvb: 20100123: fixed misspelling from 'artifactlist'*/
+table.artifactList caption {
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif ;
+	margin-top: 10px ;
+	font-weight: bold ;
+	text-align: left ;
+	margin-bottom: 3px ;
+	font-size: 95% ;
+	}
+td.artifactList_desc {
+	}
+td.artifactList_code {
+	width: 175px ;
+	vertical-align: top ;
+	text-align: right ;
+	}
+/*pvb: 20100123: added*/
+table.artifactList caption.senderReceiver {
+	font: 80% sans-serif;
+	font-weight: bold ;
+	}
+table.hmd {
+	border: thin solid #c8d999 ;
+	border-color: #c8d999 ;
+	width: 635px ;
+	margin-bottom: 10px ;
+	}
+table.hmd caption {
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif ;
+	margin-top: 10px ;
+	font-weight: bold ;
+	text-align: left ;
+	margin-bottom: 3px ;
+	font-size: 95% ;
+	}
+table.hmd td {
+	vertical-align: top ;
+	}
+td.hmd_code {
+	text-align : right ;
+	}
+td.hmd_links {
+	text-align: right ;
+	width: 80px ;
+	}
+table.interact{
+	border: thin solid #c8d999 ;
+	width: 635px ;
+	margin-bottom: 10px ;
+	}
+td.interact_type {
+/*pvb: 20101022: included width to allow for "unavailable" icon*/
+	width: 170px ;
+	font-weight: bold ;
+/*pvb: 20101022: annoyed me that these weren't top aligned*/
+ 	vertical-align: top ;
+	}
+td.interact_desc {
+	vertical-align: top ;
+	}
+td.interact_code {
+/*pvb: 20101022: included width to allow for "unavailable" icon*/
+	width: 160px ;
+	vertical-align: top ;
+	text-align: right ;
+	vertical-align: top ;
+	}
+table.interact caption {
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif ;
+	margin-top: 10px ;
+	font-weight: bold ;
+	text-align: left ;
+	margin-bottom: 3px ;
+	font-size: 95% ;
+	}
+table.resp {
+	border: thin solid #c8d999 ;
+	width: 635px ;
+	margin-bottom: 10px ;
+	}
+table.resp caption {
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif ;
+	margin-top: 10px ;
+	font-weight: bold ;
+	text-align: left ;
+	margin-bottom: 3px ;
+	font-size: 95% ;
+	}
+table.resp td {
+	vertical-align: top ;
+	}
+table.resp th {
+	text-align: left ;
+	padding-right: 5px ;
+	}
+td.general{
+white-space: nowrap;
+}	
+	
+td.resp_reason {
+	text-align: left ;
+	}
+td.resp_te {
+/*pvb: 20101022: included width to allow for "unavailable" icon*/
+	width: 160px ;
+	text-align: right ;
+	padding-right: 5px ;
+	}
+td.resp_in_code {
+	text-align: right ;
+	}
+tr.toc_row_master ul {
+	list-style-image: url("../graphics/pointer.gif") ;
+	}
+tr.toc_title_row {
+	cursor: pointer ;
+	background : #000000 ;
+	}
+/*pvb: 20100124: make claimShell title row links readable */
+tr.toc_title_row a[href] {
+	color: white ;
+	font-weight: normal ;
+	}
+tr.toc_title_row a[href]:visited {
+	font-style: italic ;
+	}
+tr.toc_title_row a[href]:hover {
+	background: black ;
+	}
+table.artifactList table.artifactList {
+	border: none ;
+	margin-top: -7px ;
+	margin-left: 10px ;
+	margin-bottom: -11px ;
+	}
+tr.toc_title_row td {
+	font-weight: bold ;
+	color: white ;
+	}
+
+/*
+ * we now return you to your regularly scheduled v3m.css
+ */
+div.breadcrumb {
+	color: White;
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+}
+/* toc navigation is based on a black background color */
+.toc_table {
+	background-color : black;
+	border: 1px ;
+	border-color : black;
+}
+
+.sectionrule {
+    color: #990000;
+    	border : 0;
+	/* white-space:nowrap;*/
+	width:100%;
+	padding-left: 0px; padding-right: 0px;
+  	margin-left: 0; margin-right: 0;
+	  border-left-width: 0; border-right-width: 0;
+ 	 width: 100%;
+}
+
+.toc_title_row {
+	cursor: pointer ;
+	background : #000000;
+}
+
+.toc_title_arrow {
+	font-family : sans-serif;
+	color : White;
+}
+
+.toc_title_text {
+	font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+	color : White;
+}
+
+.toc_row_master {
+	background : white;
+}
+
+.toc_indent_flag_gap {
+		width: 10px; 
+	text-align: left;	
+	vertical-align: top;
+}
+
+.toc_item {
+	font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+	color: black;
+	font-size : 9pt;
+}
+
+a.toc_link:visited {
+	font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+	color: #CCCCCC;
+	font-size : 9pt;
+}
+
+a.toc_link {
+	font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+	color: #CCCCCC;
+	font-size : 9pt;
+}
+/* content tables */
+
+.content_table {
+	background-color : white;
+	border : 1px ;
+	border-color : white;
+}
+
+.content_title_row {
+	cursor: pointer;
+/*	background : #5396C3;*/
+}
+
+.content_title_arrow {
+	font-family : Webdings;
+	color : White;
+}
+
+.content_title_text {
+	font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size : 10pt;
+	color : white;
+	font-weight : bold;
+	font-variant : normal;	
+}
+
+.content_bigtitle_text {
+	font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size : 14pt;
+	color : white;
+	font-weight : bold;
+}
+
+.content_row_master {
+	background : white;
+}
+
+/* f2eed6  keep this ...we may use the color for other shading rules */
+
+body.homepage {
+	font-family: verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+	color: black;
+}
+
+body {
+	font-family: verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+	color: black;
+	background: white;
+	background-position: top left;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+}
+
+p.vocDesc {
+	font-family: verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 8pt;
+	color: black;
+}
+
+p.glossaryText {
+	font-family: verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+	color: black;
+}
+
+:link { color: #00C; background: transparent }
+:visited { color: #609; background: transparent }
+:active { color: #C00; background: transparent }
+
+th, td {
+	font-family: verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 10pt;
+	color: black;
+}
+
+table {
+	/*margin-left: 50pt;*/
+	/*margin-bottom: 10pt;*/
+}
+
+
+b.heading {
+	color: maroon;
+}
+
+b.glossaryLabel {
+	color: maroon;
+}
+
+/*The following sectinos were added by Michael Krot, in June 2002*/
+
+/*Header Table is the main table that provides the basic division*/
+table.header{
+	border : 0;
+	/* white-space:nowrap;*/
+	width:100%;
+	padding-left: 0px; padding-right: 0px;
+  	margin-left: 0; margin-right: 0;
+	  border-left-width: 0; border-right-width: 0;
+ 	 width: 100%;
+}
+
+/*Graphic col refers to the  cell that will possibly contain graphic information in the 
+main header table*/
+
+td.graphic_col{
+  width: 17px;
+  vertical-align : top;
+}
+/*Number col refers to the column that typically contains numbered headings*/
+td.number_col{
+	width: 45px;
+	vertical-align : top;
+}
+/*Body col refers the table that contains the bulk of the information in the table*/
+td.body_col{
+	text-align: left;
+		vertical-align : top;
+}
+
+th._left_justified {
+	text-align: left;
+}
+
+
+
+/*End section by Michael Krot*/
+
+
+
+table.homepage {
+	margin-left: 0pt;
+	/*margin-bottom: 0pt;*/
+}
+
+table.rimlists {
+	margin-left: 32pt;
+	/*margin-bottom: 0pt;*/
+}
+
+table.standard {
+	border : thin solid;
+	border-color: #c8d999;
+	border: 0px; 
+	padding:0;
+	padding:0; 
+	width:100%;
+	margin-left: 0pt;
+}
+
+table.deprecationInfo {
+	border-width: 1px;
+	border-style: solid;
+	border-color: black; 
+	padding-left:9pt;
+	padding-right:2pt; 
+	width:100%;
+	margin-left: 0pt;
+}
+
+.graphic {
+	/*margin-left: 50pt;*/
+	border : thin solid;
+	margin-top: 10pt;
+	margin-bottom: 10pt;
+	width: auto;
+	max-width: 85%;
+	height: auto;
+}
+
+blockquote {
+	margin-left: 50pt;
+	margin-bottom: 20pt;
+}
+
+p {
+	font-family: verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 10pt; 
+	padding-bottom: 10px;
+	/*margin-left: 50pt;*/
+}
+
+span.paragraph {
+	font-family: verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 10pt; 
+	margin-left: 50pt;
+}
+
+h1, h2, h3, h4, h5, h6 { text-align: left; font-family : Arial, Helvetica, sans-serif;}
+
+/* background should be transparent, but WebTV has a bug 
+  note: original h1,h2,h3 color was 005a9c
+*/
+h1, h2, h3, h4, h5, h6 {color: maroon; background: white }
+h1 { font: bold 170% Arial, Helvetica, sans-serif ;}
+h2 { font: bold 150% Arial, Helvetica, sans-serif; }
+h3 { font: bold 130% Arial, Helvetica, sans-serif;}
+h4 { font: bold 110% Arial, Helvetica, sans-serif ;}
+h5 { font: normal 110% Arial, Helvetica, sans-serif ;}
+h6 { font: italic 110% Arial, Helvetica, sans-serif; }
+
+.hide { display: none }
+
+/* div.head { margin-bottom: 1em }
+div.head h1 { margin-top: 2em; clear: both }
+div.head table { margin-left: 2em; margin-top:# 2em }
+div.head img { color: white; border: none } /* remove border from top image */
+
+p.copyright {
+	font-size: 7pt;
+	margin-left : 0pt;
+}
+
+p.lastEdit {
+	font-size: 7pt;
+	margin-left : 0pt;
+	font-weight: bold;
+}
+
+@media screen {  /* hide from IE3 */
+/* pvb: added the [href] test so that anchors aren't highlighted, just links */
+	a[href]:hover { background: #ffa } 
+}
+
+/* pre { margin-left: 2em } */
+dt, dd { margin-top: 0; margin-bottom: 0 } /* opera 3.50 */
+dt { font-weight: bold }
+
+pre, code { font-family: monospace
+} /* navigator 4 requires this */
+
+pre.example {
+	background-color: #f2eed6;
+}
+	
+ul {
+/*	margin-left: 70pt;*/
+}
+
+ul.homepage {
+/*	margin-left: 20pt; */
+}
+
+ul.toc {
+/*	margin-left: 70pt;
+	list-style: disc;		/* Mac NS has problem with 'none' 
+	list-style: none; */
+}
+
+ol {
+/*	margin-left: 70pt; */
+}
+
+span.cardinality { font-weight: normal }
+
+li.assocRef {
+	margin-top: 6pt;
+	margin-bottom:6pt ;
+	list-style-type: none ;
+	margin-left: 0pt;
+}
+
+div.listTable { margin-left: 50pt }
+
+td.template {
+	font-size: 80%; 
+	background-color: #B0E0E6; /* find a better color */
+	}
+
+td.example {
+	font-size: 80%; 
+	background-color: #f2eed6;
+	}
+
+td.requirement {
+	background-color: #F5DEB3; /* find a better color */
+        border: 1px solid #191970;
+	}
+
+td.dtd {
+	background-color: #bedce6 ; /* find a better color */
+	}
+
+td.schema { background-color: #c8d999 ; }
+
+td.exhibit {
+	background-color: #66CCFF;
+}
+
+td.xslt { background-color: #c8d999 ; }
+
+/* div.descriptive {
+	padding-left : 68px;
+} */
+
+
+/* v3dt changes */
+caption { font: 80% sans-serif; }
+
+ul.schema {
+	list-style: disc;		/* Mac NS has problem with 'none' */
+	list-style: none;
+	margin: 1em 1em 1em 1em;
+}
+
+ul.schema ul.schema {
+	list-style: disc;		/* Mac NS has problem with 'none' */
+	list-style: none;
+	margin: 0 0 0 1em;
+}
+#foldheader{cursor:pointer;cursor:pointer ; font-weight:normal ;
+list-style-image:url(graphics/fold.gif)}
+#foldinglist{list-style-image:url(graphics/list.gif);margin-top: 0em;margin-bottom: 0em;}
+
+pre {
+	padding: 0px 0px 0px 0px;
+}
+
+/* pvb: from gunther's v3m00.css */
+td.dtdl { background-color: #d9d9d9 ; }
+
+#detailsegment {
+	padding-left: 50px;
+	font-family: verdana;
+	font-size: 12px;
+}
+
+/*pvb: 20100122*/
+/* this makes it look like an unvisited link */
+span.nonExistent {
+	text-decoration: underline ;
+	color: blue ;
+	cursor: pointer ;
+	}
+span.nonExistent:hover {
+	background: #ffa
+	}
+/* display a 'little red circle with line thru it' icon */
+span.nonExistent:after {
+	content: ' ' url("../graphics/nonExistent.png")
+	}
+img.noInteractions {
+	cursor: pointer ;
+	}
+img.unavailable {
+	cursor: pointer ;
+	}

@@ -1,0 +1,475 @@
+<?xml version="1.0" encoding="iso-8859-1"?><!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+      <title>ActMood</title>
+      <link rel="stylesheet" type="text/css" href="../../support/css/V3m.css" /><style type="text/css">
+					td {font-family: Verdana,Arial; text-align: left; vertical-align: top; font-size: 11}
+					th {font-family: Verdana,Arial; FONT-WEIGHT: bold; text-align: left; font-size: 11}
+					</style></head>
+   <body><a href="vocabulary.html#voc-systems">Return to code system index</a><br /><br /><a name="ActMood"></a><table rules="all" border="1px" cellpadding="2" cellspacing="0" class="homepage">
+         <tbody>
+            <tr>
+               <td colspan="4"><font face="Arial" size="3"><strong>ActMood&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong> [2.16.840.1.113883.5.1001]</font><br /><p class="vocDesc"><b>Description:</b></p>
+                  <p class="vocDesc">OpenIssue:  In Ballot 2009May, a strong Negative vote was lodged against several of the concept definitions in the vocabulary
+                     used for Act.moodCode. The vote was found "Persuasive With Mod", with the understanding that M and M would undertake a detailed
+                     review of these concept definitions for a future release of the RIM.
+                  </p>
+               </td>
+            </tr>
+            <tr bgcolor="cornflowerblue">
+               <th>Lvl- Typ</th>
+               <th>Concept&nbsp;Code<br />&nbsp;&nbsp;<i>Head&nbsp;Code-defined&nbsp;Value&nbsp;Set</i></th>
+               <th>Print Name</th>
+               <th>Definition, Properties, Relationships</th>
+            </tr>
+            <tr>
+               <td><a name="_ActMoodCompletionTrack"></a>0-<strong>A</strong></td>
+               <td nowrap="nowrap"><font color="black"></font><strong>_ActMoodCompletionTrack</strong><br /><i><font color="white"></font>
+						&nbsp;<i><a href="vs_ActMood.html#ActMoodCompletionTrack">v:ActMoodCompletionTrack</a></i></i></td>
+               <td>ActMoodCompletionTrack</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">These are moods describing activities as they progress in the business cycle, from defined, through planned and ordered to
+                     completed.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> EVN INT _ActMoodPotential
+                  </p>
+                  <p class="vocDesc"><strong>Concept Properties: </strong>
+							&nbsp;&nbsp;<strong><i>Name:Class:&nbsp;</i></strong>Process 
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="EVN"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>EVN</strong><br /><i><font color="white">.&nbsp;</font>
+						&nbsp;<i><a href="vs_ActMood.html#ActMoodEventOccurrence">v:ActMoodEventOccurrence</a></i></i></td>
+               <td>event (occurrence)</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Definition:</b> An act that actually happens (may be an ongoing act or a documentation of a past act).
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _ActMoodCompletionTrack
+                  </p>
+                  <p class="vocDesc"><strong>Concept Properties: </strong>
+							&nbsp;&nbsp;<strong><i>Name:Class:&nbsp;</i></strong>Event 
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="INT"></a>1-<strong>S</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>INT</strong><br /><i><font color="white">.&nbsp;</font>
+						&nbsp;<i><a href="vs_ActMood.html#ActMoodIntent">v:ActMoodIntent</a></i></i></td>
+               <td>intent</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Definition:</b> An intention or plan for an act. 
+                  </p>
+                  <p class="vocDesc"><b class="vocDesc">&gt;UsageNotes:</b> The final outcome of the intent, the act that is intended to occur, is always an event. However the final outcome may be
+                     reached indirectly via steps through other intents, such as promise, permission request, or an appointment that may lead to
+                     an actual event to occur. Alternatively, the intended act may never occur.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _ActMoodCompletionTrack<br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> PRMS _ActMoodDesire
+                  </p>
+                  <p class="vocDesc"><strong>Concept Properties: </strong>
+							&nbsp;&nbsp;<strong><i>Name:Class:&nbsp;</i></strong>Intent 
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="PRMS"></a>2-<strong>S</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>PRMS</strong><br /><i><font color="white">.&nbsp;.&nbsp;</font>
+						&nbsp;<i><a href="vs_ActMood.html#ActMoodPromise">v:ActMoodPromise</a></i></i></td>
+               <td>promise</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Definition:</b> A commitment to perform an act (may be either solicited or unsolicited). The committer becomes responsible to the other party
+                     for executing the act, and, as a consequence, the other party may rely on the first party to perform or cause to perform the
+                     act.
+                  </p>
+                  <p class="vocDesc"><b class="vocDesc">UsageNotes:</b> Commitments may be retracted or cancelled.  
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> INT<br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> APT
+                  </p>
+                  <p class="vocDesc"><strong>Concept Properties: </strong>
+							&nbsp;&nbsp;<strong><i>Name:Class:&nbsp;</i></strong>Promise 
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="APT"></a>3-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;.&nbsp;</font><strong>APT</strong><br /><i><font color="white">.&nbsp;.&nbsp;.&nbsp;</font>
+						&nbsp;<i><a href="vs_ActMood.html#ActMoodAppointment">v:ActMoodAppointment</a></i></i></td>
+               <td>appointment</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Definition:</b> An act that has been scheduled to be performed at a specific place and time.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> PRMS
+                  </p>
+                  <p class="vocDesc"><strong>Concept Properties: </strong>
+							&nbsp;&nbsp;<strong><i>Name:Class:&nbsp;</i></strong>Appointment 
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="_ActMoodDesire"></a>2-<strong>A</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>_ActMoodDesire</strong><br /><i><font color="white">.&nbsp;.&nbsp;</font>
+						&nbsp;<i><a href="vs_ActMood.html#ActMoodDesire">v:ActMoodDesire</a></i></i></td>
+               <td>desire</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Definition:</b>  A desire to have an act occur.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> INT<br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> PRP _ActMoodActRequest
+                  </p>
+                  <p class="vocDesc"><strong>Concept Properties: </strong>
+							&nbsp;&nbsp;<strong><i>Name:Class:&nbsp;</i></strong>Desire 
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="PRP"></a>3-<strong>S</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;.&nbsp;</font><strong>PRP</strong><br /><i><font color="white">.&nbsp;.&nbsp;.&nbsp;</font>
+						&nbsp;<i><a href="vs_ActMood.html#ActMoodProposal">v:ActMoodProposal</a></i></i></td>
+               <td>proposal</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Definition:</b> A suggestion that an act might be performed. Not an explicit request, and professional responsibility may or may not be present.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _ActMoodDesire<br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> RMD
+                  </p>
+                  <p class="vocDesc"><strong>Concept Properties: </strong>
+							&nbsp;&nbsp;<strong><i>Name:Class:&nbsp;</i></strong>Proposal 
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="RMD"></a>4-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;.&nbsp;.&nbsp;</font><strong>RMD</strong><br /><i><font color="white">.&nbsp;.&nbsp;.&nbsp;.&nbsp;</font>
+						&nbsp;<i><a href="vs_ActMood.html#ActMoodRecommendation">v:ActMoodRecommendation</a></i></i></td>
+               <td>recommendation</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Definition:</b> A suggestion that an act should be performed with an acceptance of some degree of professional responsibility for the resulting
+                     act. Not an explicit request. .
+                  </p>
+                  <p class="vocDesc"><b class="vocDesc">UsageNotes:</b> Where there is no clear definition or applicable concept of "professional responsibilityâ&#8364;?, RMD becomes indistinguishable from PRP. .
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> PRP
+                  </p>
+                  <p class="vocDesc"><strong>Concept Properties: </strong>
+							&nbsp;&nbsp;<strong><i>Name:Class:&nbsp;</i></strong>Recommendation 
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="_ActMoodActRequest"></a>3-<strong>A</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;.&nbsp;</font><strong>_ActMoodActRequest</strong><br /><i><font color="white">.&nbsp;.&nbsp;.&nbsp;</font>
+						&nbsp;<i><a href="vs_ActMood.html#ActMoodActRequest">v:ActMoodActRequest</a></i></i></td>
+               <td>act request</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Definition:</b> A request (or order) for an act that is part of a defined request/fulfillment cycle.
+                  </p>
+                  <p class="vocDesc"><b class="vocDesc">UsageNotes:</b> Use of an HL7 defined request/fulfillment framework is not required to use this mood code.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _ActMoodDesire<br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> ARQ PERMRQ RQO
+                  </p>
+                  <p class="vocDesc"><strong>Concept Properties: </strong>
+							&nbsp;&nbsp;<strong><i>Name:Class:&nbsp;</i></strong>ActRequest 
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="ARQ"></a>4-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;.&nbsp;.&nbsp;</font><strong>ARQ</strong><br /><i><font color="white">.&nbsp;.&nbsp;.&nbsp;.&nbsp;</font>
+						&nbsp;<i><a href="vs_ActMood.html#ActMoodAppointmentRequest">v:ActMoodAppointmentRequest</a></i></i></td>
+               <td>appointment request</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Definition:</b> A request act that is specialized for the appointment scheduling request/fulfillment cycle. An appointment request is fulfilled
+                     only and completely by an appointment (APT), i.e., all that the appointment request intends is to create an appointment <i class="vocDesc">(the actual act may well not happen if that is the professional decision during the appointment)</i>.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _ActMoodActRequest
+                  </p>
+                  <p class="vocDesc"><strong>Concept Properties: </strong>
+							&nbsp;&nbsp;<strong><i>Name:Class:&nbsp;</i></strong>AppointmentRequest 
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="PERMRQ"></a>4-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;.&nbsp;.&nbsp;</font><strong>PERMRQ</strong><br /><i><font color="white">.&nbsp;.&nbsp;.&nbsp;.&nbsp;</font>
+						&nbsp;<i><a href="vs_ActMood.html#ActMoodPermissionRequest">v:ActMoodPermissionRequest</a></i></i></td>
+               <td>permission request</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Definition:</b> A request for a permission to perform the act. Typically a payer (or possibly a supervisor) is being requested to give permission
+                     to perform the act. As opposed to the RQO, the requestee is not asked to perform or cause to perform the act but only to give
+                     the permission.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _ActMoodActRequest
+                  </p>
+                  <p class="vocDesc"><strong>Concept Properties: </strong>
+							&nbsp;&nbsp;<strong><i>Name:Class:&nbsp;</i></strong>PermissionRequest 
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="RQO"></a>4-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;.&nbsp;.&nbsp;</font><strong>RQO</strong><br /><i><font color="white">.&nbsp;.&nbsp;.&nbsp;.&nbsp;</font>
+						&nbsp;<i><a href="vs_ActMood.html#ActMoodRequest">v:ActMoodRequest</a></i></i></td>
+               <td>request</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Definition:</b> A request act that is specialized for an event request/fulfillment cycle. 
+                  </p>
+                  <p class="vocDesc"><b class="vocDesc">UsageNotes:</b> The fulfillment cycle may involve intermediary fulfilling acts in moods such as PRMS, APT, or even another RQO before being
+                     fulfilled by the final event. 
+                  </p>
+                  <p class="vocDesc"><b class="vocDesc">UsageNotes:</b> The concepts of a "request" and an "order" are viewed as different, because there is an implication of a mandate associated
+                     with order.  In practice, however, this distinction has no general functional value in the inter-operation of health care
+                     computing.  "Orders" are commonly refused for a variety of clinical and business reasons, and the notion of a "request" obligates
+                     the recipient (the fulfiller) to respond to the sender (the author).  Indeed, in many regions, including Australia and Europe,
+                     the common term used is "request."
+                  </p>
+                  <p class="vocDesc">Thus, the concept embodies both notions, as there is no useful distinction to be made.  If a mandate is to be associated with
+                     a request, this will be embodied in the "local" business rules applied to the transactions.  Should HL7 desire to provide
+                     a distinction between these in the future, the individual concepts could be added as specializations of this concept.
+                  </p>
+                  <p class="vocDesc">The critical distinction here, is the difference between this concept and an "intent", of which it is a specialization.  An
+                     intent involves decisions by a single party, the author.  A request, however, involves decisions by two parties, the author
+                     and the fulfiller, with an obligation on the part of the fulfiller to respond to the request indicating that the fulfiller
+                     will indeed fulfill the request.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _ActMoodActRequest
+                  </p>
+                  <p class="vocDesc"><strong>Concept Properties: </strong>
+							&nbsp;&nbsp;<strong><i>Name:Class:&nbsp;</i></strong>Request 
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="_ActMoodPotential"></a>1-<strong>A</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>_ActMoodPotential</strong><br /><i><font color="white">.&nbsp;</font>
+						&nbsp;<i><a href="vs_ActMood.html#ActMoodPotential">v:ActMoodPotential</a></i></i></td>
+               <td>potential</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Definition:</b> A possible act.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _ActMoodCompletionTrack<br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> DEF PERM SLOT
+                  </p>
+                  <p class="vocDesc"><strong>Concept Properties: </strong>
+							&nbsp;&nbsp;<strong><i>Name:Class:&nbsp;</i></strong>Potential 
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="DEF"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>DEF</strong><br /><i><font color="white">.&nbsp;.&nbsp;</font>
+						&nbsp;<i><a href="vs_ActMood.html#ActMoodDefinition">v:ActMoodDefinition</a></i></i></td>
+               <td>definition</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Definition:</b> A definition of a kind of act that can occur .
+                  </p>
+                  <p class="vocDesc"><b class="vocDesc">OpenIssue: </b>The semantic constructs embodied in DEF and CRT moods seem indistinguishable, and their uses can readily be determined by
+                     the context in which these are used. Therefore, this OpenIssue has been created to declare that it is likely that ActMood.DEF
+                     will be "retired" in the future in favor of the more general ActMood.CRT.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _ActMoodPotential
+                  </p>
+                  <p class="vocDesc"><strong>Concept Properties: </strong>
+							&nbsp;&nbsp;<strong><i>Name:Class:&nbsp;</i></strong>Definition 
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="PERM"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>PERM</strong><br /><i><font color="white">.&nbsp;.&nbsp;</font>
+						&nbsp;<i><a href="vs_ActMood.html#ActMoodPermission">v:ActMoodPermission</a></i></i></td>
+               <td>permission</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Definition:</b> A kind of act that defines a permission that has been granted.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _ActMoodPotential
+                  </p>
+                  <p class="vocDesc"><strong>Concept Properties: </strong>
+							&nbsp;&nbsp;<strong><i>Name:Class:&nbsp;</i></strong>Permission 
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="SLOT"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>SLOT</strong><br /><i><font color="white">.&nbsp;.&nbsp;</font>
+						&nbsp;<i><a href="vs_ActMood.html#ActMoodResourceSlot">v:ActMoodResourceSlot</a></i></i></td>
+               <td>resource slot</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Definition:</b> A kind of act that may occur during the specified time period.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _ActMoodPotential
+                  </p>
+                  <p class="vocDesc"><strong>Concept Properties: </strong>
+							&nbsp;&nbsp;<strong><i>Name:Class:&nbsp;</i></strong>ResourceSlot 
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="_ActMoodPredicate"></a>0-<strong>A</strong></td>
+               <td nowrap="nowrap"><font color="black"></font><strong>_ActMoodPredicate</strong><br /><i><font color="white"></font>
+						&nbsp;<i><a href="vs_ActMood.html#ActMoodPredicate">v:ActMoodPredicate</a></i></i></td>
+               <td>ActMoodPredicate</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Definition:</b> An act that expresses condition statements for other acts.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> CRT EXPEC OPT
+                  </p>
+                  <p class="vocDesc"><strong>Concept Properties: </strong>
+							&nbsp;&nbsp;<strong><i>Name:Class:&nbsp;</i></strong>Predicate 
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="CRT"></a>1-<strong>S</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>CRT</strong><br /><i><font color="white">.&nbsp;</font>
+						&nbsp;<i><a href="vs_ActMood.html#ActMoodCriterion">v:ActMoodCriterion</a></i></i></td>
+               <td>criterion</td>
+               <td>
+                  <p class="vocDesc"><strong>DEPRECATED </strong>from further use in HL7 designs, effective with Vocabulary release <strong><i>1033-20100712.</i></strong></p>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc"><i class="vocDesc">Deprecation Comment: </i></b>This concept This codes should no longer be used.  Instead, set attribute Act.isCriterionInd to "true" and use the desired
+                     mood for your criterion.
+                  </p>
+                  <p class="vocDesc"><b class="vocDesc">Definition:</b> A condition that must be true for the source act to be considered.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _ActMoodPredicate<br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> EVN.CRT
+                  </p>
+                  <p class="vocDesc"><strong>Concept Properties: </strong>
+							&nbsp;&nbsp;<strong><i>Name:Class:&nbsp;</i></strong>Criterion 
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="EVN.CRT"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>EVN.CRT</strong><br /><i><font color="white">.&nbsp;.&nbsp;</font>
+						&nbsp;<i><a href="vs_ActMood.html#ActMoodEventCriterion">v:ActMoodEventCriterion</a></i></i></td>
+               <td>event criterion</td>
+               <td>
+                  <p class="vocDesc"><strong>DEPRECATED </strong>from further use in HL7 designs, effective with Vocabulary release <strong><i>1037-20100712.</i></strong></p>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc"><i class="vocDesc">Deprecation Comment: </i></b>This concept This codes should no longer be used.  Instead, set attribute Act.isCriterionInd to "true" and use the desired
+                     mood for your criterion.
+                  </p>
+                  <p class="vocDesc"><b class="vocDesc">Definition:</b> A criterion (CRT) that has_match = an event (EVN).
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> CRT
+                  </p>
+                  <p class="vocDesc"><strong>Concept Properties: </strong>
+							&nbsp;&nbsp;<strong><i>Name:Class:&nbsp;</i></strong>EventCriterion 
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="EXPEC"></a>1-<strong>S</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>EXPEC</strong><br /><i><font color="white">.&nbsp;</font>
+						&nbsp;<i><a href="vs_ActMood.html#ActMoodExpectation">v:ActMoodExpectation</a></i></i></td>
+               <td>expectation</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Definition:</b> An act that is considered to have some noteworthy likelihood of occurring in the future (has_match = event).
+                  </p>
+                  <p class="vocDesc"><b class="vocDesc">Examples:</b>Prognosis of a condition, Expected date of discharge from hospital, patient will likely need an emergency decompression of
+                     the intracranial pressure by morning.
+                  </p>
+                  <p class="vocDesc"><b class="vocDesc">UsageNotes:</b>INT (intent) reflects a plan for the future, which is a declaration to do something. This contrasts with expectation, which
+                     is a prediction that something will happen in the future. GOL (goal) reflects a hope rather than a prediction. RSK (risk)
+                     reflects a potential negative event that may or may not be expected to happen.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _ActMoodPredicate<br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> GOL RSK
+                  </p>
+                  <p class="vocDesc"><strong>Concept Properties: </strong>
+							&nbsp;&nbsp;<strong><i>Name:Class:&nbsp;</i></strong>Expectation 
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="GOL"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>GOL</strong><br /><i><font color="white">.&nbsp;.&nbsp;</font>
+						&nbsp;<i><a href="vs_ActMood.html#ActMoodGoal">v:ActMoodGoal</a></i></i></td>
+               <td>Goal</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Definition:</b> An expectation that is considered to be desirable to occur in the future 
+                  </p>
+                  <p class="vocDesc"><b class="vocDesc">Examples:</b>Target weight below 80Kg, Stop smoking, Regain ability to walk, goal is to administer thrombolytics to candidate patients
+                     presenting with acute myocardial infarction.
+                  </p>
+                  <p class="vocDesc"><b class="vocDesc">UsageNotes:</b> INT (intent) reflects a plan for the future, which is a declaration to do something.  This contrasts with goal which doesn't
+                     represent an intention to act, merely a hope for an eventual result.  A goal is distinct from the intended actions to reach
+                     that goal.  "I will reduce the dose of drug x to 20mg" is an intent.  "I hope to be able to get the patient to the point where
+                     I can reduce the dose of drug x to 20mg" is a goal. EXPEC (expectation) reflects a prediction rather than a hope. RSK (risk)
+                     reflects a potential negative event rather than a hope.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> EXPEC
+                  </p>
+                  <p class="vocDesc"><strong>Concept Properties: </strong>
+							&nbsp;&nbsp;<strong><i>Name:Class:&nbsp;</i></strong>Goal 
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="RSK"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>RSK</strong><br /><i><font color="white">.&nbsp;.&nbsp;</font>
+						&nbsp;<i><a href="vs_ActMood.html#ActMoodRisk">v:ActMoodRisk</a></i></i></td>
+               <td>risk</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Definition:</b>An act that may occur in the future and which is regarded as undesirable 
+                  </p>
+                  <p class="vocDesc"><b class="vocDesc">Examples:</b>Increased risk of DVT, at risk for sub-acute bacterial endocarditis.
+                  </p>
+                  <p class="vocDesc"><b class="vocDesc">UsageNotes:</b>Note: An observation in RSK mood expresses the undesirable act, and not the underlying risk factor. A risk factor that is
+                     present (e.g. obesity, smoking, etc) should be expressed in event mood. INT (intent) reflects a plan for the future, which
+                     is a declaration to do something. This contrasts with RSK (risk), which is the potential that something negative will occur
+                     that may or may not ever happen. GOL (goal) reflects a hope to achieve something. EXPEC (expectation) is the prediction of
+                     a positive or negative event. This contrasts with RSK (risk), which is the potential that something negative will occur that
+                     may or may not ever happen, and may not be expected to happen.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> EXPEC
+                  </p>
+                  <p class="vocDesc"><strong>Concept Properties: </strong>
+							&nbsp;&nbsp;<strong><i>Name:Class:&nbsp;</i></strong>Risk 
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="OPT"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>OPT</strong><br /><i><font color="white">.&nbsp;</font>
+						&nbsp;<i><a href="vs_ActMood.html#ActMoodOption">v:ActMoodOption</a></i></i></td>
+               <td>option</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Definition:</b> One of a set of acts that specify an option for the property values that the parent act may have. Typically used in definitions
+                     or orders to describe alternatives. An option can only be used as a group, that is, all assigned values must be used together.
+                     The actual mood of the act is the same as the parent act, and they must be linked by an actrelationship with type = OPTN.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _ActMoodPredicate
+                  </p>
+                  <p class="vocDesc"><strong>Concept Properties: </strong>
+							&nbsp;&nbsp;<strong><i>Name:Class:&nbsp;</i></strong>Option 
+                  </p>
+               </td>
+            </tr>
+         </tbody>
+      </table><br /><a href="vocabulary.html#voc-systems">Return to code system index</a><br /><br /><p class="copyright">Last Published:&nbsp;20190729&nbsp;12:04&nbsp;PM</p>
+      <p class="copyright">HL7 &reg; Version 3 Standard, &copy; 2019  Health Level Seven &reg; International. &nbsp;All Rights Reserved.</p>
+      <p class="copyright">HL7 and Health Level Seven are registered trademarks of Health Level Seven International Reg. U.S. Pat &amp; TM Off.<br />Use of these materials is governed by HL7 International's <a href="http://www.hl7.org/legal/ippolicy.cfm">IP Compliance Policy</a>.
+      </p>
+   </body>
+</html>

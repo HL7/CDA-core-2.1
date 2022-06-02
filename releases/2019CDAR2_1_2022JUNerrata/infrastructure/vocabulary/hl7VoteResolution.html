@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="iso-8859-1"?><!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+      <title>HL7VoteResolution</title>
+      <link rel="stylesheet" type="text/css" href="../../support/css/V3m.css" /><style type="text/css">
+					td {font-family: Verdana,Arial; text-align: left; vertical-align: top; font-size: 11}
+					th {font-family: Verdana,Arial; FONT-WEIGHT: bold; text-align: left; font-size: 11}
+					</style></head>
+   <body><a href="vocabulary.html#voc-systems">Return to code system index</a><br /><br /><a name="hl7VoteResolution"></a><table rules="all" border="1px" cellpadding="2" cellspacing="0" class="homepage">
+         <tbody>
+            <tr>
+               <td colspan="4"><font face="Arial" size="3"><strong>hl7VoteResolution&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong> [2.16.840.1.113883.5.1131]</font><br /><p class="vocDesc"><b>Description:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description: </b>Based on concepts for resolutions from HL7 ballot spreadsheet according to HL7's Governance &amp; Operations Manual (GOM).
+                  </p>
+               </td>
+            </tr>
+            <tr bgcolor="cornflowerblue">
+               <th>Lvl- Typ</th>
+               <th>Concept&nbsp;Code<br />&nbsp;&nbsp;<i>Head&nbsp;Code-defined&nbsp;Value&nbsp;Set</i></th>
+               <th>Print Name</th>
+               <th>Definition, Properties, Relationships</th>
+            </tr>
+            <tr>
+               <td><a name="affirmativeResolution"></a>0-<strong>A</strong></td>
+               <td nowrap="nowrap"><font color="black"></font><strong>affirmativeResolution</strong></td>
+               <td>affirmative resolution</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description: </b>An abstract concept grouping resolutions that can be applied to affirmative ballot comments.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> affdef affi affr
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="affdef"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>affdef</strong></td>
+               <td>affirmative-deferred</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description: </b>The recommended change has been deferred to consideration for a future release.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> affirmativeResolution
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="affi"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>affi</strong></td>
+               <td>affirmative-incorporated</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description: </b>The recommended change has been incorporated or identified issue has been answered.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> affirmativeResolution
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="affr"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>affr</strong></td>
+               <td>affirmative-rejected</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description: </b>The recommended change has been refused and is not expected to be incorporated.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> affirmativeResolution
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="negativeResolution"></a>0-<strong>A</strong></td>
+               <td nowrap="nowrap"><font color="black"></font><strong>negativeResolution</strong></td>
+               <td>negative resolution</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description: </b>An abstract concept grouping resolutions that can be applied to negative ballot comments.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> nonsubp nonsubv notrelp notrelv prevcons retract unresolved withdraw
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="nonsubp"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>nonsubp</strong></td>
+               <td>non-substantive proposed</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description: </b>Responsible group has recommended that the negative vote be considered non-substantive.  (Issue raised does not provide sufficiently
+                     convincing reason to make changes to the item under ballot, or otherwise impede its adoption.)
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> negativeResolution
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="nonsubv"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>nonsubv</strong></td>
+               <td>non-substantive voted</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description: </b>Ballot group has voted and declared the negative vote non-substantive.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> negativeResolution
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="notrelp"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>notrelp</strong></td>
+               <td>not related proposed</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description: </b>Responsible group has recommended that the negative vote be considered not-related.  (Issue raised is not related to the current
+                     scope of the item under ballot, or does not prevent the item under ballot for being used for its defined intent.  Recommended
+                     changes may be considered as part of future versions.)  (Perhaps after further reading or explanation).
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> negativeResolution
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="notrelv"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>notrelv</strong></td>
+               <td>not related voted</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description: </b>Ballot group has voted and declared the negative vote non-related.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> negativeResolution
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="prevcons"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>prevcons</strong></td>
+               <td>previously considered</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description: </b>Committee identifies that the same issue has been raised as part of a previous ballot on the same element version and was
+                     found by the ballot group to be non-substantive or not related.)
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> negativeResolution
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="retract"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>retract</strong></td>
+               <td>retracted</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description: </b>Voter has formally withdrawn their vote or comment as having been in error.  (Perhaps after further reading or explanation).
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> negativeResolution
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="unresolved"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>unresolved</strong></td>
+               <td>unresolved</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description: </b>Vote has not yet gone through resolution.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> negativeResolution
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="withdraw"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>withdraw</strong></td>
+               <td>withdrawn</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description: </b>Voter has formally withdrawn their vote or comment on the basis of agreed changes or proposed future changes.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> negativeResolution
+                  </p>
+               </td>
+            </tr>
+         </tbody>
+      </table><br /><a href="vocabulary.html#voc-systems">Return to code system index</a><br /><br /><p class="copyright">Last Published:&nbsp;20190729&nbsp;12:04&nbsp;PM</p>
+      <p class="copyright">HL7 &reg; Version 3 Standard, &copy; 2019  Health Level Seven &reg; International. &nbsp;All Rights Reserved.</p>
+      <p class="copyright">HL7 and Health Level Seven are registered trademarks of Health Level Seven International Reg. U.S. Pat &amp; TM Off.<br />Use of these materials is governed by HL7 International's <a href="http://www.hl7.org/legal/ippolicy.cfm">IP Compliance Policy</a>.
+      </p>
+   </body>
+</html>

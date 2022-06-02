@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="iso-8859-1"?><!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+      <title>ActPriority</title>
+      <link rel="stylesheet" type="text/css" href="../../support/css/V3m.css" /><style type="text/css">
+					td {font-family: Verdana,Arial; text-align: left; vertical-align: top; font-size: 11}
+					th {font-family: Verdana,Arial; FONT-WEIGHT: bold; text-align: left; font-size: 11}
+					</style></head>
+   <body><a href="vocabulary.html#voc-systems">Return to code system index</a><br /><br /><a name="ActPriority"></a><table rules="all" border="1px" cellpadding="2" cellspacing="0" class="homepage">
+         <tbody>
+            <tr>
+               <td colspan="4"><font face="Arial" size="3"><strong>ActPriority&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong> [2.16.840.1.113883.5.7]</font><br /><p class="vocDesc"><b>Description:</b></p>
+                  <p class="vocDesc">A set of codes (e.g., for routine, emergency), specifying the urgency under which the Act happened, can happen, is happening,
+                     is intended to happen, or is requested/demanded to happen. 
+                  </p>
+               </td>
+            </tr>
+            <tr bgcolor="cornflowerblue">
+               <th>Lvl- Typ</th>
+               <th>Concept&nbsp;Code<br />&nbsp;&nbsp;<i>Head&nbsp;Code-defined&nbsp;Value&nbsp;Set</i></th>
+               <th>Print Name</th>
+               <th>Definition, Properties, Relationships</th>
+            </tr>
+            <tr>
+               <td><a name="A"></a>0-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black"></font><strong>A</strong></td>
+               <td>ASAP</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">As soon as possible, next highest priority after stat.</p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="CR"></a>0-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black"></font><strong>CR</strong></td>
+               <td>callback results</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Filler should contact the placer as soon as results are available, even for preliminary results.  (Was "C" in HL7 verion 2.3's
+                     reporting priority.)
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="CS"></a>0-<strong>S</strong></td>
+               <td nowrap="nowrap"><font color="black"></font><strong>CS</strong><br /><i><font color="white"></font>
+						&nbsp;<i><a href="vs_ActPriority.html#ActPriorityCallback">v:ActPriorityCallback</a></i></i></td>
+               <td>callback for scheduling</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Filler should contact the placer (or target) to schedule the service.  (Was "C" in HL7 version 2.3's TQ-priority component.)</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> CSP CSR
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="CSP"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>CSP</strong></td>
+               <td>callback placer for scheduling</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Filler should contact the placer to schedule the service.  (Was "C" in HL7 version 2.3's TQ-priority component.)</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> CS
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="CSR"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>CSR</strong></td>
+               <td>contact recipient for scheduling</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Filler should contact the service recipient (target) to schedule the service.  (Was "C" in HL7 version 2.3's TQ-priority component.)</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> CS
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="EL"></a>0-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black"></font><strong>EL</strong></td>
+               <td>elective</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Beneficial to the patient but not essential for survival.</p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="EM"></a>0-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black"></font><strong>EM</strong></td>
+               <td>emergency</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">An unforeseen combination of circumstances or the resulting state that calls for immediate action.</p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="P"></a>0-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black"></font><strong>P</strong></td>
+               <td>preop</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Used to indicate that a service is to be performed prior to a scheduled surgery.  When ordering a service and using the pre-op
+                     priority, a check is done to see the amount of time that must be allowed for performance of the service.  When the order is
+                     placed, a message can be generated indicating the time needed for the service so that it is not ordered in conflict with a
+                     scheduled operation.
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="PRN"></a>0-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black"></font><strong>PRN</strong></td>
+               <td>as needed</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">An "as needed" order should be accompanied by a description of what constitutes a need. This description is represented by
+                     an observation service predicate as a precondition.
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="R"></a>0-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black"></font><strong>R</strong></td>
+               <td>routine</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Routine service, do at usual work hours.</p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="RR"></a>0-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black"></font><strong>RR</strong></td>
+               <td>rush reporting</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">A report should be prepared and sent as quickly as possible.</p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="S"></a>0-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black"></font><strong>S</strong></td>
+               <td>stat</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">With highest priority (e.g., emergency).</p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="T"></a>0-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black"></font><strong>T</strong></td>
+               <td>timing critical</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">It is critical to come as close as possible to the requested time (e.g., for a through antimicrobial level).</p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="UD"></a>0-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black"></font><strong>UD</strong></td>
+               <td>use as directed</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Drug is to be used as directed by the prescriber.</p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="UR"></a>0-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black"></font><strong>UR</strong></td>
+               <td>urgent</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Calls for prompt action.</p>
+               </td>
+            </tr>
+         </tbody>
+      </table><br /><a href="vocabulary.html#voc-systems">Return to code system index</a><br /><br /><p class="copyright">Last Published:&nbsp;20190729&nbsp;12:04&nbsp;PM</p>
+      <p class="copyright">HL7 &reg; Version 3 Standard, &copy; 2019  Health Level Seven &reg; International. &nbsp;All Rights Reserved.</p>
+      <p class="copyright">HL7 and Health Level Seven are registered trademarks of Health Level Seven International Reg. U.S. Pat &amp; TM Off.<br />Use of these materials is governed by HL7 International's <a href="http://www.hl7.org/legal/ippolicy.cfm">IP Compliance Policy</a>.
+      </p>
+   </body>
+</html>

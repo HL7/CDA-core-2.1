@@ -1,0 +1,200 @@
+<!-- edited with XMLSPY v5 rel. 3 U (http://www.xmlspy.com) by George W Beeler (Beeler Consulting LLC) -->
+<!-- edited with XML Spy v4.3 U (http://www.xmlspy.com) by George W Beeler (Beeler Consulting LLC) -->
+<!--
+	add local elements to various classes
+	defined in the main DTD
+  -->
+<!ENTITY % local.ref.class "| classRef | assocRef|invAssocRef | attRef | dtRef | stateRef | sbjRef">
+<!ENTITY % local.p.class "|sbjArea|cls|attr|assoc|invAssocRef|stateEngine|state|transition">
+<!ENTITY % local.emph.class "| ital">
+<!ENTITY % local.header.mdl ", legalese">
+<!ENTITY % local.version.att "rimDTDversionNum CDATA #FIXED '1'">
+<!--
+	include the main DTD
+  -->
+<!ENTITY % v3m SYSTEM 'v3m.dtd'>
+%v3m;
+<!-- The most commonly used reference from v3m.dtd is the definition of
+	%ref-req.att  For reader's reference, its definition follows
+	 ref attribute:
+        Points to the element where more information can be found,
+        using the IDREF mechanism.  %ref-req.att; is for required ref
+        attributes: 
+
+	<!ENTITY % ref-req.att " ref IDREF  #REQUIRED">
+-->
+<!--
+	declare new elements/attributes here
+	to be useful, these new elements have to
+	appear in the local classes above
+  -->
+<!-- %AttAtt provides the constraints that are unique to attributes
+	in the RIM or R-MIM -->
+<!ENTITY % AttAtt "Cardinality CDATA #REQUIRED
+	DomainSpec CDATA #IMPLIED
+	CodingStrength CDATA #IMPLIED">
+<!-- %ConstAtt provides the constraints that apply equally to
+	classes, attributes and associations in the RMIM -->
+<!ENTITY % ConstAtt "Mandatory (M) #IMPLIED
+	Note CDATA #IMPLIED
+	Default CDATA #IMPLIED
+	DefaultUpdateMode CDATA #IMPLIED
+	UpdateModeSet CDATA #IMPLIED
+	Conformance (R | NP) #IMPLIED">
+<!-- Legalese provides for copyright and related information -->
+<!ELEMENT legalese EMPTY>
+<!ATTLIST legalese
+	copyRightOwner CDATA #IMPLIED
+	copyRightDate CDATA #IMPLIED
+	copyRightNotation CDATA #IMPLIED
+	renderer CDATA #IMPLIED
+	renderNotation CDATA #IMPLIED
+	contactEmail CDATA #IMPLIED
+	contactName CDATA #IMPLIED
+	contactNote CDATA #IMPLIED
+>
+<!-- RIM is the root element. 
+	The 'header' which is part of the RIM element
+	is defined in v3m.dtd and includes items like
+	title, date, author list, version and legalese.
+	
+	The 'body' element which is part of the RIM
+	element is also defined in v3m.dtd and includes
+	repeating 'div1' elements.  These elements
+	include a header and content drawn from
+	%local.p.class (above)
+	The actual export uses four 'div1' sections 
+	they can be distinguished by the div1 'id' 
+	attribute.  Their content and id (in parens) is:
+	1) (open-rimdiv) Introductory text
+	2) (sbj-rimdiv) Set of sbjArea
+	3) (cls-rimdiv) set of cls
+	4) (assoc-rimdiv) set of assoc followed 
+		by set of invAssocRef
+
+	If I were re-doing this, I would use a 
+	different method.  I would leave the
+	local.p.class empty and instead create
+	a local.body.mdl that included three
+	mandatory elements: sbjdiv, clsdiv
+	and assoc div.  with the content of 
+	these three defined as 2 to 4 above.
+	This would require a minor change to
+	the XSLT, but that would be easier
+	and leave a more tightly modeled
+	RIM/RMIM model
+-->
+<!ATTLIST RIM
+	id ID #REQUIRED
+	modelID CDATA #REQUIRED
+	modelType (RIM | RMIM | MIM) #REQUIRED
+	developOrgn CDATA #IMPLIED
+	developCommittee CDATA #IMPLIED
+	DTDversionNum CDATA #FIXED "1"
+>
+<!ELEMENT RIM (header, body, back?)>
+<!ATTLIST sbjArea
+	id ID #REQUIRED
+	name CDATA #REQUIRED
+	parentArea IDREF #IMPLIED
+	%ballot.att; 
+>
+<!ELEMENT sbjArea (p*, sbjArea*, classRef*)>
+<!ATTLIST cls
+	id ID #REQUIRED
+	abst (True | False) #IMPLIED
+	name CDATA #REQUIRED
+	shortName CDATA #IMPLIED
+	superType IDREF #IMPLIED
+	classCode CDATA #IMPLIED
+	classCodeRef NMTOKEN #IMPLIED
+	primeSA IDREF #IMPLIED
+	%ballot.att; 
+>
+<!ELEMENT cls (rimParent?, p*, Annotation*, subTypes?, attr*, assocs?, stateEngine?)>
+<!ATTLIST Annotation
+	noteType (default | constraint | description | procRule | versionRef | designComment) #REQUIRED
+	noteNumber CDATA #REQUIRED
+>
+<!ELEMENT Annotation (p*)>
+<!ELEMENT rimParent EMPTY>
+<!ATTLIST rimParent
+	rimFQN CDATA #REQUIRED
+	rimRef CDATA #REQUIRED
+>
+<!ELEMENT classRef EMPTY>
+<!ATTLIST classRef
+	%ref-req.att; 
+>
+<!ELEMENT ital (%p.pcd.mix;)*>
+<!ELEMENT subTypes (classRef)*>
+<!ELEMENT assocs (assocRef)*>
+<!--"type" in the attribute list of attr, should really be an external IDREF to a data type specification.-->
+<!ATTLIST attr
+	id ID #REQUIRED
+	name CDATA #REQUIRED
+	type CDATA #IMPLIED
+	shortName CDATA #IMPLIED
+	parentClass IDREF #REQUIRED
+	%AttAtt; 
+	%ConstAtt; 
+>
+<!ELEMENT attr (rimParent?, dtRef?, p*, v23Ref*, Annotation*)>
+<!ELEMENT v23Ref (#PCDATA)>
+<!ATTLIST assoc
+	id ID #REQUIRED
+	srceClass IDREF #REQUIRED
+	fwdName CDATA #REQUIRED
+	srceCard CDATA #REQUIRED
+	fwdDisplay CDATA #REQUIRED
+	destClass IDREF #REQUIRED
+	invName CDATA #REQUIRED
+	destCard CDATA #REQUIRED
+	invDisplay CDATA #REQUIRED
+	%ConstAtt; 
+>
+<!ELEMENT assoc (rimParent?, p*, Annotation*)>
+<!ELEMENT assocRef EMPTY>
+<!ATTLIST assocRef
+	%ref-req.att; 
+>
+<!ELEMENT invAssocRef EMPTY>
+<!ATTLIST invAssocRef
+	id ID #REQUIRED
+	fwdID IDREF #REQUIRED
+>
+<!ATTLIST stateEngine
+	parentClass IDREF #REQUIRED
+>
+<!ELEMENT stateEngine (state+, transition+)>
+<!ATTLIST state
+	id ID #REQUIRED
+	name CDATA #REQUIRED
+	parentClass IDREF #REQUIRED
+	parentState IDREF #IMPLIED
+>
+<!ELEMENT state (p*)>
+<!ATTLIST transition
+	id ID #REQUIRED
+	name CDATA #REQUIRED
+	startState IDREF #REQUIRED
+	endState IDREF #REQUIRED
+>
+<!ELEMENT transition (p*)>
+<!ELEMENT attRef EMPTY>
+<!ATTLIST attRef
+	%ref-req.att; 
+>
+<!-- following should be EMPTY change for debuggin only 20030223 -->
+<!ELEMENT dtRef (#PCDATA)>
+<!ATTLIST dtRef
+	ref NMTOKEN #REQUIRED
+>
+<!ELEMENT stateRef EMPTY>
+<!ATTLIST stateRef
+	%ref-req.att; 
+>
+<!ELEMENT sbjRef EMPTY>
+<!ATTLIST sbjRef
+	%ref-req.att; 
+>

@@ -1,0 +1,5 @@
+<!ENTITY coded '((@type="CD" or @type="CE" or @type="CV" or @type="CS") and @domain)'>
+<!ENTITY mandatory '(@mandatory="true")'>
+<!ENTITY structural '(@name="class_cd" or @name="mood_cd" or @name="type_cd" or @name="determiner_cd")'>
+<!ENTITY fixed '(@fixed)'>
+

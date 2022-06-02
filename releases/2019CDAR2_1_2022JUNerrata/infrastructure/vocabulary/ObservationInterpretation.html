@@ -1,0 +1,972 @@
+<?xml version="1.0" encoding="iso-8859-1"?><!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+      <title>ObservationInterpretation</title>
+      <link rel="stylesheet" type="text/css" href="../../support/css/V3m.css" /><style type="text/css">
+					td {font-family: Verdana,Arial; text-align: left; vertical-align: top; font-size: 11}
+					th {font-family: Verdana,Arial; FONT-WEIGHT: bold; text-align: left; font-size: 11}
+					</style></head>
+   <body><a href="vocabulary.html#voc-systems">Return to code system index</a><br /><br /><a name="ObservationInterpretation"></a><table rules="all" border="1px" cellpadding="2" cellspacing="0" class="homepage">
+         <tbody>
+            <tr>
+               <td colspan="4"><font face="Arial" size="3"><strong>ObservationInterpretation&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong> [2.16.840.1.113883.5.83]</font><br /><p class="vocDesc"><b>Description:</b></p>
+                  <p class="vocDesc">One or more codes specifying a rough qualitative interpretation of the observation, such as "normal", "abnormal", "below normal",
+                     "change up", "resistant", "susceptible", etc.
+                  </p>
+                  <p class="vocDesc"><i class="vocDesc">OpenIssue: </i>Description copied from Concept Domain of same name.  Must be verified.  Note also that this might be identical to the V2
+                     code system of interpretation codes (formerly Abnormal Flags in older versions).
+                  </p>
+               </td>
+            </tr>
+            <tr bgcolor="cornflowerblue">
+               <th>Lvl- Typ</th>
+               <th>Concept&nbsp;Code<br />&nbsp;&nbsp;<i>Head&nbsp;Code-defined&nbsp;Value&nbsp;Set</i></th>
+               <th>Print Name</th>
+               <th>Definition, Properties, Relationships</th>
+            </tr>
+            <tr>
+               <td><a name="EX"></a>0-<strong>S</strong></td>
+               <td nowrap="nowrap"><font color="black"></font><strong>EX</strong><br /><i><font color="white"></font>
+						&nbsp;<i><a href="vs_ObservationInterpretation.html#ObservationInterpretationOustsideThreshold">v:ObservationInterpretationOustsideThreshold</a></i></i></td>
+               <td>outside threshold</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">The observation/test result is interpreted as being outside the inclusion range for a particular protocol within which the
+                     result is being reported.
+                     
+                  </p><b class="vocDesc">Example: </b><p class="vocDesc"><i class="vocDesc">Open Issue: </i>EX, HX, LX: These three concepts do not seem to meet a clear need in the vocabulary, and their use in observation interpretation
+                     appears likely to be covered by other existing concepts (e.g., A, H, L).  The only apparent significant difference is their
+                     reference to use in protocols for exclusion of study subjects.
+                     These concepts/codes were proposed by RCRIM for use in the CTLaboratory message.  They were submitted and approved in the
+                     November 2005 Harmonization cycle in proposal "030103C_VOCAB_RCRIM_l_quade_RCRIM Obs Interp_20051028154455".  However, this
+                     proposal was not fully implemented in the vocabulary.  The proposal recommended creation of the x_ClinicalResearchExclusion
+                     domain in ObservationInterpretation with a value set including those three concepts/codes, but there is no subdomain of that
+                     name or equivalent with a binding to either of the value sets that contain these concepts/codes.
+                     Members of the OO WG have recently attempted to contact members of RCRIM regarding these concepts, both by email and at the
+                     recent WGM in Atlanta, without response.  It is felt by OO that the best course of action to take at this time is to add this
+                     comprehensive Open Issue rather than deprecate these three concepts at this time, until further discussion is held.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> HX LX
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="HX"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>HX</strong></td>
+               <td>above high threshold</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">The observation/test result is interpreted as being outside the inclusion range for a particular protocol within which the
+                     result is being reported.
+                     
+                  </p><b class="vocDesc">Example: </b><p class="vocDesc"><i class="vocDesc">Open Issue: </i>EX, HX, LX: These three concepts do not seem to meet a clear need in the vocabulary, and their use in observation interpretation
+                     appears likely to be covered by other existing concepts (e.g., A, H, L).  The only apparent significant difference is their
+                     reference to use in protocols for exclusion of study subjects.  These concepts/codes were proposed by RCRIM for use in the
+                     CTLaboratory message.  They were submitted and approved in the November 2005 Harmonization cycle in proposal "030103C_VOCAB_RCRIM_l_quade_RCRIM
+                     Obs Interp_20051028154455". However, this proposal was not fully implemented in the vocabulary.  The proposal recommended
+                     creation of the x_ClinicalResearchExclusion domain in ObservationInterpretation with a value set including those three concepts/codes,
+                     but there is no subdomain of that name or equivalent with a binding to either of the value sets that contain these concepts/codes.
+                     Members of the OO WG have recently attempted to contact members of RCRIM regarding these concepts, both by email and at the
+                     recent WGM in Atlanta, without response.  It is felt by OO that the best course of action to take at this time is to add this
+                     comprehensive Open Issue rather than deprecate these three concepts at this time, until further discussion is held.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> EX
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="LX"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>LX</strong></td>
+               <td>below low threshold</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">The numeric observation/test result is interpreted as being below the low threshold value for a particular protocol within
+                     which the result is being reported.
+                  </p><b class="vocDesc">Example: </b><p class="vocDesc"><i class="vocDesc">Open Issue: </i>EX, HX, LX: These three concepts do not seem to meet a clear need in the vocabulary, and their use in observation interpretation
+                     appears likely to be covered by other existing concepts (e.g., A, H, L).  The only apparent significant difference is their
+                     reference to use in protocols for exclusion of study subjects.  These concepts/codes were proposed by RCRIM for use in the
+                     CTLaboratory message.  They were submitted and approved in the November 2005 Harmonization cycle in proposal "030103C_VOCAB_RCRIM_l_quade_RCRIM
+                     Obs Interp_20051028154455".  However, this proposal was not fully implemented in the vocabulary.  The proposal recommended
+                     creation of the x_ClinicalResearchExclusion domain in ObservationInterpretation with a value set including those three concepts/codes,
+                     but there is no subdomain of that name or equivalent with a binding to either of the value sets that contain these concepts/codes.
+                     Members of the OO WG have recently attempted to contact members of RCRIM regarding these concepts, both by email and at the
+                     recent WGM in Atlanta, without response.  It is felt by OO that the best course of action to take at this time is to add this
+                     comprehensive Open Issue rather than deprecate these three concepts at this time, until further discussion is held.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> EX
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="HM"></a>0-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black"></font><strong>HM</strong></td>
+               <td>Hold for Medical Review</td>
+               <td>
+                  <p class="vocDesc"><strong>DEPRECATED </strong>from further use in HL7 designs, effective with Vocabulary release <strong><i>1372-20161110.</i></strong></p>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Hold for Medical Review</p>
+                  <p class="vocDesc"><i class="vocDesc">Usage Note: </i>This code is not intended for use in V3 artifacts.  It is included in the code system to maintain alignment with the V2 Table
+                     0078 "Interpretation Codes."
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="OBX"></a>0-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black"></font><strong>OBX</strong></td>
+               <td>Interpretation qualifiers in separate OBX segments</td>
+               <td>
+                  <p class="vocDesc"><strong>DEPRECATED </strong>from further use in HL7 designs, effective with Vocabulary release <strong><i>1372-20161110.</i></strong></p>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Interpretation qualifiers in separate OBX segments</p>
+                  <p class="vocDesc"><i class="vocDesc">Usage Note: </i>This code is not intended for use in V3 artifacts.  It is included in the code system to maintain alignment with the V2 Table
+                     0078 "Interpretation Codes."
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="ObservationInterpretationDetection"></a>0-<strong>A</strong></td>
+               <td nowrap="nowrap"><font color="black"></font><strong>ObservationInterpretationDetection</strong><br /><i><font color="white"></font>
+						&nbsp;<i><a href="vs_ObservationInterpretation.html#ObservationInterpretationDetected">v:ObservationInterpretationDetected</a></i></i></td>
+               <td>ObservationInterpretationDetection</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Interpretations of the presence or absence of a component / analyte or organism in a test or of a sign in a clinical observation.
+                     In keeping with laboratory data processing practice, these concepts provide a categorical interpretation of the "meaning"
+                     of the quantitative value for the same observation.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> IND NEG POS
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="IND"></a>1-<strong>S</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>IND</strong></td>
+               <td>Indeterminate</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">The specified component / analyte, organism or clinical sign could neither be declared positive / negative nor detected /
+                     not detected by the performed test or procedure.
+                  </p>
+                  <p class="vocDesc"><i class="vocDesc">Usage Note: </i>For example, if the specimen was degraded, poorly processed, or was missing the required anatomic structures, then "indeterminate"
+                     (i.e. "cannot be determined") is the appropriate response, not "equivocal".
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> ObservationInterpretationDetection<br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> E
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="E"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>E</strong></td>
+               <td>Equivocal</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">The test or procedure was successfully performed, but the results are borderline and can neither be declared positive / negative
+                     nor detected / not detected according to the current established criteria.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> IND
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="NEG"></a>1-<strong>S</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>NEG</strong></td>
+               <td>Negative</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">An absence finding of the specified component / analyte, organism or clinical sign based on the established threshold of the
+                     performed test or procedure.
+                  </p>
+                  <p class="vocDesc">[Note: Negative does not necessarily imply the complete absence of the specified item.] </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> ObservationInterpretationDetection<br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> ND
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="ND"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>ND</strong></td>
+               <td>Not detected</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">The presence of the specified component / analyte, organism or clinical sign could not be determined within the limit of detection
+                     of the performed test or procedure.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> NEG
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="POS"></a>1-<strong>S</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>POS</strong></td>
+               <td>Positive</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">A presence finding of the specified component / analyte, organism or clinical sign based on the established threshold of the
+                     performed test or procedure.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> ObservationInterpretationDetection<br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> DET
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="DET"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>DET</strong></td>
+               <td>Detected</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">The measurement of the specified component / analyte, organism or clinical sign above the limit of detection of the performed
+                     test or procedure.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> POS
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="ObservationInterpretationExpectation"></a>0-<strong>A</strong></td>
+               <td nowrap="nowrap"><font color="black"></font><strong>ObservationInterpretationExpectation</strong><br /><i><font color="white"></font>
+						&nbsp;<i><a href="vs_ObservationInterpretation.html#ObservationInterpretationExpectation">v:ObservationInterpretationExpectation</a></i></i></td>
+               <td>ObservationInterpretationExpectation</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Interpretation of the observed result taking into account additional information (contraindicators) about the patient's situation.
+                     Concepts in this category are mutually exclusive, i.e., at most one is allowed. 
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> EXP UNE
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="EXP"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>EXP</strong></td>
+               <td>Expected</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">This result has been evaluated in light of known contraindicators.  Once those contraindicators have been taken into account
+                     the result is determined to be "Expected"  (e.g., presence of drugs in a patient that is taking prescription medication for
+                     pain management).
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> ObservationInterpretationExpectation
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="UNE"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>UNE</strong></td>
+               <td>Unexpected</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">This result has been evaluated in light of known contraindicators.  Once those contraindicators have been taken into account
+                     the result is determined to be "Unexpected" (e.g., presence of non-prescribed drugs in a patient that is taking prescription
+                     medication for pain management).
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> ObservationInterpretationExpectation
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="ReactivityObservationInterpretation"></a>0-<strong>A</strong></td>
+               <td nowrap="nowrap"><font color="black"></font><strong>ReactivityObservationInterpretation</strong><br /><i><font color="white"></font>
+						&nbsp;<i><a href="vs_ObservationInterpretation.html#ReactivityObservationInterpretation">v:ReactivityObservationInterpretation</a></i></i></td>
+               <td>ReactivityObservationInterpretation</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Interpretations of the presence and level of reactivity of the specified component / analyte with the reagent in the performed
+                     laboratory test.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> NR RR
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="NR"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>NR</strong></td>
+               <td>Non-reactive</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">An absence finding used to indicate that the specified component / analyte did not react measurably with the reagent.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> ReactivityObservationInterpretation
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="RR"></a>1-<strong>S</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>RR</strong></td>
+               <td>Reactive</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">A presence finding used to indicate that the specified component / analyte reacted with the reagent above the reliably measurable
+                     limit of the performed test.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> ReactivityObservationInterpretation<br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> WR
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="WR"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>WR</strong></td>
+               <td>Weakly reactive</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">A weighted presence finding used to indicate that the specified component / analyte reacted with the reagent, but below the
+                     reliably measurable limit of the performed test.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> RR
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="_GeneticObservationInterpretation"></a>0-<strong>A</strong></td>
+               <td nowrap="nowrap"><font color="black"></font><strong>_GeneticObservationInterpretation</strong><br /><i><font color="white"></font>
+						&nbsp;<i><a href="vs_ObservationInterpretation.html#GeneticObservationInterpretation">v:GeneticObservationInterpretation</a></i></i></td>
+               <td>GeneticObservationInterpretation</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Codes that specify interpretation of genetic analysis, such as "positive", "negative", "carrier", "responsive", etc.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> CAR Carrier
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="CAR"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>CAR</strong></td>
+               <td>Carrier</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">The patient is considered as carrier based on the testing results. A carrier is an individual who carries an altered form
+                     of a gene which can lead to having a child or offspring in future generations with a genetic disorder.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _GeneticObservationInterpretation
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="Carrier"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>Carrier</strong></td>
+               <td>Carrier</td>
+               <td>
+                  <p class="vocDesc"><strong>DEPRECATED </strong>from further use in HL7 designs, effective with Vocabulary release <strong><i>1227-20130728.</i></strong></p>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">The patient is considered as carrier based on the testing results. A carrier is an individual who carries an altered form
+                     of a gene which can lead to having a child or offspring in future generations with a genetic disorder.
+                  </p>
+                  <p class="vocDesc"><b class="vocDesc"><i class="vocDesc">Deprecation Comment: </i></b>This code is currently the same string as the print name for this concept and is inconsistent with the conventions being used
+                     for the other codes in the coding system, as it is a full word with initial capitalization, rather than an all upper case
+                     mnemonic.  The recommendation from OO is to deprecate the code "Carrier" and to add "CAR" as the new active code representation
+                     for this concept.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _GeneticObservationInterpretation
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="_ObservationInterpretationChange"></a>0-<strong>A</strong></td>
+               <td nowrap="nowrap"><font color="black"></font><strong>_ObservationInterpretationChange</strong><br /><i><font color="white"></font>
+						&nbsp;<i><a href="vs_ObservationInterpretation.html#ObservationInterpretationChange">v:ObservationInterpretationChange</a></i></i></td>
+               <td>ObservationInterpretationChange</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Interpretations of change of quantity and/or severity. At most one of B or W and one of U or D allowed.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> B D U W
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="B"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>B</strong></td>
+               <td>Better</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">The current result or observation value has improved compared to the previous result or observation value (the change is significant
+                     as defined in the respective test procedure).
+                  </p>
+                  <p class="vocDesc">[Note: This can be applied to quantitative or qualitative observations.]</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _ObservationInterpretationChange
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="D"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>D</strong></td>
+               <td>Significant change down</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">The current result has decreased from the previous result for a quantitative observation (the change is significant as defined
+                     in the respective test procedure).
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _ObservationInterpretationChange
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="U"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>U</strong></td>
+               <td>Significant change up</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">The current result has increased from the previous result for a quantitative observation (the change is significant as defined
+                     in the respective test procedure).
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _ObservationInterpretationChange
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="W"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>W</strong></td>
+               <td>Worse</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">The current result or observation value has degraded compared to the previous result or observation value (the change is significant
+                     as defined in the respective test procedure).
+                  </p>
+                  <p class="vocDesc">[Note: This can be applied to quantitative or qualitative observations.]</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _ObservationInterpretationChange
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="_ObservationInterpretationExceptions"></a>0-<strong>A</strong></td>
+               <td nowrap="nowrap"><font color="black"></font><strong>_ObservationInterpretationExceptions</strong><br /><i><font color="white"></font>
+						&nbsp;<i><a href="vs_ObservationInterpretation.html#ObservationInterpretationExceptions">v:ObservationInterpretationExceptions</a></i></i></td>
+               <td>ObservationInterpretationExceptions</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Technical exceptions resulting in the inability to provide an interpretation. At most one allowed. Does not imply normality
+                     or severity.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> &lt; &gt; AC IE QCF TOX
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="&lt;"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>&lt;</strong></td>
+               <td>Off scale low</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">The result is below the minimum detection limit (the test procedure or equipment is the limiting factor).</p>
+                  <p class="vocDesc">Synonyms: Below analytical limit, low off scale.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _ObservationInterpretationExceptions
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="&gt;"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>&gt;</strong></td>
+               <td>Off scale high</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">The result is above the maximum quantifiable limit (the test procedure or equipment is the limiting factor).</p>
+                  <p class="vocDesc">Synonyms: Above analytical limit, high off scale.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _ObservationInterpretationExceptions
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="AC"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>AC</strong></td>
+               <td>Anti-complementary substances present</td>
+               <td>
+                  <p class="vocDesc"><strong>DEPRECATED </strong>from further use in HL7 designs, effective with Vocabulary release <strong><i>1372-20161110.</i></strong></p>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">A valid result cannot be obtained for the specified component / analyte due to the presence of anti-complementary substances
+                     in the sample.
+                  </p>
+                  <p class="vocDesc"><b class="vocDesc"><i class="vocDesc">Deprecation Comment: </i></b>This code is being deprecated to match the status in V2 Table 0078 "Interpretation Codes.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _ObservationInterpretationExceptions
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="IE"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>IE</strong></td>
+               <td>Insufficient evidence</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">There is insufficient evidence that the species in question is a good target for therapy with the drug.  A categorical interpretation
+                     is not possible.
+                  </p>
+                  <p class="vocDesc">[Note: A MIC with "IE" and/or a comment may be reported (without an accompanying S, I or R-categorization).]</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _ObservationInterpretationExceptions _ObservationInterpretationSusceptibility
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="QCF"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>QCF</strong></td>
+               <td>Quality control failure</td>
+               <td>
+                  <p class="vocDesc"><strong>DEPRECATED </strong>from further use in HL7 designs, effective with Vocabulary release <strong><i>1372-20161110.</i></strong></p>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">A result cannot be considered valid for the specified component / analyte or organism due to failure in the quality control
+                     testing component.
+                  </p>
+                  <p class="vocDesc"><b class="vocDesc"><i class="vocDesc">Deprecation Comment: </i></b>This code is being deprecated to match the status in V2 Table 0078 "Interpretation Codes.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _ObservationInterpretationExceptions
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="TOX"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>TOX</strong></td>
+               <td>Cytotoxic substance present</td>
+               <td>
+                  <p class="vocDesc"><strong>DEPRECATED </strong>from further use in HL7 designs, effective with Vocabulary release <strong><i>1372-20161110.</i></strong></p>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">A valid result cannot be obtained for the specified organism or cell line due to the presence of cytotoxic substances in the
+                     sample or culture.
+                  </p>
+                  <p class="vocDesc"><b class="vocDesc"><i class="vocDesc">Deprecation Comment: </i></b>This code is being deprecated to match the status in V2 Table 0078 "Interpretation Codes.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _ObservationInterpretationExceptions
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="_ObservationInterpretationNormality"></a>0-<strong>A</strong></td>
+               <td nowrap="nowrap"><font color="black"></font><strong>_ObservationInterpretationNormality</strong><br /><i><font color="white"></font>
+						&nbsp;<i><a href="vs_ObservationInterpretation.html#ObservationInterpretationNormality">v:ObservationInterpretationNormality</a></i></i></td>
+               <td>ObservationInterpretationNormality</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Interpretation of normality or degree of abnormality (including critical or "alert" level). Concepts in this category are
+                     mutually exclusive, i.e., at most one is allowed.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> A N
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="A"></a>1-<strong>S</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>A</strong><br /><i><font color="white">.&nbsp;</font>
+						&nbsp;<i><a href="vs_ObservationInterpretation.html#ObservationInterpretationNormalityAbnormal">v:ObservationInterpretationNormalityAbnormal</a></i></i></td>
+               <td>Abnormal</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">The result or observation value is outside the reference range or expected norm (as defined for the respective test procedure).</p>
+                  <p class="vocDesc">[Note: Typically applies to non-numeric results.]</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _ObservationInterpretationNormality<br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> AA H L
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="AA"></a>2-<strong>S</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>AA</strong><br /><i><font color="white">.&nbsp;.&nbsp;</font>
+						&nbsp;<i><a href="vs_ObservationInterpretation.html#ObservationInterpretationNormalityCriticallyAbnormal">v:ObservationInterpretationNormalityCriticallyAbnormal</a></i></i></td>
+               <td>Critical abnormal</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">The result or observation value is outside a reference range or expected norm at a level at which immediate action should
+                     be considered for patient safety (as defined for the respective test procedure).
+                  </p>
+                  <p class="vocDesc">[Note: Typically applies to non-numeric results.  Analogous to critical/panic limits for numeric results.]</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> A<br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> HH LL
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="HH"></a>3-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;.&nbsp;</font><strong>HH</strong></td>
+               <td>Critical high</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">The result for a quantitative observation is above a reference level at which immediate action should be considered for patient
+                     safety (as defined for the respective test procedure).
+                  </p>
+                  <p class="vocDesc">Synonym: Above upper panic limits.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> AA H&gt; HU
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="LL"></a>3-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;.&nbsp;</font><strong>LL</strong></td>
+               <td>Critical low</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">The result for a quantitative observation is below a reference level at which immediate action should be considered for patient
+                     safety (as defined for the respective test procedure).
+                  </p>
+                  <p class="vocDesc">Synonym: Below lower panic limits.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> AA L&lt; LU
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="H"></a>2-<strong>S</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>H</strong><br /><i><font color="white">.&nbsp;.&nbsp;</font>
+						&nbsp;<i><a href="vs_ObservationInterpretation.html#ObservationInterpretationNormalityHigh">v:ObservationInterpretationNormalityHigh</a></i></i></td>
+               <td>High</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">The result for a quantitative observation is above the upper limit of the reference range (as defined for the respective test
+                     procedure).
+                  </p>
+                  <p class="vocDesc">Synonym: Above high normal</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> A<br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> H&gt; HU
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="H&gt;"></a>3-<strong>S</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;.&nbsp;</font><strong>H&gt;</strong></td>
+               <td>Significantly high</td>
+               <td>
+                  <p class="vocDesc"><strong>DEPRECATED </strong>from further use in HL7 designs, effective with Vocabulary release <strong><i>1326-20150323.</i></strong></p>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">[Note: This level is situated between 'H' and 'HH'.]</p>
+                  <p class="vocDesc"><i class="vocDesc">Deprecation Comment: </i>The code 'H&gt;' is being deprecated in order to align with the use of the code 'HU' for "Very high" in V2 Table 0078 "Interpretation
+                     Codes".
+                  </p>
+                  <p class="vocDesc">[Note: The use of code 'H&gt;' is non-preferred, as this code is deprecated and on track to be retired; use code 'HU' instead.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> H<br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> HH
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td>4-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;.&nbsp;.&nbsp;</font><strong>HH</strong></td>
+               <td>Critical high</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">The result for a quantitative observation is above a reference level at which immediate action should be considered for patient
+                     safety (as defined for the respective test procedure).
+                  </p>
+                  <p class="vocDesc">Synonym: Above upper panic limits.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> AA H&gt; HU
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="HU"></a>3-<strong>S</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;.&nbsp;</font><strong>HU</strong></td>
+               <td>Significantly high</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">A test result that is significantly higher than the reference (normal) or therapeutic interval, but has not reached the critically
+                     high value and might need special attention, as defined by the laboratory or the clinician.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> H<br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> HH
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td>4-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;.&nbsp;.&nbsp;</font><strong>HH</strong></td>
+               <td>Critical high</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">The result for a quantitative observation is above a reference level at which immediate action should be considered for patient
+                     safety (as defined for the respective test procedure).
+                  </p>
+                  <p class="vocDesc">Synonym: Above upper panic limits.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> AA H&gt; HU
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="L"></a>2-<strong>S</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>L</strong><br /><i><font color="white">.&nbsp;.&nbsp;</font>
+						&nbsp;<i><a href="vs_ObservationInterpretation.html#ObservationInterpretationNormalityLow">v:ObservationInterpretationNormalityLow</a></i></i></td>
+               <td>Low</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">The result for a quantitative observation is below the lower limit of the reference range (as defined for the respective test
+                     procedure).
+                  </p>
+                  <p class="vocDesc">Synonym: Below low normal</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> A<br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> L&lt; LU
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="L&lt;"></a>3-<strong>S</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;.&nbsp;</font><strong>L&lt;</strong></td>
+               <td>Significantly low</td>
+               <td>
+                  <p class="vocDesc"><strong>DEPRECATED </strong>from further use in HL7 designs, effective with Vocabulary release <strong><i>1326-20150323.</i></strong></p>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">[Note: This level is situated between 'L' and 'LL'.]</p>
+                  <p class="vocDesc"><i class="vocDesc">Deprecation Comment: </i>The code 'L&lt;' is being deprecated in order to align with the use of the code 'LU' for "Very low" in V2 Table 0078 "Interpretation
+                     Codes".
+                  </p>
+                  <p class="vocDesc">[Note: The use of code 'L&lt;' is non-preferred, as this code is deprecated and on track to be retired; use code 'LU' instead.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> L<br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> LL
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td>4-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;.&nbsp;.&nbsp;</font><strong>LL</strong></td>
+               <td>Critical low</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">The result for a quantitative observation is below a reference level at which immediate action should be considered for patient
+                     safety (as defined for the respective test procedure).
+                  </p>
+                  <p class="vocDesc">Synonym: Below lower panic limits.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> AA L&lt; LU
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="LU"></a>3-<strong>S</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;.&nbsp;</font><strong>LU</strong></td>
+               <td>Significantly low</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">A test result that is significantly lower than the reference (normal) or therapeutic interval, but has not reached the critically
+                     low value and might need special attention, as defined by the laboratory or the clinician.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> L<br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> LL
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td>4-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;.&nbsp;.&nbsp;</font><strong>LL</strong></td>
+               <td>Critical low</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">The result for a quantitative observation is below a reference level at which immediate action should be considered for patient
+                     safety (as defined for the respective test procedure).
+                  </p>
+                  <p class="vocDesc">Synonym: Below lower panic limits.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> AA L&lt; LU
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="N"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>N</strong></td>
+               <td>Normal</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">The result or observation value is within the reference range or expected norm (as defined for the respective test procedure).</p>
+                  <p class="vocDesc">[Note: Applies to numeric or non-numeric results.]</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _ObservationInterpretationNormality
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="_ObservationInterpretationSusceptibility"></a>0-<strong>A</strong></td>
+               <td nowrap="nowrap"><font color="black"></font><strong>_ObservationInterpretationSusceptibility</strong><br /><i><font color="white"></font>
+						&nbsp;<i><a href="vs_ObservationInterpretation.html#ObservationInterpretationSusceptibility">v:ObservationInterpretationSusceptibility</a></i></i></td>
+               <td>ObservationInterpretationSusceptibility</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Interpretations of anti-microbial susceptibility testing results (microbiology). At most one allowed.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> I IE MS NS R S VS
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="I"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>I</strong></td>
+               <td>Intermediate</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Bacterial strain inhibited in vitro by a concentration of an antimicrobial agent that is associated with uncertain therapeutic
+                     effect. Reference: CLSI (http://www.clsi.org/Content/NavigationMenu/Resources/HarmonizedTerminologyDatabase/Harmonized_Terminolo.htm)
+                     Projects: ISO 20776-1, ISO 20776-2
+                  </p>
+                  <p class="vocDesc">[Note 1: Bacterial strains are categorized as intermediate by applying the appropriate breakpoints in a defined phenotypic
+                     test system.]
+                  </p>
+                  <p class="vocDesc">[Note 2: This class of susceptibility implies that an infection due to the isolate can be appropriately treated in body sites
+                     where the drugs are physiologically concentrated or when a high dosage of drug can be used.]
+                  </p>
+                  <p class="vocDesc">[Note 3: This class also indicates a "buffer zone," to prevent small, uncontrolled, technical factors from causing major discrepancies
+                     in interpretations.]
+                  </p>
+                  <p class="vocDesc">[Note 4: These breakpoints can be altered due to changes in circumstances (e.g., changes in commonly used drug dosages, emergence
+                     of new resistance mechanisms).]
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _ObservationInterpretationSusceptibility
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>IE</strong></td>
+               <td>Insufficient evidence</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">There is insufficient evidence that the species in question is a good target for therapy with the drug.  A categorical interpretation
+                     is not possible.
+                  </p>
+                  <p class="vocDesc">[Note: A MIC with "IE" and/or a comment may be reported (without an accompanying S, I or R-categorization).]</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _ObservationInterpretationExceptions _ObservationInterpretationSusceptibility
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="MS"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>MS</strong></td>
+               <td>moderately susceptible</td>
+               <td>
+                  <p class="vocDesc"><strong>DEPRECATED </strong>from further use in HL7 designs, effective with Vocabulary release <strong><i>1227-20130728.</i></strong></p>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">The patient is considered as carrier based on the testing results. A carrier is an individual who carries an altered form
+                     of a gene which can lead to having a child or offspring in future generations with a genetic disorder.
+                  </p>
+                  <p class="vocDesc"><b class="vocDesc"><i class="vocDesc">Deprecation Comment: </i></b>This antimicrobial susceptibility test interpretation concept is recommended by OO to be deprecated as it is no longer recommended
+                     for use in susceptibility testing by CLSI (reference CLSI document M100-S22; Vol. 32 No.3; CLSI Performance Standards for
+                     Antimicrobial Susceptibility Testing; Twenty-Second Informational Supplement. Jan 2012).  
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _ObservationInterpretationSusceptibility
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="NS"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>NS</strong></td>
+               <td>Non-susceptible</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">A category used for isolates for which only a susceptible interpretive criterion has been designated because of the absence
+                     or rare occurrence of resistant strains. Isolates that have MICs above or zone diameters below the value indicated for the
+                     susceptible breakpoint should be reported as non-susceptible.
+                  </p>
+                  <p class="vocDesc">NOTE 1: An isolate that is interpreted as non-susceptible does not necessarily mean that the isolate has a resistance mechanism.
+                     It is possible that isolates with MICs above the susceptible breakpoint that lack resistance mechanisms may be encountered
+                     within the wild-type distribution subsequent to the time the susceptible-only breakpoint is set. 
+                  </p>
+                  <p class="vocDesc">NOTE 2: For strains yielding results in the "nonsusceptible" category, organism identification and antimicrobial susceptibility
+                     test results should be confirmed.
+                  </p>
+                  <p class="vocDesc">Synonym: decreased susceptibility.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _ObservationInterpretationSusceptibility
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="R"></a>1-<strong>S</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>R</strong></td>
+               <td>Resistant</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Bacterial strain inhibited in vitro by a concentration of an antimicrobial agent that is associated with a high likelihood
+                     of therapeutic failure.
+                     Reference: CLSI (http://www.clsi.org/Content/NavigationMenu/Resources/HarmonizedTerminologyDatabase/Harmonized_Terminolo.htm)
+                     
+                     Projects: ISO 20776-1, ISO 20776-2
+                  </p>
+                  <p class="vocDesc">[Note 1: Bacterial strains are categorized as resistant by applying the appropriate breakpoints in a defined phenotypic test
+                     system.]
+                  </p>
+                  <p class="vocDesc">[Note 2: This breakpoint can be altered due to changes in circumstances (e.g., changes in commonly used drug dosages, emergence
+                     of new resistance mechanisms).]
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _ObservationInterpretationSusceptibility<br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> SYN-R
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="SYN-R"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>SYN-R</strong></td>
+               <td>Synergy - resistant</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">A category for isolates where the bacteria (e.g. enterococci) are not susceptible in vitro to a combination therapy (e.g.,
+                     high-level aminoglycoside and cell wall active agent).  This is predictive that this combination therapy will not be effective.
+                     
+                  </p>
+                  <p class="vocDesc"><i class="vocDesc">Usage Note: </i>Since the use of penicillin or ampicillin alone often results in treatment failure of serious enterococcal or other bacterial
+                     infections, combination therapy is usually indicated to enhance bactericidal activity. The synergy between a cell wall active
+                     agent (such as penicillin, ampicillin, or vancomycin) and an aminoglycoside (such as gentamicin, kanamycin or streptomycin)
+                     is best predicted by screening for high-level bacterial resistance to the aminoglycoside.
+                  </p>
+                  <p class="vocDesc"><i class="vocDesc">Open Issue: </i>The print name of the code is very general and the description is very specific to a pair of classes of agents, which may
+                     lead to confusion of these concepts in the future should other synergies be found.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> R
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="S"></a>1-<strong>S</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>S</strong></td>
+               <td>Susceptible</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Bacterial strain inhibited by in vitro concentration of an antimicrobial agent that is associated with a high likelihood of
+                     therapeutic success.
+                     Reference: CLSI (http://www.clsi.org/Content/NavigationMenu/Resources/HarmonizedTerminologyDatabase/Harmonized_Terminolo.htm)
+                     Synonym (earlier term): Sensitive Projects: ISO 20776-1, ISO 20776-2
+                  </p>
+                  <p class="vocDesc">[Note 1: Bacterial strains are categorized as susceptible by applying the appropriate breakpoints in a defined phenotypic
+                     system.]
+                  </p>
+                  <p class="vocDesc">[Note 2: This breakpoint can be altered due to changes in circumstances (e.g., changes in commonly used drug dosages, emergence
+                     of new resistance mechanisms).]
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _ObservationInterpretationSusceptibility<br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> SDD SYN-S
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="SDD"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>SDD</strong></td>
+               <td>Susceptible-dose dependent</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">A category that includes isolates with antimicrobial agent minimum inhibitory concentrations (MICs) that approach usually
+                     attainable blood and tissue levels and for which response rates may be lower than for susceptible isolates.
+                  </p>
+                  <p class="vocDesc">Reference: CLSI document M44-A2 2009 "Method for antifungal disk diffusion susceptibility testing of yeasts; approved guideline
+                     - second edition" - page 2.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> S
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="SYN-S"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>SYN-S</strong></td>
+               <td>Synergy - susceptible</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">A category for isolates where the bacteria (e.g. enterococci) are susceptible in vitro to a combination therapy (e.g., high-level
+                     aminoglycoside and cell wall active agent).  This is predictive that this combination therapy will be effective. 
+                  </p>
+                  <p class="vocDesc"><i class="vocDesc">Usage Note: </i>Since the use of penicillin or ampicillin alone often results in treatment failure of serious enterococcal or other bacterial
+                     infections, combination therapy is usually indicated to enhance bactericidal activity. The synergy between a cell wall active
+                     agent (such as penicillin, ampicillin, or vancomycin) and an aminoglycoside (such as gentamicin, kanamycin or streptomycin)
+                     is best predicted by screening for high-level bacterial resistance to the aminoglycoside.
+                  </p>
+                  <p class="vocDesc"><i class="vocDesc">Open Issue: </i>The print name of the code is very general and the description is very specific to a pair of classes of agents, which may
+                     lead to confusion of these concepts in the future should other synergies be found.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> S
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="VS"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>VS</strong></td>
+               <td>very susceptible</td>
+               <td>
+                  <p class="vocDesc"><strong>DEPRECATED </strong>from further use in HL7 designs, effective with Vocabulary release <strong><i>1227-20130728.</i></strong></p>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">The patient is considered as carrier based on the testing results. A carrier is an individual who carries an altered form
+                     of a gene which can lead to having a child or offspring in future generations with a genetic disorder.
+                  </p>
+                  <p class="vocDesc"><b class="vocDesc"><i class="vocDesc">Deprecation Comment: </i></b>This antimicrobial susceptibility test interpretation concept is recommended by OO to be deprecated as it is no longer recommended
+                     for use in susceptibility testing by CLSI (reference CLSI document M100-S22; Vol. 32 No.3; CLSI Performance Standards for
+                     Antimicrobial Susceptibility Testing; Twenty-Second Informational Supplement. Jan 2012).  
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _ObservationInterpretationSusceptibility
+                  </p>
+               </td>
+            </tr>
+         </tbody>
+      </table><br /><a href="vocabulary.html#voc-systems">Return to code system index</a><br /><br /><p class="copyright">Last Published:&nbsp;20190729&nbsp;12:04&nbsp;PM</p>
+      <p class="copyright">HL7 &reg; Version 3 Standard, &copy; 2019  Health Level Seven &reg; International. &nbsp;All Rights Reserved.</p>
+      <p class="copyright">HL7 and Health Level Seven are registered trademarks of Health Level Seven International Reg. U.S. Pat &amp; TM Off.<br />Use of these materials is governed by HL7 International's <a href="http://www.hl7.org/legal/ippolicy.cfm">IP Compliance Policy</a>.
+      </p>
+   </body>
+</html>

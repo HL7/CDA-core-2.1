@@ -45,3 +45,7 @@ The CDA Stylesheet is located [here](https://github.com/HL7/cda-core-xsl). It is
 ## FHIR Logical Models for CDA
 
 **The FHIR Logical Model for CDA R2.1 has not been created, yet.**
+
+## Releases Folder
+
+The `releases` folder contains snapshots of Publication Package releases. 

@@ -1,0 +1,1029 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+      <link rel="stylesheet" type="text/css" href="../../support/css/v3m.css" title="v3m" />
+      <link rel="alternate stylesheet" type="text/css"
+            href="../../support/css/v3mviewedits.css"
+            title="v3mviewedits" />
+      <script src="../../support/js/tree.js" type="text/javascript"></script>
+      <script src="../../support/js/setTopFrameText.js" type="text/javascript"></script>
+      <script src="../../support/js/swapcss.js" type="text/javascript"></script>
+      <script type="text/javascript">
+				if (find('heading')) {
+					setHeadingTextFromFileName(document.location.href, "") ;
+				}
+				</script>
+      <title>XML Implementable Technology Specification for V3 Structures Release 2</title>
+   </head>
+   <body>
+      <div class="section">
+         <h1>XML Implementable Technology Specification for V3 Structures Release 2</h1>
+         <table border="1" cellpadding="3" cellspacing="0">
+            <tbody>
+               <tr></tr>
+            </tbody>
+         </table>
+         <table style="border-width: 0pt;" cellpadding="6" width="100%">
+            <tbody>
+               <tr>
+                  <td align="left" valign="top">Responsible Group</td>
+                  <td align="left" valign="top">Implementable Technology Specifications Work Group<br />HL7
+                  </td>
+               </tr>
+               <tr>
+                  <td align="left" valign="top">ITS Co-Chair &amp; Editor</td>
+                  <td align="left" valign="top">Paul Knapp<br /><a href="mailto:pknapp@pknapp.com">pknapp@pknapp.com</a><br />Knapp Consulting Inc.
+                  </td>
+               </tr>
+               <tr>
+                  <td align="left" valign="top">ITS Co Chair</td>
+                  <td align="left" valign="top">Dale Nelson<br /><a href="mailto:dale.nelson@lantanagroup.com">dale.nelson@lantanagroup.com</a><br />Lantana Consulting Group
+                  </td>
+               </tr>
+               <tr>
+                  <td align="left" valign="top">ITS Co Chair</td>
+                  <td align="left" valign="top">Andy Stechishin<br /><a href="mailto:andy.stechishin@gmail.com">andy.stechishin@gmail.com</a><br />CANA Software &amp; Services Ltd.
+                  </td>
+               </tr>
+               <tr>
+                  <td align="left" valign="top">Editor</td>
+                  <td align="left" valign="top">Lloyd McKenzie<br /><a href="mailto:lloyd@lmckenzie.com">lloyd@lmckenzie.com</a><br />Gordon Point Informatics
+                  </td>
+               </tr>
+            </tbody>
+         </table>
+         <p class="copyright">HTML Generated:&nbsp;2017-05-31T12:34:48</p>
+         <p class="copyright">HL7® Version 3 Standard, &copy;   Health Level Seven® International &nbsp;All Rights Reserved.</p>
+         <p class="copyright">HL7 and Health Level Seven are registered trademarks of Health Level Seven International. Reg. U.S. Pat &amp; TM Off.<br />Use of these materials is governed by HL7 International's <a href="http://www.hl7.org/legal/ippolicy.cfm" target="_blank">IP Compliance Policy</a>.
+         </p>
+         <hr title="Separator for header" />
+         <div class="toc">
+            <table>
+               <tbody>
+                  <tr></tr>
+               </tbody>
+            </table><br /></div>
+         <h2><a name="contents">Table of Contents</a></h2><a href="#preface">Preface</a><br /><span>&nbsp;&nbsp;&nbsp;&nbsp;i&nbsp;<a href="#ballotnote">Notice to Balloters</a><br /></span><span>&nbsp;&nbsp;&nbsp;&nbsp;ii&nbsp;<a href="#notestoreaders">Notes to Readers</a><br /></span><span>&nbsp;&nbsp;&nbsp;&nbsp;iii&nbsp;<a href="#acknowledgements">Acknowledgements</a><br /></span><span>&nbsp;&nbsp;&nbsp;&nbsp;iv&nbsp;<a href="#prerequisites">Prerequisites</a><br /></span><span>&nbsp;&nbsp;&nbsp;&nbsp;v&nbsp;<a href="#assumptions">Assumptions</a><br /></span><span>&nbsp;&nbsp;&nbsp;&nbsp;vi&nbsp;<a href="#objective">Document Objective</a><br /></span><span>1&nbsp;<a href="#Overview">Overview</a><br /><span>&nbsp;&nbsp;&nbsp;&nbsp;1.1&nbsp;<a href="#scope">Introduction and Scope</a><br /><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1.1.1&nbsp;<a href="#changesfor20">Changes from version 1.1</a><br /></span></span></span><span>2&nbsp;<a href="#mappingToXMLInstance">Mapping to the XML Instance</a><br /><span>&nbsp;&nbsp;&nbsp;&nbsp;2.1&nbsp;<a href="#overview">Overview</a><br /></span><span>&nbsp;&nbsp;&nbsp;&nbsp;2.2&nbsp;<a href="#xmlStructures">XML structures derived from an HMD</a><br /></span><span>&nbsp;&nbsp;&nbsp;&nbsp;2.3&nbsp;<a href="#useOfNamespaces">Use of XML Namespaces</a><br /></span><span>&nbsp;&nbsp;&nbsp;&nbsp;2.4&nbsp;<a href="#determination">Determination of the XML representation </a><br /><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2.4.1&nbsp;<a href="#cardinality">Cardinality</a><br /></span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2.4.2&nbsp;<a href="#updateMode">Update Mode</a><br /></span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2.4.3&nbsp;<a href="#messageElementsClasses">Message Elements That Are HL7 Classes</a><br /><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2.4.3.1&nbsp;<a href="#directContent">Associations with direct content</a><br /></span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2.4.3.2&nbsp;<a href="#choices">Choices</a><br /></span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2.4.3.3&nbsp;<a href="#cmets">CMETs</a><br /></span></span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2.4.4&nbsp;<a href="#messageElementsAttributes">Message Elements That Are HL7 Attributes</a><br /></span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2.4.5&nbsp;<a href="#interactions">Interactions</a><br /></span></span><span>&nbsp;&nbsp;&nbsp;&nbsp;2.5&nbsp;<a href="#informalExtensions">Informal Extensions</a><br /></span><span>&nbsp;&nbsp;&nbsp;&nbsp;2.6&nbsp;<a href="#compatibility">Backwards and Forwards compatibility</a><br /><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2.6.1&nbsp;<a href="#minorversionchanges">Minor version changes</a><br /><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2.6.1.1&nbsp;<a href="#changecard">Changes in cardinality</a><br /></span></span><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2.6.2&nbsp;<a href="#backforextmechexamp">Examples</a><br /></span></span><span>&nbsp;&nbsp;&nbsp;&nbsp;2.7&nbsp;<a href="#schemaProcessors">The Use of Schema Processors</a><br /></span></span><span>3&nbsp;<a href="#references">References</a><br /></span><span>4&nbsp;<a href="#appendixA">Appendix A</a><br /><span>&nbsp;&nbsp;&nbsp;&nbsp;4.1&nbsp;<a href="#exampleInstance">Example Instance for an Interaction</a><br /></span></span><a href="#endnotes">Endnotes</a><br /><hr />
+         <div class="body">
+            <div class="subSection">
+               <div class="header">
+                  <h3><a name="preface">Preface</a></h3>
+               </div>
+            </div>
+            <div class="subSection">
+               <div class="header"><span class="icon"></span><span class="number">i&nbsp;</span><span class="title"><a name="ballotnote">Notice to Balloters</a></span></div>
+               <div class="body">
+                  <p>
+                     		No substantive changes have been made to the specification since it was last balloted at HL7 in May 2010 however, where
+                     appropriate,
+                     		ballot reconciliation suggestions have been applied to the final document. This specification is being re-balloted due to
+                     the large time gap 
+                     		between the last public review and now. Balloters are not being asked to provide detailed ballot comments, but rather to
+                     provide an "Up/Down" 
+                     		ballot vote on this specification for the HL7 context. Any comments provided may receive future consideration.
+                     	  
+                  </p>
+               </div>
+            </div>
+            <div class="subSection">
+               <div class="header"><span class="icon"></span><span class="number">ii&nbsp;</span><span class="title"><a name="notestoreaders">Notes to Readers</a></span></div>
+               <div class="body">
+                  <p>This release builds on release 1.1 and makes the necessary modifications to provide support for the ISO 21090 datatypes ITS.
+                     Its scope is limited to only those changes needed in the structures ITS to accommodate the new datatype specification. All
+                     other parts of this document remain unchanged from the version 1.1 of this specification. 
+                  </p>
+               </div>
+            </div>
+            <div class="subSection">
+               <div class="header"><span class="icon"></span><span class="number">iii&nbsp;</span><span class="title"><a name="acknowledgements">Acknowledgements</a></span></div>
+               <div class="body">
+                  <p>The XML ITS R1 standard was the result of over five years of intense work through e-mail, telephone conferences and meeting
+                     discussions. Wes Rishel (Gartner Group) was the principle author of previous drafts of DTDs for HMD-level elements and Version
+                     3 Datatypes, Paul V. Biron (Kaiser Permanente), Skirmantas Kligys (Oracle), Joey Coyle (Intermountain Healthcare), Dale Nelson
+                     (Squaretrends, LLC), Charlie McCay (Ramsey Systems Ltd) and Matthew Stephens (Ramsey Systems Ltd) continued this work, taking
+                     into account the use of W3C schema for XML processing. Important ideas have been contributed by Gunther Schadow, Bob Dolin
+                     (Kaiser Permanente), Vassil Peytchev (Epic), Mark Tucker (Regenstrief Institute), and George W. Beeler (Beeler consulting).
+                     Kai U. Heitmann (HL7 Germany) was the principle author of that document, and it was subsequently edited by Dale Nelson and
+                     Charlie McCay and Matthew Stephens.
+                  </p>
+               </div>
+            </div>
+            <div class="subSection">
+               <div class="header"><span class="icon"></span><span class="number">iv&nbsp;</span><span class="title"><a name="prerequisites">Prerequisites</a></span></div>
+               <div class="body">
+                  <p>
+                     It is a prerequisite that readers have a general knowledge of XML technology. Readers unfamiliar with XML may gain the requisite
+                     knowledge from the following standards: 
+                     				
+                  </p>
+                  <ul>
+                     <li><a href="http://www.w3.org/TR/2004/REC-xml11-20040204/">XML 1.1</a></li>
+                     <li><a href="http://www.w3.org/XML/Schema">XML Schema</a></li>
+                     <li><a href="http://www.w3.org/TR/REC-xml-names/ ">XML namespace</a></li>
+                  </ul>
+               </div>
+            </div>
+            <div class="subSection">
+               <div class="header"><span class="icon"></span><span class="number">v&nbsp;</span><span class="title"><a name="assumptions">Assumptions</a></span></div>
+               <div class="body">
+                  <p>
+                     It is assumed that the reader is familiar with HL7 version 3 terminology - especially those related to message definition
+                     (HL7 information model terminology, Message Instances, Message Types, Interactions, CMETs, wrappers, etc.).  For more information
+                     on these, refer to the V3 Guide.
+                     			
+                  </p>
+               </div>
+            </div>
+            <div class="subSection">
+               <div class="header"><span class="icon"></span><span class="number">vi&nbsp;</span><span class="title"><a name="objective">Document Objective</a></span></div>
+               <div class="body">
+                  <p>
+                     				The objective of this document is to present an Implementable Technology Specification (ITS) for the encoding rules for
+                     HL7 Version 3 messages based on the <a href="http://www.w3.org/TR/2004/REC-xml11-20040204/">Extensible Markup Language XML</a>.
+                     			
+                  </p>
+                  <p>
+                     				Several XML encoding methods could serve as a messaging syntax for HL7 V3 messages. This document represents the method
+                     that is recommended by HL7, describing the underlying rules and principles. The corresponding data type descriptions necessary
+                     for this specification are described in the <a href="../../infrastructure/its_r2/isodatatypes.html#">ISO-Harmonized Data Types, Release 1</a>.
+                     			
+                  </p>
+               </div>
+            </div>
+            <hr title="Separator from body" />
+            <div class="subSection">
+               <div class="header"><span class="icon">&nbsp;</span><span class="number">1</span><span class="title"><a name="Overview">Overview</a></span></div>
+               <div class="body">
+                  <div class="subSubSection">
+                     <div class="header"><span class="icon">&nbsp;</span><span class="number">1.1</span><span class="title"><a name="scope">Introduction and Scope</a></span></div>
+                     <div class="body">
+                        <p>
+                           					This document describes how HL7 V3 compliant messages can be expressed using XML.  It describes how the definition of
+                           the set of valid XML instance documents is derived from a specific  HL7 Message Type.  It covers ISO levels 5 and 6.  Those
+                           familiar with V2 might call these the "XML encoding rules" for HL7 Version 3 messages. 
+                           				
+                        </p>
+                        <div class="subSubSubSection">
+                           <div class="header"><span class="icon">&nbsp;</span><span class="number">1.1.1</span><span class="title"><a name="changesfor20">Changes from version 1.1</a></span></div>
+                           <div class="body">
+                              <p>
+                                 The changes in this release are limited to those necessary to fully support adoption of the <a href="../../infrastructure/its_r2/isodatatypes.html#">ISO-Harmonized Data Types, Release 1</a> specification.  This includes changes in the handling of collection types as well as "mix-in" types such as HXIT, EXPR, URG,
+                                 etc.
+                                 
+                              </p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="subSection">
+               <div class="header"><span class="icon">&nbsp;</span><span class="number">2</span><span class="title"><a name="mappingToXMLInstance">Mapping to the XML Instance</a></span></div>
+               <div class="body">
+                  <p>
+                     This section describes how an HL7 V3 Message Type can be represented in an XML instance document.   The representation is
+                     determined algorithmically from the HL7 Message Type definition.
+                     			
+                  </p>
+                  <div class="subSubSection">
+                     <div class="header"><span class="icon">&nbsp;</span><span class="number">2.1</span><span class="title"><a name="overview">Overview</a></span></div>
+                     <div class="body">
+                        <p>
+                           For the purposes of this document, we will be referring to static models and HL7 V3 Message Types as equivalent concepts.
+                           The term "static model" avoids leaving the incorrect impression that models are only for use in a messaging paradigm.  Both
+                           terms are used to name a fully specified, constrained, implementable definition of an HL7 V3 message or document in a serial
+                           tabular format.  However, one should recall that HL7 Message Types are derived from higher level message definitions such
+                           as HMDs and information models (RMIMs, etc).  All information contained in HL7 message types is ultimately derived from the
+                           V3 RIM.  Therefore, although the Message Type is useful for defining how to create an XML instance for a message or document
+                           in an algorithmic way, the semantics may be better understood by also looking at higher level representations.   For more
+                           information on HL7 V3 Message Types, HMDs, and RMIMs, please refer to the <a href="../../help/v3guide/v3guide.html#">V3 Guide</a>.
+                           					
+                        </p>
+                        <ul>
+                           <li>The set of XML instances that are conformant for each message type described by an HMD has a structure with elements corresponding
+                              to class clones, and both element and attributes corresponding to class clone attributes.   HL7 immutable attributes [<a name="fn_src1" href="#fn1">1</a>] of the class clone are represented as XML attributes, all other HL7 attributes are represented as child elements in the XML
+                              instance.  The association names determine the names of the elements that represent the class clones.  
+                           </li>
+                           <li>Some Message Type definitions refer to CMETs.  This specification describes how embedded CMETs are encoded in a message instance
+                              as well.
+                           </li>
+                           <li>CDA documents are all derived from a single message type. </li>
+                           <li>To encode an HL7 message, wrappers are defined to provide information both for message transmission (Transmission Wrapper)
+                              and for semantic interpretation (Control Act Wrapper).  An HL7 Interaction defines a complete message including the Message
+                              Type and associated Transmission Wrapper and Control Act Wrapper.  This specification describes how the wrappers are represented
+                              in an XML Message Instance.
+                           </li>
+                           <li>Each HL7 attribute has a Data Type associated with it.  The XML implementation of these data types is described in a companion
+                              document - the <a href="../../infrastructure/its_r2/isodatatypes.html#">ISO-Harmonized Data Types, Release 1</a></li>
+                           <li>Additional information not specified by the message type may be included in the instance using the extensions mechanisms described
+                              below. Receiving systems must ignore extensions that they do not recognize.
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+                  <div class="subSubSection">
+                     <div class="header"><span class="icon">&nbsp;</span><span class="number">2.2</span><span class="title"><a name="xmlStructures">XML structures derived from an HMD</a></span></div>
+                     <div class="body">
+                        <p>
+                           					The XML elements and attributes in a message instance correspond one-to-one with individual rows in the HMD with the
+                           root element representation for a transmission wrapper being the only exception.  This is explained in more detail below.
+                           				
+                        </p>
+                        <p>
+                           					Immutable attributes like classCode, moodCode etc., are represented as XML attributes in the instance.  Where these have
+                           fixed values defined in the HMD, or where there is a default value and the default value is appropriate for the instance,
+                           the XML attribute may be omitted from the instance.  Where an XML attribute has been omitted the receiving system should assume
+                           the fixed or default value as specified in the HMD.  
+                           				
+                        </p>
+                     </div>
+                  </div>
+                  <div class="subSubSection">
+                     <div class="header"><span class="icon">&nbsp;</span><span class="number">2.3</span><span class="title"><a name="useOfNamespaces">Use of XML Namespaces</a></span></div>
+                     <div class="body">
+                        <p>
+                           					All XML elements and attributes (except for informal extensions and the contents of ED datatypes)  are to be represented
+                           in the namespace defined by <code>"urn:hl7-org:v3"</code>. This is a continued use of the same namespace used in ITSs 1.0 and 1.1.
+                        </p>
+                        <p> 
+                           					Attributes "type" and "nil" from the xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" namespace may be used. The
+                           "type" attribute will be used to indicate the datatype of elements where this could be ambiguous.  
+                           				
+                        </p>
+                        <p>	
+                           							In this document all examples will be written with the assumption that <code>hl7</code> has been declared as a prefix for the hl7 namespace as follows: <code>xmlns:hl7="urn:hl7-org:v3"</code>.  Note that any valid namespace prefix (or none) may be used in practice.
+                           				
+                        </p>
+                        <p>
+                           					The use of namespaces within the ED datatype are discussed in the <a href="../../infrastructure/its_r2/isodatatypes.html#">ISO-Harmonized Data Types, Release 1</a>.
+                           				
+                        </p>
+                        <p>
+                           					XML content from other namespaces (except within an ED datatype) will be assumed to be informal extensions as described
+                           later in this document and be ignored by receiving systems that do not recognize them.  
+                           				
+                        </p>
+                     </div>
+                  </div>
+                  <div class="subSubSection">
+                     <div class="header"><span class="icon">&nbsp;</span><span class="number">2.4</span><span class="title"><a name="determination">Determination of the XML representation </a></span></div>
+                     <div class="body">
+                        <div class="subSubSubSection">
+                           <div class="header"><span class="icon">&nbsp;</span><span class="number">2.4.1</span><span class="title"><a name="cardinality">Cardinality</a></span></div>
+                           <div class="body">
+                              <p>
+                                 						For each row in the HMD representing an association, the cardinality in the HMD sets the upper and lower limits on the
+                                 number of elements that may be included in the instance which correspond to that row.  For each row in the HMD representing
+                                 an attribute, the lower limit is set to &#8220;0&#8221; if the attribute cardinality minimum bound is 0.  Otherwise the lower limit is
+                                 set to 1.  The upper limit (maxOccurs) for attributes is always 1.  (The cardinality of attribute collections is managed inside
+                                 the collection, not with the root element for the attribute.)  Note that it is never possible to repeat immutable attributes,
+                                 and these are optional in the XML instances if a default or fixed value has been set.
+                                 					
+                              </p>
+                           </div>
+                        </div>
+                        <div class="subSubSubSection">
+                           <div class="header"><span class="icon">&nbsp;</span><span class="number">2.4.2</span><span class="title"><a name="updateMode">Update Mode</a></span></div>
+                           <div class="body">
+                              <p>
+                                 					Update mode is represented as a built-in characteristic for all non-immutable attributes within the ISO datatype specification.
+                                 Thus, no modifications are required to the schema when updateMode is declared for an attribute.  However, when updateMode
+                                 is declared for an association, the type for that association is extended to include an attribute named "updateMode" constrained
+                                 to an enumeration of the modes supported for that association and, if declared, the default update mode.
+                                 					
+                              </p>
+                           </div>
+                        </div>
+                        <div class="subSubSubSection">
+                           <div class="header"><span class="icon">&nbsp;</span><span class="number">2.4.3</span><span class="title"><a name="messageElementsClasses">Message Elements That Are HL7 Classes</a></span></div>
+                           <div class="body">
+                              <p>
+                                 					The name for the element representing the Class is taken either from the association name, or in the case of the root
+                                 element representation for a transmission wrapper, from the InteractionID.
+                                 					
+                              </p>
+                              <p>
+                                 						Where the Class is flagged as Mandatory it must be included in the message for the message to be valid.  
+                                 					
+                              </p>
+                              <p>
+                                 						The XML representation of these elements are determined by the SRC column, whose value will be one of: "N", "R", "U",
+                                 "I", or "C".
+                                 					
+                              </p>
+                              <div class="subSubSubSection">
+                                 <div class="header"><span class="icon">&nbsp;</span><span class="number">2.4.3.1</span><span class="title"><a name="directContent">Associations with direct content</a></span></div>
+                                 <div class="body">
+                                    <p>
+                                       							If the value of the SRC column is "N" or "R" then the XML representation will be a sequence of child elements, one
+                                       for each HMD row of type "Attr" followed by one for each HMD row of type "Assoc" whose InMET column equals the Row column
+                                       of the row in question. 
+                                       						
+                                    </p>
+                                    <p>
+                                       							Example:
+                                       						
+                                    </p>
+                                    <p><img class="graphic" src="graphics/Ex1.jpg" alt="Ex1.jpg" /><br /><img class="graphic" src="graphics/AssignedExcel.jpg" alt="AssignedExcel.jpg" /></p>
+                                    <p><pre role="example" hl7Id="ITSExample2" space="preserve">
+								
+&lt;hl7:author typeCode="AUT" xmlns:hl7="urn:hl7-org:v3"&gt;
+  &lt;hl7:assignedEntity classCode="ASSIGNED"&gt;
+    &lt;hl7:id root="2.16.840.1.113883.2.1.4.2" extension="G0000017"/&gt;
+    &lt;hl7:code codeSystem="99.999.99.9.9" code="008"&gt;
+      &lt;hl7:displayName value="Doctor"/&gt;
+    &lt;/hl7:code&gt;
+  &lt;/hl7:assignedEntity&gt;
+&lt;/hl7:author&gt;
+							</pre></p>
+                                 </div>
+                              </div>
+                              <div class="subSubSubSection">
+                                 <div class="header"><span class="icon">&nbsp;</span><span class="number">2.4.3.2</span><span class="title"><a name="choices">Choices</a></span></div>
+                                 <div class="body">
+                                    <p>
+                                       							The preceding is true unless the value of <i>ofMET</i> (of Message Element Type) contains a choice of more than one message element type. In this case, the XML representation represents
+                                       the choice as a choice of one or more XML elements corresponding to those identified in the <i>ofMET</i> column.   Each element will have content derived as described in this section from the row in the HMD with that Element Name.
+                                       						
+                                    </p>
+                                    <p>
+                                       							If the value of the SRC column is &#8220;I&#8221; or &#8220;U&#8221; then the XML representation is the same as defined for the row in the
+                                       HMD being referenced.  In  the case of &#8220;I&#8221; the content in the row must also be identical.
+                                       						
+                                    </p>
+                                    <p>
+                                       							Example:
+                                       						
+                                    </p>
+                                    <p><img class="graphic" src="graphics/ExChoice.jpg" alt="ExChoice.jpg" /><br /><img class="graphic" src="graphics/ChoiceExcel.jpg" alt="ChoiceExcel.jpg" /></p>
+                                    <p><pre role="example" hl7Id="ITSExample3" space="preserve">
+&lt;hl7:accountHolder xmlns:hl7="urn:hl7-org:v3"&gt;
+  &lt;hl7:id root="AAAABBBB-1452-6352-7363-DEA51FEA5241"/&gt;
+  &lt;hl7:heldAccountHolderPerson classCode="PSN" determinerCode="INSTANCE"&gt;
+    &lt;hl7:name&gt;
+      &lt;hl7:item&gt;
+        &lt;hl7:part type="GIV" value="Adam"/&gt;
+        &lt;hl7:part type="FAM" value="Everyman"/&gt;
+      &lt;/hl7:item&gt;
+    &lt;/hl7:name&gt;
+    &lt;hl7:addr&gt;
+      &lt;hl7:item&gt;
+        &lt;hl7:part type="SAL" value="2222 Home Street"/&gt;
+        &lt;hl7:part type="CTY" value="Ann Arbor"/&gt;
+        &lt;hl7:part type="STA" value="MI"/&gt;
+        &lt;hl7:part type="ZIP" value="99999"/&gt;
+        &lt;hl7:part type="CNT" value="USA"/&gt;
+      &lt;/hl7:item&gt;
+    &lt;/hl7:addr&gt;
+  &lt;/hl7:heldAccountHolderPerson&gt;
+&lt;/hl7:accountHolder&gt;
+							</pre></p>
+                                 </div>
+                              </div>
+                              <div class="subSubSubSection">
+                                 <div class="header"><span class="icon">&nbsp;</span><span class="number">2.4.3.3</span><span class="title"><a name="cmets">CMETs</a></span></div>
+                                 <div class="body">
+                                    <p>
+                                       							If the value of the SRC column is "C" (i.e., the HMD row is defined by a CMET) then the XML representation of the element
+                                       is determined by applying the rules in &#8220;Message Elements That Are RIM Classes&#8221; to the requisite CMET found in the <i>ofMET</i> column.   
+                                       						
+                                    </p>
+                                    <p>
+                                       							If the value of the SRC column is &#8220;I&#8221; or &#8220;U&#8221; then the XML representation is the same as defined for the row in the
+                                       HMD being referenced.  In  the case of &#8220;I&#8221; the content in the row must also be identical.
+                                       						
+                                    </p>
+                                    <p>
+                                       							Example:
+                                       						
+                                    </p>
+                                    <p><img class="graphic" src="graphics/ExCMET.jpg" alt="ExCMET.jpg" /><br /><img class="graphic" src="graphics/CMETExcel.jpg" alt="CMETExcel.jpg" /></p>
+                                    <p><pre role="example" hl7Id="ITSExample1" space="preserve">
+&lt;hl7:contactParty xmlns:hl7="urn:hl7-org:v3"&gt;
+  &lt;hl7:id&gt;
+    &lt;hl7:item root="AAAA1234-ADE1-543A-CFD4-DACE42D93FAC"/&gt;
+  &lt;/hl7:id&gt;
+  &lt;hl7:statusCode code="active"/&gt;
+  &lt;hl7:telecom&gt;
+    &lt;hl7:item value="tel:+441234123456"/&gt;
+  &lt;/hl7:telecom&gt;
+  &lt;hl7:effectiveTime value="20040314"/&gt;
+  &lt;hl7:contactPerson&gt;
+
+		....
+	  &lt;/hl7:contactPerson&gt;
+&lt;/hl7:contactParty&gt;
+						</pre></p>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="subSubSubSection">
+                           <div class="header"><span class="icon">&nbsp;</span><span class="number">2.4.4</span><span class="title"><a name="messageElementsAttributes">Message Elements That Are HL7 Attributes</a></span></div>
+                           <div class="body">
+                              <p>HL7 immutable class attributes are conveyed as xml attributes.  Where there is a default or fixed value defined in the HL7
+                                 static model then the attribute may be omitted from the XML representation, and the receiving system will behave as though
+                                 the fixed or default value was sent.  Note that according to the Refinements and Localization document "the default is a single
+                                 value, once a default has been set, it may not be further constrained. Moreover, the assertion of default values may only
+                                 be done by an HL7 Technical Committee as it prepares a ballot, or by an HL7 International Affiliate that is preparing a region-specific
+                                 profile".
+                              </p>
+                              <p>The declared type for a structural attribute is mapped to a schema or ISO datatype simple type as follows:</p>
+                              <table width="90%" cellspacing="0" cellpadding="5" border="1"
+                                     style="border-color:blue">
+                                 <tr>
+                                    <th rowspan="1" colspan="1">Attribute Type</th>
+                                    <th rowspan="1" colspan="1">Schema Type</th>
+                                 </tr>
+                                 <tr>
+                                    <td rowspan="1" colspan="1">BL</td>
+                                    <td rowspan="1" colspan="1">xsd:boolean</td>
+                                 </tr>
+                                 <tr>
+                                    <td rowspan="1" colspan="1">CS</td>
+                                    <td rowspan="1" colspan="1">Code</td>
+                                 </tr>
+                                 <tr>
+                                    <td rowspan="1" colspan="1">INT</td>
+                                    <td rowspan="1" colspan="1">xsd:integer</td>
+                                 </tr>
+                                 <tr>
+                                    <td rowspan="1" colspan="1">REAL</td>
+                                    <td rowspan="1" colspan="1">Decimal</td>
+                                 </tr>
+                                 <tr>
+                                    <td rowspan="1" colspan="1">ST</td>
+                                    <td rowspan="1" colspan="1">xsd:string</td>
+                                 </tr>
+                              </table>
+                              <p>HL7 Non-immutable class attributes are represented as xml elements with the name taken from the &#8220;Element Name&#8221; in the HMD.
+                                 The XML representation of these elements are determined by the <i>ofMET</i>. Specifically, for rows of type "Attr", the value of <i>ofMET</i> will be the name of a Version 3 Data Type, and hence, the XML representation will be as described in the <a href="../../infrastructure/its_r2/isodatatypes.html#">ISO-Harmonized Data Types, Release 1</a>.  The transformation between the OfMET name and the value of the XML element type is performed by applying these steps in
+                                 sequence:
+                              </p>
+                              <ul>
+                                 <li>Where all or part of the <i>ofMET</i> refers to a &#8220;datatype flavor&#8221;, the type referenced will be the base type for the flavor, rather than the flavor as flavors
+                                    reflect constraints and do not change type definitions.  For example, IVL.LOW&lt;TS.DATE&gt; becomes IVL&lt;TS&gt;.  Usually this is accomplished
+                                    by stripping the first period after the name and everything following it.  However, for some types such as CE, PN, etc., the
+                                    name will be directly asserted based on the datatypes specification.
+                                 </li>
+                                 <li>All references to Mixins, (EXPR, HXIT, PPD, URG and UVP) will be removed.  E.g. URG&lt;PQ&gt; will be treated as "PQ".  SET&lt;HXIT&lt;TEL&gt;&gt;
+                                    will be treated as SET&lt;TEL&gt;.
+                                 </li>
+                                 <li>If the RTO type is encountered, the type simply becomes RTO.  For example RTO&lt;MO,PQ.TIME&gt; becomes RTO.</li>
+                                 <li>Parameterized types change from an angle-bracket expression to a separation with an underscore.  For example, IVL&lt;PQ&gt; becomes
+                                    IVL_PQ.
+                                 </li>
+                              </ul>
+                              <p>Note: Complex nested types (e.g. DSET&lt;IVL&lt;PQ&gt;&gt; are not supported.</p>
+                              <p>The xsi:type attribute must be declared for attributes whenever they are instantiating a model attribute whose datatype is
+                                 abstract or which contains abstract parameters.  E.g. ANY, QSET, IVL&lt;QTY&gt;, COLL&lt;ST&gt;, etc.
+                              </p>
+                              <p>
+                                 						Example:
+                                 					
+                              </p>
+                              <p><img class="graphic" src="graphics/Ex1.jpg" alt="Ex1.jpg" /><br /><img class="graphic" src="graphics/AssignedExcel.jpg" alt="AssignedExcel.jpg" /></p>
+                              <p><pre role="example" hl7Id="ITSExample4" space="preserve">
+&lt;hl7:author typeCode="AUT" xmlns:hl7="urn:hl7-org:v3"&gt;
+	&lt;hl7:assignedEntity classCode="ASSIGNED"&gt;
+		&lt;hl7:id root="2.16.840.1.113883.2.1.4.2" extension="G0000017"/&gt;
+		&lt;hl7:code code="008" codeSystem="99.999.99.9.9"/&gt;
+	&lt;/hl7:assignedEntity&gt;
+&lt;/hl7:author&gt;
+						</pre></p>
+                           </div>
+                        </div>
+                        <div class="subSubSubSection">
+                           <div class="header"><span class="icon">&nbsp;</span><span class="number">2.4.5</span><span class="title"><a name="interactions">Interactions</a></span></div>
+                           <div class="body">
+                              <p>
+                                 					Interactions are defined for HL7v3 messages, but are not relevant for CDA documents.  See the V3 Guide for further details
+                                 on how and why interactions are defined and used.
+                              </p>
+                              <p>
+                                 						Interactions are represented by an XML element named using the artefact code for the interaction. The content model
+                                 of this element is determined by the Message Type for the transmission wrapper.  
+                                 					
+                              </p>
+                              <p>
+                                 					Where the transmission wrapper contains a Control Act class, this class is replaced by the Control Act Message Type as
+                                 specified for the interaction.  If the Control Act Message Type contains an entry point stub, then this is replaced by the
+                                 Message Type for the payload as defined in the interaction.
+                                 					
+                              </p>
+                              <p>
+                                 						The Interaction element must have an attribute &#8220;ITSversion&#8221; that provides a version identifier for the XML ITS (Datatypes
+                                 and Structures) that is to be used.  For this version of the ITS, the ITSVersion attribute must be "2.0"
+                                 					
+                              </p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="subSubSection">
+                     <div class="header"><span class="icon">&nbsp;</span><span class="number">2.5</span><span class="title"><a name="informalExtensions">Informal Extensions</a></span></div>
+                     <div class="body">
+                        <p>
+                           					In order to support informal extensions as described in the <a href="../../infrastructure/conformance/conformance.html#">HL7 V3 Conformance and extensibility specification</a>, it is permitted to include additional XML elements and attributes that are not included in the HL7 definition of a message
+                           type.  These extensions should not change the meaning of any of the standard data items, and receiving applications must be
+                           able to safely ignore these elements.  
+                           				
+                        </p>
+                        <p>
+                           							When included in an instance local extensions MUST be in a namespace other than the HL7v3 namespace.  Such extensions
+                           must not be included within an ED datatype, since it would not always be possible to distinguish between foreign namespace
+                           items that form part of the content of the standard ED datatype, and content that was intended to be an informal extension.
+                           Since all conformant content (outside of elements of type ED) is in the HL7 namespace, the sender can put any extension content
+                           into a foreign namespace (any namespace other than the HL7 namespace or the "xsi" namespace defined by W3C), and the receiver
+                           will be able to recognise that such content may be safely ignored. Receiving systems must not report an error if such extensions
+                           are present.
+                           						
+                        </p>
+                        <p>
+                           						The extension mechanisms (HL7extension or foreign namespace) cannot be used on immutable attributes.  The extension
+                           mechanisms only allow additional data elements to be conveyed.  They do not allow changes to constraints of the elements defined
+                           in the base model.
+                           						
+                        </p>
+                        <p>
+                           							Example:
+                           						
+                        </p>
+                        <p><pre role="example" hl7Id="ITSExample6" space="preserve">
+&lt;hl7:inFulfillmentOf xmlns:hl7="urn:hl7-org:v3"&gt;
+   &lt;hl7:priorActRequest&gt;
+       &lt;ex:MessageRequests
+       	xmlns:ex="http://www.example.com/messaging"&gt;
+            &lt;ex:RequestedMessage&gt;
+            	    001-345-234
+            &lt;/ex:RequestedMessage&gt;
+       &lt;/ex:MessageRequests&gt;
+    &lt;/hl7:priorActRequest&gt;
+&lt;/hl7:inFulfillmentOf&gt;
+						</pre></p>
+                        <p>Where there is a requirement to extend a static model with attributes or associations that conform to a different version
+                           of the model , the content should be included in the HL7 <a href="../../help/glossary/glossary.html#gl-namespace">namespace</a>, but with an "HL7extension" attribute used to indicate that it is an extension. 
+                           	Where present the XML attribute "HL7extension" MUST contain the artefactId of the most granular static model in which the
+                           extension has been defined.  Receiving systems must ignore content that has an HL7extension attribute that is not recognised.
+                           				
+                        </p><pre role="example" hl7Id="extmech2a" space="preserve">
+&lt;hl7:representedOrganization classCode="ORG" determinerCode="INSTANCE" 
+  xmlns:hl7="urn:hl7-org:v3"&gt;
+  &lt;hl7:id root="1.2.826.0.1285.0.1.10" extension="300045332098"/&gt;
+  &lt;hl7:name HL7extension="PRPA_MT201301UV02"&gt;
+    &lt;hl7:part value="St. Elsewhere's Hospital"/&gt;
+  &lt;/hl7:name&gt;
+&lt;/hl7:representedOrganization&gt;
+				</pre></div>
+                  </div>
+                  <div class="subSubSection">
+                     <div class="header"><span class="icon">&nbsp;</span><span class="number">2.6</span><span class="title"><a name="compatibility">Backwards and Forwards compatibility</a></span></div>
+                     <div class="body">
+                        <p>
+                           				When there are major differences in the  versions of either the abstract HL7 artefact definitions, or of the ITS, it is
+                           anticipated that these versions will be no more than a single XSLT transform apart. 
+                        </p>
+                        <p>In this specification we hope to improve on the XML ITS R1 rules, by introducing the concept of "minor version changes" which
+                           are immutably backwards compatible, and so can be conveyed without having to introduce different namespace processing.  This
+                           allows processors to be written that "pull" the classes and attributes that they are interested in from the XML instance in
+                           the same way whether they are transmitted as an extension to an earlier version of the static model definition, or as directly
+                           conforming in an instance of a latter version of a static model.
+                        </p>
+                        <p>The extension mechanism is only intended for use in managing extensions defined by the organization that is responsible for
+                           maintaining the base specifications (ie HL7.org or HL7 affiliates).  Informal local extensions should still be expressed in
+                           a foreign namespace. 
+                        </p>
+                        <p>The extension mechanism does not support namespaced dispatching for validation.  If using schema validation, implementers
+                           must perform pre-processing to remove extensions they don't support in their schemas prior to validation.
+                        </p>
+                        <div class="subSubSubSection">
+                           <div class="header"><span class="icon">&nbsp;</span><span class="number">2.6.1</span><span class="title"><a name="minorversionchanges">Minor version changes</a></span></div>
+                           <div class="body">
+                              <div class="subSubSubSection">
+                                 <div class="header"><span class="icon">&nbsp;</span><span class="number">2.6.1.1</span><span class="title"><a name="changecard">Changes in cardinality</a></span></div>
+                                 <div class="body">
+                                    <p>
+                                       						Changes in cardinality are permitted, and document order is used to establish the appropriate fallback.  A release one
+                                       processor can still interpret the output by processing the first participation in document order.
+                                       						
+                                    </p>
+                                    <p>
+                                       This specification requires that where a cardinality is increased in a minor version change, a receiver may safely process
+                                       on the basis of the more limited cardinality if they do not support the extension.  However, the extensions must also be marked
+                                       using the HL7extension attribute. This simplifies receiver processing, while still supporting testing and validation using
+                                       the HL7extension attribute.
+                                       						
+                                    </p>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="subSubSubSection">
+                           <div class="header"><span class="icon">&nbsp;</span><span class="number">2.6.2</span><span class="title"><a name="backforextmechexamp">Examples</a></span></div>
+                           <div class="body">
+                              <p>The following examples are presented as fragments from the interaction Patient Registry Record Added  (PRPA_IN201301UV), and
+                                 predict future changes.  PRPA_MT201301UV is the artefactId for the payload message type.  Note that if the fragments had come
+                                 from a CMET, then the CMET message type identifier (with version) would be used.  
+                                 While genuine artefactIds are used, the content models have been created to illustrate the extension mechanism.<br />
+                                 						A fragment from a message/document that comforms to the static model PRPA_MT201301UV01, where only an identifier for
+                                 the represented organization is provided.
+                                 
+                              </p><pre role="example" hl7Id="extmech1" space="preserve">
+&lt;hl7:representedOrganization classCode="ORG" determinerCode="INSTANCE"&gt;
+    &lt;hl7:id root="1.2.826.0.1285.0.1.10" extension="300045332098"/&gt;
+&lt;/hl7:representedOrganization&gt;
+</pre><p>
+                                 	A possible approach using the HL7extension attribute &#8211; this is still a valid instance of PRPA_MT201301UV01, with all nodes
+                                 that include an HL7extension attribute being ignored.  But it could also be processed as an instance of PRPA_MT201301UV02
+                                 by applications that recognise this artefactId in the HL7extension attribute.  
+                                 
+                              </p><pre role="example" hl7Id="extmech2" space="preserve">
+&lt;hl7:representedOrganization classCode="ORG" determinerCode="INSTANCE"
+  xmlns:hl7="urn:hl7-org:v3"&gt;
+  &lt;hl7:id root="1.2.826.0.1285.0.1.10" extension="300045332098"/&gt;
+  &lt;hl7:name HL7extension="PRPA_MT201301UV02" value="St. Elsewhere's Hospital"/&gt;
+&lt;/hl7:representedOrganization&gt;
+</pre><p>
+                                 	A further version of the version of the model may allow for, or even require, a description for the organization.   
+                                 
+                              </p><pre role="example" hl7Id="extmech3" space="preserve">
+&lt;hl7:representedOrganization classCode="ORG" determinerCode="INSTANCE"
+  xmlns:hl7="urn:hl7-org:v3"&gt;
+  &lt;hl7:id root="1.2.826.0.1285.0.1.10" extension="300045332098"/&gt;
+  &lt;hl7:name HL7extension="PRPA_MT201301UV02" value="St. Elsewhere's Hospital"/&gt;
+  &lt;hl7:desc HL7extension="PRPA_MT201301UV03" value="A description could be added in v3 of PRPA_MT201301  and would not be processed by a v2 aware processor"/&gt;
+&lt;/hl7:representedOrganization&gt;
+</pre><p>An instance claiming direct conformance to the static model PRPA_MT201301UV03 would contain neither of the HL7extension attributes,
+                                 but otherwise the XML for the representedOrganization would be the same.  Code that has been written to use the extensions
+                                 should therefore be able to process instances of the new version of the static model with minimal change.
+                              </p><pre role="example" hl7Id="extmech4" space="preserve">
+&lt;hl7:representedOrganization classCode="ORG" determinerCode="INSTANCE"
+  xmlns:hl7="urn:hl7-org:v3"&gt;
+  &lt;hl7:id root="1.2.826.0.1285.0.1.10" extension="300045332098"/&gt;
+  &lt;hl7:name value="St. Elsewhere's Hospital"/&gt;
+  &lt;hl7:desc value="A description could be added in v3 of PRPA_MT201301  and would not be processed by a v2 aware processor"/&gt;
+&lt;/hl7:representedOrganization&gt;
+</pre></div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="subSubSection">
+                     <div class="header"><span class="icon">&nbsp;</span><span class="number">2.7</span><span class="title"><a name="schemaProcessors">The Use of Schema Processors</a></span></div>
+                     <div class="body">
+                        <p>Schema processing is not a conformance requirement although this specification has been designed to make schema processing
+                           beneficial. Where schemas are used receivers may use alternate schemas (including DTDs) than the ones provided by HL7. 
+                        </p>
+                        <p>While schema processing is not required, conformant instances must be valid against the HL7 published schemas.  Schema validity
+                           is a necessary but not sufficient condition for an instance to be considered conformant.
+                        </p>
+                        <p>Sending applications should not provide schema location hints for the HL7 namespace and receiving applications that perform
+                           schema processing should ignore such hints if provided and instead should use whatever other means they have at their disposal
+                           to locate the relevant official HL7 schemas or their own customizations thereof. It is in the interest of the receivers own
+                           security and safety not to use sender supplied schemaLocation hints.
+                        </p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="subSection">
+               <div class="header"><span class="icon">&nbsp;</span><span class="number">3</span><span class="title"><a name="references">References</a></span></div>
+               <div class="body">
+                  <p><b>[rfDatatypes1]</b><br /><a href="../../infrastructure/datatypes_r2/datatypes_r2.html#">HL7Version 3 Data Types Abstract, Release 2</a><br /></p>
+                  <p><b>[rfDatatypes2]</b><br /><a href="../../infrastructure/its_r2/isodatatypes.html#">ISO-Harmonized Data Types, Release 1</a><br /></p>
+                  <p><b>[rfXMLschema]</b><br />
+                     				World Wide Web Consortium. <i>XML Schema</i>.<br /><a href="http://www.w3.org/TR/xmlschema-0/">http://www.w3.org/TR/xmlschema-0/</a><br /><a href="http://www.w3.org/TR/xmlschema-1/">http://www.w3.org/TR/xmlschema-1/</a><br /><a href="http://www.w3.org/TR/xmlschema-2/">http://www.w3.org/TR/xmlschema-2/</a><br />
+                     				World Wide Web Consortium. <i>XML Schemas Part 1: Structures</i>.<br /><a href="http://www.w3.org/TR/xmlschema-1/">http://www.w3.org/TR/xmlschema-1/</a><br />
+                     				World Wide Web Consortium. <i>XML Schemas Part 2: Datatypes</i>.<br /><a href="http://www.w3.org/TR/xmlschema-2/ ">http://www.w3.org/TR/xmlschema-2/ </a><br /></p>
+                  <p><b>[rfXML]</b><br />
+                     				World Wide Web Consortium. <i>Extensible Markup Language, 1.1 W3C Recommendation 04 February 2004</i>.<br /><a href="http://www.w3.org/TR/2004/REC-xml11-20040204/">http://www.w3.org/TR/2004/REC-xml11-20040204/</a></p>
+                  <p><b>[rfXMLnamespace]</b><br />
+                     				World Wide Web Consortium. <i>Namespaces in XML</i>.<br /><a href="http://www.w3.org/TR/REC-xml-names/ ">http://www.w3.org/TR/REC-xml-names/ </a></p>
+                  <p><b>[rfXPath] </b><br />
+                     				World Wide Web Consortium. <i>XML Path Language</i>.<br /><a href="http://www.w3.org/TR/xpath/ ">http://www.w3.org/TR/xpath/ </a></p>
+                  <p><b>[rfXSLT]</b><br />
+                     				World Wide Web Consortium. <i>XSL Transformations (XSLT)</i>.<br /><a href="http://www.w3.org/TR/xslt/ ">http://www.w3.org/TR/xslt/ </a></p>
+                  <p><b>[rfV3guide]</b><br /><a href="../../help/v3guide/v3guide.html#">Version 3 Guide</a></p>
+                  <p><b>{rfV3Glossary}</b><br /><a href="../../help/glossary/glossary.html#">Version 3 Glossary</a><br /></p>
+               </div>
+            </div>
+            <div class="subSection">
+               <div class="header"><span class="icon">&nbsp;</span><span class="number">4</span><span class="title"><a name="appendixA">Appendix A</a></span></div>
+               <div class="body">
+                  <div class="subSubSection">
+                     <div class="header"><span class="icon">&nbsp;</span><span class="number">4.1</span><span class="title"><a name="exampleInstance">Example Instance for an Interaction</a></span></div>
+                     <div class="body">
+                        <p>
+                           				The following is an example instance for the interaction <span class="nonExistent" title="link to non-existent artifact: PRPA_IN403001UV">PRPA_IN040301</span> taken from the emergency encounter topic in the patient administration domain.
+                           					<pre role="example" hl7Id="ITSExample7" space="preserve">
+&lt;?xml version="1.0" encoding="utf-8"?&gt;
+&lt;!--Example copyright 2004 by Health Level Seven, Inc. --&gt;
+&lt;!-- Example message for PRPA_IN403001 - Emergency
+	Encounter Started interaction --&gt;
+&lt;hl7:PRPA_IN403001 xmlns:hl7="urn:hl7-org:v3" ITSVersion="2.0"&gt;
+  &lt;hl7:id root="2.16.840.1.113883.1.6" extension="1-976-245" displayable="true"/&gt;
+  &lt;hl7:creationTime value="20040927100100"/&gt;
+  &lt;hl7:versionCode code="V3PR1"/&gt;
+  &lt;hl7:interactionId root=" 2.16.840.1.113883.2.1.3.2.4.12" extension=" PRPA_IN403001" displayable="true"/&gt;
+  &lt;hl7:processingCode code="P"/&gt;
+  &lt;hl7:processingModeCode code="T"/&gt;
+  &lt;hl7:acceptAckCode code="AL"/&gt;
+  &lt;hl7:receiver&gt;
+    &lt;hl7:device&gt;
+      &lt;hl7:id&gt;
+        &lt;hl7:item root="2.16.840.1.113883.19.3.2408" extension="123" displayable="true"/&gt;
+      &lt;/hl7:id&gt;
+      &lt;hl7:name&gt;
+        &lt;hl7:item use="L"&gt;
+          &lt;hl7:part type="GIV" value="Good Health Lab System"/&gt;
+        &lt;/hl7:item&gt;
+      &lt;/hl7:name&gt;
+    &lt;/hl7:device&gt;
+  &lt;/hl7:receiver&gt;
+  &lt;hl7:sender&gt;
+    &lt;hl7:device&gt;
+      &lt;hl7:id&gt;
+        &lt;hl7:item root="2.16.840.1.113883.19.3.2409" extension="456" displayable="true"/&gt;
+      &lt;/hl7:id&gt;
+      &lt;hl7:name&gt;
+        &lt;hl7:item use="L"&gt;
+          &lt;hl7:part type="GIV" value="Good Health Patient Admin System"/&gt;
+        &lt;/hl7:item&gt;
+      &lt;/hl7:name&gt;
+    &lt;/hl7:device&gt;
+  &lt;/hl7:sender&gt;
+  &lt;hl7:controlActProcess&gt;
+    &lt;hl7:code code="PRPA_TE403001" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7TriggerEventCode"/&gt;
+    &lt;hl7:effectiveTime value="20040927095000"/&gt;
+    &lt;hl7:authorOrPerformer typeCode="AUT"&gt;
+      &lt;hl7:assignedEntity classCode="PRS"&gt;
+        &lt;hl7:id&gt;
+          &lt;hl7:item root="2.16.840.1.113883.19.3.2409" extension="10001" displayable="true"/&gt;
+        &lt;/hl7:id&gt;
+        &lt;hl7:telecom&gt;
+          &lt;hl7:item value="tel:+1(955)555-1005" use="MC"/&gt;
+          &lt;hl7:item value="mailto:admit@eg.net"/&gt;
+        &lt;/hl7:telecom&gt;
+        &lt;hl7:assigneePerson&gt;
+          &lt;hl7:name&gt;
+            &lt;hl7:item use="L"&gt;
+              &lt;hl7:part type="GIV" value="Eric"/&gt;
+              &lt;hl7:part type="FAM" value="Emergency"/&gt;
+            &lt;/hl7:item&gt;
+          &lt;/hl7:name&gt;
+        &lt;/hl7:assigneePerson&gt;
+      &lt;/hl7:assignedEntity&gt;
+    &lt;/hl7:authorOrPerformer&gt;
+    &lt;hl7:dataEnterer&gt;
+      &lt;hl7:time value="20040927100000"/&gt;
+      &lt;hl7:assignedEntity classCode="PRS"&gt;
+        &lt;hl7:id&gt;
+          &lt;hl7:item root="2.16.840.1.113883.19.3.2409" extension="10055" displayable="true"/&gt;
+        &lt;/hl7:id&gt;
+        &lt;hl7:assigneePerson&gt;
+          &lt;hl7:name&gt;
+            &lt;hl7:item use="L"&gt;
+              &lt;hl7:part type="GIV" value="Christopher"/&gt;
+              &lt;hl7:part type="FAM" value="Clerk"/&gt;
+            &lt;/hl7:item&gt;
+          &lt;/hl7:name&gt;
+        &lt;/hl7:assigneePerson&gt;
+      &lt;/hl7:assignedEntity&gt;
+    &lt;/hl7:dataEnterer&gt;
+    &lt;hl7:subject&gt;
+      &lt;hl7:encounterEvent&gt;
+        &lt;hl7:id&gt;
+          &lt;hl7:item root="2.16.840.1.113883.19.3.2409" extension="12345" displayable="true"/&gt;
+        &lt;/hl7:id&gt;
+        &lt;hl7:code code="EMER" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode"&gt;
+          &lt;hl7:displayName value="emergency"/&gt;
+        &lt;/hl7:code&gt;
+        &lt;hl7:statusCode code="active"/&gt;
+        &lt;hl7:effectiveTime&gt;
+          &lt;hl7:low value="20040927095000" inclusive="true"/&gt;
+        &lt;/hl7:effectiveTime&gt;
+        &lt;hl7:priorityCode&gt;
+          &lt;hl7:item code="EM" codeSystem="2.16.840.1.113883.5.7" codeSystemName="ActPriority"&gt;
+            &lt;hl7:displayName value="emergency"/&gt;
+          &lt;/hl7:item&gt;
+        &lt;/hl7:priorityCode&gt;
+        &lt;hl7:confidentialityCode&gt;
+          &lt;hl7:item code="N" codeSystem="2.16.840.1.113883.5.25" codeSystemName="Confidentiality"&gt;
+            &lt;hl7:displayName value="normal"/&gt;
+          &lt;/hl7:item&gt;
+        &lt;/hl7:confidentialityCode&gt;
+        &lt;hl7:reasonCode&gt;
+          &lt;hl7:item code="MEDNEC" codeSystem="2.16.840.1.113883.5.8" codeSystemName="ActReason"&gt;
+            &lt;hl7:displayName value="Medical_Necessity"/&gt;
+          &lt;/hl7:item&gt;
+        &lt;/hl7:reasonCode&gt;
+        &lt;hl7:admissionReferralSourceCode code="7" codeSystem="2.16.840.1.113883.5.39" codeSystemName="EncounterReferralSource"&gt;
+          &lt;hl7:displayName value="Emergency_Room"/&gt;
+        &lt;/hl7:admissionReferralSourceCode&gt;
+        &lt;hl7:specialCourtesiesCode&gt;
+          &lt;hl7:item code="NRM" codeSystem="2.16.840.1.113883.5.40" codeSystemName="EncounterSpecialCourtesy"&gt;
+            &lt;hl7:displayName value="norrmal_courtesy"/&gt;
+          &lt;/hl7:item&gt;
+        &lt;/hl7:specialCourtesiesCode&gt;
+        &lt;hl7:subject&gt;
+          &lt;hl7:patient&gt;
+            &lt;hl7:id&gt;
+              &lt;hl7:item root="2.16.840.1.113883.19.3.2409" extension="444551234" displayable="true"/&gt;
+            &lt;/hl7:id&gt;
+            &lt;hl7:addr&gt;
+              &lt;hl7:item use="HP"&gt;
+                &lt;hl7:part type="SAL" value="2222 Home Street"/&gt;
+                &lt;hl7:part type="CTY" value="Ann Arbor"/&gt;
+                &lt;hl7:part type="STA" value="MI"/&gt;
+                &lt;hl7:part type="ZIP" value="99999"/&gt;
+                &lt;hl7:part type="CNT" value="USA"/&gt;
+              &lt;/hl7:item&gt;
+            &lt;/hl7:addr&gt;
+            &lt;hl7:patientLivingSubject&gt;
+              &lt;hl7:name&gt;
+                &lt;hl7:part value="Adam A Everyman"/&gt;
+              &lt;/hl7:name&gt;
+              &lt;hl7:administrativeGenderCode code="M" codeSystem="2.16.840.1.113883.5.1" codeSystemName="AdministrativeGender"&gt;
+                &lt;hl7:displayName value="Male"/&gt;
+              &lt;/hl7:administrativeGenderCode&gt;
+              &lt;hl7:birthTime value="19550304"/&gt;
+              &lt;hl7:birthplace&gt;
+                &lt;hl7:addr use="BIR"&gt;
+                  &lt;hl7:part value="Ann Arbor, MI USA"/&gt;
+                &lt;/hl7:addr&gt;
+              &lt;/hl7:birthplace&gt;
+            &lt;/hl7:patientLivingSubject&gt;
+            &lt;hl7:providerOrganization&gt;
+              &lt;hl7:id&gt;
+                &lt;hl7:item root="2.16.840.1.113883.19.3.2409" extension="1-976-245" displayable="true"/&gt;
+              &lt;/hl7:id&gt;
+              &lt;hl7:name&gt;
+                &lt;hl7:item use="L"&gt;
+                  &lt;hl7:part type="SUF" qualifier="LS" value="Inc."/&gt;
+                  &lt;hl7:part value="Good Health Hospital"/&gt;
+                &lt;/hl7:item&gt;
+              &lt;/hl7:name&gt;
+              &lt;hl7:contactParty classCode="CON"&gt;
+                &lt;hl7:addr&gt;
+                  &lt;hl7:item use="HP"&gt;
+                    &lt;hl7:part type="SAL" value="2222 Hospital Street"/&gt;
+                    &lt;hl7:part type="CTY" value="Ann Arbor"/&gt;
+                    &lt;hl7:part type="STA" value="MI"/&gt;
+                    &lt;hl7:part type="ZIP" value="99999"/&gt;
+                    &lt;hl7:part type="CNT" value="USA"/&gt;
+                  &lt;/hl7:item&gt;
+                &lt;/hl7:addr&gt;
+              &lt;/hl7:contactParty&gt;
+            &lt;/hl7:providerOrganization&gt;
+          &lt;/hl7:patient&gt;
+        &lt;/hl7:subject&gt;
+        &lt;hl7:admitter&gt;
+          &lt;hl7:time lowClosed="true"&gt;
+            &lt;hl7:low value="20040927095000"/&gt;
+          &lt;/hl7:time&gt;
+          &lt;hl7:assignedPerson classCode="PRS"&gt;
+            &lt;hl7:id&gt;
+              &lt;hl7:item root="2.16.840.1.113883.19.3.2409" extension="10001" displayable="true"/&gt;
+            &lt;/hl7:id&gt;
+            &lt;hl7:telecom value="tel:+1(955)555-1005" use="MC"/&gt;
+            &lt;hl7:telecom&gt;
+              &lt;hl7:item value="mailto:admit@eg.net"/&gt;
+            &lt;/hl7:telecom&gt;
+            &lt;hl7:assigneePerson&gt;
+              &lt;hl7:name&gt;
+                &lt;hl7:item use="L"&gt;
+                  &lt;hl7:part type="GIV" value="Eric"/&gt;
+                  &lt;hl7:part type="FAM" value="Emergency"/&gt;
+                &lt;/hl7:item&gt;
+              &lt;/hl7:name&gt;
+            &lt;/hl7:assigneePerson&gt;
+          &lt;/hl7:assignedPerson&gt;
+        &lt;/hl7:admitter&gt;
+        &lt;hl7:attender&gt;
+          &lt;hl7:time lowClosed="true"&gt;
+            &lt;hl7:low value="20030927095000"/&gt;
+          &lt;/hl7:time&gt;
+          &lt;hl7:statusCode code="active"/&gt;
+          &lt;hl7:assignedPerson classCode="PRS"&gt;
+            &lt;hl7:id&gt;
+              &lt;hl7:item root="2.16.840.1.113883.19.3.2409" extension="10001" displayable="true"/&gt;
+            &lt;/hl7:id&gt;
+            &lt;hl7:telecom&gt;
+              &lt;hl7:item value="tel:+1(955)555-1006" use="MC"/&gt;
+              &lt;hl7:item value="mailto:attend@eg.net"/&gt;
+            &lt;/hl7:telecom&gt;
+            &lt;hl7:assigneePerson&gt;
+              &lt;hl7:name&gt;
+                &lt;hl7:item use="L"&gt;
+                  &lt;hl7:part type="GIV" value="Eric"/&gt;
+                  &lt;hl7:part type="FAM" value="Emergency"/&gt;
+                &lt;/hl7:item&gt;
+              &lt;/hl7:name&gt;
+            &lt;/hl7:assigneePerson&gt;
+          &lt;/hl7:assignedPerson&gt;
+        &lt;/hl7:attender&gt;
+        &lt;hl7:location&gt;
+          &lt;hl7:time lowClosed="true"&gt;
+            &lt;hl7:low value="20040927095000"/&gt;
+          &lt;/hl7:time&gt;
+          &lt;hl7:statusCode code="active"/&gt;
+          &lt;hl7:serviceDeliveryLocation&gt;
+            &lt;hl7:code code="ER" codeSystem="2.16.840.1.113883.5.111" codeSystemName="RoleCode"&gt;
+              &lt;hl7:displayName value="Emergency_room"/&gt;
+            &lt;/hl7:code&gt;
+            &lt;hl7:statusCode code="active"/&gt;
+            &lt;hl7:location&gt;
+              &lt;hl7:name&gt;
+                &lt;hl7:item value="ER - Room 4 - Bed B"/&gt;
+              &lt;/hl7:name&gt;
+            &lt;/hl7:location&gt;
+          &lt;/hl7:serviceDeliveryLocation&gt;
+        &lt;/hl7:location&gt;
+        &lt;hl7:notificationContact&gt;
+          &lt;hl7:notificationParty&gt;
+            &lt;hl7:id&gt;
+              &lt;hl7:item root="2.16.840.1.113883.19.3.2409" extension="1-976-245" displayable="false"/&gt;
+            &lt;/hl7:id&gt;
+            &lt;hl7:addr&gt;
+              &lt;hl7:item use="HP"&gt;
+                &lt;hl7:part type="SAL" value="5555 Home Street"/&gt;
+                &lt;hl7:part type="CTY" value="Ann Arbor"/&gt;
+                &lt;hl7:part type="STA" value="MI"/&gt;
+                &lt;hl7:part type="ZIP" value="99999"/&gt;
+                &lt;hl7:part type="CNT" value="USA"/&gt;
+              &lt;/hl7:item&gt;
+            &lt;/hl7:addr&gt;
+            &lt;hl7:telecom&gt;
+              &lt;hl7:item value="tel:+1(555)555-2010" use="H"/&gt;
+            &lt;/hl7:telecom&gt;
+            &lt;hl7:contactPerson&gt;
+              &lt;hl7:id&gt;
+                &lt;hl7:item root="2.16.840.1.113883.19.3.2409" extension="1-976-245" displayable="false"/&gt;
+              &lt;/hl7:id&gt;
+              &lt;hl7:name&gt;
+                &lt;hl7:item use="L"&gt;
+                  &lt;hl7:part type="GIV" value="Carrie"/&gt;
+                  &lt;hl7:part type="GIV" value="C"/&gt;
+                  &lt;hl7:part type="FAM" value="Contact"/&gt;
+                &lt;/hl7:item&gt;
+              &lt;/hl7:name&gt;
+              &lt;hl7:administrativeGenderCode code="F" codeSystem="2.16.840.1.113883.5.1" codeSystemName="AdministrativeGender"&gt;
+                &lt;hl7:displayName value="Female"/&gt;
+              &lt;/hl7:administrativeGenderCode&gt;
+            &lt;/hl7:contactPerson&gt;
+          &lt;/hl7:notificationParty&gt;
+        &lt;/hl7:notificationContact&gt;
+        &lt;hl7:pertinentInformation1&gt;
+          &lt;hl7:valuablesLocation negationInd="false"&gt;
+            &lt;hl7:text mediaType="text/plain" value=" Mr. Everyman's valuables were checked into patient valuables location ER-3. "/&gt;
+            &lt;hl7:value mediaType="text/plain" value=" Mr. Everyman arrived with a wedding ring, a Timex watch, a wallet with $35 and an American Express credit card, and a set of house and car keys. These items were stored for safekeeping during his stay."/&gt;
+          &lt;/hl7:valuablesLocation&gt;
+        &lt;/hl7:pertinentInformation1&gt;
+        &lt;hl7:pertinentInformation2&gt;
+          &lt;hl7:priorityNumber value="1"/&gt;
+          &lt;hl7:observationDx negationInd="false"&gt;
+            &lt;hl7:code code="ADMDX" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode"&gt;
+              &lt;hl7:displayName value="admitting_diagnosis"/&gt;
+            &lt;/hl7:code&gt;
+            &lt;hl7:statusCode code="active"/&gt;
+            &lt;hl7:value code="518.82" codeSystem="2.16.840.1.113883.5" codeSystemName="ICD9" codeSystemVersion="9"&gt;
+              &lt;hl7:displayName value="Acute Respiratory Distress"/&gt;
+            &lt;/hl7:value&gt;
+          &lt;/hl7:observationDx&gt;
+        &lt;/hl7:pertinentInformation2&gt;
+        &lt;hl7:arrivedBy contextControlCode="OP" contextConductionInd="true" typeCode="ARR"&gt;
+          &lt;hl7:transportationEvent moodCode="EVN"&gt;
+            &lt;hl7:text mediaType="text/plain" value="Ambulance"/&gt;
+          &lt;/hl7:transportationEvent&gt;
+        &lt;/hl7:arrivedBy&gt;
+      &lt;/hl7:encounterEvent&gt;
+    &lt;/hl7:subject&gt;
+  &lt;/hl7:controlActProcess&gt;
+&lt;/hl7:PRPA_IN403001&gt;
+</pre></p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="subSection">
+               <div class="header">
+                  <h3><a name="endnotes">Endnotes</a></h3>
+               </div>
+            </div>
+            <ol>
+               <li><a name="fn1"></a>[<a href="#fn_src1">source</a>] Refer to the <span class="nonExistent" title="link to non-existent spec: v3modelcoreprinciples#">Core Principles</span> specification for additional information about what constitutes an immutable attribute
+               </li>
+            </ol>
+            <p></p>
+            <table>
+               <tbody>
+                  <tr>
+                     <td><a class="custombutton" href="#top">Return to top of page</a></td>
+                  </tr>
+               </tbody>
+            </table>
+         </div>
+      </div>
+   </body>
+</html>

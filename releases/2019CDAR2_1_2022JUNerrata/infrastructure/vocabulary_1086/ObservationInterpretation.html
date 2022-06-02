@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="iso-8859-1"?><!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+      <title>ObservationInterpretation</title>
+      <link rel="stylesheet" type="text/css" href="../../support/css/V3m.css" /><style type="text/css">
+					td {font-family: Verdana,Arial; text-align: left; vertical-align: top; font-size: 11}
+					th {font-family: Verdana,Arial; FONT-WEIGHT: bold; text-align: left; font-size: 11}
+					</style></head>
+   <body><a href="vocabulary.html#voc-systems">Return to code system index</a><br /><br /><a name="ObservationInterpretation"></a><table rules="all" border="1px" cellpadding="2" cellspacing="0" class="homepage">
+         <tbody>
+            <tr>
+               <td colspan="4"><font face="Arial" size="3"><strong>ObservationInterpretation&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong> [2.16.840.1.113883.5.83]</font><br /><p class="vocDesc"><b>Description:</b></p>
+                  <p class="vocDesc">One or more codes specifying a rough qualitative interpretation of the observation, such as "normal", "abnormal", "below normal",
+                     "change up", "resistant", "susceptible", etc.
+                  </p>
+                  <p class="vocDesc"><i class="vocDesc">OpenIssue: </i>Description copied from Concept Domain of same name.  Must be verified.  Note also that this might be identical to the V2
+                     code system of interpretation codes (formerly Abnormal Flags in older versions).
+                  </p>
+               </td>
+            </tr>
+            <tr bgcolor="cornflowerblue">
+               <th>Lvl- Typ</th>
+               <th>Concept&nbsp;Code<br />&nbsp;&nbsp;<i>Head&nbsp;Code-defined&nbsp;Value&nbsp;Set</i></th>
+               <th>Print Name</th>
+               <th>Definition, Properties, Relationships</th>
+            </tr>
+            <tr>
+               <td><a name="EX"></a>0-<strong>S</strong></td>
+               <td nowrap="nowrap"><font color="black"></font><strong>EX</strong><br /><i><font color="white"></font>
+						&nbsp;<i><a href="vs_ObservationInterpretation.html#ObservationInterpretationOustsideThreshold">v:ObservationInterpretationOustsideThreshold</a></i></i></td>
+               <td>outside threshold</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Definition:</b>The observation/test result is interpreted as being outside the inclusion range for a particular protocol within which the
+                     result is being reported.
+                  </p>
+                  <p class="vocDesc"><b class="vocDesc">Example:</b>A positive result on a Hepatitis screening test.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> HX LX
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="HX"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>HX</strong></td>
+               <td>above high threshold</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Definition:</b>The numeric observation/test result is interpreted as being above the high threshold value for a particular protocol within
+                     which the result is being reported.
+                  </p>
+                  <p class="vocDesc"><b class="vocDesc">Example:</b>An ALT (SGOT) result above a protocol-defined threshold value of 2.5 times the upper limit of normal based on the subject's
+                     sex and age.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> EX
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="LX"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>LX</strong></td>
+               <td>below low threshold</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Definition:</b>The numeric observation/test result is interpreted as being below the low threshold value for a particular protocol within
+                     which the result is being reported.
+                  </p>
+                  <p class="vocDesc"><b class="vocDesc">Example:</b>A Total White Blood Cell Count falling below a protocol-defined threshold value of 3000/mm^3
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> EX
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="ObservationInterpretationDetection"></a>0-<strong>A</strong></td>
+               <td nowrap="nowrap"><font color="black"></font><strong>ObservationInterpretationDetection</strong><br /><i><font color="white"></font>
+						&nbsp;<i><a href="vs_ObservationInterpretation.html#ObservationInterpretationDetected">v:ObservationInterpretationDetected</a></i></i></td>
+               <td>ObservationInterpretationDetection</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description:</b> The specializations of this concept indicate the presence or absence of an analyte in a test or of a sign in a clinical observation.
+                     In keeping with laboratory data processing practice, these codes provide a categorical interpretation of the "meaning" of
+                     the  quantitative value for the same observation.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> IND NEG POS
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="IND"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>IND</strong></td>
+               <td>Indeterminate</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description:</b> The value of this observation does not allow interpretation as to whether or not the analyte or sign in question is present.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> ObservationInterpretationDetection
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="NEG"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>NEG</strong></td>
+               <td>Negative</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description:</b> The value of this observation is interpreted as showing that the analyte or sign in question is not present.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> ObservationInterpretationDetection
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="POS"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>POS</strong></td>
+               <td>Positive</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description:</b> he value of this observation is interpreted as showing that the analyte or sign in question is present.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> ObservationInterpretationDetection
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="_GeneticObservationInterpretation"></a>0-<strong>A</strong></td>
+               <td nowrap="nowrap"><font color="black"></font><strong>_GeneticObservationInterpretation</strong><br /><i><font color="white"></font>
+						&nbsp;<i><a href="vs_ObservationInterpretation.html#GeneticObservationInterpretation">v:GeneticObservationInterpretation</a></i></i></td>
+               <td>GeneticObservationInterpretation</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Codes that specify interpretation of genetic analysis, such as "positive", "negative", "carrier", "responsive", etc.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> Carrier
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="Carrier"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>Carrier</strong></td>
+               <td>Carrier</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description: </b>The patient is considered as carrier based on the testing results. A carrier is an individual who carries an altered form
+                     of a gene which can lead to having a child or offspring in future generations with a genetic disorder. 
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _GeneticObservationInterpretation
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="_ObservationInterpretationChange"></a>0-<strong>A</strong></td>
+               <td nowrap="nowrap"><font color="black"></font><strong>_ObservationInterpretationChange</strong><br /><i><font color="white"></font>
+						&nbsp;<i><a href="vs_ObservationInterpretation.html#ObservationInterpretationChange">v:ObservationInterpretationChange</a></i></i></td>
+               <td>ObservationInterpretationChange</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Change of quantity and/or severity.  At most one of B or W and one of U or D allowed.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> B D U W
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="B"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>B</strong></td>
+               <td>better</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Better (of severity or nominal observations)</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _ObservationInterpretationChange
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="D"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>D</strong></td>
+               <td>decreased</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Significant change down (quantitative observations, does not imply B or W)</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _ObservationInterpretationChange
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="U"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>U</strong></td>
+               <td>increased</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Significant change up (quantitative observations, does not imply B or W)</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _ObservationInterpretationChange
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="W"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>W</strong></td>
+               <td>worse</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Worse (of severity or nominal observations)</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _ObservationInterpretationChange
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="_ObservationInterpretationExceptions"></a>0-<strong>A</strong></td>
+               <td nowrap="nowrap"><font color="black"></font><strong>_ObservationInterpretationExceptions</strong><br /><i><font color="white"></font>
+						&nbsp;<i><a href="vs_ObservationInterpretation.html#ObservationInterpretationExceptions">v:ObservationInterpretationExceptions</a></i></i></td>
+               <td>ObservationInterpretationExceptions</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Technical exceptions. At most one allowed. Does not imply normality or severity.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong>  &lt;
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="&lt;"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>&lt;</strong></td>
+               <td>low off scale</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Below absolute low-off instrument scale.  This is statement depending on the instrument, logically does not imply LL or L
+                     (e.g., if the instrument is inadequate).  If an off-scale value is also low or critically low one must also report L and LL
+                     respectively.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _ObservationInterpretationExceptions
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="_ObservationInterpretationNormality"></a>0-<strong>A</strong></td>
+               <td nowrap="nowrap"><font color="black"></font><strong>_ObservationInterpretationNormality</strong><br /><i><font color="white"></font>
+						&nbsp;<i><a href="vs_ObservationInterpretation.html#ObservationInterpretationNormality">v:ObservationInterpretationNormality</a></i></i></td>
+               <td>ObservationInterpretationNormality</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Normality, Abnormality, Alert.  Concepts in this category are mutually exclusive, i.e., at most one is allowed.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> A N
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="A"></a>1-<strong>S</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>A</strong><br /><i><font color="white">.&nbsp;</font>
+						&nbsp;<i><a href="vs_ObservationInterpretation.html#ObservationInterpretationNormalityAbnormal">v:ObservationInterpretationNormalityAbnormal</a></i></i></td>
+               <td>Abnormal</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Abnormal (for nominal observations, all service types)</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _ObservationInterpretationNormality<br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> AA H L
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="AA"></a>2-<strong>S</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>AA</strong><br /><i><font color="white">.&nbsp;.&nbsp;</font>
+						&nbsp;<i><a href="vs_ObservationInterpretation.html#ObservationInterpretationNormalityAlert">v:ObservationInterpretationNormalityAlert</a></i></i></td>
+               <td>Abnormal alert</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Abnormal alert (for nominal observations and all service types)</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> A<br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> HH LL
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="HH"></a>3-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;.&nbsp;</font><strong>HH</strong></td>
+               <td>High alert</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Above upper alert threshold (for quantitative observations)</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> AA H
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="LL"></a>3-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;.&nbsp;</font><strong>LL</strong></td>
+               <td>Low alert</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Below lower alert threshold (for quantitative observations)</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> AA L
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="H"></a>2-<strong>S</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>H</strong><br /><i><font color="white">.&nbsp;.&nbsp;</font>
+						&nbsp;<i><a href="vs_ObservationInterpretation.html#ObservationInterpretationNormalityHigh">v:ObservationInterpretationNormalityHigh</a></i></i></td>
+               <td>High</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Above high normal (for quantitative observations)</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> A<br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> HH
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td>3-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;.&nbsp;</font><strong>HH</strong></td>
+               <td>High alert</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Above upper alert threshold (for quantitative observations)</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> AA H
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="L"></a>2-<strong>S</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>L</strong><br /><i><font color="white">.&nbsp;.&nbsp;</font>
+						&nbsp;<i><a href="vs_ObservationInterpretation.html#ObservationInterpretationNormalityLow">v:ObservationInterpretationNormalityLow</a></i></i></td>
+               <td>Low</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Below low normal (for quantitative observations)</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> A<br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> LL
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td>3-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;.&nbsp;</font><strong>LL</strong></td>
+               <td>Low alert</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Below lower alert threshold (for quantitative observations)</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> AA L
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="N"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>N</strong></td>
+               <td>Normal</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Normal (for all service types)</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _ObservationInterpretationNormality
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="_ObservationInterpretationSusceptibility"></a>0-<strong>A</strong></td>
+               <td nowrap="nowrap"><font color="black"></font><strong>_ObservationInterpretationSusceptibility</strong><br /><i><font color="white"></font>
+						&nbsp;<i><a href="vs_ObservationInterpretation.html#ObservationInterpretationSusceptibility">v:ObservationInterpretationSusceptibility</a></i></i></td>
+               <td>ObservationInterpretationSusceptibility</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Microbiology: interpretations of minimal inhibitory concentration (MIC) values. At most one allowed.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> I MS R S VS
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="I"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>I</strong></td>
+               <td>intermediate</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Intermediate</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _ObservationInterpretationSusceptibility
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="MS"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>MS</strong></td>
+               <td>moderately susceptible</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Moderately susceptible</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _ObservationInterpretationSusceptibility
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="R"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>R</strong></td>
+               <td>resistent</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Resistent</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _ObservationInterpretationSusceptibility
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="S"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>S</strong></td>
+               <td>susceptible</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Susceptible</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _ObservationInterpretationSusceptibility
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="VS"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>VS</strong></td>
+               <td>very susceptible</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Very susceptible</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _ObservationInterpretationSusceptibility
+                  </p>
+               </td>
+            </tr>
+         </tbody>
+      </table><br /><a href="vocabulary.html#voc-systems">Return to code system index</a><br /><br /><p class="copyright">Last Published:&nbsp;20190729&nbsp;12:04&nbsp;PM</p>
+      <p class="copyright">HL7 &reg; Version 3 Standard, &copy; 2019  Health Level Seven &reg; International. &nbsp;All Rights Reserved.</p>
+      <p class="copyright">HL7 and Health Level Seven are registered trademarks of Health Level Seven International Reg. U.S. Pat &amp; TM Off.<br />Use of these materials is governed by HL7 International's <a href="http://www.hl7.org/legal/ippolicy.cfm">IP Compliance Policy</a>.
+      </p>
+   </body>
+</html>

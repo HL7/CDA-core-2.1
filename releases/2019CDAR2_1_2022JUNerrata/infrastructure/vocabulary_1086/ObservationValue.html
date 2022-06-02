@@ -1,0 +1,1499 @@
+<?xml version="1.0" encoding="iso-8859-1"?><!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+      <title>ObservationValue</title>
+      <link rel="stylesheet" type="text/css" href="../../support/css/V3m.css" /><style type="text/css">
+					td {font-family: Verdana,Arial; text-align: left; vertical-align: top; font-size: 11}
+					th {font-family: Verdana,Arial; FONT-WEIGHT: bold; text-align: left; font-size: 11}
+					</style></head>
+   <body><a href="vocabulary.html#voc-systems">Return to code system index</a><br /><br /><a name="ObservationValue"></a><table rules="all" border="1px" cellpadding="2" cellspacing="0" class="homepage">
+         <tbody>
+            <tr>
+               <td colspan="4"><font face="Arial" size="3"><strong>ObservationValue&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong> [2.16.840.1.113883.5.1063]</font><br /><p class="vocDesc"><b>Description:</b></p>
+                  <p class="vocDesc">This domain is the root domain to which all HL7-recognized value sets for the Observation.value attribute will be linked when
+                     Observation.value has a coded data type.
+                  </p>
+                  <p class="vocDesc"><i class="vocDesc">OpenIssue: </i>Description copied from Concept Domain of same name.  Must be corrected..
+                  </p>
+               </td>
+            </tr>
+            <tr bgcolor="cornflowerblue">
+               <th>Lvl- Typ</th>
+               <th>Concept&nbsp;Code<br />&nbsp;&nbsp;<i>Head&nbsp;Code-defined&nbsp;Value&nbsp;Set</i></th>
+               <th>Print Name</th>
+               <th>Definition, Properties, Relationships</th>
+            </tr>
+            <tr>
+               <td><a name="_ActCoverageAssessmentObservationValue"></a>0-<strong>A</strong></td>
+               <td nowrap="nowrap"><font color="black"></font><strong>_ActCoverageAssessmentObservationValue</strong><br /><i><font color="white"></font>
+						&nbsp;<i><a href="vs_ObservationValue.html#ActCoverageAssessmentObservationValue">v:ActCoverageAssessmentObservationValue</a></i></i></td>
+               <td>ActCoverageAssessmentObservationValue</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Codes specify the category of observation, evidence, or document used to assess for services, e.g., discharge planning, or
+                     to establish eligibility for coverage under a policy or program. The type of evidence is coded as observation values.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> ELSTAT HLSTAT LIVDEP LIVSIT SOECSTAT _ActFinancialStatusObservationValue
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="ELSTAT"></a>1-<strong>S</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>ELSTAT</strong><br /><i><font color="white">.&nbsp;</font>
+						&nbsp;<i><a href="vs_ObservationValue.html#ObservationEligibilityIndicatorValue">v:ObservationEligibilityIndicatorValue</a></i></i></td>
+               <td>eligibility indicator</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Code specifying eligibility indicators used to assess or establish eligibility for coverage under a policy or program eligibility
+                     status, e.g., certificates of creditable coverage; student enrollment; adoption, marriage or birth certificate.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _ActCoverageAssessmentObservationValue<br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> ADOPT BTHCERT CCOC DRLIC FOSTER MEMBER MIL MRGCERT PASSPORT STUDENRL
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="ADOPT"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>ADOPT</strong></td>
+               <td>adoption document</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Indicator of adoption.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> ELSTAT
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="BTHCERT"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>BTHCERT</strong></td>
+               <td>birth certificate</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Indicator of birth.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> ELSTAT
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="CCOC"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>CCOC</strong></td>
+               <td>creditable coverage document</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Indicator of creditable coverage.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> ELSTAT
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="DRLIC"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>DRLIC</strong></td>
+               <td>driver license</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Indicator of driving status.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> ELSTAT
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="FOSTER"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>FOSTER</strong></td>
+               <td>foster child document</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Indicator of foster child status.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> ELSTAT
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="MEMBER"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>MEMBER</strong></td>
+               <td>program or policy member</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Indicator of status as covered member under a policy or program, e.g., member id card or coverage document.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> ELSTAT
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="MIL"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>MIL</strong></td>
+               <td>military identification</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Indicator of military status.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> ELSTAT
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="MRGCERT"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>MRGCERT</strong></td>
+               <td>marriage certificate</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Indicator of marriage status.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> ELSTAT
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="PASSPORT"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>PASSPORT</strong></td>
+               <td>passport</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Indicator of citizenship.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> ELSTAT
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="STUDENRL"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>STUDENRL</strong></td>
+               <td>student enrollment</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Indicator of student status.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> ELSTAT
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="HLSTAT"></a>1-<strong>S</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>HLSTAT</strong><br /><i><font color="white">.&nbsp;</font>
+						&nbsp;<i><a href="vs_ObservationValue.html#ObservationHealthStatusValue">v:ObservationHealthStatusValue</a></i></i></td>
+               <td>health status</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Code specifying non-clinical indicators related to health status used to assess or establish eligibility for coverage under
+                     a policy or program, e.g., pregnancy, disability, drug use, mental health issues.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _ActCoverageAssessmentObservationValue<br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> DISABLE DRUG IVDRG PGNT
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="DISABLE"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>DISABLE</strong></td>
+               <td>disabled</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Indication of disability.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> HLSTAT
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="DRUG"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>DRUG</strong></td>
+               <td>drug use</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Indication of drug use.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> HLSTAT
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="IVDRG"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>IVDRG</strong></td>
+               <td>IV drug use</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Indication of IV drug use .</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> HLSTAT
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="PGNT"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>PGNT</strong></td>
+               <td>pregnant</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Non-clinical report of pregnancy.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> HLSTAT
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="LIVDEP"></a>1-<strong>S</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>LIVDEP</strong><br /><i><font color="white">.&nbsp;</font>
+						&nbsp;<i><a href="vs_ObservationValue.html#ObservationLivingDependencyValue">v:ObservationLivingDependencyValue</a></i></i></td>
+               <td>living dependency</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Code specifying observations related to living dependency, such as dependent upon spouse for activities of daily living.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _ActCoverageAssessmentObservationValue<br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> RELDEP SPSDEP URELDEP
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="RELDEP"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>RELDEP</strong></td>
+               <td>relative dependent</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Continued living in private residence requires functional and health care assistance from one or more relatives.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> LIVDEP
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="SPSDEP"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>SPSDEP</strong></td>
+               <td>spouse dependent</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Continued living in private residence requires functional and health care assistance from spouse or life partner.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> LIVDEP
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="URELDEP"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>URELDEP</strong></td>
+               <td>unrelated person dependent</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Continued living in private residence requires functional and health care assistance from one or more unrelated persons.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> LIVDEP
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="LIVSIT"></a>1-<strong>S</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>LIVSIT</strong><br /><i><font color="white">.&nbsp;</font>
+						&nbsp;<i><a href="vs_ObservationValue.html#ObservationLivingSituationValue">v:ObservationLivingSituationValue</a></i></i></td>
+               <td>living situation</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Code specifying observations related to living situation for a person in a private residence.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _ActCoverageAssessmentObservationValue<br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> ALONE DEPCHD DEPSPS DEPYGCHD FAM RELAT SPS UNREL
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="ALONE"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>ALONE</strong></td>
+               <td>alone</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Living alone.  Maps to PD1-2   Living arrangement   (IS)   00742 [A]</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> LIVSIT
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="DEPCHD"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>DEPCHD</strong></td>
+               <td>dependent children</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Living with one or more dependent children requiring moderate supervision.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> LIVSIT
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="DEPSPS"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>DEPSPS</strong></td>
+               <td>dependent spouse</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Living with disabled spouse requiring functional and health care assistance</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> LIVSIT
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="DEPYGCHD"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>DEPYGCHD</strong></td>
+               <td>dependent young children</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Living with one or more dependent children requiring intensive supervision</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> LIVSIT
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="FAM"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>FAM</strong></td>
+               <td>family</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Living with family. Maps to PD1-2   Living arrangement   (IS)   00742 [F]</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> LIVSIT
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="RELAT"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>RELAT</strong></td>
+               <td>relative</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Living with one or more relatives. Maps to PD1-2   Living arrangement   (IS)   00742 [R]</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> LIVSIT
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="SPS"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>SPS</strong></td>
+               <td>spouse only</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Living only with spouse or life partner. Maps to PD1-2   Living arrangement   (IS)   00742 [S]</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> LIVSIT
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="UNREL"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>UNREL</strong></td>
+               <td>unrelated person</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Living with one or more unrelated persons.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> LIVSIT
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="SOECSTAT"></a>1-<strong>S</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>SOECSTAT</strong><br /><i><font color="white">.&nbsp;</font>
+						&nbsp;<i><a href="vs_ObservationValue.html#ObservationSocioEconomicStatusValue">v:ObservationSocioEconomicStatusValue</a></i></i></td>
+               <td>socio economic status</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Code specifying observations or indicators related to socio-economic status used to assess to assess for services, e.g., discharge
+                     planning, or to establish eligibility for coverage under a policy or program.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _ActCoverageAssessmentObservationValue<br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> ABUSE HMLESS ILGIM INCAR PROB REFUG UNEMPL
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="ABUSE"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>ABUSE</strong></td>
+               <td>abuse victim</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Indication of abuse victim.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> SOECSTAT
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="HMLESS"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>HMLESS</strong></td>
+               <td>homeless</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Indication of status as homeless.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> SOECSTAT
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="ILGIM"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>ILGIM</strong></td>
+               <td>illegal immigrant</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Indication of status as illegal immigrant.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> SOECSTAT
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="INCAR"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>INCAR</strong></td>
+               <td>incarcerated</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Indication of status as incarcerated.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> SOECSTAT
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="PROB"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>PROB</strong></td>
+               <td>probation</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Indication of probation status.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> SOECSTAT
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="REFUG"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>REFUG</strong></td>
+               <td>refugee</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Indication of refugee status.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> SOECSTAT
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="UNEMPL"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>UNEMPL</strong></td>
+               <td>unemployed</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Indication of unemployed status.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> SOECSTAT
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="_ActFinancialStatusObservationValue"></a>1-<strong>A</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>_ActFinancialStatusObservationValue</strong><br /><i><font color="white">.&nbsp;</font>
+						&nbsp;<i><a href="vs_ObservationValue.html#ActFinancialStatusObservationValue">v:ActFinancialStatusObservationValue</a></i></i></td>
+               <td>ActFinancialStatusObservationValue</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Code specifying financial indicators used to assess or establish eligibility for coverage under a policy or program; e.g.,
+                     pay stub; tax or income document; asset document; living expenses.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _ActCoverageAssessmentObservationValue<br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> ASSET INCOME LIVEXP
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="ASSET"></a>2-<strong>S</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>ASSET</strong><br /><i><font color="white">.&nbsp;.&nbsp;</font>
+						&nbsp;<i><a href="vs_ObservationValue.html#ObservationAssetValue">v:ObservationAssetValue</a></i></i></td>
+               <td>asset</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Codes specifying asset indicators used to assess or establish eligibility for coverage under a policy or program.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _ActFinancialStatusObservationValue<br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> ANNUITY PROP RETACCT TRUST
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="ANNUITY"></a>3-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;.&nbsp;</font><strong>ANNUITY</strong></td>
+               <td>annuity</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Indicator of annuity ownership or status as beneficiary.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> ASSET
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="PROP"></a>3-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;.&nbsp;</font><strong>PROP</strong></td>
+               <td>real property</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Indicator of real property ownership, e.g., deed or real estate contract.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> ASSET
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="RETACCT"></a>3-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;.&nbsp;</font><strong>RETACCT</strong></td>
+               <td>retirement investment account</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Indicator of retirement investment account ownership.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> ASSET
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="TRUST"></a>3-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;.&nbsp;</font><strong>TRUST</strong></td>
+               <td>trust</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Indicator of status as trust beneficiary.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> ASSET
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="INCOME"></a>2-<strong>S</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>INCOME</strong><br /><i><font color="white">.&nbsp;.&nbsp;</font>
+						&nbsp;<i><a href="vs_ObservationValue.html#ObservationIncomeValue">v:ObservationIncomeValue</a></i></i></td>
+               <td>income</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Code specifying income indicators used to assess or establish eligibility for coverage under a policy or program; e.g., pay
+                     or pension check, child support payments received or provided, and taxes paid.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _ActFinancialStatusObservationValue<br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> CHILD DISABL INVEST PAY RETIRE SPOUSAL SUPPLE TAX
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="CHILD"></a>3-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;.&nbsp;</font><strong>CHILD</strong></td>
+               <td>child support</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Indicator of child support payments received or provided.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> INCOME
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="DISABL"></a>3-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;.&nbsp;</font><strong>DISABL</strong></td>
+               <td>disability pay</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Indicator of disability income replacement payment.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> INCOME
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="INVEST"></a>3-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;.&nbsp;</font><strong>INVEST</strong></td>
+               <td>investment income</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Indicator of investment income, e.g., dividend check, annuity payment; real estate rent, investment divestiture proceeds;
+                     trust or endowment check.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> INCOME
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="PAY"></a>3-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;.&nbsp;</font><strong>PAY</strong></td>
+               <td>paid employment</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Indicator of paid employment, e.g., letter of hire, contract, employer letter; copy of pay check or pay stub.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> INCOME
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="RETIRE"></a>3-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;.&nbsp;</font><strong>RETIRE</strong></td>
+               <td>retirement pay</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Indicator of retirement payment, e.g., pension check.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> INCOME
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="SPOUSAL"></a>3-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;.&nbsp;</font><strong>SPOUSAL</strong></td>
+               <td>spousal or partner support</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Indicator of spousal or partner support payments received or provided; e.g., alimony payment; support stipulations in a divorce
+                     settlement.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> INCOME
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="SUPPLE"></a>3-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;.&nbsp;</font><strong>SUPPLE</strong></td>
+               <td>income supplement</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Indicator of income supplement, e.g., gifting, parental income support; stipend, or grant.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> INCOME
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="TAX"></a>3-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;.&nbsp;</font><strong>TAX</strong></td>
+               <td>tax obligation</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Indicator of tax obligation or payment, e.g., statement of taxable income.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> INCOME
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="LIVEXP"></a>2-<strong>S</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>LIVEXP</strong><br /><i><font color="white">.&nbsp;.&nbsp;</font>
+						&nbsp;<i><a href="vs_ObservationValue.html#ObservationLivingExpenseValue">v:ObservationLivingExpenseValue</a></i></i></td>
+               <td>living expense</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Codes specifying living expense indicators used to assess or establish eligibility for coverage under a policy or program.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _ActFinancialStatusObservationValue<br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> CLOTH FOOD HEALTH HOUSE LEGAL MORTG RENT SUNDRY TRANS UTIL
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="CLOTH"></a>3-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;.&nbsp;</font><strong>CLOTH</strong></td>
+               <td>clothing expense</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Indicator of clothing expenses.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> LIVEXP
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="FOOD"></a>3-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;.&nbsp;</font><strong>FOOD</strong></td>
+               <td>food expense</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Indicator of transportation expenses.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> LIVEXP
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="HEALTH"></a>3-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;.&nbsp;</font><strong>HEALTH</strong></td>
+               <td>health expense</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Indicator of health expenses; including medication costs, health service costs, financial participations, and health coverage
+                     premiums.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> LIVEXP
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="HOUSE"></a>3-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;.&nbsp;</font><strong>HOUSE</strong></td>
+               <td>household expense</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Indicator of housing expense, e.g., household appliances, fixtures, furnishings, and maintenance and repairs.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> LIVEXP
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="LEGAL"></a>3-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;.&nbsp;</font><strong>LEGAL</strong></td>
+               <td>legal expense</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Indicator of legal expenses.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> LIVEXP
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="MORTG"></a>3-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;.&nbsp;</font><strong>MORTG</strong></td>
+               <td>mortgage</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Indicator of mortgage amount, interest, and payments.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> LIVEXP
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="RENT"></a>3-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;.&nbsp;</font><strong>RENT</strong></td>
+               <td>rent</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Indicator of rental or lease payments.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> LIVEXP
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="SUNDRY"></a>3-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;.&nbsp;</font><strong>SUNDRY</strong></td>
+               <td>sundry expense</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Indicator of transportation expenses.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> LIVEXP
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="TRANS"></a>3-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;.&nbsp;</font><strong>TRANS</strong></td>
+               <td>transportation expense</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Indicator of transportation expenses, e.g., vehicle payments, vehicle insurance, vehicle fuel, and vehicle maintenance and
+                     repairs.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> LIVEXP
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="UTIL"></a>3-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;.&nbsp;</font><strong>UTIL</strong></td>
+               <td>utility expense</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Indicator of transportation expenses.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> LIVEXP
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="_AllergyTestValue"></a>0-<strong>A</strong></td>
+               <td nowrap="nowrap"><font color="black"></font><strong>_AllergyTestValue</strong><br /><i><font color="white"></font>
+						&nbsp;<i><a href="vs_ObservationValue.html#AllergyTestValue">v:AllergyTestValue</a></i></i></td>
+               <td>AllergyTestValue</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Indicates the result of a particular allergy test.  E.g. Negative, Mild, Moderate, Severe</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> A0 A1 A2 A3 A4
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="A0"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>A0</strong></td>
+               <td>no reaction</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description:</b>Patient exhibits no reaction to the challenge agent.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _AllergyTestValue
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="A1"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>A1</strong></td>
+               <td>minimal reaction</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description:</b>Patient exhibits a minimal reaction to the challenge agent.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _AllergyTestValue
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="A2"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>A2</strong></td>
+               <td>mild reaction</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description:</b>Patient exhibits a mild reaction to the challenge agent.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _AllergyTestValue
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="A3"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>A3</strong></td>
+               <td>moderate reaction</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description:</b>Patient exhibits moderate reaction to the challenge agent.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _AllergyTestValue
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="A4"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>A4</strong></td>
+               <td>severe reaction</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description:</b>Patient exhibits a severe reaction to the challenge agent.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _AllergyTestValue
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="_CoverageLimitObservationValue"></a>0-<strong>A</strong></td>
+               <td nowrap="nowrap"><font color="black"></font><strong>_CoverageLimitObservationValue</strong><br /><i><font color="white"></font>
+						&nbsp;<i><a href="vs_ObservationValue.html#CoverageLimitObservationValue">v:CoverageLimitObservationValue</a></i></i></td>
+               <td>CoverageLimitObservationValue</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description:</b>Coded observation values for coverage limitations, for e.g., types of claims or types of parties covered under a policy or
+                     program.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> _CoverageLevelObservationValue
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="_CoverageLevelObservationValue"></a>1-<strong>A</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>_CoverageLevelObservationValue</strong><br /><i><font color="white">.&nbsp;</font>
+						&nbsp;<i><a href="vs_ObservationValue.html#CoverageLevelObservationValue">v:CoverageLevelObservationValue</a></i></i></td>
+               <td>CoverageLevelObservationValue</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description:</b>Coded observation values for types of covered parties under a policy or program based on their personal relationships or employment
+                     status.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _CoverageLimitObservationValue<br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> ADC CHD DEP DP ECH FLY IND SSP
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="ADC"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>ADC</strong></td>
+               <td>adult child</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description:</b>Child over an age as specified by coverage policy or program, e.g., student, differently abled, and income dependent.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _CoverageLevelObservationValue
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="CHD"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>CHD</strong></td>
+               <td>child</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description:</b>Dependent biological, adopted, foster child as specified by coverage policy or program.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _CoverageLevelObservationValue
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="DEP"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>DEP</strong></td>
+               <td>dependent</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description:</b>Person requiring functional and/or financial assistance from another person as specified by coverage policy or program.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _CoverageLevelObservationValue
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="DP"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>DP</strong></td>
+               <td>domestic partner</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description:</b>Persons registered as a family unit in a domestic partner registry as specified by law and by coverage policy or program.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _CoverageLevelObservationValue
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="ECH"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>ECH</strong></td>
+               <td>employee</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description:</b>An individual employed by an employer who receive remuneration in wages, salary, commission, tips, piece-rates, or pay-in-kind
+                     through the employeraTMs payment system (i.e., not a contractor) as specified by coverage policy or program.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _CoverageLevelObservationValue
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="FLY"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>FLY</strong></td>
+               <td>family</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description:</b>As specified by coverage policy or program.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _CoverageLevelObservationValue
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="IND"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>IND</strong></td>
+               <td>individual</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description:</b>Person as specified by coverage policy or program.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _CoverageLevelObservationValue
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="SSP"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>SSP</strong></td>
+               <td>same sex partner</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description:</b>A pair of people of the same gender who live together as a family as specified by coverage policy or program, e.g., Naomi
+                     and Ruth from the Book of Ruth; Socrates and Alcibiades
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _CoverageLevelObservationValue
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="_GeneticObservationValue"></a>0-<strong>A</strong></td>
+               <td nowrap="nowrap"><font color="black"></font><strong>_GeneticObservationValue</strong><br /><i><font color="white"></font>
+						&nbsp;<i><a href="vs_ObservationValue.html#GeneticObservationValue">v:GeneticObservationValue</a></i></i></td>
+               <td>GeneticObservationValue</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description: </b>The domain contains genetic analysis specific observation values, e.g. Homozygote, Heterozygote, etc.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> Homozygote
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="Homozygote"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>Homozygote</strong></td>
+               <td>HOMO</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description: </b>An individual having different alleles at one or more loci regarding a specific character 
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _GeneticObservationValue
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="_ObservationMeasureScoring"></a>0-<strong>S</strong></td>
+               <td nowrap="nowrap"><font color="black"></font><strong>_ObservationMeasureScoring</strong><br /><i><font color="white"></font>
+						&nbsp;<i><a href="vs_ObservationValue.html#ObservationMeasureScoring">v:ObservationMeasureScoring</a></i></i></td>
+               <td>ObservationMeasureScoring</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Observation values used to indicate the type of scoring (e.g. proportion, ratio) used by a health quality measure.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> CONTVAR PROPOR RATIO
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="CONTVAR"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>CONTVAR</strong></td>
+               <td>continuous variable measure scoring</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">A measure score in which each individual value for the measure can fall anywhere along a continuous scale (e.g., mean time
+                     to thrombolytics which aggregates the time in minutes from a case presenting with chest pain to the time of administration
+                     of thrombolytics).
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _ObservationMeasureScoring
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="PROPOR"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>PROPOR</strong></td>
+               <td>proportion measure scoring</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">A score derived by dividing the number of cases that meet a criterion for quality (the numerator) by the number of eligible
+                     cases within a given time frame (the denominator) where the numerator cases are a subset of the denominator cases (e.g., percentage
+                     of eligible women with a mammogram performed in the last year).
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _ObservationMeasureScoring
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="RATIO"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>RATIO</strong></td>
+               <td>ratio measure scoring</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">A score that may have a value of zero or greater that is derived by dividing a count of one type of data by a count of another
+                     type of data (e.g., the number of patients with central lines who develop infection divided by the number of central line
+                     days).
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _ObservationMeasureScoring
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="_ObservationMeasureType"></a>0-<strong>S</strong></td>
+               <td nowrap="nowrap"><font color="black"></font><strong>_ObservationMeasureType</strong><br /><i><font color="white"></font>
+						&nbsp;<i><a href="vs_ObservationValue.html#ObservationMeasureType">v:ObservationMeasureType</a></i></i></td>
+               <td>ObservationMeasureType</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Observation values used to indicate whether a health quality measure is used to example a process or outcome over time.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> OUTCOME PROCESS
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="OUTCOME"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>OUTCOME</strong></td>
+               <td>outcome measure type</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">A measure that indicates the result of the performance (or non-performance) of a function or process.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _ObservationMeasureType
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="PROCESS"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>PROCESS</strong></td>
+               <td>process measure type</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">A measure which focuses on a process which leads to a certain outcome, meaning that a scientific basis exists for believing
+                     that the process, when executed well, will increase the probability of achieving a desired outcome.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _ObservationMeasureType
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="_ObservationPopulationInclusion"></a>0-<strong>S</strong></td>
+               <td nowrap="nowrap"><font color="black"></font><strong>_ObservationPopulationInclusion</strong><br /><i><font color="white"></font>
+						&nbsp;<i><a href="vs_ObservationValue.html#ObservationPopulationInclusion">v:ObservationPopulationInclusion</a></i></i></td>
+               <td>ObservationPopulationInclusion</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Observation values used to assert various populations that a subject falls into.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> DENEXCEP DENOM IPP MSRPOPL NUMER
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="DENEXCEP"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>DENEXCEP</strong></td>
+               <td>included in denominator exception population</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">The subject meets criteria for inclusion in the denominator exception population. Denominator Exceptions are the valid reasons
+                     for patients who are included in the denominator population, but for whom a process or outcome of care does not occur. Patients
+                     may have Denominator Exceptions for medical reasons (e.g., patient has an egg allergy so they did not receive flu vaccine);
+                     patient reasons (e.g., patient refused flu vaccine); or system reasons (e.g., patient did not receive flu vaccine due to vaccine
+                     shortage). 
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _ObservationPopulationInclusion
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="DENOM"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>DENOM</strong></td>
+               <td>included in denominator population</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">The subject meets criteria for inclusion in the denominator population. The denominator is the lower part of a fraction used
+                     to calculate a rate, proportion, or ratio. The denominator is a subset of the Initial Patient Population, grouped for inclusion
+                     in a specific performance measure based on specific criteria (e.g., patient's age, diagnosis, prior heart attack). 
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _ObservationPopulationInclusion
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="IPP"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>IPP</strong></td>
+               <td>included in initial patient population</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">The subject meets criteria for inclusion in the initial patient population. This identifies the eligible group of patients
+                     that the performance measure(s) is (are) designed to address; usually focused on a specific disease process (e.g., coronary
+                     artery disease, asthma). 
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _ObservationPopulationInclusion
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="MSRPOPL"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>MSRPOPL</strong></td>
+               <td>included in measure population</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">The subject meets criteria for inclusion in the measure population. Continuous variable measures do not have a Denominator,
+                     but instead define a Measure Population. To be in the measure population, a patient is in the larger Initial Patient Population
+                     appropriate to the measure set and is not excluded from the individual measure. 
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _ObservationPopulationInclusion
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="NUMER"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>NUMER</strong></td>
+               <td>included in numerator population</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">The subject meets criteria for inclusion in the numerator population. The numerator is the upper portion of a fraction used
+                     to calculate a rate, proportion, or ratio. For a Proportion Measure, the Numerator is a subset of the Denominator, which defines
+                     the group of patients in the denominator for whom a process or outcome of care occurs (e.g., flu vaccine received).
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _ObservationPopulationInclusion
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="_PartialCompletionScale"></a>0-<strong>A</strong></td>
+               <td nowrap="nowrap"><font color="black"></font><strong>_PartialCompletionScale</strong><br /><i><font color="white"></font>
+						&nbsp;<i><a href="vs_ObservationValue.html#PartialCompletionScale">v:PartialCompletionScale</a></i></i></td>
+               <td>PartialCompletionScale</td>
+               <td>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> G LE ME MI N S
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="G"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>G</strong></td>
+               <td>Great extent</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Value for Act.partialCompletionCode attribute that implies 81-99% completion</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _PartialCompletionScale
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="LE"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>LE</strong></td>
+               <td>Large extent</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Value for Act.partialCompletionCode attribute that implies 61-80% completion</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _PartialCompletionScale
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="ME"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>ME</strong></td>
+               <td>Medium extent</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Value for Act.partialCompletionCode attribute that implies 41-60% completion</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _PartialCompletionScale
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="MI"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>MI</strong></td>
+               <td>Minimal extent</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Value for Act.partialCompletionCode attribute that implies 1-20% completion</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _PartialCompletionScale
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="N"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>N</strong></td>
+               <td>None</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Value for Act.partialCompletionCode attribute that implies 0% completion</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _PartialCompletionScale
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="S"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>S</strong></td>
+               <td>Some extent</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Value for Act.partialCompletionCode attribute that implies 21-40% completion</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _PartialCompletionScale
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="_SeverityObservation"></a>0-<strong>A</strong></td>
+               <td nowrap="nowrap"><font color="black"></font><strong>_SeverityObservation</strong><br /><i><font color="white"></font>
+						&nbsp;<i><a href="vs_ObservationValue.html#SeverityObservation">v:SeverityObservation</a></i></i></td>
+               <td>SeverityObservation</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Potential values for observations of severity.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> H L M
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="H"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>H</strong></td>
+               <td>High</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Indicates the condition may be life-threatening or has the potential to cause permanent injury.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _SeverityObservation
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="L"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>L</strong></td>
+               <td>Low</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Indicates the condition may result in some adverse consequences but is unlikely to substantially affect the situation of the
+                     subject.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _SeverityObservation
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="M"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>M</strong></td>
+               <td>Moderate</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Indicates the condition may result in noticable adverse adverse consequences but is unlikely to be life-threatening or cause
+                     permanent injury.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _SeverityObservation
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="_SubjectBodyPosition"></a>0-<strong>A</strong></td>
+               <td nowrap="nowrap"><font color="black"></font><strong>_SubjectBodyPosition</strong></td>
+               <td>_SubjectBodyPosition</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Contains codes for defining the observed, physical position of a subject, such as during an observation, assessment, collection
+                     of a specimen, etc.  ECG waveforms and vital signs, such as blood pressure, are two examples where a general, observed position
+                     typically needs to be noted.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> LLD PRN RLD SFWL SIT STN SUP
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="LLD"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>LLD</strong></td>
+               <td>left lateral decubitus</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Lying on the left side.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _SubjectBodyPosition
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="PRN"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>PRN</strong></td>
+               <td>prone</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Lying with the front or ventral surface downward; lying face down.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _SubjectBodyPosition
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="RLD"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>RLD</strong></td>
+               <td>right lateral decubitus</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Lying on the right side.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _SubjectBodyPosition
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="SFWL"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>SFWL</strong></td>
+               <td>Semi-Fowler's</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">A semi-sitting position in bed with the head of the bed elevated approximately 45 degrees.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _SubjectBodyPosition
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="SIT"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>SIT</strong></td>
+               <td>sitting</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Resting the body on the buttocks, typically with upper torso erect or semi erect.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _SubjectBodyPosition
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="STN"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>STN</strong></td>
+               <td>standing</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">To be stationary, upright, vertical, on one's legs.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _SubjectBodyPosition
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="SUP"></a>1-<strong>S</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>SUP</strong></td>
+               <td>supine</td>
+               <td>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _SubjectBodyPosition<br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> RTRD TRD
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="RTRD"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>RTRD</strong></td>
+               <td>reverse trendelenburg</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Lying on the back, on an inclined plane, typically about 30-45 degrees with head raised and feet lowered.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> SUP
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="TRD"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>TRD</strong></td>
+               <td>trendelenburg</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Lying on the back, on an inclined plane, typically about 30-45 degrees, with  head lowered and feet raised.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> SUP
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="_VerificationOutcomeValue"></a>0-<strong>A</strong></td>
+               <td nowrap="nowrap"><font color="black"></font><strong>_VerificationOutcomeValue</strong><br /><i><font color="white"></font>
+						&nbsp;<i><a href="vs_ObservationValue.html#VerificationOutcomeValue">v:VerificationOutcomeValue</a></i></i></td>
+               <td>verification outcome</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Values for observations of verification act results</p>
+                  <p class="vocDesc"><b class="vocDesc">Examples:</b> Verified, not verified, verified with warning.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> ACT ACTPEND ELG INACT INPNDINV INPNDUPD NELG
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="ACT"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>ACT</strong></td>
+               <td>active coverage</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Definition: </b>Coverage is in effect for healthcare service(s) and/or product(s).
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _VerificationOutcomeValue
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="ACTPEND"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>ACTPEND</strong></td>
+               <td>active - pending investigation</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Definition: </b>Coverage is in effect for healthcare service(s) and/or product(s) - Pending Investigation
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _VerificationOutcomeValue
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="ELG"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>ELG</strong></td>
+               <td>eligible</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Definition: </b>Coverage is in effect for healthcare service(s) and/or product(s).
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _VerificationOutcomeValue
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="INACT"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>INACT</strong></td>
+               <td>inactive</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Definition: </b>Coverage is not in effect for healthcare service(s) and/or product(s).
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _VerificationOutcomeValue
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="INPNDINV"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>INPNDINV</strong></td>
+               <td>inactive - pending investigation</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Definition: </b>Coverage is not in effect for healthcare service(s) and/or product(s) - Pending Investigation.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _VerificationOutcomeValue
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="INPNDUPD"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>INPNDUPD</strong></td>
+               <td>inactive - pending eligibility update</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Definition: </b>Coverage is not in effect for healthcare service(s) and/or product(s) - Pending Eligibility Update.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _VerificationOutcomeValue
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="NELG"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>NELG</strong></td>
+               <td>not eligible</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Definition: </b>Coverage is not in effect for healthcare service(s) and/or product(s). May optionally include reasons for the ineligibility.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _VerificationOutcomeValue
+                  </p>
+               </td>
+            </tr>
+         </tbody>
+      </table><br /><a href="vocabulary.html#voc-systems">Return to code system index</a><br /><br /><p class="copyright">Last Published:&nbsp;20190729&nbsp;12:04&nbsp;PM</p>
+      <p class="copyright">HL7 &reg; Version 3 Standard, &copy; 2019  Health Level Seven &reg; International. &nbsp;All Rights Reserved.</p>
+      <p class="copyright">HL7 and Health Level Seven are registered trademarks of Health Level Seven International Reg. U.S. Pat &amp; TM Off.<br />Use of these materials is governed by HL7 International's <a href="http://www.hl7.org/legal/ippolicy.cfm">IP Compliance Policy</a>.
+      </p>
+   </body>
+</html>

@@ -1,0 +1,2743 @@
+<?xml version="1.0" encoding="iso-8859-1"?><!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+      <title>ActReason</title>
+      <link rel="stylesheet" type="text/css" href="../../support/css/V3m.css" /><style type="text/css">
+					td {font-family: Verdana,Arial; text-align: left; vertical-align: top; font-size: 11}
+					th {font-family: Verdana,Arial; FONT-WEIGHT: bold; text-align: left; font-size: 11}
+					</style></head>
+   <body><a href="vocabulary.html#voc-systems">Return to code system index</a><br /><br /><a name="ActReason"></a><table rules="all" border="1px" cellpadding="2" cellspacing="0" class="homepage">
+         <tbody>
+            <tr>
+               <td colspan="4"><font face="Arial" size="3"><strong>ActReason&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong> [2.16.840.1.113883.5.8]</font><br /><p class="vocDesc"><b>Description:</b></p>
+                  <p class="vocDesc">A set of codes specifying the motivation, cause, or rationale of an Act, when such rationale is not reasonably represented
+                     as an ActRelationship of type "has reason" linking to another Act.
+                  </p>
+                  <p class="vocDesc"><i class="vocDesc">Examples:</i> Example reasons that might qualify for being coded in this field might be: "routine requirement", "infectious disease reporting
+                     requirement", "on patient request", "required by law".
+                  </p>
+               </td>
+            </tr>
+            <tr bgcolor="cornflowerblue">
+               <th>Lvl- Typ</th>
+               <th>Concept&nbsp;Code<br />&nbsp;&nbsp;<i>Head&nbsp;Code-defined&nbsp;Value&nbsp;Set</i></th>
+               <th>Print Name</th>
+               <th>Definition, Properties, Relationships</th>
+            </tr>
+            <tr>
+               <td><a name="_ActAccommodationReason"></a>0-<strong>A</strong></td>
+               <td nowrap="nowrap"><font color="black"></font><strong>_ActAccommodationReason</strong><br /><i><font color="white"></font>
+						&nbsp;<i><a href="vs_ActReason.html#ActAccommodationReason">v:ActAccommodationReason</a></i></i></td>
+               <td>ActAccommodationReason</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Identifies the reason the patient is assigned to this accommodation type</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> ACCREQNA FLRCNV MEDNEC PAT
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="ACCREQNA"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>ACCREQNA</strong></td>
+               <td>Accommodation Requested Not Available</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Accommodation requested is not available.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _ActAccommodationReason
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="FLRCNV"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>FLRCNV</strong></td>
+               <td>Floor Convenience</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Accommodation is assigned for floor convenience.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _ActAccommodationReason
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="MEDNEC"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>MEDNEC</strong></td>
+               <td>Medical Necessity</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Required for medical reasons(s).</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _ActAccommodationReason
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="PAT"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>PAT</strong></td>
+               <td>Patient request</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">The Patient requested the action</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _ActAccommodationReason _SchedulingActReason _SubstanceAdminSubstitutionNotAllowedReason
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="_ActCoverageReason"></a>0-<strong>A</strong></td>
+               <td nowrap="nowrap"><font color="black"></font><strong>_ActCoverageReason</strong><br /><i><font color="white"></font>
+						&nbsp;<i><a href="vs_ActReason.html#ActCoverageReason">v:ActCoverageReason</a></i></i></td>
+               <td>ActCoverageReason</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description:</b>Codes used to specify reasons or criteria relating to coverage provided under a policy or program.  May be used to convey
+                     reasons pertaining to coverage contractual provisions, including criteria for eligibility, coverage limitations, coverage
+                     maximums, or financial participation required of covered parties.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> _EligibilityActReasonCode
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="_EligibilityActReasonCode"></a>1-<strong>A</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>_EligibilityActReasonCode</strong><br /><i><font color="white">.&nbsp;</font>
+						&nbsp;<i><a href="vs_ActReason.html#EligibilityActReasonCode">v:EligibilityActReasonCode</a></i></i></td>
+               <td>EligibilityActReasonCode</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Identifies the reason or rational for why a person is eligibile for benefits under an insurance policy or progam. </p>
+                  <p class="vocDesc"><i class="vocDesc">Examples: </i> A person is a claimant under an automobile insurance policy are client deceased &amp; adopted client has been given a new policy
+                     identifier.  A new employee is eligible for health insurance as an employment benefit.  A person meets a government program
+                     eligibility criteria for financial, age or health status.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _ActCoverageReason<br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> _ActIneligibilityReason _CoverageEligibilityReason
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="_ActIneligibilityReason"></a>2-<strong>A</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>_ActIneligibilityReason</strong><br /><i><font color="white">.&nbsp;.&nbsp;</font>
+						&nbsp;<i><a href="vs_ActReason.html#ActIneligibilityReason">v:ActIneligibilityReason</a></i></i></td>
+               <td>ActIneligibilityReason</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Identifies the reason or rational for why a person is not eligibile for benefits under an insurance policy.</p>
+                  <p class="vocDesc">Examples are client deceased &amp; adopted client has been given a new policy identifier.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _EligibilityActReasonCode<br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> COVSUS DECSD REGERR
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="COVSUS"></a>3-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;.&nbsp;</font><strong>COVSUS</strong></td>
+               <td>coverage suspended</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">When a client has no contact with the health system for an extended period, coverage is suspended.  Client will be reinstated
+                     to original start date upon proof of identification, residency etc.
+                  </p>
+                  <p class="vocDesc">Example: Coverage may be suspended during a strike situation, when employer benefits for employees are not covered (i.e. not
+                     in effect).
+                  </p>
+                  <p class="vocDesc"><b>OpenIssue:</b></p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _ActIneligibilityReason
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="DECSD"></a>3-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;.&nbsp;</font><strong>DECSD</strong></td>
+               <td>deceased</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Client deceased.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _ActIneligibilityReason
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="REGERR"></a>3-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;.&nbsp;</font><strong>REGERR</strong></td>
+               <td>registered in error</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Client was registered in error.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _ActIneligibilityReason
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="_CoverageEligibilityReason"></a>2-<strong>A</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>_CoverageEligibilityReason</strong><br /><i><font color="white">.&nbsp;.&nbsp;</font>
+						&nbsp;<i><a href="vs_ActReason.html#CoverageEligibilityReason">v:CoverageEligibilityReason</a></i></i></td>
+               <td>CoverageEligibilityReason</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Definition: Identifies the reason or rational for why a person is eligibile for benefits under an insurance policy or progam.
+                     
+                  </p>
+                  <p class="vocDesc"><i class="vocDesc">Examples: </i> A person is a claimant under an automobile insurance policy are client deceased &amp; adopted client has been given a new policy
+                     identifier.  A new employee is eligible for health insurance as an employment benefit.  A person meets a government program
+                     eligibility criteria for financial, age or health status.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _EligibilityActReasonCode<br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> AGE CRIME DIS EMPLOY FINAN HEALTH MULTI PNC STATUTORY VEHIC WORK
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="AGE"></a>3-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;.&nbsp;</font><strong>AGE</strong></td>
+               <td>age eligibility</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">A person becomes eligible for a program based on age.</p>
+                  <p class="vocDesc"><i class="vocDesc">Example: </i> In the U.S., a person who is 65 years of age or older is eligible for Medicare. 
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _CoverageEligibilityReason
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="CRIME"></a>3-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;.&nbsp;</font><strong>CRIME</strong></td>
+               <td>crime victim</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">A person becomes eligible for insurance or a program because of crime related health condition or injury. </p>
+                  <p class="vocDesc"><i class="vocDesc">Example: </i> A person is a claimant under the U.S. Crime Victims Compensation program.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _CoverageEligibilityReason
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="DIS"></a>3-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;.&nbsp;</font><strong>DIS</strong></td>
+               <td>disability</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">A person becomes a claimant under a disability income insurance policy or a disability rehabilitation program because of a
+                     health condition or injury which limits the person's ability to earn an income or function without institutionalization. 
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _CoverageEligibilityReason
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="EMPLOY"></a>3-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;.&nbsp;</font><strong>EMPLOY</strong></td>
+               <td>employment benefit</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">A person becomes eligible for insurance provided as an employment benefit based on employment status.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _CoverageEligibilityReason
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="FINAN"></a>3-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;.&nbsp;</font><strong>FINAN</strong></td>
+               <td>financial eligibility</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">A person becomes eligible for a program based on financial criteria.</p>
+                  <p class="vocDesc"><i class="vocDesc">Example: </i> A person whose family income is below a financial threshold for eligibility for Medicaid or SCHIP.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _CoverageEligibilityReason
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="HEALTH"></a>3-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;.&nbsp;</font><strong>HEALTH</strong></td>
+               <td>health status</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">A person becomes eligible for a program because of a qualifying health condition or injury. </p>
+                  <p class="vocDesc"><i class="vocDesc">Examples: </i> A person is determined to have a qualifying health conditions include pregnancy, HIV/AIDs, tuberculosis, end stage renal
+                     disease, breast or cervical cancer, or other condition requiring specialized health services, hospice, institutional or community
+                     based care provided under a program
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _CoverageEligibilityReason
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="MULTI"></a>3-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;.&nbsp;</font><strong>MULTI</strong></td>
+               <td>multiple criteria eligibility</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">A person becomes eligible for a program based on more than one criterion.</p>
+                  <p class="vocDesc"><i class="vocDesc">Examples: </i> In the U.S., a child whose familiy income meets Medicaid financial thresholds and whose age is less than 18 is eligible for
+                     the Early and Periodic Screening, Diagnostic, and Treatment program (EPSDT).  A person whose family income meets Medicaid
+                     financial thresholds and whose age is 65 years or older is eligible for Medicaid and Medicare, and are referred to as dual
+                     eligibles.  
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _CoverageEligibilityReason
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="PNC"></a>3-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;.&nbsp;</font><strong>PNC</strong></td>
+               <td>property and casualty condition</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">A person becomes a claimant under a property and casualty insurance policy because of a related health condition or injury
+                     resulting from a circumstance covered under the terms of the policy. 
+                  </p>
+                  <p class="vocDesc"><i class="vocDesc">Example: </i> A person is a claimant under a homeowners insurance policy because of an injury sustained on the policyholderaTMs premises.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _CoverageEligibilityReason
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="STATUTORY"></a>3-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;.&nbsp;</font><strong>STATUTORY</strong></td>
+               <td>statutory eligibility</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">A person becomes eligible for a program based on statutory criteria.</p>
+                  <p class="vocDesc"><i class="vocDesc">Examples: </i> A person is a member of an indigenous group, a veteran of military service, or  in the U.S., a recipient of adoption assistance
+                     and foster care under Title IV-E of the Social Security. 
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _CoverageEligibilityReason
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="VEHIC"></a>3-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;.&nbsp;</font><strong>VEHIC</strong></td>
+               <td>motor vehicle accident victim</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">A person becomes a claimant under a motor vehicle accident insurance because of a motor vehicle accident related health condition
+                     or injury. 
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _CoverageEligibilityReason
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="WORK"></a>3-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;.&nbsp;</font><strong>WORK</strong></td>
+               <td>work related</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">A person becomes eligible for insurance or a program because of a work related health condition or injury. </p>
+                  <p class="vocDesc"><i class="vocDesc">Example: </i> A person is a claimant under the U.S. Black Lung Program.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _CoverageEligibilityReason
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="_ActInformationManagementReason"></a>0-<strong>A</strong></td>
+               <td nowrap="nowrap"><font color="black"></font><strong>_ActInformationManagementReason</strong></td>
+               <td>ActInformationManagementReason</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description:</b>The rationale or purpose for an act relating to information management, such as archiving information for the purpose of complying
+                     with an enterprise data retention policy. 
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> _ActHealthInformationManagementReason _ActInformationPrivacyReason
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="_ActHealthInformationManagementReason"></a>1-<strong>A</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>_ActHealthInformationManagementReason</strong></td>
+               <td>ActHealthInformationManagementReason</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description:</b>The rationale or purpose for an act relating to health information management, such as archiving information for the purpose
+                     of complying with an organization policy or jurisdictional law relating to  data retention.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _ActInformationManagementReason<br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> _ActConsentInformationAccessOverrideReason _ActHealthInformationPrivacyReason
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="_ActConsentInformationAccessOverrideReason"></a>2-<strong>A</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>_ActConsentInformationAccessOverrideReason</strong><br /><i><font color="white">.&nbsp;.&nbsp;</font>
+						&nbsp;<i><a href="vs_ActReason.html#ActConsentInformationAccessOverrideReason">v:ActConsentInformationAccessOverrideReason</a></i></i></td>
+               <td>ActConsentInformationAccessOverrideReason</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Definition: </b>Use to convey the reason that a provider may or has accessed personal healthcare information.  Typically, this involves overriding
+                     the subject's consent directives.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _ActHealthInformationManagementReason<br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> OVRER OVRPJ OVRPS OVRTPS
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="OVRER"></a>3-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;.&nbsp;</font><strong>OVRER</strong></td>
+               <td>emergency</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Definition: </b>The patient is unable to provide consent, but the provider determines they have an urgent healthcare related reason to access
+                     the record.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _ActConsentInformationAccessOverrideReason
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="OVRPJ"></a>3-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;.&nbsp;</font><strong>OVRPJ</strong></td>
+               <td>professional judgment</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Definition: </b>The patient, while able to give consent, has not.  However the provider believes it is in the patient's interest to access
+                     the record without patient consent. 
+                  </p>
+                  <p class="vocDesc"><b class="vocDesc">Example:</b>Psychiatric patient.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _ActConsentInformationAccessOverrideReason
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="OVRPS"></a>3-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;.&nbsp;</font><strong>OVRPS</strong></td>
+               <td>public safety</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Definition: </b>The patient, while able to give consent, has not.  However, the provider believes that access to masked patient information
+                     is justified because of concerns related to public safety.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _ActConsentInformationAccessOverrideReason
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="OVRTPS"></a>3-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;.&nbsp;</font><strong>OVRTPS</strong></td>
+               <td>third party safety</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Definition: </b>The patient, while able to give consent, has not.  However, the provider believes that access to masked patient information
+                     is justified because of concerns related to the health and safety of one or more third parties.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _ActConsentInformationAccessOverrideReason
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="_ActHealthInformationPrivacyReason"></a>2-<strong>A</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>_ActHealthInformationPrivacyReason</strong></td>
+               <td>ActHealthInformationPrivacyReason</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description:</b>The rationale or purpose for an act relating to the management of personal health information, such as collecting personal
+                     health information for research or public health purposes.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _ActHealthInformationManagementReason<br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> HMARKT HOPERAT HPAYMT HRESCH TREAT
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="HMARKT"></a>3-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;.&nbsp;</font><strong>HMARKT</strong></td>
+               <td>healthcare marketing</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description:</b>Activities conducted for the purposes of marketing services and products that are typically related to healthcare.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _ActHealthInformationPrivacyReason
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="HOPERAT"></a>3-<strong>S</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;.&nbsp;</font><strong>HOPERAT</strong></td>
+               <td>healthcare operations</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description:</b>Administrative and contractual processes required to support the provision of healthcare.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _ActHealthInformationPrivacyReason<br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> HACCRED HCOMPL HLEGAL HOUTCOMS HPRGRP HQUALIMP HSYSADMIN MEMADMIN PATADMIN PATSFTY
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="HACCRED"></a>4-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;.&nbsp;.&nbsp;</font><strong>HACCRED</strong></td>
+               <td>accreditation</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description:</b>Operational activities conducted for the purposes of meeting of criteria defined by an accrediting entity
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> HOPERAT
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="HCOMPL"></a>4-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;.&nbsp;.&nbsp;</font><strong>HCOMPL</strong></td>
+               <td>compliance</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description:</b>Operational activities required to meet a mandate 
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> HOPERAT
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="HLEGAL"></a>4-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;.&nbsp;.&nbsp;</font><strong>HLEGAL</strong></td>
+               <td>legal</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description:</b>Operational activities required by legal proceedings
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> HOPERAT
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="HOUTCOMS"></a>4-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;.&nbsp;.&nbsp;</font><strong>HOUTCOMS</strong></td>
+               <td>outcome measure</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description:</b>Operational activities conducted for the purposes of assessing the results of healthcare
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> HOPERAT
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="HPRGRP"></a>4-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;.&nbsp;.&nbsp;</font><strong>HPRGRP</strong></td>
+               <td>program reporting</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description:</b>Operational activities conducted to meet program accounting requirements 
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> HOPERAT
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="HQUALIMP"></a>4-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;.&nbsp;.&nbsp;</font><strong>HQUALIMP</strong></td>
+               <td>quality improvement</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description:</b>Operational activities conducted for the purposes of improving healthcare quality
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> HOPERAT
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="HSYSADMIN"></a>4-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;.&nbsp;.&nbsp;</font><strong>HSYSADMIN</strong></td>
+               <td>system administration</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description:</b>Operational activities conducted to administer the electronic systems used for the delivery of healthcare
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> HOPERAT
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="MEMADMIN"></a>4-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;.&nbsp;.&nbsp;</font><strong>MEMADMIN</strong></td>
+               <td>member administration</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description:</b>Operational activities conducted to administer healthcare coverage to an enrollee under a policy or program
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> HOPERAT
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="PATADMIN"></a>4-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;.&nbsp;.&nbsp;</font><strong>PATADMIN</strong></td>
+               <td>patient administration</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description:</b>Operational activities conducted to administer the delivery of healthcare to a patient
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> HOPERAT
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="PATSFTY"></a>4-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;.&nbsp;.&nbsp;</font><strong>PATSFTY</strong></td>
+               <td>patient safety</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description:</b>Operational activities conducted for the purposes of increasing the safety of healthcare
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> HOPERAT
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="HPAYMT"></a>3-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;.&nbsp;</font><strong>HPAYMT</strong></td>
+               <td>healthcare payment</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description:</b>Administrative, financial, and contractual processes related to payment for the provision of healthcare.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _ActHealthInformationPrivacyReason
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="HRESCH"></a>3-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;.&nbsp;</font><strong>HRESCH</strong></td>
+               <td>healthcare research</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description:</b>Activities conducted for the purposes of obtaining healthcare knowledge.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _ActHealthInformationPrivacyReason
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="TREAT"></a>3-<strong>S</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;.&nbsp;</font><strong>TREAT</strong></td>
+               <td>treatment</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description:</b>Provision of healthcare to a subject of care.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _ActHealthInformationPrivacyReason<br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> CAREMGT CLINTRL ETREAT POPHLTH
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="CAREMGT"></a>4-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;.&nbsp;.&nbsp;</font><strong>CAREMGT</strong></td>
+               <td>Care Management</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description:</b>Coordination of care provision typically overseen by a healthcare payer.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> TREAT
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="CLINTRL"></a>4-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;.&nbsp;.&nbsp;</font><strong>CLINTRL</strong></td>
+               <td>clinical trial</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description:</b>Healthcare provided or withheld in the course of conducting research
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> TREAT
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="ETREAT"></a>4-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;.&nbsp;.&nbsp;</font><strong>ETREAT</strong></td>
+               <td>Emergency Treatment</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description:</b>Provision of emergency healthcare .
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> TREAT
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="POPHLTH"></a>4-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;.&nbsp;.&nbsp;</font><strong>POPHLTH</strong></td>
+               <td>population health</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description:</b>Activities conducted for the purposes of population health, such as the reporting of notifiable conditions.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> TREAT
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="_ActInformationPrivacyReason"></a>1-<strong>A</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>_ActInformationPrivacyReason</strong></td>
+               <td>ActInformationPrivacyReason</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description:</b>The rationale or purpose for an act relating to the management of personal information, such as disclosing personal tax information
+                     for the purpose of complying with a court order.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _ActInformationManagementReason<br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> MARKT OPERAT PAYMT RESCH SRVC
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="MARKT"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>MARKT</strong></td>
+               <td>marketing</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description:</b></p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _ActInformationPrivacyReason
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="OPERAT"></a>2-<strong>S</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>OPERAT</strong></td>
+               <td>operations</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description:</b>Administrative and contractual processes required to support an activity, product, or service
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _ActInformationPrivacyReason<br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> ACCRED COMPL ENADMIN LEGAL OUTCOMS PRGRPT QUALIMP SYSADMN
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="ACCRED"></a>3-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;.&nbsp;</font><strong>ACCRED</strong></td>
+               <td>accreditation</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description:</b>Operational activities conducted for the purposes of meeting of criteria defined by an accrediting entity for an activity,
+                     product, or service
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> OPERAT
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="COMPL"></a>3-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;.&nbsp;</font><strong>COMPL</strong></td>
+               <td>compliance</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description:</b>Operational activities required to meet a mandate related to an activity, product, or service
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> OPERAT
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="ENADMIN"></a>3-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;.&nbsp;</font><strong>ENADMIN</strong></td>
+               <td>entity administration</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description:</b>Operational activities conducted to administer information relating to entities involves with an activity, product, or service
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> OPERAT
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td>3-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;.&nbsp;</font><strong>LEGAL</strong></td>
+               <td>subpoena</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Definition:</b>To provide information as a result of a subpoena.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> OPERAT _PatientProfileQueryReasonCode
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="OUTCOMS"></a>3-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;.&nbsp;</font><strong>OUTCOMS</strong></td>
+               <td>outcome measure</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description:</b>Operational activities conducted for the purposes of assessing the results of an activity, product, or service
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> OPERAT
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="PRGRPT"></a>3-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;.&nbsp;</font><strong>PRGRPT</strong></td>
+               <td>program reporting</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description:</b>Operational activities conducted to meet program accounting requirements related to an activity, product, or service
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> OPERAT
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="QUALIMP"></a>3-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;.&nbsp;</font><strong>QUALIMP</strong></td>
+               <td>quality improvement</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description:</b>Operational activities conducted for the purposes of improving the quality of an activity, product, or service
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> OPERAT
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="SYSADMN"></a>3-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;.&nbsp;</font><strong>SYSADMN</strong></td>
+               <td>system administration</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description:</b>Operational activities conducted to administer the electronic systems used for an activity, product, or service
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> OPERAT
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="PAYMT"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>PAYMT</strong></td>
+               <td>payment</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description:</b>Administrative, financial, and contractual processes related to payment for an activity, product, or service 
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _ActInformationPrivacyReason
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="RESCH"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>RESCH</strong></td>
+               <td>research</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description:</b>Investigative activities conducted for the purposes of obtaining knowledge
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _ActInformationPrivacyReason
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="SRVC"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>SRVC</strong></td>
+               <td>service</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description:</b>Provision of a service, product, or capability to an individual or organization
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _ActInformationPrivacyReason
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="_ActInvalidReason"></a>0-<strong>S</strong></td>
+               <td nowrap="nowrap"><font color="black"></font><strong>_ActInvalidReason</strong></td>
+               <td>ActInvalidReason</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description: </b>Types of reasons why a substance is invalid for use.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> ADVSTORAGE EXPLOT OUTSIDESCHED PRODRECALL
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="ADVSTORAGE"></a>1-<strong>S</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>ADVSTORAGE</strong></td>
+               <td>adverse storage condition</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description: </b>Storage conditions caused the substance to be ineffective.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _ActInvalidReason<br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> COLDCHNBRK
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="COLDCHNBRK"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>COLDCHNBRK</strong></td>
+               <td>cold chain break</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description: </b>Cold chain was not maintained for the substance.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> ADVSTORAGE
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="EXPLOT"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>EXPLOT</strong></td>
+               <td>expired lot</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description: </b>The lot from which the substance was drawn was expired.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _ActInvalidReason
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="OUTSIDESCHED"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>OUTSIDESCHED</strong></td>
+               <td>administered outside recommended schedule</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description: </b>The substance was administered outside of the recommended schedule.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _ActInvalidReason
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="PRODRECALL"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>PRODRECALL</strong></td>
+               <td>product recall</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description: </b>The substance was recalled by the manufacturer.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _ActInvalidReason
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="_ActInvoiceCancelReason"></a>0-<strong>A</strong></td>
+               <td nowrap="nowrap"><font color="black"></font><strong>_ActInvoiceCancelReason</strong></td>
+               <td>ActInvoiceCancelReason</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Domain specifies the codes used to describe reasons why a Provider is cancelling an Invoice or Invoice Grouping.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> INCCOVPTY INCINVOICE INCPOLICY INCPROV
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="INCCOVPTY"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>INCCOVPTY</strong></td>
+               <td>incorrect covered party as patient</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">The covered party (patient) specified with the Invoice is not correct.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _ActInvoiceCancelReason
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="INCINVOICE"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>INCINVOICE</strong></td>
+               <td>incorrect billing</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">The billing information, specified in the Invoice Elements, is not correct.  This could include incorrect costing for items
+                     included in the Invoice.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _ActInvoiceCancelReason
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="INCPOLICY"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>INCPOLICY</strong></td>
+               <td>incorrect policy</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">The policy specified with the Invoice is not correct.  For example, it may belong to another Adjudicator or Covered Party.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _ActInvoiceCancelReason
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="INCPROV"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>INCPROV</strong></td>
+               <td>incorrect provider</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">The provider specified with the Invoice is not correct.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _ActInvoiceCancelReason
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="_ActNoImmunizationReason"></a>0-<strong>A</strong></td>
+               <td nowrap="nowrap"><font color="black"></font><strong>_ActNoImmunizationReason</strong><br /><i><font color="white"></font>
+						&nbsp;<i><a href="vs_ActReason.html#ActNoImmunizationReason">v:ActNoImmunizationReason</a></i></i></td>
+               <td>ActNoImmunizationReason</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">A coded description of the reason for why a patient did not receive a scheduled immunization.</p>
+                  <p class="vocDesc">(important for public health strategy</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> IMMUNE MEDPREC OSTOCK PATOBJ PHILISOP RELIG VACEFF VACSAF
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="IMMUNE"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>IMMUNE</strong></td>
+               <td>immunity</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Definition:</b>Testing has shown that the patient already has immunity to the agent targeted by the immunization.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _ActNoImmunizationReason
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="MEDPREC"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>MEDPREC</strong></td>
+               <td>medical precaution</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Definition:</b>The patient currently has a medical condition for which the vaccine is contraindicated or for which precaution is warranted.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _ActNoImmunizationReason
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="OSTOCK"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>OSTOCK</strong></td>
+               <td>out of stock</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Definition:</b>There was no supply of the product on hand to perform the service.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _ActNoImmunizationReason
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="PATOBJ"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>PATOBJ</strong></td>
+               <td>patient objection</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Definition:</b>The patient or their guardian objects to receiving the vaccine.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _ActNoImmunizationReason
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="PHILISOP"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>PHILISOP</strong></td>
+               <td>philosophical objection</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Definition:</b>The patient or their guardian objects to receiving the vaccine because of philosophical beliefs.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _ActNoImmunizationReason
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="RELIG"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>RELIG</strong></td>
+               <td>religious objection</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Definition:</b>The patient or their guardian objects to receiving the vaccine on religious grounds.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _ActNoImmunizationReason
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="VACEFF"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>VACEFF</strong></td>
+               <td>vaccine efficacy concerns</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Definition:</b>The intended vaccine has expired or is otherwise believed to no longer be effective.
+                  </p>
+                  <p class="vocDesc"><b class="vocDesc">Example:</b>Due to temperature exposure.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _ActNoImmunizationReason
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="VACSAF"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>VACSAF</strong></td>
+               <td>vaccine safety concerns</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Definition:</b>The patient or their guardian objects to receiving the vaccine because of concerns over its safety.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _ActNoImmunizationReason
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="_ActSupplyFulfillmentRefusalReason"></a>0-<strong>A</strong></td>
+               <td nowrap="nowrap"><font color="black"></font><strong>_ActSupplyFulfillmentRefusalReason</strong><br /><i><font color="white"></font>
+						&nbsp;<i><a href="vs_ActReason.html#ActSupplyFulfillmentRefusalReason">v:ActSupplyFulfillmentRefusalReason</a></i></i></td>
+               <td>ActSupplyFulfillmentRefusalReason</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Indicates why a fulfiller refused to fulfill a supply order, and considered it important to notify other providers of their
+                     decision.  E.g. "Suspect fraud", "Possible abuse", "Contraindicated".
+                  </p>
+                  <p class="vocDesc">(used when capturing 'refusal to fill' annotations)</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> FRR01 FRR02 FRR03 FRR04 FRR05 FRR06
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="FRR01"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>FRR01</strong></td>
+               <td>order stopped</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Definition:</b>The order has been stopped by the prescriber but this fact has not necessarily captured electronically.
+                  </p>
+                  <p class="vocDesc"><b class="vocDesc">Example:</b>A verbal stop, a fax, etc.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _ActSupplyFulfillmentRefusalReason
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="FRR02"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>FRR02</strong></td>
+               <td>stale-dated order</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Definition:</b>Order has not been fulfilled within a reasonable amount of time, and may not be current.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _ActSupplyFulfillmentRefusalReason
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="FRR03"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>FRR03</strong></td>
+               <td>incomplete data</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Definition:</b>Data needed to safely act on the order which was expected to become available independent of the order is not yet available
+                  </p>
+                  <p class="vocDesc"><b class="vocDesc">Example:</b>Lab results, diagnostic imaging, etc.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _ActSupplyFulfillmentRefusalReason
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="FRR04"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>FRR04</strong></td>
+               <td>product unavailable</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Definition:</b>Product not available or manufactured. Cannot supply.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _ActSupplyFulfillmentRefusalReason
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="FRR05"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>FRR05</strong></td>
+               <td>ethical/religious</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Definition:</b>The dispenser has ethical, religious or moral objections to fulfilling the order/dispensing the product.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _ActSupplyFulfillmentRefusalReason
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="FRR06"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>FRR06</strong></td>
+               <td>unable to provide care</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Definition:</b>Fulfiller not able to provide appropriate care associated with fulfilling the order.
+                  </p>
+                  <p class="vocDesc"><b class="vocDesc">Example:</b>Therapy requires ongoing monitoring by fulfiller and fulfiller will be ending practice, leaving town, unable to schedule necessary
+                     time, etc.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _ActSupplyFulfillmentRefusalReason
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="_ClinicalResearchEventReason"></a>0-<strong>A</strong></td>
+               <td nowrap="nowrap"><font color="black"></font><strong>_ClinicalResearchEventReason</strong></td>
+               <td>ClinicalResearchEventReason</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Definition:</b>Specifies the reason that an event occurred in a clinical research study.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> RET SCH TRM UNS
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="RET"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>RET</strong></td>
+               <td>retest</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Definition:</b>The event occurred so that a test or observation performed at a prior event could be performed again due to conditions set
+                     forth in the protocol.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _ClinicalResearchEventReason
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="SCH"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>SCH</strong></td>
+               <td>scheduled</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Definition:</b>The event occurred due to it being scheduled in the research protocol.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _ClinicalResearchEventReason
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="TRM"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>TRM</strong></td>
+               <td>termination</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Definition:</b>The event occurred in order to terminate the subject's participation in the study.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _ClinicalResearchEventReason
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="UNS"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>UNS</strong></td>
+               <td>unscheduled</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Definition:</b>The event that occurred was initiated by a study participant (e.g. the subject or the investigator), and did not occur for
+                     protocol reasons.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _ClinicalResearchEventReason
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="_ClinicalResearchObservationReason"></a>0-<strong>A</strong></td>
+               <td nowrap="nowrap"><font color="black"></font><strong>_ClinicalResearchObservationReason</strong></td>
+               <td>ClinicalResearchObservationReason</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Definition:</b>SSpecifies the reason that a test was performed or observation collected in a clinical research study.
+                  </p>
+                  <p class="vocDesc"><b class="vocDesc">Note:</b>This set of codes are not strictly reasons, but are used in the currently Normative standard.  Future revisions of the specification
+                     will model these as ActRelationships and thes codes may subsequently be retired.  Thus, these codes should not be used for
+                     new specifications.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> NPT PPT UPT
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="NPT"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>NPT</strong></td>
+               <td>non-protocol</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Definition:</b>The observation or test was neither defined or scheduled in the study protocol.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _ClinicalResearchObservationReason
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="PPT"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>PPT</strong></td>
+               <td>per protocol</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Definition:</b>The observation or test occurred due to it being defined in the research protocol, and during an activity or event that was
+                     scheduled in the protocol.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _ClinicalResearchObservationReason
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="UPT"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>UPT</strong></td>
+               <td>per definition</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">:</b>The observation or test occurred as defined in the research protocol, but at a point in time not specified in the study protocol.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _ClinicalResearchObservationReason
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="_CombinedPharmacyOrderSuspendReasonCode"></a>0-<strong>A</strong></td>
+               <td nowrap="nowrap"><font color="black"></font><strong>_CombinedPharmacyOrderSuspendReasonCode</strong></td>
+               <td>CombinedPharmacyOrderSuspendReasonCode</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description:</b>Indicates why the prescription should be suspended.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> ALTCHOICE CLARIF DRUGHIGH HOSPADM LABINT NON-AVAIL PREG SALG SDDI SDUPTHER SINTOL SURG WASHOUT
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="ALTCHOICE"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>ALTCHOICE</strong></td>
+               <td>try another treatment first</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description:</b>This therapy has been ordered as a backup to a preferred therapy.  This order will be released when and if the preferred therapy
+                     is unsuccessful.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _CombinedPharmacyOrderSuspendReasonCode
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="CLARIF"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>CLARIF</strong></td>
+               <td>prescription requires clarification</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description:</b>Clarification is required before the order can be acted upon.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _CombinedPharmacyOrderSuspendReasonCode
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="DRUGHIGH"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>DRUGHIGH</strong></td>
+               <td>drug level too high</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description:</b>The current level of the medication in the patient's system is too high.  The medication is suspended to allow the level to
+                     subside to a safer level.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _CombinedPharmacyOrderSuspendReasonCode
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="HOSPADM"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>HOSPADM</strong></td>
+               <td>admission to hospital</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description:</b>The patient has been admitted to a care facility and their community medications are suspended until hospital discharge.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _CombinedPharmacyOrderSuspendReasonCode
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="LABINT"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>LABINT</strong></td>
+               <td>lab interference issues</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description:</b>The therapy would interfere with a planned lab test and the therapy is being withdrawn until the test is completed.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _CombinedPharmacyOrderSuspendReasonCode
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="NON-AVAIL"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>NON-AVAIL</strong></td>
+               <td>patient not-available</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description:</b>Patient not available for a period of time due to a scheduled therapy, leave of absence or other reason.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _CombinedPharmacyOrderSuspendReasonCode
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="PREG"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>PREG</strong></td>
+               <td>parent is pregnant/breast feeding</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description:</b>The patient is pregnant or breast feeding.  The therapy will be resumed when the pregnancy is complete and the patient is
+                     no longer breastfeeding.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _CombinedPharmacyOrderSuspendReasonCode
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="SALG"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>SALG</strong></td>
+               <td>allergy</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description:</b>The patient is believed to be allergic to a substance that is part of the therapy and the therapy is being temporarily withdrawn
+                     to confirm.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _CombinedPharmacyOrderSuspendReasonCode
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="SDDI"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>SDDI</strong></td>
+               <td>drug interacts with another drug</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description:</b>The drug interacts with a short-term treatment that is more urgently required.  This order will be resumed when the short-term
+                     treatment is complete.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _CombinedPharmacyOrderSuspendReasonCode
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="SDUPTHER"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>SDUPTHER</strong></td>
+               <td>duplicate therapy</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description:</b>Another short-term co-occurring therapy fulfills the same purpose as this therapy.  This therapy will be resumed when the
+                     co-occuring therapy is complete.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _CombinedPharmacyOrderSuspendReasonCode
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="SINTOL"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>SINTOL</strong></td>
+               <td>intolerance</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description:</b>The patient is believed to have an intolerance to a substance that is part of the therapy and the therapy is being temporarily
+                     withdrawn to confirm.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _CombinedPharmacyOrderSuspendReasonCode
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="SURG"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>SURG</strong></td>
+               <td>patient scheduled for surgery</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description:</b>The drug is contraindicated for patients receiving surgery and the patient is scheduled to be admitted for surgery in the
+                     near future.  The drug will be resumed when the patient has sufficiently recovered from the surgery.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _CombinedPharmacyOrderSuspendReasonCode
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="WASHOUT"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>WASHOUT</strong></td>
+               <td>waiting for old drug to wash out</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description:</b>The patient was previously receiving a medication contraindicated with the current medication.  The current medication will
+                     remain on hold until the prior medication has been cleansed from their system.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _CombinedPharmacyOrderSuspendReasonCode
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="_ControlActNullificationReasonCode"></a>0-<strong>S</strong></td>
+               <td nowrap="nowrap"><font color="black"></font><strong>_ControlActNullificationReasonCode</strong></td>
+               <td>ControlActNullificationReasonCode</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description:</b>Identifies reasons for nullifying (retracting) a particular control act.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> ALTD EIE NORECMTCH
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="ALTD"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>ALTD</strong></td>
+               <td>altered decision</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description:</b>The decision on which the recorded information was based was changed before the decision had an effect.
+                  </p>
+                  <p class="vocDesc"><b class="vocDesc">Example:</b>Aborted prescription before patient left office, released prescription before suspend took effect.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _ControlActNullificationReasonCode
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="EIE"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>EIE</strong></td>
+               <td>entered in error</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description:</b>The information was recorded incorrectly or was recorded in the wrong record.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _ControlActNullificationReasonCode
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="NORECMTCH"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>NORECMTCH</strong></td>
+               <td>no record match</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description: </b>There is no match for the record in the database.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> NOMATCH _ControlActNullificationReasonCode _StatusRevisionRefusalReasonCode
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="_ControlActReason"></a>0-<strong>A</strong></td>
+               <td nowrap="nowrap"><font color="black"></font><strong>_ControlActReason</strong><br /><i><font color="white"></font>
+						&nbsp;<i><a href="vs_ActReason.html#ControlActReason">v:ControlActReason</a></i></i></td>
+               <td>ControlActReason</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Identifies why a specific query, request, or other trigger event occurred.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> _MedicationOrderAbortReasonCode _MedicationOrderReleaseReasonCode _PharmacySupplyEventAbortReason _PharmacySupplyEventStockReasonCode _PharmacySupplyRequestRenewalRefusalReasonCode _SupplyOrderAbortReasonCode
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="_MedicationOrderAbortReasonCode"></a>1-<strong>A</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>_MedicationOrderAbortReasonCode</strong><br /><i><font color="white">.&nbsp;</font>
+						&nbsp;<i><a href="vs_ActReason.html#MedicationOrderAbortReasonCode">v:MedicationOrderAbortReasonCode</a></i></i></td>
+               <td>medication order abort reason</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description:</b>Indicates the reason the medication order should be aborted.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _ControlActReason<br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> DISCONT INEFFECT MONIT NOREQ NOTCOVER PREFUS RECALL REPLACE REPLACEFIX UNABLE
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="DISCONT"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>DISCONT</strong></td>
+               <td>product discontinued</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description:</b>The medication is no longer being manufactured or is otherwise no longer available.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _MedicationOrderAbortReasonCode _PharmacySupplyRequestRenewalRefusalReasonCode
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="INEFFECT"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>INEFFECT</strong></td>
+               <td>ineffective</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description:</b>The therapy has been found to not have the desired therapeutic benefit on the patient.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _MedicationOrderAbortReasonCode
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="MONIT"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>MONIT</strong></td>
+               <td>response to monitoring</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description:</b>Monitoring the patient while taking the medication, the decision has been made that the therapy is no longer appropriate.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _MedicationOrderAbortReasonCode
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="NOREQ"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>NOREQ</strong></td>
+               <td>no longer required for treatment</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description:</b>The underlying condition has been resolved or has evolved such that a different treatment is no longer needed.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _MedicationOrderAbortReasonCode
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="NOTCOVER"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>NOTCOVER</strong></td>
+               <td>not covered</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description:</b>The product does not have (or no longer has) coverage under the patientaTMs insurance policy.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _MedicationOrderAbortReasonCode
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="PREFUS"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>PREFUS</strong></td>
+               <td>patient refuse</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description:</b>The patient refused to take the product.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _MedicationOrderAbortReasonCode
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="RECALL"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>RECALL</strong></td>
+               <td>product recalled</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description:</b>The manufacturer or other agency has requested that stocks of a medication be removed from circulation.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _MedicationOrderAbortReasonCode
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="REPLACE"></a>2-<strong>S</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>REPLACE</strong></td>
+               <td>change in order</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description:</b>Item in current order is no longer in use as requested and a new one has/will be created to replace it.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _MedicationOrderAbortReasonCode<br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> DOSECHG
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="DOSECHG"></a>3-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;.&nbsp;</font><strong>DOSECHG</strong></td>
+               <td>change in medication/dose</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description:</b>The medication is being re-prescribed at a different dosage.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> REPLACE
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="REPLACEFIX"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>REPLACEFIX</strong></td>
+               <td>error in order</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description:</b>Current order was issued with incorrect data and a new order has/will be created to replace it.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _MedicationOrderAbortReasonCode
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="UNABLE"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>UNABLE</strong></td>
+               <td>unable to use</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description:</b>&lt;The patient is not (or is no longer) able to use the medication in a manner prescribed.
+                  </p>
+                  <p class="vocDesc"><b class="vocDesc">Example:</b>CanaTMt swallow.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _MedicationOrderAbortReasonCode
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="_MedicationOrderReleaseReasonCode"></a>1-<strong>A</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>_MedicationOrderReleaseReasonCode</strong><br /><i><font color="white">.&nbsp;</font>
+						&nbsp;<i><a href="vs_ActReason.html#MedicationOrderReleaseReasonCode">v:MedicationOrderReleaseReasonCode</a></i></i></td>
+               <td>medication order release reason</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Definition:</b>A collection of concepts that indicate why the prescription should be released from suspended state.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _ControlActReason<br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> HOLDDONE HOLDINAP
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="HOLDDONE"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>HOLDDONE</strong></td>
+               <td>suspend reason no longer applies</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Definition:</b>The original reason for suspending the medication has ended.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _MedicationOrderReleaseReasonCode
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="HOLDINAP"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>HOLDINAP</strong></td>
+               <td>suspend reason inappropriate</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Definition:</b></p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _MedicationOrderReleaseReasonCode
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="_PharmacySupplyEventAbortReason"></a>1-<strong>S</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>_PharmacySupplyEventAbortReason</strong><br /><i><font color="white">.&nbsp;</font>
+						&nbsp;<i><a href="vs_ActReason.html#PharmacySupplyEventAbortReason">v:PharmacySupplyEventAbortReason</a></i></i></td>
+               <td>PharmacySupplyEventAbortReason</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Definition:</b>Identifies why the dispense event was not completed.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _ControlActReason<br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> CONTRA FOABORT FOSUSP NOPICK PATDEC QUANTCHG
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="CONTRA"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>CONTRA</strong></td>
+               <td>contraindication</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Definition:</b>Contraindication identified
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _PharmacySupplyEventAbortReason
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="FOABORT"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>FOABORT</strong></td>
+               <td>order aborted</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Definition:</b>Order to be fulfilled was aborted
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _PharmacySupplyEventAbortReason
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="FOSUSP"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>FOSUSP</strong></td>
+               <td>order suspended</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Definition:</b>Order to be fulfilled was suspended
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _PharmacySupplyEventAbortReason
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="NOPICK"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>NOPICK</strong></td>
+               <td>not picked up</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Definition:</b>Patient did not come to get medication
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _PharmacySupplyEventAbortReason
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="PATDEC"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>PATDEC</strong></td>
+               <td>patient changed mind</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Definition:</b>Patient changed their mind regarding obtaining medication
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _PharmacySupplyEventAbortReason
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="QUANTCHG"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>QUANTCHG</strong></td>
+               <td>change supply quantity</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Definition:</b>Patient requested a revised quantity of medication
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _PharmacySupplyEventAbortReason
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="_PharmacySupplyEventStockReasonCode"></a>1-<strong>A</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>_PharmacySupplyEventStockReasonCode</strong><br /><i><font color="white">.&nbsp;</font>
+						&nbsp;<i><a href="vs_ActReason.html#PharmacySupplyEventStockReasonCode">v:PharmacySupplyEventStockReasonCode</a></i></i></td>
+               <td>pharmacy supply event stock reason</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Definition:</b>A collection of concepts that indicates the reason for a "bulk supply" of medication.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _ControlActReason<br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> FLRSTCK LTC OFFICE PHARM PROG
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="FLRSTCK"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>FLRSTCK</strong></td>
+               <td>floor stock</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Definition:</b>The bulk supply is issued to replenish a ward for local dispensing.  (Includes both mobile and fixed-location ward stocks.)
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _PharmacySupplyEventStockReasonCode
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="LTC"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>LTC</strong></td>
+               <td>long term care use</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Definition:</b>The bulk supply will be administered within a long term care facility.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _PharmacySupplyEventStockReasonCode
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="OFFICE"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>OFFICE</strong></td>
+               <td>office use</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Definition:</b>The bulk supply is intended for general clinician office use.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _PharmacySupplyEventStockReasonCode
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="PHARM"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>PHARM</strong></td>
+               <td>pharmacy transfer</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Definition:</b>The bulk supply is being transferred to another dispensing facility to.
+                  </p>
+                  <p class="vocDesc"><b class="vocDesc">Example:</b>Alleviate a temporary shortage.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _PharmacySupplyEventStockReasonCode
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="PROG"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>PROG</strong></td>
+               <td>program use</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Definition:</b>The bulk supply is intended for dispensing according to a specific program.
+                  </p>
+                  <p class="vocDesc"><b class="vocDesc">Example:</b>Mass immunization.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _PharmacySupplyEventStockReasonCode
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="_PharmacySupplyRequestRenewalRefusalReasonCode"></a>1-<strong>A</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>_PharmacySupplyRequestRenewalRefusalReasonCode</strong><br /><i><font color="white">.&nbsp;</font>
+						&nbsp;<i><a href="vs_ActReason.html#PharmacySupplyRequestRenewalRefusalReasonCode">v:PharmacySupplyRequestRenewalRefusalReasonCode</a></i></i></td>
+               <td>pharmacy supply request renewal refusal reason</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Definition:</b>A collection of concepts that identifies why a renewal prescription has been refused.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _ControlActReason<br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> ALREADYRX DISCONT FAMPHYS MODIFY NEEDAPMT NOTAVAIL NOTPAT ONHOLD PRNA TOOEARLY
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="ALREADYRX"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>ALREADYRX</strong></td>
+               <td>new prescription exists</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Definition:</b>Patient has already been given a new (renewal) prescription.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _PharmacySupplyRequestRenewalRefusalReasonCode
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>DISCONT</strong></td>
+               <td>product discontinued</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description:</b>The medication is no longer being manufactured or is otherwise no longer available.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _MedicationOrderAbortReasonCode _PharmacySupplyRequestRenewalRefusalReasonCode
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="FAMPHYS"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>FAMPHYS</strong></td>
+               <td>family physician must authorize further fills</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Definition:</b>Request for further authorization must be done through patient's family physician.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _PharmacySupplyRequestRenewalRefusalReasonCode
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="MODIFY"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>MODIFY</strong></td>
+               <td>modified prescription exists</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Definition:</b>Therapy has been changed and new prescription issued
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _PharmacySupplyRequestRenewalRefusalReasonCode
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="NEEDAPMT"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>NEEDAPMT</strong></td>
+               <td>patient must make appointment</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Definition:</b>Patient must see prescriber prior to further fills.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _PharmacySupplyRequestRenewalRefusalReasonCode
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="NOTAVAIL"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>NOTAVAIL</strong></td>
+               <td>prescriber not available</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Definition:</b>Original prescriber is no longer available to prescribe and no other prescriber has taken responsibility for the patient.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _PharmacySupplyRequestRenewalRefusalReasonCode
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="NOTPAT"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>NOTPAT</strong></td>
+               <td>patient no longer in this practice</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Definition:</b>Patient no longer or has never been under this prescribers care.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _PharmacySupplyRequestRenewalRefusalReasonCode
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="ONHOLD"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>ONHOLD</strong></td>
+               <td>medication on hold</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Definition:</b>This medication is on hold.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _PharmacySupplyRequestRenewalRefusalReasonCode
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="PRNA"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>PRNA</strong></td>
+               <td>product not available</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description:</b>This product is not available or manufactured.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _PharmacySupplyRequestRenewalRefusalReasonCode
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="TOOEARLY"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>TOOEARLY</strong></td>
+               <td>too early</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Definition:</b>The patient should have medication remaining.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _PharmacySupplyRequestRenewalRefusalReasonCode
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="_SupplyOrderAbortReasonCode"></a>1-<strong>A</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>_SupplyOrderAbortReasonCode</strong><br /><i><font color="white">.&nbsp;</font>
+						&nbsp;<i><a href="vs_ActReason.html#SupplyOrderAbortReasonCode">v:SupplyOrderAbortReasonCode</a></i></i></td>
+               <td>supply order abort reason</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Definition:</b>A collection of concepts that indicates why the prescription should no longer be allowed to be dispensed (but can still administer
+                     what is already being dispensed).
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _ControlActReason<br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> IMPROV INTOL NEWSTR NEWTHER
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="IMPROV"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>IMPROV</strong></td>
+               <td>condition improved</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Definition:</b>The patient's medical condition has nearly abated.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _SupplyOrderAbortReasonCode
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="INTOL"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>INTOL</strong></td>
+               <td>intolerance</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description:</b>The patient has an intolerance to the medication.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _SupplyOrderAbortReasonCode
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="NEWSTR"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>NEWSTR</strong></td>
+               <td>new strength</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Definition:</b>The current medication will be replaced by a new strength of the same medication.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _SupplyOrderAbortReasonCode
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="NEWTHER"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>NEWTHER</strong></td>
+               <td>new therapy</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Definition:</b>A new therapy will be commenced when current supply exhausted.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _SupplyOrderAbortReasonCode
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="_GenericUpdateReasonCode"></a>0-<strong>A</strong></td>
+               <td nowrap="nowrap"><font color="black"></font><strong>_GenericUpdateReasonCode</strong></td>
+               <td>GenericUpdateReasonCode</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description:</b>Identifies why a change is being made to a  record.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> CHGDATA FIXDATA NEWDATA
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="CHGDATA"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>CHGDATA</strong></td>
+               <td>information change</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description:</b>Information has changed since the record was created.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _GenericUpdateReasonCode
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="FIXDATA"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>FIXDATA</strong></td>
+               <td>error correction</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description:</b>Previously recorded information was erroneous and is being corrected.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _GenericUpdateReasonCode
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="NEWDATA"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>NEWDATA</strong></td>
+               <td>new information</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description:</b>New information has become available to supplement the record.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _GenericUpdateReasonCode
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="_PatientProfileQueryReasonCode"></a>0-<strong>A</strong></td>
+               <td nowrap="nowrap"><font color="black"></font><strong>_PatientProfileQueryReasonCode</strong></td>
+               <td>patient profile query reason</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Definition:</b>A collection of concepts identifying why the patient's profile is being queried.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> ADMREV LEGAL PATCAR PATREQ PRCREV REGUL RSRCH VALIDATION
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="ADMREV"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>ADMREV</strong></td>
+               <td>administrative review</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Definition: </b>To evaluate for service authorization, payment, reporting, or performance/outcome measures.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _PatientProfileQueryReasonCode
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="LEGAL"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>LEGAL</strong></td>
+               <td>subpoena</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Definition:</b>To provide information as a result of a subpoena.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> OPERAT _PatientProfileQueryReasonCode
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="PATCAR"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>PATCAR</strong></td>
+               <td>patient care</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Definition:</b>To obtain records as part of patient care.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _PatientProfileQueryReasonCode
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="PATREQ"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>PATREQ</strong></td>
+               <td>patient request</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Definition:</b>Patient requests information from their profile.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _PatientProfileQueryReasonCode
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="PRCREV"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>PRCREV</strong></td>
+               <td>practice review</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Definition:</b>To evaluate the provider's current practice for professional-improvement reasons.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _PatientProfileQueryReasonCode
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="REGUL"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>REGUL</strong></td>
+               <td>regulatory review</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description:</b>Review for the purpose of regulatory compliance.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _PatientProfileQueryReasonCode
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="RSRCH"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>RSRCH</strong></td>
+               <td>research</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Definition:</b>To provide research data, as authorized by the patient.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _PatientProfileQueryReasonCode
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="VALIDATION"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>VALIDATION</strong></td>
+               <td>validation review</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description:</b>To validate the patient's record.
+                  </p>
+                  <p class="vocDesc"><b class="vocDesc">Example:</b>Merging or unmerging records.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _PatientProfileQueryReasonCode
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="_PharmacySupplyRequestFulfillerRevisionRefusalReasonCode"></a>0-<strong>S</strong></td>
+               <td nowrap="nowrap"><font color="black"></font><strong>_PharmacySupplyRequestFulfillerRevisionRefusalReasonCode</strong><br /><i><font color="white"></font>
+						&nbsp;<i><a href="vs_ActReason.html#PharmacySupplyRequestFulfillerRevisionRefusalReasonCode">v:PharmacySupplyRequestFulfillerRevisionRefusalReasonCode</a></i></i></td>
+               <td>PharmacySupplyRequestFulfillerRevisionRefusalReasonCode</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Definition:</b>Indicates why the request to transfer a prescription from one dispensing facility to another has been refused.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> LOCKED NOUSERPERM UNKWNTARGET
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="LOCKED"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>LOCKED</strong></td>
+               <td>locked</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Definition:</b>The prescription may not be reassigned from the original pharmacy.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _PharmacySupplyRequestFulfillerRevisionRefusalReasonCode
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="NOUSERPERM"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>NOUSERPERM</strong></td>
+               <td>no user permission</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Definition:</b>The user does not have permission
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _PharmacySupplyRequestFulfillerRevisionRefusalReasonCode _StatusRevisionRefusalReasonCode _SubstanceAdministrationPermissionRefusalReasonCode
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="UNKWNTARGET"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>UNKWNTARGET</strong></td>
+               <td>unknown target</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Definition:</b>The target facility does not recognize the dispensing facility.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _PharmacySupplyRequestFulfillerRevisionRefusalReasonCode
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="_RefusalReasonCode"></a>0-<strong>A</strong></td>
+               <td nowrap="nowrap"><font color="black"></font><strong>_RefusalReasonCode</strong><br /><i><font color="white"></font>
+						&nbsp;<i><a href="vs_ActReason.html#RefusalReasonCode">v:RefusalReasonCode</a></i></i><br /><i><font color="white"></font>
+						&nbsp;<i><a href="vs_ActReason.html#UpdateRefusalReasonCode">v:UpdateRefusalReasonCode</a></i></i></td>
+               <td>RefusalReasonCode</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description: </b>Identifies why a request to add (or activate) a record is being refused.  Examples include the receiving system not able to
+                     match the identifier and find that record in the receiving system, having no permission, or a detected issue exists which
+                     precludes the requested action.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> NOMATCH NOPERM
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="NOMATCH"></a>1-<strong>S</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>NOMATCH</strong></td>
+               <td>no match</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description: </b>There is no match.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _RefusalReasonCode<br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> NOPRODMTCH NORECMTCH NOSERMTCH
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="NOPRODMTCH"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>NOPRODMTCH</strong></td>
+               <td>no product match</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description: </b>There is no match for the product in the master file repository.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> NOMATCH
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>NORECMTCH</strong></td>
+               <td>no record match</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description: </b>There is no match for the record in the database.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> NOMATCH _ControlActNullificationReasonCode _StatusRevisionRefusalReasonCode
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="NOSERMTCH"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>NOSERMTCH</strong></td>
+               <td>no service match</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description: </b>There is no match for the service in the master file repository.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> NOMATCH
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="NOPERM"></a>1-<strong>S</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>NOPERM</strong></td>
+               <td>no permission</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description: </b>There is no permission.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _RefusalReasonCode<br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> NOAGNTPERM
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="NOAGNTPERM"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>NOAGNTPERM</strong></td>
+               <td>no agent permission</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description: </b>The agent does not have permission.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> NOPERM
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="_SchedulingActReason"></a>0-<strong>A</strong></td>
+               <td nowrap="nowrap"><font color="black"></font><strong>_SchedulingActReason</strong><br /><i><font color="white"></font>
+						&nbsp;<i><a href="vs_ActReason.html#SchedulingActReason">v:SchedulingActReason</a></i></i></td>
+               <td>SchedulingActReason</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Reasons for cancelling or rescheduling an Appointment</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> BLK DEC FIN MED MTG PAT PHY
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="BLK"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>BLK</strong></td>
+               <td>Unexpected Block (of Schedule)</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">The time slots previously allocated are now blocked and no longer available for booking Appointments</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _SchedulingActReason
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="DEC"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>DEC</strong></td>
+               <td>Patient Deceased</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">The Patient is deceased</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _SchedulingActReason
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="FIN"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>FIN</strong></td>
+               <td>No Financial Backing</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Patient unable to pay and not covered by insurance</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _SchedulingActReason
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="MED"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>MED</strong></td>
+               <td>Medical Status Altered</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">The medical condition of the Patient has changed</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _SchedulingActReason
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="MTG"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>MTG</strong></td>
+               <td>In an outside meeting</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">The Physician is in a meeting.  For example, he/she may request administrative time to talk to family after appointment</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _SchedulingActReason
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>PAT</strong></td>
+               <td>Patient request</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">The Patient requested the action</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _ActAccommodationReason _SchedulingActReason _SubstanceAdminSubstitutionNotAllowedReason
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="PHY"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>PHY</strong></td>
+               <td>Physician request</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">The Physician requested the action</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _SchedulingActReason
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="_StatusRevisionRefusalReasonCode"></a>0-<strong>S</strong></td>
+               <td nowrap="nowrap"><font color="black"></font><strong>_StatusRevisionRefusalReasonCode</strong><br /><i><font color="white"></font>
+						&nbsp;<i><a href="vs_ActReason.html#StatusRevisionRefusalReasonCode">v:StatusRevisionRefusalReasonCode</a></i></i></td>
+               <td>StatusRevisionRefusalReasonCode</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Indicates why the act revision (status update) is being refused.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> FILLED INRQSTATE NORECMTCH NOUSERPERM
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="FILLED"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>FILLED</strong></td>
+               <td>fully filled</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Ordered quantity has already been completely fulfilled.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _StatusRevisionRefusalReasonCode
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="INRQSTATE"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>INRQSTATE</strong></td>
+               <td>in requested state</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">The record is already in the requested state.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _StatusRevisionRefusalReasonCode
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>NORECMTCH</strong></td>
+               <td>no record match</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description: </b>There is no match for the record in the database.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> NOMATCH _ControlActNullificationReasonCode _StatusRevisionRefusalReasonCode
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>NOUSERPERM</strong></td>
+               <td>no user permission</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Definition:</b>The user does not have permission
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _PharmacySupplyRequestFulfillerRevisionRefusalReasonCode _StatusRevisionRefusalReasonCode _SubstanceAdministrationPermissionRefusalReasonCode
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="_SubstanceAdminSubstitutionNotAllowedReason"></a>0-<strong>A</strong></td>
+               <td nowrap="nowrap"><font color="black"></font><strong>_SubstanceAdminSubstitutionNotAllowedReason</strong><br /><i><font color="white"></font>
+						&nbsp;<i><a href="vs_ActReason.html#SubstanceAdminSubstitutionNotAllowedReason">v:SubstanceAdminSubstitutionNotAllowedReason</a></i></i></td>
+               <td>SubstanceAdminSubstitutionNotAllowedReason</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Reasons why substitution of a substance administration request is not permitted.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> ALGINT COMPCON PAT THERCHAR TRIAL
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="ALGINT"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>ALGINT</strong></td>
+               <td>allergy intolerance</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Definition: </b>Patient has had a prior allergic intolerance response to alternate product or one of its components.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _SubstanceAdminSubstitutionNotAllowedReason
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="COMPCON"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>COMPCON</strong></td>
+               <td>compliance concern</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Definition: </b>Patient has compliance issues with medication such as differing appearance, flavor, size, shape or consistency.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _SubstanceAdminSubstitutionNotAllowedReason
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>PAT</strong></td>
+               <td>Patient request</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">The Patient requested the action</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _ActAccommodationReason _SchedulingActReason _SubstanceAdminSubstitutionNotAllowedReason
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="THERCHAR"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>THERCHAR</strong></td>
+               <td>therapeutic characteristics</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">The prescribed product has specific clinical release or other therapeutic characteristics not shared by other substitutable
+                     medications.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _SubstanceAdminSubstitutionNotAllowedReason
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="TRIAL"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>TRIAL</strong></td>
+               <td>clinical trial</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Definition: </b>The specific manufactured drug is part of a clinical trial.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _SubstanceAdminSubstitutionNotAllowedReason
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="_SubstanceAdminSubstitutionReason"></a>0-<strong>A</strong></td>
+               <td nowrap="nowrap"><font color="black"></font><strong>_SubstanceAdminSubstitutionReason</strong><br /><i><font color="white"></font>
+						&nbsp;<i><a href="vs_ActReason.html#SubstanceAdminSubstitutionReason">v:SubstanceAdminSubstitutionReason</a></i></i></td>
+               <td>SubstanceAdminSubstitutionReason</td>
+               <td>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> CT FP OS RR
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="CT"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>CT</strong></td>
+               <td>continuing therapy</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Indicates that the decision to substitute or to not substitute was driven by a desire to maintain consistency with a pre-existing
+                     therapy.  I.e. The performer provided the same item/service as had been previously provided rather than providing exactly
+                     what was ordered, or rather than substituting with a lower-cost equivalent.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _SubstanceAdminSubstitutionReason
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="FP"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>FP</strong></td>
+               <td>formulary policy</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Indicates that the decision to substitute or to not substitute was driven by a policy expressed within the formulary.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _SubstanceAdminSubstitutionReason
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="OS"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>OS</strong></td>
+               <td>out of stock</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">In the case of 'substitution', indicates that the substitution occurred because the ordered item was not in stock.  In the
+                     case of 'no substitution', indicates that a cheaper equivalent was not substituted because it was not in stock.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _SubstanceAdminSubstitutionReason
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="RR"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>RR</strong></td>
+               <td>regulatory requirement</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Indicates that the decision to substitute or to not substitute was driven by a jurisdictional regulatory requirement mandating
+                     or prohibiting substitution.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _SubstanceAdminSubstitutionReason
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="_SubstanceAdministrationPermissionRefusalReasonCode"></a>0-<strong>S</strong></td>
+               <td nowrap="nowrap"><font color="black"></font><strong>_SubstanceAdministrationPermissionRefusalReasonCode</strong><br /><i><font color="white"></font>
+						&nbsp;<i><a href="vs_ActReason.html#SubstanceAdministrationPermissionRefusalReasonCode">v:SubstanceAdministrationPermissionRefusalReasonCode</a></i></i></td>
+               <td>SubstanceAdministrationPermissionRefusalReasonCode</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Definition:</b>Indicates why the requested authorization to prescribe or dispense a medication has been refused.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> NOUSERPERM PATINELIG PROTUNMET PROVUNAUTH
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>NOUSERPERM</strong></td>
+               <td>no user permission</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Definition:</b>The user does not have permission
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _PharmacySupplyRequestFulfillerRevisionRefusalReasonCode _StatusRevisionRefusalReasonCode _SubstanceAdministrationPermissionRefusalReasonCode
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="PATINELIG"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>PATINELIG</strong></td>
+               <td>patient not eligible</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Definition:</b>Patient not eligible for drug
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _SubstanceAdministrationPermissionRefusalReasonCode
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="PROTUNMET"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>PROTUNMET</strong></td>
+               <td>protocol not met</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Definition:</b>Patient does not meet required protocol
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _SubstanceAdministrationPermissionRefusalReasonCode
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="PROVUNAUTH"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>PROVUNAUTH</strong></td>
+               <td>provider not authorized</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Definition:</b>Provider is not authorized to prescribe or dispense
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _SubstanceAdministrationPermissionRefusalReasonCode
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="_TransferActReason"></a>0-<strong>A</strong></td>
+               <td nowrap="nowrap"><font color="black"></font><strong>_TransferActReason</strong><br /><i><font color="white"></font>
+						&nbsp;<i><a href="vs_ActReason.html#TransferActReason">v:TransferActReason</a></i></i></td>
+               <td>TransferActReason</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">The explanation for why a patient is moved from one location to another within the organization</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> ER RQ
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="ER"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>ER</strong></td>
+               <td>Error</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Moved to an error in placing the patient in the original location.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _TransferActReason
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="RQ"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>RQ</strong></td>
+               <td>Request</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Moved at the request of the patient.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _TransferActReason
+                  </p>
+               </td>
+            </tr>
+         </tbody>
+      </table><br /><a href="vocabulary.html#voc-systems">Return to code system index</a><br /><br /><p class="copyright">Last Published:&nbsp;20190729&nbsp;12:04&nbsp;PM</p>
+      <p class="copyright">HL7 &reg; Version 3 Standard, &copy; 2019  Health Level Seven &reg; International. &nbsp;All Rights Reserved.</p>
+      <p class="copyright">HL7 and Health Level Seven are registered trademarks of Health Level Seven International Reg. U.S. Pat &amp; TM Off.<br />Use of these materials is governed by HL7 International's <a href="http://www.hl7.org/legal/ippolicy.cfm">IP Compliance Policy</a>.
+      </p>
+   </body>
+</html>

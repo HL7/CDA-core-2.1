@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<knowledgeRequestNotification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" classCode="ACT" moodCode="DEF">
+	<effectiveTime value="20120706001023"/>
+	<subject1 typeCode="SBJ">
+		<patientContext classCode="PAT">
+			<patientPerson classCode="PSN" determinerCode="INSTANCE">
+				<administrativeGenderCode code="M" codeSystem="2.16.840.1.113883.5.1" codeSystemName="AdministrativeGender"/>
+			</patientPerson>
+			<subjectOf typeCode="SBJ">
+				<age classCode="OBS" moodCode="DEF">
+					<code code="30525-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LN"/>
+					<value value="77" unit="a"/>
+				</age>
+			</subjectOf>
+		</patientContext>
+	</subject1>
+	<subject2 typeCode="SUBJ">
+		<mainSearchCriteria classCode="OBS" moodCode="DEF">
+			<code code="KSUBJ" codeSystem="2.16.840.1.113883.1.11.20385" codeSystemName="ActCode"/>
+			<value code="385093006" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED-CT">
+				<displayName value="Community acquired pneumonia"/>
+			</value>
+		</mainSearchCriteria>
+	</subject2>
+	<subject3 typeCode="SUBJ">
+		<taskContext classCode="ACT" moodCode="DEF">
+			<code code="PROBLISTREV" codeSystem="2.16.840.1.113883.1.11.19846" codeSystemName="ActTaskCode"/>
+		</taskContext>
+	</subject3>
+	<subject4 typeCode="SUBJ">
+		<subTopic classCode="OBS" moodCode="DEF">
+			<code code="KSUBT" codeSystem="2.16.840.1.113883.1.11.20385" codeSystemName="ActCode"/>
+			<value code="Q000628" codeSystem="2.16.840.1.113883.6.177" codeSystemName="MSH">
+				<displayName value="therapy"/>
+			</value>
+		</subTopic>
+	</subject4>
+</knowledgeRequestNotification>

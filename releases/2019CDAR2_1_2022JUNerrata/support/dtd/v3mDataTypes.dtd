@@ -1,0 +1,99 @@
+<!-- edited with XML Spy v4.1 U (http://www.xmlspy.com) by Mike Craig (HL7) -->
+<!--
+	add local elements to various classes
+	defined in the main DTD
+  -->
+<!ENTITY % local.illus.class "|idl">
+<!ENTITY % local.ref.class "|dtref|propref|nullref">
+<!ENTITY % local.tech.class "|propname|dtname">
+<!ENTITY % local.p.class "|dt">
+<!--
+	include the main DTD
+  -->
+<!ENTITY % v3pub SYSTEM 'V3m.dtd'>
+%v3pub;
+<!--
+	declare new elements/attributes here
+	to be useful, these new elements have to
+	appear in the local classes above
+  -->
+<!ELEMENT propname (#PCDATA)>
+<!ATTLIST propname
+	%common.att; 
+>
+<!ELEMENT dtname (#PCDATA)>
+<!ATTLIST dtname
+	%common.att; 
+	ref NMTOKEN #IMPLIED
+>
+<!-- pointer to a type -->
+<!ELEMENT dtref EMPTY>
+<!ATTLIST dtref
+	%common.att; 
+	%ref-req.att; 
+>
+<!-- pointer to a property -->
+<!ELEMENT propref EMPTY>
+<!ATTLIST propref
+	%common.att; 
+	%ref-req.att; 
+>
+<!ELEMENT nullref EMPTY>
+<!ATTLIST nullref
+	%common.att; 
+	ref NMTOKEN #REQUIRED
+>
+<!-- <!ELEMENT xtabref EMPTY>
+<!ATTLIST xtabref
+	%common.att; 
+	spec CDATA #REQUIRED
+	ref NMTOKEN #REQUIRED
+> -->
+<!ELEMENT dt (head?, (%div.mix; | prop | div3)*)>
+<!ATTLIST dt
+	%common-idreq.att; 
+>
+<!ELEMENT prop (%div.mix;)*>
+<!ATTLIST prop
+	%common-idreq.att; 
+	type NMTOKEN #IMPLIED
+>
+<!ELEMENT idl (#PCDATA)>
+<!ATTLIST idl
+	%common.att; 
+	xml:space (default | preserve) #FIXED "preserve"
+>
+<!ENTITY v3dt 'http://www.hl7.org/v3dt-its/'>
+<!-- this is just pretend -->
+<!--
+	special characters
+  -->
+<!ENTITY infin '&#8734;'>
+<!ENTITY lte '&#8804;'>
+<!ENTITY gte '&#8805;'>
+<!ENTITY pm '&#xb1;'>
+<!ENTITY sqrt '&#x221a;'>
+<!ENTITY auml '&#xe4;'>
+<!ENTITY deg '&#xb0;'>
+<!--
+	greek letters
+  -->
+<!ENTITY alpha '&#x3b1;'>
+<!ENTITY beta '&#x3b2;'>
+<!ENTITY gamma '&#x3b3;'>
+<!ENTITY mu '&#x3bc;'>
+<!ENTITY sigma '&#x3c3;'>
+<!ENTITY chi '&#x3c7;'>
+<!ENTITY upsilon '&#x3c5;'>
+<!ENTITY inf '&#8734;'>
+<!ENTITY delta '&#916;'>
+<!ENTITY neq '&#8800;'>
+<!ENTITY egrave '&#232;'>
+<!ENTITY rtarrow '&#8594;'>
+<!ENTITY aleph '&#x2135;'>
+<!ENTITY mult '&#215;'>
+<!ENTITY setelem '&#x2208;'>
+<!ENTITY prime '&#8242;'>
+<!ENTITY sqrt '&#8730;'>
+<!ENTITY Aring '&#xc5;'>
+<!ENTITY ouml '&#xf6;'>

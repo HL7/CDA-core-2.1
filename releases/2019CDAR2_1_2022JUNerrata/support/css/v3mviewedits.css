@@ -1,0 +1,57 @@
+@import url("v3m.css");
+/*
+ * the following styles (inserted into Paul V. Biron's list) were added by
+ * Woody Beeler (20060225) to accomodate the display of change markup
+ * enetered as 'class' values.  The following SHOW the markup
+ */
+span.changed {
+  text-decoration: none;
+color: blue;
+border: 0
+	}
+span.deleted {
+  text-decoration: line-through;
+  color: red;
+  border:0;
+  display: inline;
+	}
+span.inserted {
+  text-decoration: underline;
+  color: red;
+  border:0;
+	}
+td.changed {
+  text-decoration: none;
+color: blue;
+border: 0
+	}
+td.deleted {
+  text-decoration: line-through;
+  color: red;
+  border:0;
+  display: table-cell;
+	}
+td.inserted {
+  text-decoration: underline;
+  color: red;
+  border:0;
+	}
+*.changed {
+text-decoration: none;  
+color: blue;
+  border-left: medium solid blue;
+	}
+*.deleted {
+  text-decoration: line-through;
+  color: red;
+  border-left: medium solid red;
+  display: block;
+	}
+*.inserted {
+  text-decoration: underline;
+  color: red;
+  border-left: medium solid lime;
+	}
+/*
+ * end 20060225 changes
+ */

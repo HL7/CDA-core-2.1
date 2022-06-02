@@ -1,0 +1,1673 @@
+<?xml version="1.0" encoding="iso-8859-1"?><!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+      <title>EntityCode</title>
+      <link rel="stylesheet" type="text/css" href="../../support/css/V3m.css" /><style type="text/css">
+					td {font-family: Verdana,Arial; text-align: left; vertical-align: top; font-size: 11}
+					th {font-family: Verdana,Arial; FONT-WEIGHT: bold; text-align: left; font-size: 11}
+					</style></head>
+   <body><a href="vocabulary.html#voc-systems">Return to code system index</a><br /><br /><a name="EntityCode"></a><table rules="all" border="1px" cellpadding="2" cellspacing="0" class="homepage">
+         <tbody>
+            <tr>
+               <td colspan="4"><font face="Arial" size="3"><strong>EntityCode&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong> [2.16.840.1.113883.5.1060]</font><br /><p class="vocDesc"><b>Description:</b></p>
+                  <p class="vocDesc"><i class="vocDesc">OpenIssue: </i>Missing description.
+                  </p>
+               </td>
+            </tr>
+            <tr bgcolor="cornflowerblue">
+               <th>Lvl- Typ</th>
+               <th>Concept&nbsp;Code<br />&nbsp;&nbsp;<i>Head&nbsp;Code-defined&nbsp;Value&nbsp;Set</i></th>
+               <th>Print Name</th>
+               <th>Definition, Properties, Relationships</th>
+            </tr>
+            <tr>
+               <td><a name="_MaterialEntityAdditive"></a>0-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black"></font><strong>_MaterialEntityAdditive</strong></td>
+               <td>Content ID</td>
+               <td>
+                  <p class="vocDesc"><strong>DEPRECATED </strong>from further use in HL7 designs, effective with Vocabulary release <strong><i>900-20090820.</i></strong></p>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description: </b>cid: is the most common mechanism used in webservices. A cid: reference points from the SOAP body to other content in the
+                     mime package in which the SOAP envelope is wrapped
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="_MaterialEntityClassType"></a>0-<strong>A</strong></td>
+               <td nowrap="nowrap"><font color="black"></font><strong>_MaterialEntityClassType</strong><br /><i><font color="white"></font>
+						&nbsp;<i><a href="vs_EntityCode.html#MaterialEntityClassType">v:MaterialEntityClassType</a></i></i></td>
+               <td>MaterialEntityClassType</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Types of Material for EntityClass "MAT"</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> BLDPRD VCCNE _ContainerEntityType _MedicalDevice _SpecimenAdditiveEntity<br />&nbsp;&nbsp;<strong>ClassifiesClassCode to: </strong>MAT
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="BLDPRD"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>BLDPRD</strong></td>
+               <td>Blood Product</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">A manufactured product that is produced from the raw blood oi a donor with the intention of using it in a recipient transfusion.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _MaterialEntityClassType
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="VCCNE"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>VCCNE</strong><br /><i><font color="white">.&nbsp;</font>
+						&nbsp;<i><a href="vs_EntityCode.html#VaccineEntityType">v:VaccineEntityType</a></i></i></td>
+               <td>Vaccine</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">A Type of medicine that creates an immune protection without the recipient experiencing the disease.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _MaterialEntityClassType
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="_ContainerEntityType"></a>1-<strong>A</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>_ContainerEntityType</strong><br /><i><font color="white">.&nbsp;</font>
+						&nbsp;<i><a href="vs_EntityCode.html#ContainerEntityType">v:ContainerEntityType</a></i></i></td>
+               <td>ContainerEntityType</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Material intended to hold another material for purpose of storage or transport.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _MaterialEntityClassType<br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> PKG
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="PKG"></a>2-<strong>S</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>PKG</strong><br /><i><font color="white">.&nbsp;.&nbsp;</font>
+						&nbsp;<i><a href="vs_EntityCode.html#PackageEntityType">v:PackageEntityType</a></i></i></td>
+               <td>Package</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">A material intended to hold other materials for purposes of storage or transportation</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _ContainerEntityType<br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> COMPPKG KIT _NonRigidContainerEntityType _RigidContainerEntityType
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="COMPPKG"></a>3-<strong>S</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;.&nbsp;</font><strong>COMPPKG</strong><br /><i><font color="white">.&nbsp;.&nbsp;.&nbsp;</font>
+						&nbsp;<i><a href="vs_EntityCode.html#CompliancePackageEntityType">v:CompliancePackageEntityType</a></i></i></td>
+               <td>Compliance Package</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">A container intended to contain sufficient material for more than one use, but grouped or organized to provide individual
+                     access to sufficient material for a single use.  Often used to ensure that the proper type and amount of material is consumed/expended
+                     for each use.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> PKG<br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> BLSTRPK DIALPK DISK DOSET STRIP
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td>4-<strong>S</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;.&nbsp;.&nbsp;</font><strong>BLSTRPK</strong><br /><i><font color="white">.&nbsp;.&nbsp;.&nbsp;.&nbsp;</font>
+						&nbsp;<i><a href="vs_EntityCode.html#BlisterPackEntityType">v:BlisterPackEntityType</a></i></i></td>
+               <td>Blister Pack</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">A bubblepack.  Medications sealed individually, separated into doses.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> COMPPKG _RigidContainerEntityType<br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> CARD
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td>5-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;.&nbsp;.&nbsp;.&nbsp;</font><strong>CARD</strong></td>
+               <td>Card</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">A bubble pack card.  Multiple individual/separated doses.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> BLSTRPK
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="DIALPK"></a>4-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;.&nbsp;.&nbsp;</font><strong>DIALPK</strong></td>
+               <td>Dial Pack</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Rotatable dispenser.  Eg. Birth control package.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> COMPPKG
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="DISK"></a>4-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;.&nbsp;.&nbsp;</font><strong>DISK</strong></td>
+               <td>Disk</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Object that is thin, flat, and circular.  Doses of medication often contained in bubbles on the disk.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> COMPPKG
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="DOSET"></a>4-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;.&nbsp;.&nbsp;</font><strong>DOSET</strong></td>
+               <td>Dosette</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Special packaging that will help patients take their medications on a regular basis.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> COMPPKG
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="STRIP"></a>4-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;.&nbsp;.&nbsp;</font><strong>STRIP</strong></td>
+               <td>Strip</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">A continuous strip of plastic sectioned into individual pouches, each one containing the quantity of 1 or more medications
+                     intended to be administered at a specific time
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> COMPPKG
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="KIT"></a>3-<strong>S</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;.&nbsp;</font><strong>KIT</strong><br /><i><font color="white">.&nbsp;.&nbsp;.&nbsp;</font>
+						&nbsp;<i><a href="vs_EntityCode.html#KitEntityType">v:KitEntityType</a></i></i></td>
+               <td>Kit</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">A container for a diverse collection of products intended to be used together for some purpose (e.g. Medicinal kits often
+                     contain a syringe, a needle and the injectable medication).
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> PKG<br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> SYSTM
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="SYSTM"></a>4-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;.&nbsp;.&nbsp;</font><strong>SYSTM</strong></td>
+               <td>System</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">A kit in which the components are interconnected.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> KIT
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="_NonRigidContainerEntityType"></a>3-<strong>A</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;.&nbsp;</font><strong>_NonRigidContainerEntityType</strong><br /><i><font color="white">.&nbsp;.&nbsp;.&nbsp;</font>
+						&nbsp;<i><a href="vs_EntityCode.html#NonRigidContainerEntityType">v:NonRigidContainerEntityType</a></i></i></td>
+               <td>NonRigidContainerEntityType</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">A container having dimensions that adjust somewhat based on the amount and shape of the material placed within it.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> PKG<br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> BAG PACKT PCH SACH<br />&nbsp;&nbsp;<strong>ClassifiesClassCode to: </strong>CONT
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="BAG"></a>4-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;.&nbsp;.&nbsp;</font><strong>BAG</strong></td>
+               <td>Bag</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">A pouched or pendulous container.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _NonRigidContainerEntityType
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="PACKT"></a>4-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;.&nbsp;.&nbsp;</font><strong>PACKT</strong></td>
+               <td>Packet</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">A paper</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _NonRigidContainerEntityType
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="PCH"></a>4-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;.&nbsp;.&nbsp;</font><strong>PCH</strong></td>
+               <td>Pouch</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">A small bag or container made of a soft material.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _NonRigidContainerEntityType
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="SACH"></a>4-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;.&nbsp;.&nbsp;</font><strong>SACH</strong></td>
+               <td>Sachet</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">A small bag or packet containing a small portion of a substance.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _NonRigidContainerEntityType
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="_RigidContainerEntityType"></a>3-<strong>A</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;.&nbsp;</font><strong>_RigidContainerEntityType</strong><br /><i><font color="white">.&nbsp;.&nbsp;.&nbsp;</font>
+						&nbsp;<i><a href="vs_EntityCode.html#RigidContainerEntityType">v:RigidContainerEntityType</a></i></i></td>
+               <td>RigidContainerEntityType</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">A container having a fixed and inflexible dimensions and volume</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> PKG<br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> BLSTRPK _IndividualPackageEntityType _MultiUseContainerEntityType<br />&nbsp;&nbsp;<strong>ClassifiesClassCode to: </strong>CONT
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td>4-<strong>S</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;.&nbsp;.&nbsp;</font><strong>BLSTRPK</strong><br /><i><font color="white">.&nbsp;.&nbsp;.&nbsp;.&nbsp;</font>
+						&nbsp;<i><a href="vs_EntityCode.html#BlisterPackEntityType">v:BlisterPackEntityType</a></i></i></td>
+               <td>Blister Pack</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">A bubblepack.  Medications sealed individually, separated into doses.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> COMPPKG _RigidContainerEntityType<br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> CARD
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td>5-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;.&nbsp;.&nbsp;.&nbsp;</font><strong>CARD</strong></td>
+               <td>Card</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">A bubble pack card.  Multiple individual/separated doses.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> BLSTRPK
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="_IndividualPackageEntityType"></a>4-<strong>A</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;.&nbsp;.&nbsp;</font><strong>_IndividualPackageEntityType</strong><br /><i><font color="white">.&nbsp;.&nbsp;.&nbsp;.&nbsp;</font>
+						&nbsp;<i><a href="vs_EntityCode.html#IndividualPackageEntityType">v:IndividualPackageEntityType</a></i></i></td>
+               <td>IndividualPackageEntityType</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Container intended to contain sufficient material for only one use.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _RigidContainerEntityType<br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> AMP MINIM NEBAMP OVUL
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="AMP"></a>5-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;.&nbsp;.&nbsp;.&nbsp;</font><strong>AMP</strong></td>
+               <td>Ampule</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">A small sealed glass container that holds a measured amount of a medicinal substance.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _IndividualPackageEntityType
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="MINIM"></a>5-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;.&nbsp;.&nbsp;.&nbsp;</font><strong>MINIM</strong></td>
+               <td>Minim</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Individually dosed ophthalmic solution.  One time eye dropper dispenser.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _IndividualPackageEntityType
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="NEBAMP"></a>5-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;.&nbsp;.&nbsp;.&nbsp;</font><strong>NEBAMP</strong></td>
+               <td>Nebuamp</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Individually dosed inhalation solution.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _IndividualPackageEntityType
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="OVUL"></a>5-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;.&nbsp;.&nbsp;.&nbsp;</font><strong>OVUL</strong></td>
+               <td>Ovule</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">A container either glass or plastic and a narrow neck, for storing liquid.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _IndividualPackageEntityType
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="_MultiUseContainerEntityType"></a>4-<strong>A</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;.&nbsp;.&nbsp;</font><strong>_MultiUseContainerEntityType</strong><br /><i><font color="white">.&nbsp;.&nbsp;.&nbsp;.&nbsp;</font>
+						&nbsp;<i><a href="vs_EntityCode.html#MultiUseContainerEntityType">v:MultiUseContainerEntityType</a></i></i></td>
+               <td>MultiUseContainerEntityType</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">A container intended to contain sufficient material for more than one use.  (I.e. Material is intended to be removed from
+                     the container at more than one discrete time period.)
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _RigidContainerEntityType<br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> BOT BOX CAN CART CNSTR JAR JUG TIN TUB TUBE VIAL<br />&nbsp;&nbsp;<strong>ClassifiesClassCode to: </strong>CONT
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="BOT"></a>5-<strong>S</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;.&nbsp;.&nbsp;.&nbsp;</font><strong>BOT</strong><br /><i><font color="white">.&nbsp;.&nbsp;.&nbsp;.&nbsp;.&nbsp;</font>
+						&nbsp;<i><a href="vs_EntityCode.html#BottleEntityType">v:BottleEntityType</a></i></i></td>
+               <td>Bottle</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">A container, typically rounded, either glass or plastic with a narrow neck and capable of storing liquid.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _MultiUseContainerEntityType<br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> BOTA BOTD BOTG BOTP
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="BOTA"></a>6-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;.&nbsp;.&nbsp;.&nbsp;.&nbsp;</font><strong>BOTA</strong></td>
+               <td>Amber Bottle</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">A bottle of yellow to brown color.  Used to store light-sensitive materials</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> BOT
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="BOTD"></a>6-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;.&nbsp;.&nbsp;.&nbsp;.&nbsp;</font><strong>BOTD</strong></td>
+               <td>Dropper Bottle</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">A bottle with a cap designed to release the contained liquid in droplets of a specific size.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> BOT
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="BOTG"></a>6-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;.&nbsp;.&nbsp;.&nbsp;.&nbsp;</font><strong>BOTG</strong></td>
+               <td>Glass Bottle</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">A bottle made of glass</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> BOT
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="BOTP"></a>6-<strong>S</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;.&nbsp;.&nbsp;.&nbsp;.&nbsp;</font><strong>BOTP</strong><br /><i><font color="white">.&nbsp;.&nbsp;.&nbsp;.&nbsp;.&nbsp;.&nbsp;</font>
+						&nbsp;<i><a href="vs_EntityCode.html#PlasticBottleEntityType">v:PlasticBottleEntityType</a></i></i></td>
+               <td>Plastic Bottle</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">A bottle made of plastic</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> BOT<br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> BOTPLY
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="BOTPLY"></a>7-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;.&nbsp;.&nbsp;.&nbsp;.&nbsp;.&nbsp;</font><strong>BOTPLY</strong></td>
+               <td>Polyethylene Bottle</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">A bottle made of polyethylene</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> BOTP
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="BOX"></a>5-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;.&nbsp;.&nbsp;.&nbsp;</font><strong>BOX</strong></td>
+               <td>Box</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">A 6-sided container commonly made from paper or cardboard used for solid forms.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _MultiUseContainerEntityType
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="CAN"></a>5-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;.&nbsp;.&nbsp;.&nbsp;</font><strong>CAN</strong></td>
+               <td>Can</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">A metal container in which a material is hermetically sealed to enable storage over long periods.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _MultiUseContainerEntityType
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="CART"></a>5-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;.&nbsp;.&nbsp;.&nbsp;</font><strong>CART</strong></td>
+               <td>Cartridge</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">A sealed container of liquid or powder intended to be loaded into a device.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _MultiUseContainerEntityType
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="CNSTR"></a>5-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;.&nbsp;.&nbsp;.&nbsp;</font><strong>CNSTR</strong></td>
+               <td>Canister</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">A pressurized metal container holding a substance released as a spray or aerosol.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _MultiUseContainerEntityType
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="JAR"></a>5-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;.&nbsp;.&nbsp;.&nbsp;</font><strong>JAR</strong></td>
+               <td>Jar</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">A container of glass, earthenware, plastic, etc.  Top of the container has a diameter of similar size to the diameter of the
+                     container as a whole
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _MultiUseContainerEntityType
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="JUG"></a>5-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;.&nbsp;.&nbsp;.&nbsp;</font><strong>JUG</strong></td>
+               <td>Jug</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">A deep vessel  for holding liquids, with a handle and often with a spout or lip shape for pouring.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _MultiUseContainerEntityType
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="TIN"></a>5-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;.&nbsp;.&nbsp;.&nbsp;</font><strong>TIN</strong></td>
+               <td>Tin</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">A lidded container made of thin sheet metal.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _MultiUseContainerEntityType
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="TUB"></a>5-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;.&nbsp;.&nbsp;.&nbsp;</font><strong>TUB</strong></td>
+               <td>Tub</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">An open flat bottomed round container.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _MultiUseContainerEntityType
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="TUBE"></a>5-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;.&nbsp;.&nbsp;.&nbsp;</font><strong>TUBE</strong></td>
+               <td>Tube</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">A long hollow rigid or flexible cylinder.  Material is extruded by squeezing the container.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _MultiUseContainerEntityType
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="VIAL"></a>5-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;.&nbsp;.&nbsp;.&nbsp;</font><strong>VIAL</strong></td>
+               <td>Vial</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">A small cylindrical glass for holding liquid medicines.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _MultiUseContainerEntityType
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="_MedicalDevice"></a>1-<strong>A</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>_MedicalDevice</strong><br /><i><font color="white">.&nbsp;</font>
+						&nbsp;<i><a href="vs_EntityCode.html#MedicalDevice">v:MedicalDevice</a></i></i></td>
+               <td>MedicalDevice</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">A device with direct or indirect therapeutic purpose.  Values for EntityCode when EntityClass = "DEV"</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _MaterialEntityClassType<br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> _AccessMedicalDevice _AdministrationMedicalDevice<br />&nbsp;&nbsp;<strong>ClassifiesClassCode to: </strong>DEV
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="_AccessMedicalDevice"></a>2-<strong>A</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>_AccessMedicalDevice</strong><br /><i><font color="white">.&nbsp;.&nbsp;</font>
+						&nbsp;<i><a href="vs_EntityCode.html#AccessMedicalDevice">v:AccessMedicalDevice</a></i></i></td>
+               <td>AccessMedicalDevice</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">A device used to allow access to a part of a body</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _MedicalDevice<br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> LINE
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="LINE"></a>3-<strong>S</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;.&nbsp;</font><strong>LINE</strong><br /><i><font color="white">.&nbsp;.&nbsp;.&nbsp;</font>
+						&nbsp;<i><a href="vs_EntityCode.html#LineAccessMedicalDevice">v:LineAccessMedicalDevice</a></i></i></td>
+               <td>Line</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">A hollow tube used to administer a substance into a vein, artery or body cavity</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _AccessMedicalDevice<br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> IALINE IVLINE
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="IALINE"></a>4-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;.&nbsp;.&nbsp;</font><strong>IALINE</strong></td>
+               <td>Intra-arterial Line</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">A line used to administer a substance into an artery</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> LINE
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="IVLINE"></a>4-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;.&nbsp;.&nbsp;</font><strong>IVLINE</strong></td>
+               <td>Intraveneous Line</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">A line used to administer a substance into a vein</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> LINE
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="_AdministrationMedicalDevice"></a>2-<strong>A</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>_AdministrationMedicalDevice</strong><br /><i><font color="white">.&nbsp;.&nbsp;</font>
+						&nbsp;<i><a href="vs_EntityCode.html#AdministrationMedicalDevice">v:AdministrationMedicalDevice</a></i></i></td>
+               <td>AdministrationMedicalDevice</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">A device intended to administer a substance to a subject</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _MedicalDevice<br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> APLCTR INH PMP _InjectionMedicalDevice
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="APLCTR"></a>3-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;.&nbsp;</font><strong>APLCTR</strong></td>
+               <td>Applicator</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">A device used to apply a liquid or powder to a surface.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _AdministrationMedicalDevice
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="INH"></a>3-<strong>S</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;.&nbsp;</font><strong>INH</strong><br /><i><font color="white">.&nbsp;.&nbsp;.&nbsp;</font>
+						&nbsp;<i><a href="vs_EntityCode.html#InhalerMedicalDevice">v:InhalerMedicalDevice</a></i></i></td>
+               <td>Inhaler</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">A small device used for inhaling medicine in the form of a vapour or gas in order to ease a respiratory condition such as
+                     asthma or to relieve nasal congestion.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _AdministrationMedicalDevice<br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> DSKS DSKUNH TRBINH
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="DSKS"></a>4-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;.&nbsp;.&nbsp;</font><strong>DSKS</strong></td>
+               <td>Diskus</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">The device used to inhale the doses of medication contained in the disk form.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> INH
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="DSKUNH"></a>4-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;.&nbsp;.&nbsp;</font><strong>DSKUNH</strong></td>
+               <td>Diskhaler</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">The device used to inhale the doses of medication contained in the disk form.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> INH
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="TRBINH"></a>4-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;.&nbsp;.&nbsp;</font><strong>TRBINH</strong></td>
+               <td>Turbuhaler</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Asthma medication delivery device.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> INH
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="PMP"></a>3-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;.&nbsp;</font><strong>PMP</strong></td>
+               <td>Pump</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">A device that is used to raise, compress, or transfer liquids or gases and is operated by a piston or similar mechanism.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _AdministrationMedicalDevice
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="_InjectionMedicalDevice"></a>3-<strong>A</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;.&nbsp;</font><strong>_InjectionMedicalDevice</strong><br /><i><font color="white">.&nbsp;.&nbsp;.&nbsp;</font>
+						&nbsp;<i><a href="vs_EntityCode.html#InjectionMedicalDevice">v:InjectionMedicalDevice</a></i></i></td>
+               <td>InjectionMedicalDevice</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">A device intended to administer liquid into a subject via a</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _AdministrationMedicalDevice<br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> AINJ PEN SYR
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="AINJ"></a>4-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;.&nbsp;.&nbsp;</font><strong>AINJ</strong></td>
+               <td>AutoInjector</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Automatically injects medication.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _InjectionMedicalDevice
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="PEN"></a>4-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;.&nbsp;.&nbsp;</font><strong>PEN</strong></td>
+               <td>Pen</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">A device which can contain a cartridge for injection purposes.  Eg. Insulin pen.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _InjectionMedicalDevice
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="SYR"></a>4-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;.&nbsp;.&nbsp;</font><strong>SYR</strong></td>
+               <td>Syringe</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">A barrel with a plunger.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _InjectionMedicalDevice
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="_SpecimenAdditiveEntity"></a>1-<strong>A</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>_SpecimenAdditiveEntity</strong><br /><i><font color="white">.&nbsp;</font>
+						&nbsp;<i><a href="vs_EntityCode.html#SpecimenAdditiveEntity">v:SpecimenAdditiveEntity</a></i></i></td>
+               <td>SpecimenAdditiveEntity</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Set of codes related to specimen additives</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _MaterialEntityClassType<br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> ACDA ACDB ACET AMIES BACTM BF10 BOR BOUIN BSKM C32 C38 CARS CARY CHLTM CTAD EDTK15 EDTK75 EDTN ENT F10 FDP FL10 FL100 HCL6 HEPA HEPL HEPN HNO3 JKM KARN KOX LIA M4 M4RT M5 MICHTM MMDTM NAF NONE PAGE PHENOL PVA RLM SILICA SPS SST STUTM THROM THYMOL THYO TOLU URETM VIRTM WEST<br />&nbsp;&nbsp;<strong>ClassifiesClassCode to: </strong>MAT
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="ACDA"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>ACDA</strong></td>
+               <td>ACD Solution A</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">ACD Solution A of trisodium citrate, 22.0g/L; citric acid, 8.0 g/L; and dextrose 24.5 g/L. Used in Blood banking and histocompatibilty
+                     testing
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _SpecimenAdditiveEntity
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="ACDB"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>ACDB</strong></td>
+               <td>ACD Solution B</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">ACD Solution B of trisodium citrate, 13.2g/L; citric acid, 4.8 g/L; and dextrose 14.7 g/L. Used in Blood banking and histocompatibilty
+                     testing.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _SpecimenAdditiveEntity
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="ACET"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>ACET</strong></td>
+               <td>Acetic Acid</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">50% V/V acetic acid in water.  Used as  a urine preservative</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _SpecimenAdditiveEntity
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="AMIES"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>AMIES</strong></td>
+               <td>Amies transport medium</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Sodium Chloride 3.0g, Potassium Chloride 0.2g, Calcium Chloride 0.1g, Magnesium Chloride 0.1g, Monopotassium Phosphate 0.2g,
+                     Disodium Phosphate 1.15g, Sodium Thiogly collate 1.0g, Distilled Water 1 liter
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _SpecimenAdditiveEntity
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="BACTM"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>BACTM</strong></td>
+               <td>Bacterial Transport medium</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Any medium used to maintain bacterial viability (e.g. Stuart's, Cary-Blair, Amies)</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _SpecimenAdditiveEntity
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="BF10"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>BF10</strong></td>
+               <td>Buffered 10% formalin</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Formaldehyde 4% w/v; methyl alcohol 1% w/v; phosphate buffering salts. Tissue preservative</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _SpecimenAdditiveEntity
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="BOR"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>BOR</strong></td>
+               <td>Boric Acid</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Powdered boric acid (usually 10 g) added to 24-hour urine collections as a preservative.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _SpecimenAdditiveEntity
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="BOUIN"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>BOUIN</strong></td>
+               <td>Bouin's solution</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Picric acid, saturated aqueous solution (750.0 ml), 37-40% formalin (250.0 ml), glacial acetic acid (50.0 ml). Tissue preservative.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _SpecimenAdditiveEntity
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="BSKM"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>BSKM</strong></td>
+               <td>Buffered skim milk</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">50% skim milk in 0.01 M phosphate-buffered saline.  Maintain virus viability</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _SpecimenAdditiveEntity
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="C32"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>C32</strong></td>
+               <td>3.2% Citrate</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">A 3.2% solution of Sodium Citrate in water.  Used as a blood preservative</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _SpecimenAdditiveEntity
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="C38"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>C38</strong></td>
+               <td>3.8% Citrate</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">A 3.8% solution of Sodium Citrate in water. Used as a blood preservative</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _SpecimenAdditiveEntity
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="CARS"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>CARS</strong></td>
+               <td>Carson's Modified 10% formalin</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">A modification of buffered 10% formalin used as a general tissue preservative.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _SpecimenAdditiveEntity
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="CARY"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>CARY</strong></td>
+               <td>Cary Blair Medium</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Sodium Thioglycollate 1.5 g, Disodium Hydrogen Phosphate 1.1 g, Sodium Chloride 5.0 g, Calcium Chloride 0.09 g, Agar 5.0 g,
+                     per Liter of Water
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _SpecimenAdditiveEntity
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="CHLTM"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>CHLTM</strong></td>
+               <td>Chlamydia transport medium</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Any of a number of non-nutritive buffered media used to maintain Chlamydia viability during transportation to the laboratory</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _SpecimenAdditiveEntity
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="CTAD"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>CTAD</strong></td>
+               <td>CTAD</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Buffered tri-sodium citrate solution with theophylline, adenosine and dipyridamole</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _SpecimenAdditiveEntity
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="EDTK15"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>EDTK15</strong></td>
+               <td>Potassium/K EDTA 15%</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Potassium EDTA 15% solution in water</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _SpecimenAdditiveEntity
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="EDTK75"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>EDTK75</strong></td>
+               <td>Potassium/K EDTA 7.5%</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Potassium EDTA 7.5% solution in water</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _SpecimenAdditiveEntity
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="EDTN"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>EDTN</strong></td>
+               <td>Sodium/Na EDTA</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Sodium fluoride and Disodium EDTA</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _SpecimenAdditiveEntity
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="ENT"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>ENT</strong></td>
+               <td>Enteric bacteria transport medium</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Any of a number of non-nutritive buffered media used to maintain enteric bacterial viability during transportation to the
+                     laboratory
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _SpecimenAdditiveEntity
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="F10"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>F10</strong></td>
+               <td>10% Formalin</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">A 10% v/v solution in water of formalin( a 37% solution of formaldehyde and water).  Used for tissue preservation.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _SpecimenAdditiveEntity
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="FDP"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>FDP</strong></td>
+               <td>Thrombin NIH; soybean trypsin inhibitor</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Thrombin plus soybean trypsin inhibitor.  For use in identifying fibrn degredation products.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _SpecimenAdditiveEntity
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="FL10"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>FL10</strong></td>
+               <td>Sodium Fluoride, 10mg</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Sodium fluoride, 10mg added as a urine preservative.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _SpecimenAdditiveEntity
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="FL100"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>FL100</strong></td>
+               <td>Sodium Fluoride, 100mg</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Sodium fluoride, 100mg added as a urine preservative.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _SpecimenAdditiveEntity
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="HCL6"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>HCL6</strong></td>
+               <td>6N HCL</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">A solution of HCl containing 6moles of hydrogen ion/L. Used as a Urine Preservative.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _SpecimenAdditiveEntity
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="HEPA"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>HEPA</strong></td>
+               <td>Ammonium heparin</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Ammonium heparin</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _SpecimenAdditiveEntity
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="HEPL"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>HEPL</strong></td>
+               <td>Lithium/Li Heparin</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Lithium heparin salt</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _SpecimenAdditiveEntity
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="HEPN"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>HEPN</strong></td>
+               <td>Sodium/Na Heparin</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Sodium heparin salt</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _SpecimenAdditiveEntity
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="HNO3"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>HNO3</strong></td>
+               <td>Nitric Acid</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">6N Nitric acid used to preserve urine for heavy metal analysis.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _SpecimenAdditiveEntity
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="JKM"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>JKM</strong></td>
+               <td>Jones Kendrick Medium</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">A transport medium formulated to maintain Bordetella pertussis viability.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _SpecimenAdditiveEntity
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="KARN"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>KARN</strong></td>
+               <td>Karnovsky's fixative</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">5% Glutaraldehyde, 4% Formaldehyde in 0.08M buffer. Tissue preservation</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _SpecimenAdditiveEntity
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="KOX"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>KOX</strong></td>
+               <td>Potassium Oxalate</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Potassium oxalate and sodium fluoride in a 1.25:1 ratio</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _SpecimenAdditiveEntity
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="LIA"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>LIA</strong></td>
+               <td>Lithium iodoacetate</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Iodoacetate lithium salt</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _SpecimenAdditiveEntity
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="M4"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>M4</strong></td>
+               <td>M4</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Modified Hank's balanced salt solution supplemented with bovine serum albumin, gelatin, sucrose and glutamic acid. It is buffered
+                     to pH 7.3+ or - 0.2 with HEPES buffer. Phenol red is used to indicate pH. Vancomycin, Amphotericin B and Colistin are used
+                     to
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _SpecimenAdditiveEntity
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="M4RT"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>M4RT</strong></td>
+               <td>M4-RT</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Modified Hank's balanced salt solution supplemented with bovine serum albumin, gelatin, sucrose and glutamic acid. It is buffered
+                     to pH 7.3+ or - 0.2 with Hepes buffer. Phenol red is used to indicate pH. Gentamicin and amphotericin B are used to inhibit
+                     c
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _SpecimenAdditiveEntity
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="M5"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>M5</strong></td>
+               <td>M5</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Modified Hank's balanced salt solution supplemented with protein stabilizers, sucrose and glutamic acid. It is buffered to
+                     pH 7.3+ or - 0.2 with Hepes buffer. Phenol red is used to indicate pH. Vancomycin, Amphotericin B and Colistin are used to
+                     inhibit c
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _SpecimenAdditiveEntity
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="MICHTM"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>MICHTM</strong></td>
+               <td>Michel's transport medium</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">1M potassium citrate, pH 7.0 2.5 ml, 0.1M magnesium sulfate 5.0 ml, 0.1M N-ethyl malemide  5.0 ml, dH2O 87.5 ml, ammonium
+                     sulfate 55gm. Preserve antigens for Immunofluorescence procedures
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _SpecimenAdditiveEntity
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="MMDTM"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>MMDTM</strong></td>
+               <td>MMD transport medium</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">A buffered medium with ammonium sulfate added to preserve antigens for Immunofluorescence procedures</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _SpecimenAdditiveEntity
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="NAF"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>NAF</strong></td>
+               <td>Sodium Fluoride</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Sodium fluoride</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _SpecimenAdditiveEntity
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="NONE"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>NONE</strong></td>
+               <td>None</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">No additive. Specifically identifes the specimen as having no additives.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _SpecimenAdditiveEntity
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="PAGE"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>PAGE</strong></td>
+               <td>Page's Saline</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">0.12 g NaCl, 0.004 g MgSO, 0.004 g, CaCl, 0.142 g Na2HPO4 and 0.136 g KH2PO4 per liter of distilled water. Maintain Acanthaoemba
+                     viability.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _SpecimenAdditiveEntity
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="PHENOL"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>PHENOL</strong></td>
+               <td>Phenol</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Phenol. Urine preservative</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _SpecimenAdditiveEntity
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="PVA"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>PVA</strong></td>
+               <td>Polyvinylalcohol</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Polyvinyl alcohol</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _SpecimenAdditiveEntity
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="RLM"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>RLM</strong></td>
+               <td>Reagan Lowe Medium</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">A transport medium formulated to maintain Bordetella pertussis viability.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _SpecimenAdditiveEntity
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="SILICA"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>SILICA</strong></td>
+               <td>Siliceous earth</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Diatomaceous earth. For glucose determination blood samples</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _SpecimenAdditiveEntity
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="SPS"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>SPS</strong></td>
+               <td>Sodium polyanethol sulfonate 0.35% in 0.85% sodium chloride</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Sodium polyanethol sulfonate in saline. Anticomplementary and antiphagocytic properties. Used in blood culture collection.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _SpecimenAdditiveEntity
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="SST"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>SST</strong></td>
+               <td>Serum Separator Tube</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Polymer separator gel with clot activator</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _SpecimenAdditiveEntity
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="STUTM"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>STUTM</strong></td>
+               <td>Stuart transport medium</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Sodium Glycerophosphate 10.0g, Calcium Chloride 0.1g, Mercaptoacetic Acid 1.0ml, Distilled Water 1 liter</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _SpecimenAdditiveEntity
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="THROM"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>THROM</strong></td>
+               <td>Thrombin</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Thrombin. Accelerates clotting.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _SpecimenAdditiveEntity
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="THYMOL"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>THYMOL</strong></td>
+               <td>Thymol</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">2-Isopropyl-5-methyl phenol. A preservative for 24 Hr Urine samples</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _SpecimenAdditiveEntity
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="THYO"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>THYO</strong></td>
+               <td>Thyoglycolate broth</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">A nutritive medium with a reducing agent  (sodium thioglycolate) which, due to a chemical reaction, removes oxygen from the
+                     broth.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _SpecimenAdditiveEntity
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="TOLU"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>TOLU</strong></td>
+               <td>Toluene</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Also known as Methylbenzene; Toluol; Phenylmethane. A preservative for 24 Hr Urine samples</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _SpecimenAdditiveEntity
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="URETM"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>URETM</strong></td>
+               <td>Ureaplasma transport medium</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">A buffered salt solution with antifungal agents added for the collection and transport of Ureaplasma specimens.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _SpecimenAdditiveEntity
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="VIRTM"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>VIRTM</strong></td>
+               <td>Viral Transport medium</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Sucrose 74.6g, Potassium hydrogenphosphate 0.52g, L-glutamic acid 0.72g, Bovine serum albumin 5.0g, Gentamicin 50mg, Potassium
+                     dihydrogenphosphate 1.25g, L-15 medium 9.9L, Water to 10L. Maintain Virus viability.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _SpecimenAdditiveEntity
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="WEST"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>WEST</strong></td>
+               <td>Buffered Citrate</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">3.8% Citrate buffered to a pH of 5.5 for Westergren Sedimentation Rate</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _SpecimenAdditiveEntity
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="_NonDrugAgentEntity"></a>0-<strong>A</strong></td>
+               <td nowrap="nowrap"><font color="black"></font><strong>_NonDrugAgentEntity</strong></td>
+               <td>NonDrugAgentEntity</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Indicates types of allergy and intolerance agents which are non-drugs.  (E.g. foods, latex, etc.)</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> NDA01 NDA02 NDA03 NDA04 NDA05 NDA06 NDA07 NDA08 NDA09 NDA10 NDA11 NDA12 NDA13 NDA14 NDA15 NDA16 NDA17
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="NDA01"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>NDA01</strong></td>
+               <td>egg</td>
+               <td>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _NonDrugAgentEntity
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="NDA02"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>NDA02</strong></td>
+               <td>fish</td>
+               <td>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _NonDrugAgentEntity
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="NDA03"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>NDA03</strong></td>
+               <td>lactose</td>
+               <td>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _NonDrugAgentEntity
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="NDA04"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>NDA04</strong></td>
+               <td>peanut</td>
+               <td>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _NonDrugAgentEntity
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="NDA05"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>NDA05</strong></td>
+               <td>soy</td>
+               <td>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _NonDrugAgentEntity
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="NDA06"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>NDA06</strong></td>
+               <td>sulfites</td>
+               <td>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _NonDrugAgentEntity
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="NDA07"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>NDA07</strong></td>
+               <td>wheat or gluten</td>
+               <td>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _NonDrugAgentEntity
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="NDA08"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>NDA08</strong></td>
+               <td>isocyanates</td>
+               <td>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _NonDrugAgentEntity
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="NDA09"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>NDA09</strong></td>
+               <td>solvents</td>
+               <td>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _NonDrugAgentEntity
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="NDA10"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>NDA10</strong></td>
+               <td>oils</td>
+               <td>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _NonDrugAgentEntity
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="NDA11"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>NDA11</strong></td>
+               <td>venoms</td>
+               <td>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _NonDrugAgentEntity
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="NDA12"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>NDA12</strong></td>
+               <td>latex</td>
+               <td>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _NonDrugAgentEntity
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="NDA13"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>NDA13</strong></td>
+               <td>shellfish</td>
+               <td>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _NonDrugAgentEntity
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="NDA14"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>NDA14</strong></td>
+               <td>strawberries</td>
+               <td>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _NonDrugAgentEntity
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="NDA15"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>NDA15</strong></td>
+               <td>tomatoes</td>
+               <td>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _NonDrugAgentEntity
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="NDA16"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>NDA16</strong></td>
+               <td>dust</td>
+               <td>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _NonDrugAgentEntity
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="NDA17"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>NDA17</strong></td>
+               <td>dust mites</td>
+               <td>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _NonDrugAgentEntity
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="_OrganizationEntityType"></a>0-<strong>A</strong></td>
+               <td nowrap="nowrap"><font color="black"></font><strong>_OrganizationEntityType</strong><br /><i><font color="white"></font>
+						&nbsp;<i><a href="vs_EntityCode.html#OrganizationEntityType">v:OrganizationEntityType</a></i></i></td>
+               <td>OrganizationEntityType</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Further classifies entities of classCode ORG.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> HHOLD NAT RELIG<br />&nbsp;&nbsp;<strong>ClassifiesClassCode to: </strong>ORG
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="HHOLD"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>HHOLD</strong></td>
+               <td>household</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">The group of persons who occupy a single housing unit.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _OrganizationEntityType
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="NAT"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>NAT</strong><br /><i><font color="white">.&nbsp;</font>
+						&nbsp;<i><a href="vs_EntityCode.html#NationEntityType">v:NationEntityType</a></i></i></td>
+               <td>NationEntityType</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Codes identifying nation states.  Allows for finer grained specification of Entity with classcode &lt;= NAT</p>
+                  <p class="vocDesc"><i class="vocDesc">Example:</i>ISO3166 country codes.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _OrganizationEntityType
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="RELIG"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>RELIG</strong></td>
+               <td>religious institution</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">An organization that provides religious rites of worship.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _OrganizationEntityType
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="_PlaceEntityType"></a>0-<strong>A</strong></td>
+               <td nowrap="nowrap"><font color="black"></font><strong>_PlaceEntityType</strong><br /><i><font color="white"></font>
+						&nbsp;<i><a href="vs_EntityCode.html#PlaceEntityType">v:PlaceEntityType</a></i></i></td>
+               <td>PlaceEntityType</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Types of places for EntityClass "PLC"</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> BED BLDG FLOOR ROOM WING<br />&nbsp;&nbsp;<strong>ClassifiesClassCode to: </strong>PLC
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="BED"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>BED</strong></td>
+               <td>Bed Location</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">The location of a bed</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _PlaceEntityType
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="BLDG"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>BLDG</strong></td>
+               <td>Building Location</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">The location of a building</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _PlaceEntityType
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="FLOOR"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>FLOOR</strong></td>
+               <td>Floor Location</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">The location of a floor of a building</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _PlaceEntityType
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="ROOM"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>ROOM</strong></td>
+               <td>Room Location</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">The location of a room</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _PlaceEntityType
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="WING"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>WING</strong></td>
+               <td>Wing Location</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">The location of a wing of a building (e.g. East Wing).  The same room number for the same floor number can be distinguished
+                     by wing number in some situations
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _PlaceEntityType
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="_ResourceGroupEntityType"></a>0-<strong>A</strong></td>
+               <td nowrap="nowrap"><font color="black"></font><strong>_ResourceGroupEntityType</strong></td>
+               <td>ResourceGroupEntityType</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Codes to characterize a Resource Group using categories that typify its membership and/or function</p>
+                  <p class="vocDesc">.</p>
+                  <p class="vocDesc"><i class="vocDesc">Example: </i>PractitionerGroup
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> PRAC<br />&nbsp;&nbsp;<strong>ClassifiesClassCode to: </strong>RGRP
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="PRAC"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>PRAC</strong></td>
+               <td>PractitionerGroup</td>
+               <td>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _ResourceGroupEntityType
+                  </p>
+               </td>
+            </tr>
+         </tbody>
+      </table><br /><a href="vocabulary.html#voc-systems">Return to code system index</a><br /><br /><p class="copyright">Last Published:&nbsp;20190729&nbsp;12:04&nbsp;PM</p>
+      <p class="copyright">HL7 &reg; Version 3 Standard, &copy; 2019  Health Level Seven &reg; International. &nbsp;All Rights Reserved.</p>
+      <p class="copyright">HL7 and Health Level Seven are registered trademarks of Health Level Seven International Reg. U.S. Pat &amp; TM Off.<br />Use of these materials is governed by HL7 International's <a href="http://www.hl7.org/legal/ippolicy.cfm">IP Compliance Policy</a>.
+      </p>
+   </body>
+</html>

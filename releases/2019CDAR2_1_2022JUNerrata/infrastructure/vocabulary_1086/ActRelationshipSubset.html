@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="iso-8859-1"?><!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+      <title>ActRelationshipSubset</title>
+      <link rel="stylesheet" type="text/css" href="../../support/css/V3m.css" /><style type="text/css">
+					td {font-family: Verdana,Arial; text-align: left; vertical-align: top; font-size: 11}
+					th {font-family: Verdana,Arial; FONT-WEIGHT: bold; text-align: left; font-size: 11}
+					</style></head>
+   <body><a href="vocabulary.html#voc-systems">Return to code system index</a><br /><br /><a name="ActRelationshipSubset"></a><table rules="all" border="1px" cellpadding="2" cellspacing="0" class="homepage">
+         <tbody>
+            <tr>
+               <td colspan="4"><font face="Arial" size="3"><strong>ActRelationshipSubset&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong> [2.16.840.1.113883.5.1099]</font><br /><p class="vocDesc"><b>Description:</b></p>
+                  <p class="vocDesc">&lt;ns1:p&gt;Used to indicate that the target of the relationship will be a filtered subset of the total related set of targets.&lt;/ns1:p&gt;&lt;ns1:p&gt;Used
+                     when there is a need to limit the number of components to the first, the last, the next, the total, the average or some other
+                     filtered or calculated subset.&lt;/ns1:p&gt;
+                  </p>
+               </td>
+            </tr>
+            <tr bgcolor="cornflowerblue">
+               <th>Lvl- Typ</th>
+               <th>Concept&nbsp;Code<br />&nbsp;&nbsp;<i>Head&nbsp;Code-defined&nbsp;Value&nbsp;Set</i></th>
+               <th>Print Name</th>
+               <th>Definition, Properties, Relationships</th>
+            </tr>
+            <tr>
+               <td><a name="ActRelationshipExpectedSubset"></a>0-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black"></font><strong>ActRelationshipExpectedSubset</strong></td>
+               <td>ActRelationshipExpectedSubset</td>
+               <td></td>
+            </tr>
+            <tr>
+               <td><a name="ActRelationshipPastSubset"></a>0-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black"></font><strong>ActRelationshipPastSubset</strong></td>
+               <td>ActRelationshipPastSubset</td>
+               <td></td>
+            </tr>
+            <tr>
+               <td><a name="MAX"></a>0-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black"></font><strong>MAX</strong></td>
+               <td>maximum</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">The occurrence whose value attribute is greater than all other occurrences at the time the instance is created.</p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="MIN"></a>0-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black"></font><strong>MIN</strong></td>
+               <td>minimum</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">The occurrence whose value attribute is less than all other occurrences at the time the instance is created.</p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="_ParticipationSubset"></a>0-<strong>A</strong></td>
+               <td nowrap="nowrap"><font color="black"></font><strong>_ParticipationSubset</strong><br /><i><font color="white"></font>
+						&nbsp;<i><a href="vs_ActRelationshipSubset.html#ParticipationSubset">v:ParticipationSubset</a></i></i></td>
+               <td>ParticipationSubset</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Used to indicate that the participation is a filtered subset of the total participations of the same type owned by the Act.
+                     
+                  </p>
+                  <p class="vocDesc">Used when there is a need to limit the participations to the first, the last, the next or some other filtered subset.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> FUTURE PAST SUM
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="FUTURE"></a>1-<strong>S</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>FUTURE</strong><br /><i><font color="white">.&nbsp;</font>
+						&nbsp;<i><a href="vs_ActRelationshipSubset.html#ExpectedSubset">v:ExpectedSubset</a></i></i></td>
+               <td>expected future</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">An occurrence that is scheduled to occur in the future. An Act whose effective time is greater than 'now', where 'now' is
+                     the time the instance is authored.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _ParticipationSubset<br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> FUTSUM LAST NEXT
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="FUTSUM"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>FUTSUM</strong></td>
+               <td>future summary</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Represents a 'summary' of all acts that are scheduled to occur in the future (whose effective time is greater than 'now' where
+                     is the time the instance is authored.). The effectiveTime represents the outer boundary of all occurrences, repeatNumber represents
+                     the total number of repetitions, etc.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> FUTURE
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="LAST"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>LAST</strong></td>
+               <td>expected last</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Restricted to the latest known occurrence that is scheduled to occur. The Act with the highest known effective time.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> FUTURE
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="NEXT"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>NEXT</strong></td>
+               <td>expected next</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Restricted to the nearest recent known occurrence scheduled to occur in the future. The Act with the lowest effective time,
+                     still greater than 'now'. ('now' is the time the instance is authored.)
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> FUTURE
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="PAST"></a>1-<strong>S</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>PAST</strong><br /><i><font color="white">.&nbsp;</font>
+						&nbsp;<i><a href="vs_ActRelationshipSubset.html#PastSubset">v:PastSubset</a></i></i></td>
+               <td>previous</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">An occurrence that occurred or was scheduled to occur in the past. An Act whose effective time is less than 'now'. ('now'
+                     is the time the instance is authored.)
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _ParticipationSubset<br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> FIRST PREVSUM RECENT
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="FIRST"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>FIRST</strong></td>
+               <td>first known</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Restricted to the earliest known occurrence that occurred or was scheduled to occur in the past. The Act with the lowest effective
+                     time. ('now' is the time the instance is authored.)
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> PAST
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="PREVSUM"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>PREVSUM</strong></td>
+               <td>previous summary</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Represents a 'summary' of all acts that previously occurred or were scheduled to occur. The effectiveTime represents the outer
+                     boundary of all occurrences, repeatNumber represents the total number of repetitions, etc. ('now' is the time the instance
+                     is authored.)
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> PAST
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="RECENT"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>RECENT</strong></td>
+               <td>most recent</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Restricted to the most recent known occurrence that occurred or was scheduled to occur in the past. The Act with the most
+                     recent effective time, still less than 'now'. ('now' is the time the instance is authored.)
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> PAST
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="SUM"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>SUM</strong></td>
+               <td>summary</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Represents a 'summary' of all acts that have occurred or were scheduled to occur and which are scheduled to occur in the future.
+                     The effectiveTime represents the outer boundary of all occurrences, repeatNumber represents the total number of repetitions,
+                     etc.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _ParticipationSubset
+                  </p>
+               </td>
+            </tr>
+         </tbody>
+      </table><br /><a href="vocabulary.html#voc-systems">Return to code system index</a><br /><br /><p class="copyright">Last Published:&nbsp;20190729&nbsp;12:04&nbsp;PM</p>
+      <p class="copyright">HL7 &reg; Version 3 Standard, &copy; 2019  Health Level Seven &reg; International. &nbsp;All Rights Reserved.</p>
+      <p class="copyright">HL7 and Health Level Seven are registered trademarks of Health Level Seven International Reg. U.S. Pat &amp; TM Off.<br />Use of these materials is governed by HL7 International's <a href="http://www.hl7.org/legal/ippolicy.cfm">IP Compliance Policy</a>.
+      </p>
+   </body>
+</html>

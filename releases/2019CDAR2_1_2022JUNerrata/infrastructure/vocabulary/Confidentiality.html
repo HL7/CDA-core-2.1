@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="iso-8859-1"?><!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+      <title>Confidentiality</title>
+      <link rel="stylesheet" type="text/css" href="../../support/css/V3m.css" /><style type="text/css">
+					td {font-family: Verdana,Arial; text-align: left; vertical-align: top; font-size: 11}
+					th {font-family: Verdana,Arial; FONT-WEIGHT: bold; text-align: left; font-size: 11}
+					</style></head>
+   <body><a href="vocabulary.html#voc-systems">Return to code system index</a><br /><br /><a name="Confidentiality"></a><table rules="all" border="1px" cellpadding="2" cellspacing="0" class="homepage">
+         <tbody>
+            <tr>
+               <td colspan="4"><font face="Arial" size="3"><strong>Confidentiality&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong> [2.16.840.1.113883.5.25]</font><br /><p class="vocDesc"><b>Description:</b></p>
+                  <p class="vocDesc">A set of codes specifying the security classification of acts and roles in accordance with the definition for concept domain
+                     "Confidentiality".
+                  </p>
+               </td>
+            </tr>
+            <tr bgcolor="cornflowerblue">
+               <th>Lvl- Typ</th>
+               <th>Concept&nbsp;Code<br />&nbsp;&nbsp;<i>Head&nbsp;Code-defined&nbsp;Value&nbsp;Set</i></th>
+               <th>Print Name</th>
+               <th>Definition, Properties, Relationships</th>
+            </tr>
+            <tr>
+               <td><a name="_Confidentiality"></a>0-<strong>S</strong></td>
+               <td nowrap="nowrap"><font color="black"></font><strong>_Confidentiality</strong></td>
+               <td>Confidentiality</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">A specializable code and its leaf codes used in Confidentiality value sets to value the Act.Confidentiality and Role.Confidentiality
+                     attribute in accordance with the definition for concept domain "Confidentiality".
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> L M N R U V
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="L"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>L</strong></td>
+               <td>low</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><i class="vocDesc">Definition: </i>Privacy metadata indicating that the information has been de-identified, and there are mitigating circumstances that prevent
+                     re-identification, which minimize risk of harm from unauthorized disclosure.  The information requires protection to maintain
+                     low sensitivity.
+                  </p>
+                  <p class="vocDesc"><i class="vocDesc">Examples: </i>Includes anonymized, pseudonymized, or non-personally identifiable information such as HIPAA limited data sets.
+                  </p>
+                  <p class="vocDesc"><i class="vocDesc">Map: </i>No clear map to ISO 13606-4 Sensitivity Level (1) Care Management:   RECORD_COMPONENTs that might need to be accessed by a
+                     wide range of administrative staff to manage the subject of care's access to health services.
+                  </p>
+                  <p class="vocDesc"><i class="vocDesc">Usage Note: </i>This metadata indicates the receiver may have an obligation to comply with a data use agreement.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _Confidentiality
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="M"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>M</strong></td>
+               <td>moderate</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><i class="vocDesc">Definition: </i>Privacy metadata indicating moderately sensitive information, which presents moderate risk of harm if disclosed without authorization.
+                  </p>
+                  <p class="vocDesc"><i class="vocDesc">Examples: </i>Includes allergies of non-sensitive nature used inform food service; health information a patient authorizes to be used for
+                     marketing, released to a bank for a health credit card or savings account; or information in personal health record systems
+                     that are not governed under health privacy laws.
+                  </p>
+                  <p class="vocDesc"><i class="vocDesc">Map: </i>Partial Map to ISO 13606-4 Sensitivity Level (2) Clinical Management:  Less sensitive RECORD_COMPONENTs that might need to
+                     be accessed by a wider range of personnel not all of whom are actively caring for the patient (e.g. radiology staff).
+                  </p>
+                  <p class="vocDesc"><i class="vocDesc">Usage Note: </i>This metadata indicates that the receiver may be obligated to comply with the receiver's terms of use or privacy policies.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _Confidentiality
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="N"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>N</strong></td>
+               <td>normal</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><i class="vocDesc">Definition: </i>Privacy metadata indicating that the information is typical, non-stigmatizing health information, which presents typical risk
+                     of harm if disclosed without authorization.
+                  </p>
+                  <p class="vocDesc"><i class="vocDesc">Examples: </i>In the US, this includes what HIPAA identifies as the minimum necessary protected health information (PHI) given a covered
+                     purpose of use (treatment, payment, or operations).  Includes typical, non-stigmatizing health information disclosed in an
+                     application for health, workers compensation, disability, or life insurance.
+                  </p>
+                  <p class="vocDesc"><i class="vocDesc">Map: </i>Partial Map to ISO 13606-4 Sensitivity Level (3) Clinical Care:   Default for normal clinical care access (i.e. most clinical
+                     staff directly caring for the patient should be able to access nearly all of the EHR).   Maps to normal confidentiality for
+                     treatment information but not to ancillary care, payment and operations.
+                  </p>
+                  <p class="vocDesc"><i class="vocDesc">Usage Note: </i>This metadata indicates that the receiver may be obligated to comply with applicable jurisdictional privacy law or disclosure
+                     authorization.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _Confidentiality
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="R"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>R</strong></td>
+               <td>restricted</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Privacy metadata indicating highly sensitive, potentially stigmatizing information, which presents a high risk to the information
+                     subject if disclosed without authorization. May be pre-empted by jurisdictional law, e.g., for public health reporting or
+                     emergency treatment.
+                  </p>
+                  <p class="vocDesc"><i class="vocDesc">Examples: </i>Includes information that is additionally protected such as sensitive conditions mental health, HIV, substance abuse, domestic
+                     violence, child abuse, genetic disease, and reproductive health; or sensitive demographic information such as a patient's
+                     standing as an employee or a celebrity. May be used to indicate proprietary or classified information that is not related
+                     to an individual, e.g., secret ingredients in a therapeutic substance; or the name of a manufacturer.
+                  </p>
+                  <p class="vocDesc"><i class="vocDesc">Map: </i>Partial Map to ISO 13606-4 Sensitivity Level (3) Clinical Care: Default for normal clinical care access (i.e. most clinical
+                     staff directly caring for the patient should be able to access nearly all of the EHR). Maps to normal confidentiality for
+                     treatment information but not to ancillary care, payment and operations..
+                  </p>
+                  <p class="vocDesc"><i class="vocDesc">Usage Note: </i>This metadata indicates that the receiver may be obligated to comply with applicable, prevailing (default) jurisdictional
+                     privacy law or disclosure authorization..
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _Confidentiality
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="U"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>U</strong></td>
+               <td>unrestricted</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><i class="vocDesc">Definition: </i>Privacy metadata indicating that the information is not classified as sensitive.
+                  </p>
+                  <p class="vocDesc"><i class="vocDesc">Examples: </i>Includes publicly available information, e.g., business name, phone, email or physical address.
+                  </p>
+                  <p class="vocDesc"><i class="vocDesc">Usage Note: </i>This metadata indicates that the receiver has no obligation to consider additional policies when making access control decisions.
+                     Note that in some jurisdictions, personally identifiable information must be protected as confidential, so it would not be
+                     appropriate to assign a confidentiality code of "unrestricted"  to that information even if it is publicly available.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _Confidentiality
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="V"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>V</strong></td>
+               <td>very restricted</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">. Privacy metadata indicating that the information is extremely sensitive and likely stigmatizing health information that
+                     presents a very high risk if disclosed without authorization.  This information must be kept in the highest confidence.  
+                  </p>
+                  <p class="vocDesc"><i class="vocDesc">Examples: </i> Includes information about a victim of abuse, patient requested information sensitivity, and taboo subjects relating to health status that must be discussed with the patient by an attending provider before sharing with the patient.  May also include information held under â&#8364;&#339;legal lockâ&#8364;? or attorney-client privilege
+                  </p>
+                  <p class="vocDesc"><i class="vocDesc">Map: </i> This metadata indicates that the receiver may not disclose this information except as directed by the information custodian,
+                     who may be the information subject.
+                  </p>
+                  <p class="vocDesc"><i class="vocDesc">Usage Note: </i> This metadata indicates that the receiver may not disclose this information except as directed by the information custodian,
+                     who may be the information subject.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _Confidentiality
+                  </p>
+               </td>
+            </tr>
+         </tbody>
+      </table><br /><a href="vocabulary.html#voc-systems">Return to code system index</a><br /><br /><p class="copyright">Last Published:&nbsp;20190729&nbsp;12:04&nbsp;PM</p>
+      <p class="copyright">HL7 &reg; Version 3 Standard, &copy; 2019  Health Level Seven &reg; International. &nbsp;All Rights Reserved.</p>
+      <p class="copyright">HL7 and Health Level Seven are registered trademarks of Health Level Seven International Reg. U.S. Pat &amp; TM Off.<br />Use of these materials is governed by HL7 International's <a href="http://www.hl7.org/legal/ippolicy.cfm">IP Compliance Policy</a>.
+      </p>
+   </body>
+</html>

@@ -1,0 +1,744 @@
+<!-- edited with XMLSPY v2004 rel. 3 U (http://www.xmlspy.com) by Mike Craig (HL7 Publications TC) -->
+<!-- edited with XML Spy v4.1 U (http://www.xmlspy.com) by Mike Craig (HL7) -->
+<!--
+	these entities define the file names for various V3 publications
+	Note: these are NOT the full URLs to where these publications
+	can be accessed, see below for those
+  -->
+<!ENTITY datatypes_hack "&#37;0A">
+<!ENTITY datatypes "datatypes.html">
+<!ENTITY datatypes_r2 "datatypes_r2.html">
+<!ENTITY rim_r2 "rim_r2.html">
+<!ENTITY v3dtp1 "Datatypes1">
+<!ENTITY v3dtp2 "Datatypes2">
+<!ENTITY stofprin "stofprin">
+<!ENTITY vocab "vocabulary">
+<!--Here are references to general directories-->
+<!ENTITY path_home "../../">
+<!--end new additions for Nov. 2004-->
+<!ENTITY dir_output_combinedmifs "../../../output/processable/combinedPackageMIF/">
+<!ENTITY dir_output_packagemifs "../../../output/processable/packageMIF/">
+<!ENTITY dir_output_domainhmds "../../../output/processable/hmdvsd/hmd/">
+<!ENTITY dir_common_domainhmds "../../../output/processable/hmdvsd/commonhmd/">
+<!ENTITY dir_9999 "../../../output/processable/intermediatexml/">
+<!ENTITY dir_nonsectioncontent "&path_home;infrastructure/">
+<!ENTITY dir_damcontent "&path_home;dams/">
+<!ENTITY dir_outputdomains "../../../output/domains/">
+<!ENTITY dir_sectioncontent "&path_home;domains/">
+<!ENTITY contentlocation '&dir_sectioncontent;'>
+<!ENTITY dir_conformance '&dir_nonsectioncontent;conformance/'>
+<!ENTITY dir_v3modelcoreprinciples '&dir_nonsectioncontent;coreprinciples/'>
+<!ENTITY dir_saifcd '&dir_nonsectioncontent;saifcd/'>
+<!ENTITY dir_datatypes '&dir_nonsectioncontent;datatypes/'>
+<!ENTITY dir_datatypes_r2 '&dir_nonsectioncontent;datatypes_r2/'>
+<!ENTITY dir_mif '&dir_nonsectioncontent;mif/'>
+<!ENTITY dir_support "&path_home;support/">
+<!ENTITY dir_javascript "&dir_support;js/">
+<!ENTITY dir_css "&dir_support;css/">
+<!ENTITY dir_posttransformgraphics 'graphics/'>
+<!ENTITY dir_posttransformeditableimages 'editable/images/'>
+<!ENTITY multicacheSchemas '../../processable/multicacheschemas/schemas.html'>
+<!ENTITY multicacheR2BSchemas '../../processable/multicacheschemasR2b/schemas.html'>
+<!ENTITY narrativeSchemas '../../processable/narrativeschemas/schemas.html'>
+<!ENTITY redefineSchemas '../../processable/redefinechemas/schemas.html'>
+<!-- will change to procMulticacheSchemas, procNarrativeSchemas, procRedfineSchemas -->
+<!ENTITY processableExamples '../../processable/examples/examples.html'>
+<!ENTITY approvalXML '../../support/basis4mif/approval.xml'>
+<!-- <!ENTITY approvalXML '../../welcome/environment/approval.xml'> -->
+<!ENTITY knownIssues '../../welcome/issues/issues.html'>
+<!ENTITY edition_welcome '../../welcome/introduction/index.html'>
+<!ENTITY ballotqareview '../../welcome/issues/ballotqareview.html'>
+<!ENTITY ballotqareview '../../welcome/issues/ballotqareview.html'>
+<!ENTITY itsxml_r2htmlfile '../../infrastructure/itsxml_r2/datatypes_its_xml_r2.html'>
+<!ENTITY uvti_file '../../domains/uvti/uvti.html'>
+<!--Don't know whether we'll need to the two entries here for GB or not; DGL; 2-22-07
+<!ENTITY gb_lab '../../domains/gblb/gblb.html'>
+<!ENTITY gb_ct '../../domains/gbct/gbct.html'>-->
+<!ENTITY downloads '../../welcome/downloads/downloads.html'>
+<!ENTITY pdfs '../../welcome/pdf/pdf.html'>
+<!--here are references for checking if files exist (12-28-02)-->
+<!--changed from tmpschemas/multicacheschemas (7-3-2005)  TODO: make ent more efficient for outputdir-->
+<!ENTITY dir_schema '../../../output/processable/multicacheschemas/'>
+<!ENTITY dir_spreadsheet 'hmd/'>
+<!ENTITY dir_inputgraphics 'sourcegraphics/'>
+<!ENTITY dir_outputgraphics 'outputgraphics/'>
+<!ENTITY dir_outputsharedgraphics '&path_home;support/graphics/'>
+<!ENTITY dir_editable 'editable/'>
+<!ENTITY dir_editable_images '&dir_editable;/images/'>
+<!ENTITY dir_gen_examples 'examples/'>
+<!ENTITY dir_processable '../../../output/processable/'>
+<!ENTITY dir_intermediatexml '&dir_processable;intermediatexml/'>
+<!--Here are the helpfiles entries-->
+<!ENTITY dir_helpfiles '&path_home;help/'>
+<!ENTITY helpfileslocation '&dir_helpfiles;'>
+<!ENTITY fi_v3guide '&dir_helpfiles;v3guide/v3guide'>
+<!ENTITY v3guidefile '&fi_v3guide;'>
+<!ENTITY dir_glossary '&dir_helpfiles;glossary/'>
+<!ENTITY fi_glossary '&dir_helpfiles;glossary/glossary'>
+<!ENTITY glossaryfile '&fi_glossary;'>
+<!ENTITY dir_hdf '&dir_helpfiles;hdf/'>
+<!ENTITY fi_hdf '&dir_hdf;hdf'>
+<!ENTITY hdffile '&fi_hdf;'>
+<!ENTITY fi_hdfprojectinitiation '&dir_hdf;HDFProjectInitiation'>
+<!ENTITY hdfprojectInitiationfile '&fi_hdfprojectinitiation;'>
+<!ENTITY fi_hdfrequirementsdoc '&dir_hdf;HDFRequirementsDoc'>
+<!ENTITY hdfrequirementsdocfile '&fi_hdfrequirementsdoc;'>
+<!ENTITY fi_hdfspecmodeling '&dir_hdf;HDFSpecModeling'>
+<!ENTITY hdfspecmodelingfile '&fi_hdfspecmodeling;'>
+<!ENTITY fi_hdfspecdocumentation '&dir_hdf;HDFSpecDocumentation'>
+<!ENTITY hdfspecdocumentationfile '&fi_hdfspecdocumentation;'>
+<!ENTITY fi_hdfspecapproval '&dir_hdf;HDFSpecApproval'>
+<!ENTITY hdfspecapprovalfile '&fi_hdfspecapproval;'>
+<!ENTITY fi_hdfspecpublication '&dir_hdf;HDFSpecPublication'>
+<!ENTITY hdfspecpublicationfile '&fi_hdfspecpublication;'>
+<!ENTITY fi_hdfimplprofiling '&dir_hdf;HDFImplProfiling'>
+<!ENTITY hdfimplprofilingfile '&fi_hdfimplprofiling;'>
+<!ENTITY fi_hdfappendix '&dir_hdf;HDFAppendix'>
+<!ENTITY hdfappendixfile '&fi_hdfappendix;'>
+<!ENTITY dir_pfg '&dir_helpfiles;pfg/'>
+<!ENTITY fi_pfg '&dir_pfg;pfg'>
+<!ENTITY pfgfile '&fi_pfg;'>
+<!ENTITY dir_rlus '&dir_nonsectioncontent;rlus/'>
+<!ENTITY fi_rlus '&dir_rlus;rlus'>
+<!ENTITY rlusfile '&fi_rlus;'>
+<!ENTITY dir_eis '&dir_nonsectioncontent;eis/'>
+<!ENTITY fi_eis '&dir_eis;eis'>
+<!ENTITY eisfile '&fi_eis;'>
+<!ENTITY dir_dss '&dir_nonsectioncontent;dss/'>
+<!ENTITY fi_dss '&dir_dss;dss'>
+<!ENTITY dssfile '&fi_dss;'>
+<!ENTITY fi_dss_r2 '&dir_dss;dss_r2'>
+<!ENTITY dss_r2file '&fi_dss_r2;'>
+<!-- New Entry for Healthcare, community and Services Provider Directory; 7/28/2009 -->
+<!ENTITY dir_hcspdir '&dir_nonsectioncontent;hcspdir/'>
+<!ENTITY fi_hcspdir '&dir_hcspdir;hcspdir'>
+<!ENTITY hcspdirfile '&fi_hcspdir;'>
+<!-- New Entry for Services directory; 2/20/2015 -->
+<!ENTITY dir_services '&dir_nonsectioncontent;services/'>
+<!-- New Entry for Ordering Service Interface in Services; 2/20/2015 -->
+<!ENTITY dir_uvorderservice '&dir_nonsectioncontent;services/'>
+<!ENTITY fi_uvorderservice '&dir_uvorderservice;uvorderservice'>
+<!ENTITY uvorderservicefile '&fi_uvorderservice;'>
+<!-- New Entry for Event Publish and Subscribe Service Interface in Services; 2/20/2015 -->
+<!ENTITY dir_useventpubsub '&dir_nonsectioncontent;services/'>
+<!ENTITY fi_useventpubsub '&dir_useventpubsub;useventpubsub'>
+<!ENTITY useventpubsubfile '&fi_useventpubsub;'>
+<!-- New Entry for Event Publish and Subscribe Service Interface in Services; 2/20/2015-->
+<!ENTITY dir_usunifiedcommunication '&dir_nonsectioncontent;services/'>
+<!ENTITY fi_usunifiedcommunication '&dir_usunifiedcommunication;usunifiedcommunication'>
+<!ENTITY usunifiedcommunicationfile '&fi_usunifiedcommunication;'>
+<!-- New Entry for PASS SLS; 12/17/2014 -->
+<!ENTITY dir_pass_sls '&dir_nonsectioncontent;pass_sls/'>
+<!ENTITY fi_pass_sls '&dir_pass_sls;pass_sls'>
+<!ENTITY pass_slsfile '&fi_pass_sls;'>
+<!ENTITY dir_services '&dir_nonsectioncontent;services/'>
+<!ENTITY dir_soa4hl7 '&dir_nonsectioncontent;soa4hl7/'>
+<!ENTITY fi_soa4hl7 '&dir_soa4hl7;soa4hl7'>
+<!ENTITY soa4hl7file '&fi_soa4hl7;'>
+<!ENTITY dir_terminfo '&dir_nonsectioncontent;terminfo/'>
+<!ENTITY fi_terminfo '&dir_terminfo;terminfo'>
+<!ENTITY terminfofile '&fi_terminfo;'>
+<!ENTITY dir_subs '&dir_helpfiles;subs/'>
+<!ENTITY fi_subs '&dir_subs;subs'>
+<!ENTITY subsfile '&fi_subs;'>
+<!ENTITY fi_conformance 'conformance'>
+<!ENTITY conformancefile '&dir_conformance;&fi_conformance;'>
+<!ENTITY fi_saifcd 'saifcd'>
+<!ENTITY saifcdfile '&dir_saifcd;&fi_saifcd;'>
+<!ENTITY fi_v3modelcoreprinciples 'v3modelcoreprinciples'>
+<!ENTITY v3modelcoreprinciplesfile '&dir_v3modelcoreprinciples;&fi_v3modelcoreprinciples;'>
+<!ENTITY fi_datatypespec '&dir_datatypes;datatypes'>
+<!ENTITY datatypespecfile '&fi_datatypespec;'>
+<!ENTITY fi_datatype_r2spec '&dir_datatypes_r2;datatypes_r2'>
+<!ENTITY datatype_r2specfile '&fi_datatype_r2spec;'>
+<!ENTITY fi_mif '&dir_mif;mif'>
+<!ENTITY mif_file '&fi_mif;'>
+<!ENTITY fi_backbone '&dir_helpfiles;backbone/backbone'>
+<!ENTITY backbonefile '&fi_backbone;'>
+<!-- Added to support the Domain Analysis Model Content - 3/21/2008 -->
+<!ENTITY dir_uvalg '&dir_damcontent;uvalg/'>
+<!ENTITY fi_alg_dam '&dir_uvalg;uvalg'>
+<!ENTITY alg_damfile '&fi_alg_dam;'>
+<!ENTITY dir_uvbpd '&dir_damcontent;uvbpd/'>
+<!ENTITY fi_bpd_dam '&dir_uvbpd;uvbpd'>
+<!ENTITY bpd_damfile '&fi_bpd_dam;'>
+<!ENTITY dir_uvcgn '&dir_damcontent;uvcgn/'>
+<!ENTITY fi_cgn_dam '&dir_uvcgn;uvcgn'>
+<!ENTITY cgn_damfile '&fi_cgn_dam;'>
+<!ENTITY dir_uvcrd '&dir_damcontent;uvcrd/'>
+<!ENTITY fi_crd_dam '&dir_uvcrd;uvcrd'>
+<!ENTITY crd_damfile '&fi_crd_dam;'>
+<!ENTITY dir_uvcsq '&dir_damcontent;uvcsq/'>
+<!ENTITY fi_csq_dam '&dir_uvcsq;uvcsq'>
+<!ENTITY csq_damfile '&fi_csq_dam;'>
+<!ENTITY dir_uvems '&dir_damcontent;uvems/'>
+<!ENTITY fi_ems_dam '&dir_uvems;uvems'>
+<!ENTITY ems_damfile '&fi_ems_dam;'>
+<!ENTITY dir_uvlab '&dir_damcontent;uvlab/'>
+<!ENTITY fi_lab_dam '&dir_uvlab;uvlab'>
+<!ENTITY lab_damfile '&fi_lab_dam;'>
+<!ENTITY dir_uvpcd '&dir_damcontent;uvpcd/'>
+<!ENTITY fi_pcd_dam '&dir_uvpcd;uvpcd'>
+<!ENTITY pcd_damfile '&fi_pcd_dam;'>
+<!ENTITY dir_uvtbs '&dir_damcontent;uvtbs/'>
+<!ENTITY fi_tbs_dam '&dir_uvtbs;uvtbs'>
+<!ENTITY tbs_damfile '&fi_tbs_dam;'>
+<!ENTITY dir_uvvrc '&dir_damcontent;uvvrc/'>
+<!ENTITY fi_vrc_dam '&dir_uvvrc;uvvrc'>
+<!ENTITY vrc_damfile '&fi_vrc_dam;'>
+<!-- Added definitions for new Care Plan DAM files in DAM section. - 7/16/13 -->
+<!ENTITY dir_uvcar '&dir_damcontent;uvcar/'>
+<!ENTITY fi_car_dam '&dir_uvcar;uvcar'>
+<!ENTITY car_damfile '&fi_car_dam;'>
+<!-- Added definitions for new Detailed Clinical Models (patient care) DAM files in DAM section. - 8/22/10 -->
+<!ENTITY dir_uvdcm '&dir_damcontent;uvdcm/'>
+<!ENTITY fi_dcm_dam '&dir_uvdcm;uvdcm'>
+<!ENTITY dcm_damfile '&fi_dcm_dam;'>
+<!-- Added definitions for new DCM Medical Devices DAM files in DAM section. Not to be confused with above - 8/10/10 -->
+<!ENTITY dir_uvdmd '&dir_damcontent;uvdmd/'>
+<!ENTITY fi_dmd_dam '&dir_uvdmd;uvdmd'>
+<!ENTITY dmd_damfile '&fi_dmd_dam;'>
+<!-- Added definitions for new Lab DAM files in DAM section. 4/18/14 -->
+<!ENTITY dir_uvlab '&dir_damcontent;uvlab/'>
+<!ENTITY fi_lab_dam '&dir_uvlab;uvlab'>
+<!ENTITY lab_damfile '&fi_lab_dam;'>
+<!-- Added definitions for new Nutrition DAM files in DAM section. 7/13/11 -->
+<!ENTITY dir_uvnut '&dir_damcontent;uvnut/'>
+<!ENTITY fi_nut_dam '&dir_uvnut;uvnut'>
+<!ENTITY nut_damfile '&fi_nut_dam;'>
+<!-- Added definitions for new Security DAM files in DAM section. - 11/13/09 -->
+<!ENTITY dir_uvsec '&dir_damcontent;uvsec/'>
+<!ENTITY fi_sec_dam '&dir_uvsec;uvsec'>
+<!ENTITY sec_damfile '&fi_sec_dam;'>
+
+<!-- Added definitions for new Virtual Medical Record DAM files in DAM section. - 11/13/09 -->
+<!ENTITY dir_uvvmr '&dir_damcontent;uvvmr/'>
+<!ENTITY fi_vmr_dam '&dir_uvvmr;uvvmr'>
+<!ENTITY vmr_damfile '&fi_vmr_dam;'>
+
+<!-- Added definitions for new Semantic Health Interop PPS DAM files in DAM section. - 3/11/11 -->
+<!ENTITY dir_uvshi '&dir_damcontent;uvshi/'>
+<!ENTITY fi_shi_dam '&dir_uvshi;uvshi'>
+<!ENTITY shi_damfile '&fi_shi_dam;'>
+
+<!-- Added definitions for new Preop Anesthesiology DAM files in DAM section. - 3/11/11 -->
+<!ENTITY dir_uvans '&dir_damcontent;uvans/'>
+<!ENTITY fi_ans_dam '&dir_uvans;uvans'>
+<!ENTITY ans_damfile '&fi_ans_dam;'>
+
+<!-- Added definitions for new Pressure Ulcer Prevention DAM files in DAM section. - 3/11/11 -->
+<!ENTITY dir_uvulc '&dir_damcontent;uvulc/'>
+<!ENTITY fi_ulc_dam '&dir_uvulc;uvulc'>
+<!ENTITY ulc_damfile '&fi_ulc_dam;'>
+
+<!-- Added definitions for new Immunization DAM files in DAM section. - 3/11/11 -->
+<!ENTITY dir_uvimz '&dir_damcontent;uvimz/'>
+<!ENTITY fi_imz_dam '&dir_uvimz;uvimz'>
+<!ENTITY imz_damfile '&fi_imz_dam;'>
+
+<!-- Added definitions for new Interdependent Registries DAM files in DAM section. - 3/11/11 -->
+<!ENTITY dir_uvreg '&dir_damcontent;uvreg/'>
+<!ENTITY fi_reg_dam '&dir_uvreg;uvreg'>
+<!ENTITY reg_damfile '&fi_reg_dam;'>
+<!-- Added definitions for new Major Depressive Disorder DAM files in DAM section. -2014 -->
+<!ENTITY dir_uvmdd '&dir_damcontent;uvmdd/'>
+<!ENTITY fi_mdd_dam '&dir_uvmdd;uvmdd'>
+<!ENTITY mdd_damfile '&fi_mdd_dam;'>
+
+<!-- Added definitions for new Behavioral Health Assessment DAM files in DAM section. - 3/11/11 -->
+<!ENTITY dir_uvbha '&dir_damcontent;uvbha/'>
+<!ENTITY fi_bha_dam '&dir_uvbha;uvbha'>
+<!ENTITY bha_damfile '&fi_bha_dam;'>
+
+<!-- Added definitions for new Schizophrenia DAM files in DAM section. - 7/14/12 -->
+<!ENTITY dir_uvscz '&dir_damcontent;uvscz/'>
+<!ENTITY fi_scz_dam '&dir_uvscz;uvscz'>
+<!ENTITY scz_damfile '&fi_scz_dam;'>
+
+<!-- Added definitions for new Allergies and Intolerances DAM files in DAM section. - 11/7/12 -->
+<!ENTITY dir_uvalg '&dir_damcontent;uvalg/'>
+<!ENTITY fi_alg_dam '&dir_uvalg;uvalg'>
+<!ENTITY alg_damfile '&fi_alg_dam;'>
+
+<!-- Added definitions for new Exchange of Trauma Data DAM files in DAM section. - 3/6/13 -->
+<!ENTITY dir_uvtrm '&dir_damcontent;uvtrm/'>
+<!ENTITY fi_trm_dam '&dir_uvtrm;uvtrm'>
+<!ENTITY trm_damfile '&fi_trm_dam;'>
+
+<!-- Added definitions for new Care Plan DAM files in DAM section. - 7/16/13 -->
+<!ENTITY dir_uvcar '&dir_damcontent;uvcar/'>
+<!ENTITY fi_car_dam '&dir_uvcar;uvcar'>
+<!ENTITY car_damfile '&fi_car_dam;'>
+
+<!-- Added definitions for new Major Depressive Disorders DAM files in DAM section. - 7/16/13 -->
+<!ENTITY dir_uvmdd '&dir_damcontent;uvmdd/'>
+<!ENTITY fi_mdd_dam '&dir_uvmdd;uvmdd'>
+<!ENTITY mdd_damfile '&fi_mdd_dam;'>
+
+<!-- Added definitions for new Care Provision; Health Concern DAM files in DAM section. - 7/11/14 -->
+<!ENTITY dir_uvhco '&dir_damcontent;uvhco/'>
+<!ENTITY fi_hco_dam '&dir_uvhco;uvhco'>
+<!ENTITY hco_damfile '&fi_hco_dam;'>
+
+<!-- Added definitions for new Clincal Sequencing DAM files in DAM section. - 7/31/14 -->
+<!ENTITY dir_uvcgs '&dir_damcontent;uvcgs/'>
+<!ENTITY fi_cgs_dam '&dir_uvcgs;uvcgs'>
+<!ENTITY cgs_damfile '&fi_cgs_dam;'>
+
+<!ENTITY dir_templates '&dir_nonsectioncontent;templates/'>
+<!ENTITY fi_templates '&dir_templates;templates'>
+<!ENTITY templatesfile '&fi_templates;'>
+
+<!ENTITY dir_constraints '&dir_nonsectioncontent;constraints/'>
+<!ENTITY fi_constraints '&dir_constraints;constraints'>
+<!ENTITY constraintsfile '&fi_constraints;'>
+
+<!--Here are the welcome files-->
+<!ENTITY dir_welcome '&dir_nonsectioncontent;welcome/'>
+<!ENTITY welcomelocation '&dir_welcome;'>
+<!--Now come the ITSXML directories-->
+<!ENTITY dir_itsxml "&dir_nonsectioncontent;itsxml/">
+<!ENTITY itsxmllocation '&dir_itsxml;'>
+<!ENTITY fi_itsxml 'datatypes_its_xml'>
+<!ENTITY itsxmlfile '&itsxmllocation;&fi_itsxml;'>
+<!ENTITY fi_itsxml_dtr1dot1 'datatypes_r1dot1_its_xml'>
+<!ENTITY itsxml_dtr1dot1_file '&itsxmllocation;&fi_itsxml_dtr1dot1;'>
+<!ENTITY fi_itsrimsr 'rim_serialization'>
+<!ENTITY itsrimsrfile '&itsxmllocation;&fi_itsrimsr;'>
+<!ENTITY dir_itsxml_r2 "&dir_nonsectioncontent;itsxml_r2/">
+<!ENTITY itsxml_r2location '&dir_itsxml_r2;'>
+<!ENTITY fi_itsxml_r2 'datatypes_its_xml_r2'>
+<!ENTITY itsxml_r2file '&itsxml_r2location;&fi_itsxml_r2;'>
+<!ENTITY dir_itsxmlmsg "&dir_nonsectioncontent;itsxml/">
+<!ENTITY itsxmlmsglocation '&dir_itsxmlmsg;'>
+<!ENTITY fi_itsxmlmsg 'messaging_its_xml'>
+<!ENTITY itsxmlmsgfile '&itsxmlmsglocation;&fi_itsxmlmsg;'>
+<!--<!ENTITY dir_itsxml1dot1msg "&dir_nonsectioncontent;itsxml/">
+<!ENTITY itsxml1dot1msglocation '&dir_itsxml1dot1msg;'>-->
+<!ENTITY itsxml1dot1msglocation '&dir_itsxmlmsg;'>
+<!ENTITY fi_itsxml1dot1msg 'messaging_its_xml1dot1'>
+<!ENTITY itsxml1dot1msgfile '&itsxml1dot1msglocation;&fi_itsxml1dot1msg;'>
+<!ENTITY itsxml2dot0msglocation '&dir_itsxmlmsg;'>
+<!ENTITY fi_itsxml2dot0msg 'messaging_its_xml2dot0'>
+<!ENTITY itsxml2dot0msgfile '&itsxml2dot0msglocation;&fi_itsxml2dot0msg;'>
+<!ENTITY dir_itsxmlfreq "&dir_nonsectioncontent;itsxml/">
+<!ENTITY itsxmlfreqlocation '&dir_itsxmlfreq;'>
+<!ENTITY fi_itsxmlfreq 'requirements_its_xml'>
+<!ENTITY itsxmlfreqfile '&itsxmlfreqlocation;&fi_itsxmlfreq;'>
+<!--Now come the New ITS XML Datatypes and Structures DTR2 WFC to DTR1 Files. -->
+<!ENTITY fi_itsxmldtr2wfc 'datatypes_its_xml_r2wfc'>
+<!ENTITY itsxmldtr2wfcfile '&itsxmllocation;&fi_itsxmldtr2wfc;'>
+<!ENTITY fi_itsxmlmsgdtr2wfc 'messaging_its_xml_r2wfc'>
+<!ENTITY itsxmlmsgdtr2wfcfile '&itsxmllocation;&fi_itsxmlmsgdtr2wfc;'>
+<!--Now come the New ITS R2 (XML/UML) directories-->
+<!ENTITY dir_itsspec_r2 "&dir_nonsectioncontent;its_r2/">
+<!ENTITY itsspec_r2_location '&dir_itsspec_r2;'>
+<!ENTITY fi_itsspec_r2 'its_r2Spec'>
+<!ENTITY itsspecr2file '&itsspec_r2_location;&fi_itsspec_r2;'>
+<!ENTITY dir_itsguide_r2 "&dir_nonsectioncontent;its_r2/">
+<!ENTITY itsguide_r2_location '&dir_itsguide_r2;'>
+<!ENTITY fi_itsguide_r2 'its_r2Guide'>
+<!ENTITY itsguider2file '&itsguide_r2_location;&fi_itsguide_r2;'>
+<!ENTITY dir_isodt "&dir_nonsectioncontent;its_r2/">
+<!ENTITY isodt_location '&dir_isodt;'>
+<!ENTITY fi_isodt 'isodatatypes'>
+<!ENTITY isodtfile '&isodt_location;&fi_isodt;'>
+<!ENTITY isodtguide_location '&dir_isodt;'>
+<!ENTITY fi_isodtguide 'isodatatypesguide'>
+<!ENTITY isodtguidefile '&isodt_location;&fi_isodtguide;'>
+<!--New directory and file definitions for ITS HL7 over HTTP: 8/1/2014-->
+<!ENTITY dir_its_hoh "&dir_nonsectioncontent;its_hoh/">
+<!ENTITY fi_its_hoh '&dir_its_hoh;its_hoh'>
+<!ENTITY its_hohfile '&fi_its_hoh;'>
+<!--<!ENTITY dir_datatypes "&dir_helpfiles;">-->
+<!ENTITY fi_datatypes '&dir_datatypes;datatypes'>
+<!-- add dir_datatypes to this value as the others do -->
+<!ENTITY datatypesfile '&fi_datatypes;'>
+<!ENTITY fi_datatypes_r2 '&dir_datatypes_r2;datatypes_r2'>
+<!-- add dir_datatypes to this value as the others do -->
+<!ENTITY datatypesfile_r2 '&fi_datatypes_r2;'>
+<!ENTITY fi_v3dt '&dir_itsxml;ITSXMLdt'>
+<!ENTITY v3dt '&fi_v3dt;'>
+<!-- ITS UML-->
+<!ENTITY dir_itsuml "&dir_nonsectioncontent;itsuml/">
+<!ENTITY itsumllocation '&dir_itsuml;'>
+<!ENTITY fi_itsuml 'datatypes_its_uml'>
+<!ENTITY itsumlfile '&itsumllocation;&fi_itsuml;'>
+<!-- new uml structures -->
+<!ENTITY fi_itsuml_objectdef 'objectdef_its_uml'>
+<!ENTITY itsumlobjectdeffile '&itsumllocation;&fi_itsuml_objectdef;'>
+<!-- ITS hData structures -->
+<!ENTITY dir_hdata "&dir_nonsectioncontent;hdata/">
+<!ENTITY hdatalocation '&dir_hdata;'>
+<!ENTITY fi_hdata_api 'hdataapi'>
+<!ENTITY hdata_apifile '&hdatalocation;&fi_hdata_api;'>
+<!ENTITY fi_hdata_dataformat 'hdatadf'>
+<!ENTITY hdata_dataformatfile '&hdatalocation;&fi_hdata_dataformat;'>
+
+<!--Transport Protocol-->
+<!ENTITY dir_transport "&dir_nonsectioncontent;transport/">
+<!ENTITY transportlocation '&dir_transport;'>
+<!ENTITY fi_transport_intro 'transport_intro'>
+<!ENTITY transport_introfile '&transportlocation;&fi_transport_intro;'>
+<!ENTITY fi_transport_ebxml 'transport_ebxml'>
+<!ENTITY transport_ebxmlfile '&transportlocation;&fi_transport_ebxml;'>
+<!ENTITY fi_transport_mllp 'transport_mllp'>
+<!ENTITY transport_mllpfile '&transportlocation;&fi_transport_mllp;'>
+<!ENTITY fi_transport_abstract 'transport_abstract'>
+<!ENTITY transport_abstractfile '&transportlocation;&fi_transport_abstract;'>
+<!ENTITY fi_transport_rmmi 'transport_rmmi'>
+<!ENTITY transport_rmmifile '&transportlocation;&fi_transport_rmmi;'>
+<!ENTITY fi_transport_ebms2 'transport_ebxml_ebms2'>
+<!ENTITY transport_ebmsfile '&transportlocation;&fi_transport_ebms2;'>
+
+<!-- wsprofiles was split into three files so these next two reference variables should not be need MAC-2005JAN-->
+<!ENTITY fi_transport_wsprofiles 'transport_wsprofiles'>
+<!ENTITY transport_wsprofilefile '&transportlocation;&fi_transport_wsprofiles;'>
+<!ENTITY fi_transport_wsaddressingprofile 'HL7WSAddressingProfile_XML'>
+<!ENTITY transport_wsaddressingprofile '&transportlocation;&fi_transport_wsaddressingprofile;'>
+<!ENTITY fi_transport_wsrmprofile 'HL7WSRMProfile_XML'>
+<!ENTITY transport_wsrmprofile '&transportlocation;&fi_transport_wsrmprofile;'>
+<!ENTITY fi_transport_wssecurityprofile 'HL7WSSecurityProfile_XML'>
+<!ENTITY transport_wssecurityprofile '&transportlocation;&fi_transport_wssecurityprofile;'>
+<!--i'm not sure if these next two are necessary (Michael Krot, 7/1/2002)-->
+<!ENTITY fi_xmlspec '&dir_itsxml;itsxmldt.html'>
+<!ENTITY xmlspec '&fi_xmlspec;'>
+<!--Here are the Reference Files-->
+<!ENTITY dir_referencefiles '&dir_nonsectioncontent;'>
+<!ENTITY referencefileslocation '&dir_referencefiles;'>
+<!ENTITY dir_rim_r2 '&dir_nonsectioncontent;rim_r2/'>
+<!ENTITY rimlocation_r2 '&dir_rim_r2;'>
+<!ENTITY fi_rim_r2 '&dir_nonsectioncontent;rim_r2/rim_r2'>
+<!ENTITY rimfile_r2 '&fi_rim_r2;'>
+<!ENTITY dir_rim '&dir_nonsectioncontent;rim/'>
+<!ENTITY rimlocation '&dir_rim;'>
+<!ENTITY fi_rim '&dir_nonsectioncontent;rim/rim'>
+<!ENTITY rimfile '&fi_rim;'>
+<!ENTITY dir_vocab '&dir_nonsectioncontent;vocabulary/'>
+<!ENTITY vocablocation '&dir_vocab;'>
+<!ENTITY fi_vocab '&dir_nonsectioncontent;vocabulary/vocabulary'>
+<!ENTITY vocabfile '&fi_vocab;'>
+<!--Here are introduction files-->
+<!ENTITY dir_introductions '&dir_sectioncontent;introductions/'>
+<!ENTITY inframgmt '&dir_introductions;im____'>
+<!ENTITY healthmgmt '&dir_introductions;hm____'>
+<!ENTITY adminmgmt '&dir_introductions;am____'>
+<!--new foundation stuff-->
+<!ENTITY dir_cda '&dir_nonsectioncontent;cda/'>
+<!ENTITY fi_cda 'cda'>
+<!ENTITY cdalocation '&dir_cda;'>
+<!ENTITY cdafile '&cdalocation;&fi_cda;'>
+<!--Here is the new Quality Measure in Domains content-->
+<!--<!ENTITY dir_uvqm '&dir_nonsectioncontent;uvqm/'>
+<!ENTITY fi_uvqm '&dir_uvqm;uvqm'>
+<!ENTITY uvqmfile '&fi_uvqm;'>-->
+<!ENTITY dir_strucdoc '&dir_nonsectioncontent;strucdoc/'>
+<!ENTITY fi_strucdoc 'strucdoc'>
+<!ENTITY strucdoclocation '&dir_strucdoc;'>
+<!ENTITY strucdocfile '&strucdoclocation;&fi_strucdoc;'>
+<!ENTITY dir_cts '&dir_nonsectioncontent;cts/'>
+<!ENTITY fi_cts 'cts'>
+<!ENTITY ctslocation '&dir_cts;'>
+<!ENTITY ctsfile '&ctslocation;&fi_cts;'>
+<!ENTITY dir_cts_r2 '&dir_nonsectioncontent;cts_r2/'>
+<!ENTITY fi_cts_r2 'cts_r2'>
+<!ENTITY cts_r2location '&dir_cts_r2;'>
+<!ENTITY cts_r2file '&cts_r2location;&fi_cts_r2;'>
+<!ENTITY dir_gello '&dir_nonsectioncontent;gello/'>
+<!ENTITY fi_gello 'gello'>
+<!ENTITY gellolocation '&dir_gello;'>
+<!ENTITY gellofile '&gellolocation;&fi_gello;'>
+<!-- added Gello2 11/25/2008 -->
+<!ENTITY dir_gello2 '&dir_nonsectioncontent;gello2/'>
+<!ENTITY fi_gello2 'gello2'>
+<!ENTITY gello2location '&dir_gello2;'>
+<!ENTITY gello2file '&gello2location;&fi_gello2;'>
+<!-- added V3 Gello1 7/24/2009 -->
+<!--<!ENTITY dir_gello_v3_r1 '&dir_nonsectioncontent;gello_v3_r1/'>
+<!ENTITY fi_gello_v3_r1 'gello_v3_r1'>
+<!ENTITY gello_v3_r1location '&dir_gello_v3_r1;'>
+<!ENTITY gello_v3_r1file '&gello_v3_r1location;&fi_gello_v3_r1;'>-->
+<!-- new document for September 2005 ... png -->
+<!ENTITY dir_security '&dir_nonsectioncontent;security/'>
+<!ENTITY fi_security '&dir_security;security_overview'> 
+<!ENTITY securityfile '&fi_security;'>
+<!--<!ENTITY fi_securityov '&dir_security;security_overview'>-->
+<!--<!ENTITY securityovfile '&fi_securityov;'> -->
+<!ENTITY dir_hacc '&dir_security;'>
+<!ENTITY fi_hacc '&dir_hacc;hacc'>
+<!ENTITY hacc_file '&fi_hacc;'>
+<!ENTITY dir_ds4p '&dir_security;'>
+<!ENTITY fi_ds4p '&dir_ds4p;ds4p'>
+<!ENTITY ds4pfile '&fi_ds4p;'>
+<!ENTITY dir_healthcare_class_sys '&dir_security;'>
+<!ENTITY fi_healthcare_class_sys '&dir_healthcare_class_sys;healthcare_class_sys'>
+<!ENTITY healthcare_class_sysfile '&fi_healthcare_class_sys;'>
+<!ENTITY dir_secprivont '&dir_security;'>
+<!ENTITY fi_secprivont '&dir_secprivont;security_ontology'>
+<!ENTITY secprivontfile '&fi_secprivont;'>
+<!-- New Entry for PASS Access Control Service in Security; 11/21/2013 -->
+<!ENTITY fi_pass_acs 'pass_acs'>
+<!ENTITY pass_acsfile '&dir_security;&fi_pass_acs;'>
+<!--Here is the new MITA US Realm content -->
+<!ENTITY dir_mita_sg '&dir_nonsectioncontent;mita_sg/'>
+<!ENTITY fi_mita_sg '&dir_mita_sg;mita'>
+<!ENTITY mita_sg_file '&fi_mita_sg;'>
+<!--Here are the hmd files-->
+<!--Numbering information goes here-->
+<!-- GWB 11/13/2003 deleted lines 84-88 and replaced with lines 89-94 in order to create new 'hard-coded' tocNumbers for the intro section -->
+<!-- <!ENTITY overview_tocNumber '1'>-->
+<!-- <!ENTITY toc_tocNumber '1.1'>-->
+<!-- <!ENTITY designelementnavigation_tocNumber '1.2'>-->
+<!ENTITY storyboard_tocNumber '1.3'>
+<!ENTITY dmim_tocNumber '1.2'>
+<!ENTITY overview_tocNumber '1'>
+<!ENTITY preface_tocNumber '1.1'>
+<!ENTITY intro_tocNumber '1.2'>
+<!ENTITY designelementnavigation_tocNumber 'i'>
+<!--!ENTITY storyboard_tocNumber '1.3'-->
+<!ENTITY statebased_tocNumber '2'>
+<!ENTITY query_tocNumber '3'>
+<!ENTITY masterfiles_tocNumber '4'>
+<!ENTITY indexes_tocNumber '5'>
+<!ENTITY cmetindexes_tocNumber '5'>
+<!ENTITY interactionindexes_tocNumber '5.3'>
+<!ENTITY intro_segmentNumber '0'>
+<!ENTITY storyboard_segmentNumber '1'>
+<!ENTITY approle_segmentNumber '2'>
+<!ENTITY trigger_segmentNumber '3'>
+<!ENTITY rmim_segmentNumber '4'>
+<!ENTITY hmd_segmentNumber '5'>
+<!ENTITY interaction_segmentNumber '6'>
+<!ENTITY dir_hmd 'hmd/'>
+<!ENTITY hmdlocation '&dir_hmd;'>
+<!--Here are the descriptive and name-->
+<!ENTITY info_statebased "This is the text for state based as defined in v3m.ent">
+<!ENTITY info_querybased "This is the text for query based as defined in v3m.ent">
+<!ENTITY info_masterfiles "This is the text for master files as defined in v3m.ent">
+<!ENTITY seg_nav_nocontent 'No information is provided here because there is no content in this domain to navigate.'>
+<!ENTITY seg_md_name 'Message Definitions'>
+<!ENTITY seg_md_description 'This is the descriptive text for message descriptions as defined in v3m.ent'>
+<!ENTITY seg_md_nocontent 'At this time there are currently no message definitions.'>
+<!ENTITY seg_qu_name 'Query Definitions'>
+<!ENTITY seg_qu_description 'This is the descriptive text for query defintions as defined in v3m.ent'>
+<!ENTITY seg_qu_nocontent 'At this time there are currently no query definitions.'>
+<!ENTITY seg_mf_name 'Master File Definitions'>
+<!ENTITY seg_mf_description 'This is the descriptive text for master file definitions as defined in v3m.ent'>
+<!ENTITY seg_mf_nocontent 'At this time there are currently no master file definitions.'>
+<!ENTITY art_md_st_name 'Message Definition Storyboards'>
+<!ENTITY art_md_st_description 'This is the descriptive text for message definition storyboards as defined in v3m.ent'>
+<!ENTITY art_md_st_nocontent 'At this time there are currently no  message definition storyboards.'>
+<!ENTITY art_qu_st_name 'Query Storyboards'>
+<!ENTITY art_qu_st_description 'This is the descriptive text for query storyboards as defined in v3m.ent'>
+<!ENTITY art_qu_st_nocontent 'At this time there are currently no query storyboards.'>
+<!ENTITY art_mf_st_name 'Master File Storyboards'>
+<!ENTITY art_mf_st_description 'This is the descriptive text for master file storyboards as defined in v3m.ent'>
+<!ENTITY art_mf_st_nocontent 'At this time there are currently no master file storyboards.'>
+<!ENTITY art_do_st_name2 'Domain Storyboards'>
+<!ENTITY art_do_st_name 'Storyboard Overview'>
+<!ENTITY storyboard_name_for_toc 'Storyboard Overview'>
+<!ENTITY storyboard_name_for_testing 'Storyboards'>
+<!ENTITY art_do_st_description 'This is the descriptive text for domain level storyboards as defined in v3m.ent'>
+<!ENTITY art_do_st_nocontent 'At this time there are currently no domain level storyboards.'>
+<!ENTITY art_md_ar_name 'Message Definition Application Roles'>
+<!ENTITY art_md_ar_description 'This is the descriptive text for message definition application roles as defined in v3m.ent'>
+<!ENTITY art_md_ar_nocontent 'At this time there are currently no  message definition application roles.'>
+<!ENTITY art_qu_ar_name 'Query Application Roles'>
+<!ENTITY art_qu_ar_description 'This is the descriptive text for query Application Roles as defined in v3m.ent'>
+<!ENTITY art_qu_ar_nocontent 'At this time there are currently no query application roles.'>
+<!ENTITY art_mf_ar_name 'Master File Application Roles'>
+<!ENTITY art_mf_ar_description 'This is the descriptive text for master file application roles as defined in v3m.ent'>
+<!ENTITY art_mf_ar_nocontent 'At this time there are currently no master file application roles.'>
+<!ENTITY art_md_te_name 'Message Definition Trigger Events'>
+<!ENTITY art_md_te_description 'This is the descriptive text for message definition trigger events as defined in v3m.ent'>
+<!ENTITY art_md_te_nocontent 'At this time there are currently no  message definition trigger events.'>
+<!ENTITY art_md_rm_name 'Message Definition RMIMs'>
+<!ENTITY art_md_rm_description 'This is the descriptive text for message definition RMIMs as defined in v3m.ent'>
+<!ENTITY art_md_rm_nocontent 'At this time there are currently no  message definition RMIMs.'>
+<!ENTITY art_qu_rm_name 'Query RMIMs'>
+<!ENTITY art_qu_rm_description 'This is the descriptive text for query RMIMs as defined in v3m.ent'>
+<!ENTITY art_qu_rm_nocontent 'At this time there are currently no query RMIMs.'>
+<!ENTITY art_mf_rm_name 'Master File RMIMs'>
+<!ENTITY art_mf_rm_description 'This is the descriptive text for master file RMIMs as defined in v3m.ent'>
+<!ENTITY art_mf_rm_nocontent 'At this time there are currently no master file RMIMs.'>
+<!ENTITY art_md_hd_name 'Message Definition HMDs'>
+<!ENTITY art_md_hd_description 'This is the descriptive text for message definition HMDs as defined in v3m.ent'>
+<!ENTITY art_md_hd_nocontent 'At this time there are currently no  message definition HMDs.'>
+<!ENTITY art_qu_hd_name 'Query HMDs'>
+<!ENTITY art_qu_hd_description 'This is the descriptive text for query HMDsas defined in v3m.ent'>
+<!ENTITY art_qu_hd_nocontent 'At this time there are currently no query HMDs.'>
+<!ENTITY art_mf_hd_name 'Master File HMDs'>
+<!ENTITY art_mf_hd_description 'This is the descriptive text for master file HMDsas defined in v3m.ent'>
+<!ENTITY art_mf_hd_nocontent 'At this time there are currently no master file HMDs.'>
+<!ENTITY art_qu_te_name 'Query Trigger Events'>
+<!ENTITY art_qu_te_description 'This is the descriptive text for query Trigger Events as defined in v3m.ent'>
+<!ENTITY art_qu_te_nocontent 'At this time there are currently no query trigger events.'>
+<!ENTITY art_mf_te_name 'Master File Trigger Events'>
+<!ENTITY art_mf_te_description 'This is the descriptive text for master file trigger events as defined in v3m.ent'>
+<!ENTITY art_mf_te_nocontent 'At this time there are currently no master file trigger events.'>
+<!--Here are the examples files-->
+<!ENTITY dir_examples 'examples/'>
+<!ENTITY examplelocation '&dir_examples;'>
+<!ENTITY dir_examples_html '../../processable/examples/'>
+<!ENTITY dir_schema_html '../../processable/multicacheschemas/'>
+<!ENTITY example_htmllocation '&dir_examples_html;'>
+<!ENTITY invalidSpecification1 "(The user identified specification">
+<!ENTITY invalidSpecification2 "is not available)">
+<!-- sectioncontent references -->
+<!ENTITY al "&contentlocation;uval/uval">
+<!ENTITY ab "&contentlocation;uvab/uvab">
+<!ENTITY ai "&contentlocation;uvai/uvai">
+<!ENTITY bb "&contentlocation;uvbb/uvbb">
+<!ENTITY cd "&contentlocation;uvcd/uvcd">
+<!ENTITY ci "&contentlocation;uvci/uvci">
+<!ENTITY cg "&contentlocation;uvcg/uvcg">
+<!ENTITY cg_dam "&contentlocation;uvcg/uvcg_GeneExpressionDAM">
+<!ENTITY cg_cmets "&contentlocation;uvcg/uvcg_do_cmets">
+<!ENTITY cp "&contentlocation;uvcp/uvcp">
+<!ENTITY cp_cmets "&contentlocation;uvcp/uvcp_do_cmets">
+<!ENTITY cr "&contentlocation;uvcr/uvcr">
+<!ENTITY ct "&contentlocation;uvct/uvct">
+<!ENTITY ds "&contentlocation;uvds/uvds">
+<!ENTITY ds_infobutton "&contentlocation;uvds/uvds_Context-awareKnowledgeRetrieval(Infobutton)">
+<!ENTITY em "&contentlocation;uvem/uvem">
+<!ENTITY ii "&contentlocation;uvii/uvii">
+<!ENTITY ii_cmets "&contentlocation;uvii/uvii_do_cmets">
+<!ENTITY iz "&contentlocation;uviz/uviz">
+<!ENTITY lb "&contentlocation;uvlb/uvlb">
+<!ENTITY mi "&contentlocation;uvmi/uvmi">
+<!ENTITY mt "&contentlocation;uvmt/uvmt">
+<!ENTITY mr "&contentlocation;uvmr/uvmr">
+<!ENTITY nu "&contentlocation;uvnu/uvnu">
+<!-- add Patient because it seems to be missing 2015-01-07 LL -->
+<!ENTITY pa "&contentlocation;uvpa/uvpa">
+<!ENTITY pa_person "&contentlocation;uvpa/uvpa_Person">
+<!ENTITY pa_patient "&contentlocation;uvpa/uvpa_Patient">
+<!ENTITY pa_patientencounter "&contentlocation;uvpa/uvpa_PatientEncounter">
+<!ENTITY pa_cmets "&contentlocation;uvpa/uvpa_do_cmets">
+<!ENTITY pc "&contentlocation;uvpc/uvpc">
+<!ENTITY pc_assess "&contentlocation;uvpc/uvpc_AssessmentScales">
+<!ENTITY pc_carecomp "&contentlocation;uvpc/uvpc_CareComposition">
+<!ENTITY pc_carerec "&contentlocation;uvpc/uvpc_CareRecord">
+<!ENTITY pc_caretrans "&contentlocation;uvpc/uvpc_CareTransfer">
+<!ENTITY pc_allergiesintolerances "&contentlocation;uvpc/uvpc_AllergiesandIntolerance">
+<!ENTITY pc_adversereaction "&contentlocation;uvpc/uvpc_AdverseReactions">
+<!ENTITY pc_queriescarerec "&contentlocation;uvpc/uvpc_CareRecordQuery">
+<!ENTITY pc_health "&contentlocation;uvpc/uvpc_HealthConcern">
+<!ENTITY pc_fmpref "&contentlocation;uvpc/uvpc_NutritionDrugPreferences">
+<!ENTITY ph "&contentlocation;uvph/uvph">
+<!ENTITY pm "&contentlocation;uvpm/uvpm">
+<!ENTITY rx "&contentlocation;uvrx/uvrx">
+<!ENTITY rx_cmets "&contentlocation;uvrx/uvrx_do_cmets">
+<!ENTITY rx_do_cmets "&contentlocation;uvrx/uvrx_do_cmets">
+<!ENTITY rx_medorder "&contentlocation;uvrx/uvrx_MedicationOrder">
+<!ENTITY rx_commorder "&contentlocation;uvrx/uvrx_CommonOrder">
+<!ENTITY rx_commdisp "&contentlocation;uvrx/uvrx_CommonDispenseSupplyEvent">
+<!ENTITY rx_meddisp "&contentlocation;uvrx/uvrx_MedicationDispenseEvent">
+<!ENTITY rx_medstate "&contentlocation;uvrx/uvrx_MedicationStatementandAdministration">
+<!ENTITY rx_medkbq "&contentlocation;uvrx/uvrx_MedicationKnowledge-BaseQuery">
+<!ENTITY rx_medstate "&contentlocation;uvrx/uvrx_MedicationStatement">
+<!ENTITY mm "&contentlocation;uvmm/uvmm">
+<!ENTITY me "&contentlocation;uvme/uvme">
+<!ENTITY me_cmets "&contentlocation;uvme/uvme_do_cmets">
+<!ENTITY sc "&contentlocation;uvsc/uvsc">
+<!ENTITY sc_cmets "&contentlocation;uvsc/uvsc_do_cmets">
+<!ENTITY qi "&contentlocation;uvqi/uvqi">
+<!ENTITY ob "&contentlocation;uvob/uvob">
+<!ENTITY or "&contentlocation;uvor/uvor">
+<!ENTITY rg "&contentlocation;uvrg/uvrg">
+<!ENTITY rr "&contentlocation;uvrr/uvrr">
+<!ENTITY rp "&contentlocation;uvrp/uvrp">
+<!ENTITY rp_rps "&contentlocation;uvrp/uvrp_RegulatedProductSubmission">
+<!ENTITY rp_spl "&contentlocation;uvrp/uvrp_StructuredProductLabeling(SPL)">
+<!ENTITY rt "&contentlocation;uvrt/uvrt">
+<!ENTITY rt_bridg "&contentlocation;uvrt/uvrt_BRIDGModel">
+<!ENTITY rt_aecg "&contentlocation;uvrt/uvrt_AnnotatedECG">
+<!ENTITY rt_sdstructdoc "&contentlocation;uvrt/uvrt_StudyDesignStructuredDocument">
+<!--<!ENTITY rt_study "&contentlocation;uvrt/uvrt_StudyDesign">-->
+<!ENTITY rt_part "&contentlocation;uvrt/uvrt_StudyParticipation">
+<!--<!ENTITY rt_data "&contentlocation;uvrt/uvrt_SubjectData">-->
+<!ENTITY rt_dsr "&contentlocation;uvrt/uvrt_DrugStabilityReporting,Release2">
+<!--<!ENTITY rt_ctrr "&contentlocation;uvrt/uvrt_ClinicalTrialsRegistrationandResults">-->
+<!ENTITY rt_bridg "&contentlocation;uvrt/uvrt_BRIDGDomainAnalysisModel">
+<!--<!ENTITY rt_ctrrdam "&contentlocation;uvrt/uvrt_CTRRDomainAnalysisModel">-->
+<!ENTITY td "&contentlocation;uvtd/uvtd">
+<!ENTITY ti "&contentlocation;uvti/uvti">
+<!ENTITY cs "&contentlocation;uvcs/uvcs">
+<!ENTITY cs_cmets "&contentlocation;uvcs/uvcs_do_cmets">
+<!ENTITY ti "&contentlocation;uvti/uvti">
+<!ENTITY qm "&contentlocation;uvqm/uvqm">
+<!ENTITY uvqm "&contentlocation;uvqm/uvqm">
+<!ENTITY sp "&contentlocation;uvsp/uvsp">
+<!--ENTITY qm "&dir_nonsectioncontent;/uvqm"-->
+
+<!ENTITY NMTOKEN 'i need a value'>
+<!ENTITY ltbrkt '&lt;'>
+<!ENTITY rtbrkt '&gt;'>
+<!ENTITY KANJI-KI "&#x6728;">
+<!ENTITY KANJI-MURA "&#x6751;">
+<!ENTITY KANJI-MICHI "&#x9053;">
+<!ENTITY KANJI-O "&#x7537;">
+<!ENTITY HIRAGANA-KI "&#x304D;">
+<!ENTITY HIRAGANA-MU "&#x3082;">
+<!ENTITY HIRAGANA-RA "&#x3089;">
+<!ENTITY HIRAGANA-MI "&#x307F;">
+<!ENTITY HIRAGANA-CHI "&#x3061;">
+<!ENTITY HIRAGANA-O "&#x304A;">
+<!ENTITY Beta "&#914;">
+<!ENTITY Gamma "&#915;">
+<!ENTITY Delta "&#916;">
+<!ENTITY prime "&#8242;">
+<!ENTITY alpha '&#x3b1;'>
+<!ENTITY beta '&#x3b2;'>
+<!ENTITY gamma '&#x3b3;'>
+<!ENTITY mu '&#x3bc;'>
+<!ENTITY sigma '&#x3c3;'>
+<!ENTITY chi '&#x3c7;'>
+<!ENTITY upsilon '&#x3c5;'>
+<!ENTITY infin '&#8734;'>
+<!ENTITY lte '&#8804;'>
+<!ENTITY gte '&#8805;'>
+<!ENTITY pm '&#xb1;'>
+<!ENTITY sqrt '&#x221a;'>
+<!ENTITY auml '&#xe4;'>
+<!ENTITY deg '&#xb0;'>
+<!ENTITY inf '&#8734;'>
+<!ENTITY delta '&#916;'>
+<!ENTITY neq '&#8800;'>
+<!ENTITY egrave '&#232;'>
+<!ENTITY rtarrow '&#8594;'>
+<!ENTITY aleph '&#x2135;'>
+<!ENTITY mult '&#215;'>
+<!ENTITY setelem '&#x2208;'>
+<!ENTITY prime '&#8242;'>
+<!ENTITY sqrt '&#8730;'>
+<!ENTITY Aring '&#xc5;'>
+<!ENTITY ouml '&#xf6;'>
+<!ENTITY nbsp "&#160;">
+<!ENTITY copy "&#169;">
+<!ENTITY reg "&#174;">
+<!ENTITY mdash "&#38;#x2014;">
+<!ENTITY ldquo "&#38;#x201C;">
+<!ENTITY rdquo "&#38;#x201D;">
+<!ENTITY forslash "&#47;">
+<!ENTITY period "&#46;">
+
+
+<!-- Text Constants -->
+<!ENTITY nodivisioncontent "At this time there is no content for this section.">
+<!--
+	this URL is the base for all V3 publications, if you append the
+	filenames above to this base URL you will get the full URLs
+	for all V3 pubs
+  -->
+<!ENTITY v3BaseURL "http://www.hl7.org/v3">
+<!-- 
+	The following control testing of Interaction schemas (xsd) for inclusion of
+	a hyper-link.  testXsdContent= "y" or "n" controls whether to test beyond the 
+	existence of a file. testXsdGroup1 provides the first group "name" to test for.
+	testXsdGroup2 provides the second name to test for. If testXsdGroup2 ="" then 
+	will only test for presence of group1
+-->
+<!ENTITY testXsdContent "y">
+<!ENTITY testXsdGroup1 "NoControlAct">
+<!ENTITY testXsdGroup2 "">

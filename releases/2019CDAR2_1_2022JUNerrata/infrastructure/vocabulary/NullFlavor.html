@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="iso-8859-1"?><!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+      <title>NullFlavor</title>
+      <link rel="stylesheet" type="text/css" href="../../support/css/V3m.css" /><style type="text/css">
+					td {font-family: Verdana,Arial; text-align: left; vertical-align: top; font-size: 11}
+					th {font-family: Verdana,Arial; FONT-WEIGHT: bold; text-align: left; font-size: 11}
+					</style></head>
+   <body><a href="vocabulary.html#voc-systems">Return to code system index</a><br /><br /><a name="NullFlavor"></a><table rules="all" border="1px" cellpadding="2" cellspacing="0" class="homepage">
+         <tbody>
+            <tr>
+               <td colspan="4"><font face="Arial" size="3"><strong>NullFlavor&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong> [2.16.840.1.113883.5.1008]</font><br /><p class="vocDesc"><b>Description:</b></p>
+                  <p class="vocDesc">A collection of codes specifying why a valid value is not present.</p>
+               </td>
+            </tr>
+            <tr bgcolor="cornflowerblue">
+               <th>Lvl- Typ</th>
+               <th>Concept&nbsp;Code<br />&nbsp;&nbsp;<i>Head&nbsp;Code-defined&nbsp;Value&nbsp;Set</i></th>
+               <th>Print Name</th>
+               <th>Definition, Properties, Relationships</th>
+            </tr>
+            <tr>
+               <td><a name="NI"></a>0-<strong>S</strong></td>
+               <td nowrap="nowrap"><font color="black"></font><strong>NI</strong><br /><i><font color="white"></font>
+						&nbsp;<i><a href="vs_NullFlavor.html#NoInformation">v:NoInformation</a></i></i></td>
+               <td>NoInformation</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description:</b>The value is exceptional (missing, omitted, incomplete, improper). No information as to the reason for being an exceptional
+                     value is provided. This is the most general exceptional value. It is also the default exceptional value.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> INV MSK NA UNK
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="INV"></a>1-<strong>S</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>INV</strong></td>
+               <td>invalid</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description:</b>The value as represented in the instance is not a member of the set of permitted data values in the constrained value domain
+                     of a variable. 
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> NI<br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> DER OTH UNC
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="DER"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>DER</strong></td>
+               <td>derived</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description:</b>An actual value may exist, but it must be derived from the provided information (usually an EXPR generic data type extension
+                     will be used to convey the derivation expressionexpression .
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> INV
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="OTH"></a>2-<strong>S</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>OTH</strong><br /><i><font color="white">.&nbsp;.&nbsp;</font>
+						&nbsp;<i><a href="vs_NullFlavor.html#Other">v:Other</a></i></i></td>
+               <td>other</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description:</b>The actual value is not a member of the set of permitted data values in the constrained value domain of a variable. (e.g.,
+                     concept not provided by required code system).
+                  </p>
+                  <p class="vocDesc"><b class="vocDesc">Usage Notes</b>: This flavor and its specializations are most commonly used with the CD datatype and its flavors.  However, it may apply
+                     to *any* datatype where the constraints of the type are tighter than can be conveyed.  For example, a PQ that is for a true
+                     measured amount whose units are not supported in UCUM, a need to convey a REAL when the type has been constrained to INT,
+                     etc.
+                  </p>
+                  <p class="vocDesc">With coded datatypes, this null flavor may only be used if the vocabulary binding has a coding strength of CNE.  By definition,
+                     all local codes and original text are part of the value set if the coding strength is CWE.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> INV<br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> NINF PINF
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="NINF"></a>3-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;.&nbsp;</font><strong>NINF</strong></td>
+               <td>negative infinity</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Negative infinity of numbers.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> OTH
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="PINF"></a>3-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;.&nbsp;</font><strong>PINF</strong></td>
+               <td>positive infinity</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Positive infinity of numbers.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> OTH
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="UNC"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>UNC</strong></td>
+               <td>un-encoded</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description:</b> The actual value has not yet been encoded within the approved value domain.
+                  </p>
+                  <p class="vocDesc"><b class="vocDesc">Example</b>: Original text or a local code has been specified but translation or encoding to the approved value set has not yet occurred
+                     due to limitations of the sending system.  Original text has been captured for a PQ, but not attempt has been made to split
+                     the value and unit or to encode the unit in UCUM.
+                  </p>
+                  <p class="vocDesc"><b class="vocDesc">Usage Notes</b>: If it is known that it is not possible to encode the concept, OTH should be used instead.  However, use of UNC does not
+                     necessarily guarantee the concept will be encodable, only that encoding has not been attempted.
+                  </p>
+                  <p class="vocDesc">Data type properties such as original text and translations may be present when this null flavor is included.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> INV
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="MSK"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>MSK</strong></td>
+               <td>masked</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">There is information on this item available but it has not been provided by the sender due to security, privacy or other reasons.
+                     There may be an alternate mechanism for gaining access to this information.
+                  </p>
+                  <p class="vocDesc">Note: using this null flavor does provide information that may be a breach of confidentiality, even though no detail data
+                     is provided.  Its primary purpose is for those circumstances where it is necessary to inform the receiver that the information
+                     does exist without providing any detail.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> NI
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="NA"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>NA</strong></td>
+               <td>not applicable</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Known to have no proper value (e.g., last menstrual period for a male).</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> NI
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="UNK"></a>1-<strong>S</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>UNK</strong><br /><i><font color="white">.&nbsp;</font>
+						&nbsp;<i><a href="vs_NullFlavor.html#Unknown">v:Unknown</a></i></i></td>
+               <td>unknown</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description:</b>A proper value is applicable, but not known.
+                  </p>
+                  <p class="vocDesc"><b class="vocDesc">Usage Notes</b>: This means the actual value is not known.  If the only thing that is unknown is how to properly express the value in the
+                     necessary constraints (value set, datatype, etc.), then the OTH or UNC flavor should be used.  No properties should be included
+                     for a datatype with this property unless:
+                  </p>
+                  <ol class="vocDesc">
+                     <li class="vocDesc">Those properties themselves directly translate to a semantic of "unknown".  (E.g. a local code sent as a translation that
+                        conveys 'unknown')
+                     </li>
+                     <li class="vocDesc">Those properties further qualify the nature of what is unknown.  (E.g. specifying a use code of "H" and a URL prefix of "tel:"
+                        to convey that it is the home phone number that is unknown.)
+                     </li>
+                  </ol>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> NI<br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> ASKU NASK NAVU QS TRC
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="ASKU"></a>2-<strong>S</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>ASKU</strong><br /><i><font color="white">.&nbsp;.&nbsp;</font>
+						&nbsp;<i><a href="vs_NullFlavor.html#AskedButUnknown">v:AskedButUnknown</a></i></i></td>
+               <td>asked but unknown</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Information was sought but not found (e.g., patient was asked but didn't know)</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> UNK<br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> NAV
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="NAV"></a>3-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;.&nbsp;</font><strong>NAV</strong></td>
+               <td>temporarily unavailable</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Information is not available at this time but it is expected that it will be available later.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> ASKU NAVU
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="NASK"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>NASK</strong></td>
+               <td>not asked</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">This information has not been sought (e.g., patient was not asked)</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> UNK
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="NAVU"></a>2-<strong>S</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>NAVU</strong></td>
+               <td>Not available</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Information is not available at this time (with no expectation regarding whether it will or will not be available in the future).</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> UNK<br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> NAV
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td>3-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;.&nbsp;</font><strong>NAV</strong></td>
+               <td>temporarily unavailable</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Information is not available at this time but it is expected that it will be available later.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> ASKU NAVU
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="QS"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>QS</strong></td>
+               <td>Sufficient Quantity</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description:</b>The specific quantity is not known, but is known to be non-zero and is not specified because it makes up the bulk of the material.
+                     e.g. 'Add 10mg of ingredient X, 50mg of ingredient Y, and sufficient quantity of water to 100mL.' The null flavor would be
+                     used to express the quantity of water.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> UNK
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="TRC"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>TRC</strong></td>
+               <td>trace</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">The content is greater than zero, but too small to be quantified.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> UNK
+                  </p>
+               </td>
+            </tr>
+         </tbody>
+      </table><br /><a href="vocabulary.html#voc-systems">Return to code system index</a><br /><br /><p class="copyright">Last Published:&nbsp;20190729&nbsp;12:04&nbsp;PM</p>
+      <p class="copyright">HL7 &reg; Version 3 Standard, &copy; 2019  Health Level Seven &reg; International. &nbsp;All Rights Reserved.</p>
+      <p class="copyright">HL7 and Health Level Seven are registered trademarks of Health Level Seven International Reg. U.S. Pat &amp; TM Off.<br />Use of these materials is governed by HL7 International's <a href="http://www.hl7.org/legal/ippolicy.cfm">IP Compliance Policy</a>.
+      </p>
+   </body>
+</html>

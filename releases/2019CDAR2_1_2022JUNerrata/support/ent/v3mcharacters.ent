@@ -1,0 +1,17 @@
+<!--
+	These entities define the special characters
+	that can be included in publications
+	can be accessed, see below for those
+  -->
+ <!ENTITY ltbrkt '&lt;'>
+<!ENTITY rtbrkt '&gt;'>
+<!ENTITY copy '&#169;'>
+<!ENTITY ndash '&#8211;'>
+<!ENTITY Beta "&#914;">
+<!ENTITY Gamma "&#915;">
+<!ENTITY Delta "&#916;">
+<!ENTITY sqrt '&#8730;'>
+<!ENTITY nbsp "&#160;">
+<!ENTITY reg "&#174;">
+<!ENTITY forslash "&#47;">
+<!ENTITY period "&#46;">

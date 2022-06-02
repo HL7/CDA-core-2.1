@@ -1,0 +1,1236 @@
+<?xml version="1.0" encoding="iso-8859-1"?><!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+      <title>ParticipationType</title>
+      <link rel="stylesheet" type="text/css" href="../../support/css/V3m.css" /><style type="text/css">
+					td {font-family: Verdana,Arial; text-align: left; vertical-align: top; font-size: 11}
+					th {font-family: Verdana,Arial; FONT-WEIGHT: bold; text-align: left; font-size: 11}
+					</style></head>
+   <body><a href="vocabulary.html#voc-systems">Return to code system index</a><br /><br /><a name="ParticipationType"></a><table rules="all" border="1px" cellpadding="2" cellspacing="0" class="homepage">
+         <tbody>
+            <tr>
+               <td colspan="4"><font face="Arial" size="3"><strong>ParticipationType&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong> [2.16.840.1.113883.5.90]</font><br /></td>
+            </tr>
+            <tr bgcolor="cornflowerblue">
+               <th>Lvl- Typ</th>
+               <th>Concept&nbsp;Code<br />&nbsp;&nbsp;<i>Head&nbsp;Code-defined&nbsp;Value&nbsp;Set</i></th>
+               <th>Print Name</th>
+               <th>Definition, Properties, Relationships</th>
+            </tr>
+            <tr>
+               <td><a name="PART"></a>0-<strong>S</strong></td>
+               <td nowrap="nowrap"><font color="black"></font><strong>PART</strong><br /><i><font color="white"></font>
+						&nbsp;<i><a href="vs_ParticipationType.html#ParticipationParticipation">v:ParticipationParticipation</a></i></i></td>
+               <td>Participation</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Indicates that the target of the participation is involved in some manner in the act, but does not qualify how.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> CST DIR IND IRCP LOC PRF RESP VRF _ParticipationAncillary _ParticipationInformationGenerator
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="CST"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>CST</strong><br /><i><font color="white">.&nbsp;</font>
+						&nbsp;<i><a href="vs_ParticipationType.html#ParticipationCustodian">v:ParticipationCustodian</a></i></i></td>
+               <td>custodian</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">An entity (person, organization or device) that is in charge of maintaining the information of this act (e.g., who maintains
+                     the report or the master service catalog item, etc.).
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> PART
+                  </p>
+                  <p class="vocDesc"><strong>Concept Properties: </strong>
+							&nbsp;&nbsp;<strong><i>conductible:&nbsp;</i></strong>true 
+							&nbsp;&nbsp;<strong><i>isDocumentCharacteristic:&nbsp;</i></strong>true 
+							&nbsp;&nbsp;<strong><i>Name:Act:participation:Participation:&nbsp;</i></strong>custodian 
+							&nbsp;&nbsp;<strong><i>Sort:Act:participation:Participation:&nbsp;</i></strong>G________ 
+							&nbsp;&nbsp;<strong><i>Name:Role:participation:Participation:&nbsp;</i></strong>custodianship 
+							&nbsp;&nbsp;<strong><i>Sort:Role:participation:Participation:&nbsp;</i></strong>G________ 
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="DIR"></a>1-<strong>S</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>DIR</strong><br /><i><font color="white">.&nbsp;</font>
+						&nbsp;<i><a href="vs_ParticipationType.html#ParticipationTargetDirect">v:ParticipationTargetDirect</a></i></i></td>
+               <td>direct target</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Target participant  that is substantially present in the act  and which is directly involved in the action (includes consumed
+                     material, devices, etc.).
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> PART<br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> ALY BBY CAT CSM DEV DON EXPAGNT EXPART PRD SBJ
+                  </p>
+                  <p class="vocDesc"><strong>Concept Properties: </strong>
+							&nbsp;&nbsp;<strong><i>conductible:&nbsp;</i></strong>true 
+							&nbsp;&nbsp;<strong><i>Name:Act:participation:Participation:&nbsp;</i></strong>directTarget 
+							&nbsp;&nbsp;<strong><i>Sort:Act:participation:Participation:&nbsp;</i></strong>A________ 
+							&nbsp;&nbsp;<strong><i>Name:Role:participation:Participation:&nbsp;</i></strong>directTargetOf 
+							&nbsp;&nbsp;<strong><i>Sort:Role:participation:Participation:&nbsp;</i></strong>A________ 
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="ALY"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>ALY</strong><br /><i><font color="white">.&nbsp;.&nbsp;</font>
+						&nbsp;<i><a href="vs_ParticipationType.html#ParticipationAnalyte">v:ParticipationAnalyte</a></i></i></td>
+               <td>analyte</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">The target of an Observation action. Links an observation to a Role whose player is the substance or most specific component
+                     entity (material, micro-organism, etc.) being measured within the subject.
+                  </p>
+                  <p class="vocDesc"><i class="vocDesc">Examples: </i>A "plasma porcelain substance concentration" has analyte a Role with player substance Entity "porcelain".
+                  </p>
+                  <p class="vocDesc"><i class="vocDesc">UsageNotes: </i>The Role that this participation connects to may be any Role whose player is that substance measured. Very often, the scoper
+                     may indicate the system in which the component is being measured. E.g., for "plasma porcelain" the scoper could be "Plasma".
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> DIR
+                  </p>
+                  <p class="vocDesc"><strong>Concept Properties: </strong>
+							&nbsp;&nbsp;<strong><i>Name:Act:participation:Participation:&nbsp;</i></strong>analyte 
+							&nbsp;&nbsp;<strong><i>Name:Role:participation:Participation:&nbsp;</i></strong>analyzedBy 
+							&nbsp;&nbsp;<strong><i>Sort:Act:participation:Participation:&nbsp;</i></strong>AAB______ 
+							&nbsp;&nbsp;<strong><i>Sort:Role:participation:Participation:&nbsp;</i></strong>AAB______ 
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="BBY"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>BBY</strong><br /><i><font color="white">.&nbsp;.&nbsp;</font>
+						&nbsp;<i><a href="vs_ParticipationType.html#ParticipationBaby">v:ParticipationBaby</a></i></i></td>
+               <td>baby</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">In an obstetric service, the baby.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> DIR
+                  </p>
+                  <p class="vocDesc"><strong>Concept Properties: </strong>
+							&nbsp;&nbsp;<strong><i>Name:Act:participation:Participation:&nbsp;</i></strong>baby 
+							&nbsp;&nbsp;<strong><i>Sort:Act:participation:Participation:&nbsp;</i></strong>AB_______ 
+							&nbsp;&nbsp;<strong><i>Name:Role:participation:Participation:&nbsp;</i></strong>babyOf 
+							&nbsp;&nbsp;<strong><i>Sort:Role:participation:Participation:&nbsp;</i></strong>AB_______ 
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="CAT"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>CAT</strong><br /><i><font color="white">.&nbsp;.&nbsp;</font>
+						&nbsp;<i><a href="vs_ParticipationType.html#ParticipationCatalyst">v:ParticipationCatalyst</a></i></i></td>
+               <td>catalyst</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">The catalyst of a chemical reaction, such as an enzyme or a platinum surface. In biochemical reactions, connects the enzyme
+                     with the molecular interaction
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> DIR
+                  </p>
+                  <p class="vocDesc"><strong>Concept Properties: </strong>
+							&nbsp;&nbsp;<strong><i>Name:Act:participation:Participation:&nbsp;</i></strong>catalyst 
+							&nbsp;&nbsp;<strong><i>Name:Role:participation:Participation:&nbsp;</i></strong>catalystOf 
+							&nbsp;&nbsp;<strong><i>Sort:Act:participation:Participation:&nbsp;</i></strong>AA_______ 
+							&nbsp;&nbsp;<strong><i>Sort:Role:participation:Participation:&nbsp;</i></strong>AA_______ 
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="CSM"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>CSM</strong><br /><i><font color="white">.&nbsp;.&nbsp;</font>
+						&nbsp;<i><a href="vs_ParticipationType.html#ParticipationConsumable">v:ParticipationConsumable</a></i></i></td>
+               <td>consumable</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Participant material that is taken up, diminished, altered, or disappears in the act.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> DIR
+                  </p>
+                  <p class="vocDesc"><strong>Concept Properties: </strong>
+							&nbsp;&nbsp;<strong><i>Name:Act:participation:Participation:&nbsp;</i></strong>consumable 
+							&nbsp;&nbsp;<strong><i>Sort:Act:participation:Participation:&nbsp;</i></strong>AE_______ 
+							&nbsp;&nbsp;<strong><i>Name:Role:participation:Participation:&nbsp;</i></strong>consumedIn 
+							&nbsp;&nbsp;<strong><i>Sort:Role:participation:Participation:&nbsp;</i></strong>AE_______ 
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="DEV"></a>2-<strong>S</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>DEV</strong><br /><i><font color="white">.&nbsp;.&nbsp;</font>
+						&nbsp;<i><a href="vs_ParticipationType.html#ParticipationTargetDevice">v:ParticipationTargetDevice</a></i></i></td>
+               <td>device</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Participant used in performing the act without being substantially affected by the act (i.e. durable or inert with respect
+                     to that particular service).
+                  </p>
+                  <p class="vocDesc"><i class="vocDesc">Examples: </i>monitoring equipment, tools, but also access/drainage lines, prostheses, pace maker, etc.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> DIR<br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> NRD RDV
+                  </p>
+                  <p class="vocDesc"><strong>Concept Properties: </strong>
+							&nbsp;&nbsp;<strong><i>Name:Act:participation:Participation:&nbsp;</i></strong>device 
+							&nbsp;&nbsp;<strong><i>Sort:Act:participation:Participation:&nbsp;</i></strong>AD_______ 
+							&nbsp;&nbsp;<strong><i>Name:Role:participation:Participation:&nbsp;</i></strong>deviceOf 
+							&nbsp;&nbsp;<strong><i>Sort:Role:participation:Participation:&nbsp;</i></strong>AD_______ 
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="NRD"></a>3-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;.&nbsp;</font><strong>NRD</strong><br /><i><font color="white">.&nbsp;.&nbsp;.&nbsp;</font>
+						&nbsp;<i><a href="vs_ParticipationType.html#ParticipationNon-reuseableDevice">v:ParticipationNon-reuseableDevice</a></i></i></td>
+               <td>non-reuseable device</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">A device that changes ownership due to the service, e.g., a pacemaker, a prosthesis, an insulin injection equipment (pen),
+                     etc.  Such material may need to be restocked after he service.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> DEV
+                  </p>
+                  <p class="vocDesc"><strong>Concept Properties: </strong>
+							&nbsp;&nbsp;<strong><i>Name:Act:participation:Participation:&nbsp;</i></strong>nonReusableDevice 
+							&nbsp;&nbsp;<strong><i>Sort:Act:participation:Participation:&nbsp;</i></strong>ADB______ 
+							&nbsp;&nbsp;<strong><i>Name:Role:participation:Participation:&nbsp;</i></strong>nonReusableDeviceOf 
+							&nbsp;&nbsp;<strong><i>Sort:Role:participation:Participation:&nbsp;</i></strong>ADB______ 
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="RDV"></a>3-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;.&nbsp;</font><strong>RDV</strong><br /><i><font color="white">.&nbsp;.&nbsp;.&nbsp;</font>
+						&nbsp;<i><a href="vs_ParticipationType.html#ParticipationReusableDevice">v:ParticipationReusableDevice</a></i></i></td>
+               <td>reusable device</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">A device that does not change ownership due to the service, i.e., a surgical instrument or tool or an endoscope.  The distinction
+                     between reuseable and non-reuseable must be made in order to know whether material must be re-stocked.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> DEV
+                  </p>
+                  <p class="vocDesc"><strong>Concept Properties: </strong>
+							&nbsp;&nbsp;<strong><i>Name:Act:participation:Participation:&nbsp;</i></strong>reusableDevice 
+							&nbsp;&nbsp;<strong><i>Sort:Act:participation:Participation:&nbsp;</i></strong>ADA______ 
+							&nbsp;&nbsp;<strong><i>Name:Role:participation:Participation:&nbsp;</i></strong>reusableDeviceOf 
+							&nbsp;&nbsp;<strong><i>Sort:Role:participation:Participation:&nbsp;</i></strong>ADA______ 
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="DON"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>DON</strong><br /><i><font color="white">.&nbsp;.&nbsp;</font>
+						&nbsp;<i><a href="vs_ParticipationType.html#ParticipationDonor">v:ParticipationDonor</a></i></i></td>
+               <td>donor</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">In some organ transplantation services and rarely in transfusion services a donor will be a target participant in the service.
+                     However, in most cases transplantation is decomposed in three services: explantation, transport, and implantation.  The identity
+                     of the donor (recipient) is often irrelevant for the explantation (implantation) service.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> DIR
+                  </p>
+                  <p class="vocDesc"><strong>Concept Properties: </strong>
+							&nbsp;&nbsp;<strong><i>Name:Act:participation:Participation:&nbsp;</i></strong>organDonor 
+							&nbsp;&nbsp;<strong><i>Sort:Act:participation:Participation:&nbsp;</i></strong>AC_______ 
+							&nbsp;&nbsp;<strong><i>Name:Role:participation:Participation:&nbsp;</i></strong>organDonation 
+							&nbsp;&nbsp;<strong><i>Sort:Role:participation:Participation:&nbsp;</i></strong>AC_______ 
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="EXPAGNT"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>EXPAGNT</strong><br /><i><font color="white">.&nbsp;.&nbsp;</font>
+						&nbsp;<i><a href="vs_ParticipationType.html#ParticipationExposureagent">v:ParticipationExposureagent</a></i></i></td>
+               <td>ExposureAgent</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description: </b>The entity playing the associated role is the physical (including energy), chemical or biological substance that is participating
+                     in the exposure.  For example in communicable diseases, the associated playing entity is the disease causing pathogen.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> DIR
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="EXPART"></a>2-<strong>S</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>EXPART</strong><br /><i><font color="white">.&nbsp;.&nbsp;</font>
+						&nbsp;<i><a href="vs_ParticipationType.html#ParticipationExposureparticipation">v:ParticipationExposureparticipation</a></i></i></td>
+               <td>ExposureParticipation</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description:</b>Direct participation in an exposure act where it is unknown that the participant is the source or subject of the exposure.
+                     If the participant is known to be the contact of an exposure then the SBJ participation type should be used.  If the participant
+                     is known to be the source then the EXSRC participation type should be used.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> DIR<br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> EXPTRGT EXSRC
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="EXPTRGT"></a>3-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;.&nbsp;</font><strong>EXPTRGT</strong><br /><i><font color="white">.&nbsp;.&nbsp;.&nbsp;</font>
+						&nbsp;<i><a href="vs_ParticipationType.html#ParticipationExposuretarget">v:ParticipationExposuretarget</a></i></i></td>
+               <td>ExposureTarget</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description: </b>The entity playing the associated role is the target (contact) of exposure.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> EXPART
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="EXSRC"></a>3-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;.&nbsp;</font><strong>EXSRC</strong><br /><i><font color="white">.&nbsp;.&nbsp;.&nbsp;</font>
+						&nbsp;<i><a href="vs_ParticipationType.html#ParticipationExposuresource">v:ParticipationExposuresource</a></i></i></td>
+               <td>ExposureSource</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description:</b>The entity playing the associated role is the source of exposure.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> EXPART
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="PRD"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>PRD</strong><br /><i><font color="white">.&nbsp;.&nbsp;</font>
+						&nbsp;<i><a href="vs_ParticipationType.html#ParticipationProduct">v:ParticipationProduct</a></i></i></td>
+               <td>product</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Participant material that is brought forth (produced) in the act (e.g., specimen in a specimen collection, access or drainage
+                     in a placement service, medication package in a dispense service). It does not matter whether the material produced had existence
+                     prior to the service, or whether it is created in the service (e.g., in supply services the product is taken from a stock).
+                     
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> DIR
+                  </p>
+                  <p class="vocDesc"><strong>Concept Properties: </strong>
+							&nbsp;&nbsp;<strong><i>Name:Act:participation:Participation:&nbsp;</i></strong>product 
+							&nbsp;&nbsp;<strong><i>Sort:Act:participation:Participation:&nbsp;</i></strong>AF_______ 
+							&nbsp;&nbsp;<strong><i>Name:Role:participation:Participation:&nbsp;</i></strong>productOf 
+							&nbsp;&nbsp;<strong><i>Sort:Role:participation:Participation:&nbsp;</i></strong>AF_______ 
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="SBJ"></a>2-<strong>S</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>SBJ</strong><br /><i><font color="white">.&nbsp;.&nbsp;</font>
+						&nbsp;<i><a href="vs_ParticipationType.html#ParticipationTargetSubject">v:ParticipationTargetSubject</a></i></i></td>
+               <td>subject</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">The principle target on which the action happens.</p>
+                  <p class="vocDesc"><i class="vocDesc">Examples: </i>The patient in physical examination, a specimen in a lab observation. May also be a patient's family member (teaching) or
+                     a device or room (cleaning, disinfecting, housekeeping). 
+                  </p>
+                  <p class="vocDesc"><i class="vocDesc">UsageNotes: </i>Not all direct targets are subjects. Consumables and devices used as tools for an act are not subjects. However, a device
+                     may be a subject of a maintenance action.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> DIR<br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> SPC
+                  </p>
+                  <p class="vocDesc"><strong>Concept Properties: </strong>
+							&nbsp;&nbsp;<strong><i>Name:Act:participation:Participation:&nbsp;</i></strong>subject 
+							&nbsp;&nbsp;<strong><i>Sort:Act:participation:Participation:&nbsp;</i></strong>AA_______ 
+							&nbsp;&nbsp;<strong><i>Name:Role:participation:Participation:&nbsp;</i></strong>subjectOf 
+							&nbsp;&nbsp;<strong><i>Sort:Role:participation:Participation:&nbsp;</i></strong>AA_______ 
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="SPC"></a>3-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;.&nbsp;</font><strong>SPC</strong><br /><i><font color="white">.&nbsp;.&nbsp;.&nbsp;</font>
+						&nbsp;<i><a href="vs_ParticipationType.html#ParticipationSpecimen">v:ParticipationSpecimen</a></i></i></td>
+               <td>specimen</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">The subject of non-clinical (e.g. laboratory) observation services is a specimen.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> SBJ
+                  </p>
+                  <p class="vocDesc"><strong>Concept Properties: </strong>
+							&nbsp;&nbsp;<strong><i>Name:Act:participation:Participation:&nbsp;</i></strong>specimen 
+							&nbsp;&nbsp;<strong><i>Sort:Act:participation:Participation:&nbsp;</i></strong>AAA______ 
+							&nbsp;&nbsp;<strong><i>Name:Role:participation:Participation:&nbsp;</i></strong>specimenOf 
+							&nbsp;&nbsp;<strong><i>Sort:Role:participation:Participation:&nbsp;</i></strong>AAA______ 
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="IND"></a>1-<strong>S</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>IND</strong><br /><i><font color="white">.&nbsp;</font>
+						&nbsp;<i><a href="vs_ParticipationType.html#ParticipationIndirectTarget">v:ParticipationIndirectTarget</a></i></i></td>
+               <td>indirect target</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Target that is not substantially present in the act and which is not directly affected by the act, but which will be a focus
+                     of the record or documentation of the act.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> PART<br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> BEN CAGNT COV GUAR HLD RCT RCV
+                  </p>
+                  <p class="vocDesc"><strong>Concept Properties: </strong>
+							&nbsp;&nbsp;<strong><i>conductible:&nbsp;</i></strong>true 
+							&nbsp;&nbsp;<strong><i>Name:Act:participation:Participation:&nbsp;</i></strong>indirectTarget 
+							&nbsp;&nbsp;<strong><i>Sort:Act:participation:Participation:&nbsp;</i></strong>B________ 
+							&nbsp;&nbsp;<strong><i>Name:Role:participation:Participation:&nbsp;</i></strong>indirectTargetOf 
+							&nbsp;&nbsp;<strong><i>Sort:Role:participation:Participation:&nbsp;</i></strong>B________ 
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="BEN"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>BEN</strong><br /><i><font color="white">.&nbsp;.&nbsp;</font>
+						&nbsp;<i><a href="vs_ParticipationType.html#ParticipationBeneficiary">v:ParticipationBeneficiary</a></i></i></td>
+               <td>beneficiary</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Target on behalf of whom the service happens, but that is not necessarily present in the service.  Can occur together with
+                     direct target to indicate that a target is both, as in the case where the patient is the indirect beneficiary of a service
+                     rendered to a family member, e.g. counseling or given home care instructions.  This concept includes a participant, such as
+                     a covered party, who derives benefits from a service act covered by a coverage act.
+                  </p>
+                  <p class="vocDesc">Note that the semantic role of the intended recipient who benefits from the happening denoted by the verb in the clause. 
+                     Thus, a patient who has no coverage under a policy or program may be a beneficiary of a health service while not being the
+                     beneficiary of coverage for that service.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> IND
+                  </p>
+                  <p class="vocDesc"><strong>Concept Properties: </strong>
+							&nbsp;&nbsp;<strong><i>Name:Act:participation:Participation:&nbsp;</i></strong>beneficiary 
+							&nbsp;&nbsp;<strong><i>Sort:Act:participation:Participation:&nbsp;</i></strong>BC_______ 
+							&nbsp;&nbsp;<strong><i>Name:Role:participation:Participation:&nbsp;</i></strong>beneficiaryOf 
+							&nbsp;&nbsp;<strong><i>Sort:Role:participation:Participation:&nbsp;</i></strong>BC_______ 
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="CAGNT"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>CAGNT</strong><br /><i><font color="white">.&nbsp;.&nbsp;</font>
+						&nbsp;<i><a href="vs_ParticipationType.html#ParticipationCausativeAgent">v:ParticipationCausativeAgent</a></i></i></td>
+               <td>causative agent</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Definition: A factor, such as a microorganism, chemical substance, or form of radiation, whose presence, excessive presence,
+                     or (in deficiency diseases) relative absence is essential, in whole or in part, for the occurrence of a condition.
+                  </p>
+                  <p class="vocDesc">Constraint:  The use of this participation is limited to observations.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> IND
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="COV"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>COV</strong><br /><i><font color="white">.&nbsp;.&nbsp;</font>
+						&nbsp;<i><a href="vs_ParticipationType.html#ParticipationCoverageTarget">v:ParticipationCoverageTarget</a></i></i></td>
+               <td>coverage target</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">The target participation for an individual in a health care coverage act in which the target role is either the policy holder
+                     of the coverage, or a covered party under the coverage.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> IND
+                  </p>
+                  <p class="vocDesc"><strong>Concept Properties: </strong>
+							&nbsp;&nbsp;<strong><i>Name:Act:participation:Participation:&nbsp;</i></strong>coveredParty 
+							&nbsp;&nbsp;<strong><i>Sort:Act:participation:Participation:&nbsp;</i></strong>BB_______ 
+							&nbsp;&nbsp;<strong><i>Name:Role:participation:Participation:&nbsp;</i></strong>coveredPartyOf 
+							&nbsp;&nbsp;<strong><i>Sort:Role:participation:Participation:&nbsp;</i></strong>BB_______ 
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="GUAR"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>GUAR</strong><br /><i><font color="white">.&nbsp;.&nbsp;</font>
+						&nbsp;<i><a href="vs_ParticipationType.html#ParticipationGuarantorParty">v:ParticipationGuarantorParty</a></i></i></td>
+               <td>guarantor party</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">The target person or organization contractually recognized by the issuer as a participant who has assumed fiscal responsibility
+                     for another personaTMs financial obligations by guaranteeing to pay for amounts owed to a particular account
+                  </p>
+                  <p class="vocDesc"><i class="vocDesc">Example:</i>The subscriber of the patientaTMs health insurance policy signs a contract with the provider to be fiscally responsible for
+                     the patient billing account balance amount owed.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> IND
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="HLD"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>HLD</strong><br /><i><font color="white">.&nbsp;.&nbsp;</font>
+						&nbsp;<i><a href="vs_ParticipationType.html#ParticipationHolder">v:ParticipationHolder</a></i></i></td>
+               <td>holder</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Participant who posses an instrument such as a financial contract (insurance policy) usually based on some agreement with
+                     the author.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> IND
+                  </p>
+                  <p class="vocDesc"><strong>Concept Properties: </strong>
+							&nbsp;&nbsp;<strong><i>Name:Act:participation:Participation:&nbsp;</i></strong>holder 
+							&nbsp;&nbsp;<strong><i>Sort:Act:participation:Participation:&nbsp;</i></strong>BE_______ 
+							&nbsp;&nbsp;<strong><i>Name:Role:participation:Participation:&nbsp;</i></strong>contractHeld 
+							&nbsp;&nbsp;<strong><i>Sort:Role:participation:Participation:&nbsp;</i></strong>BE_______ 
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="RCT"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>RCT</strong><br /><i><font color="white">.&nbsp;.&nbsp;</font>
+						&nbsp;<i><a href="vs_ParticipationType.html#ParticipationRecordTarget">v:ParticipationRecordTarget</a></i></i></td>
+               <td>record target</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">The record target indicates whose medical record holds the documentation of this act.  This is especially important when the
+                     subject of a service is not the patient himself.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> IND
+                  </p>
+                  <p class="vocDesc"><strong>Concept Properties: </strong>
+							&nbsp;&nbsp;<strong><i>Name:Act:participation:Participation:&nbsp;</i></strong>recordTarget 
+							&nbsp;&nbsp;<strong><i>Sort:Act:participation:Participation:&nbsp;</i></strong>BA_______ 
+							&nbsp;&nbsp;<strong><i>Name:Role:participation:Participation:&nbsp;</i></strong>recordTargetOf 
+							&nbsp;&nbsp;<strong><i>Sort:Role:participation:Participation:&nbsp;</i></strong>BA_______ 
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="RCV"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>RCV</strong><br /><i><font color="white">.&nbsp;.&nbsp;</font>
+						&nbsp;<i><a href="vs_ParticipationType.html#ParticipationReceiver">v:ParticipationReceiver</a></i></i></td>
+               <td>receiver</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">The person (or organization) who receives the product of an Act.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> IND
+                  </p>
+                  <p class="vocDesc"><strong>Concept Properties: </strong>
+							&nbsp;&nbsp;<strong><i>Name:Act:participation:Participation:&nbsp;</i></strong>receiver 
+							&nbsp;&nbsp;<strong><i>Sort:Act:participation:Participation:&nbsp;</i></strong>BD_______ 
+							&nbsp;&nbsp;<strong><i>Name:Role:participation:Participation:&nbsp;</i></strong>receiverOf 
+							&nbsp;&nbsp;<strong><i>Sort:Role:participation:Participation:&nbsp;</i></strong>BD_______ 
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="IRCP"></a>1-<strong>S</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>IRCP</strong><br /><i><font color="white">.&nbsp;</font>
+						&nbsp;<i><a href="vs_ParticipationType.html#ParticipationInformationRecipient">v:ParticipationInformationRecipient</a></i></i></td>
+               <td>information recipient</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">A party, who may or should receive or who has recieved the Act or subsequent or derivative information of that Act. Information
+                     recipient is inert, i.e., independent of mood." Rationale: this is a generalization of a too diverse family that the definition
+                     can't be any more specific, and the concept is abstract so one of the specializations should be used.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> PART<br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> NOT PRCP REFB REFT TRC
+                  </p>
+                  <p class="vocDesc"><strong>Concept Properties: </strong>
+							&nbsp;&nbsp;<strong><i>conductible:&nbsp;</i></strong>true 
+							&nbsp;&nbsp;<strong><i>isDocumentCharacteristic:&nbsp;</i></strong>true 
+							&nbsp;&nbsp;<strong><i>Name:Act:participation:Participation:&nbsp;</i></strong>informationRecipient 
+							&nbsp;&nbsp;<strong><i>Sort:Act:participation:Participation:&nbsp;</i></strong>H________ 
+							&nbsp;&nbsp;<strong><i>Name:Role:participation:Participation:&nbsp;</i></strong>informationReceived 
+							&nbsp;&nbsp;<strong><i>Sort:Role:participation:Participation:&nbsp;</i></strong>H________ 
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="NOT"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>NOT</strong><br /><i><font color="white">.&nbsp;.&nbsp;</font>
+						&nbsp;<i><a href="vs_ParticipationType.html#ParticipationUgentNotificationContact">v:ParticipationUgentNotificationContact</a></i></i></td>
+               <td>ugent notification contact</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">An information recipient to notify for urgent matters about this Act. (e.g., in a laboratory order, critical results are being
+                     called by phone right away, this is the contact to call; or for an inpatient encounter, a next of kin to notify when the patient
+                     becomes critically ill).
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> IRCP
+                  </p>
+                  <p class="vocDesc"><strong>Concept Properties: </strong>
+							&nbsp;&nbsp;<strong><i>isDocumentCharacteristic:&nbsp;</i></strong>true 
+							&nbsp;&nbsp;<strong><i>Name:Act:participation:Participation:&nbsp;</i></strong>notificationContact 
+							&nbsp;&nbsp;<strong><i>Sort:Act:participation:Participation:&nbsp;</i></strong>HE_______ 
+							&nbsp;&nbsp;<strong><i>Name:Role:participation:Participation:&nbsp;</i></strong>contactFor 
+							&nbsp;&nbsp;<strong><i>Sort:Role:participation:Participation:&nbsp;</i></strong>HE_______ 
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="PRCP"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>PRCP</strong><br /><i><font color="white">.&nbsp;.&nbsp;</font>
+						&nbsp;<i><a href="vs_ParticipationType.html#ParticipationPrimaryInformationRecipient">v:ParticipationPrimaryInformationRecipient</a></i></i></td>
+               <td>primary information recipient</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Information recipient to whom an act statement is primarily directed. E.g., a primary care provider receiving a discharge
+                     letter from a hospitalist, a health department receiving information on a suspected case of infectious disease. Multiple of
+                     these participations may exist on the same act without requiring that recipients be ranked as primary vs. secondary.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> IRCP
+                  </p>
+                  <p class="vocDesc"><strong>Concept Properties: </strong>
+							&nbsp;&nbsp;<strong><i>isDocumentCharacteristic:&nbsp;</i></strong>true 
+							&nbsp;&nbsp;<strong><i>Name:Act:participation:Participation:&nbsp;</i></strong>primaryInformationRecipient 
+							&nbsp;&nbsp;<strong><i>Sort:Act:participation:Participation:&nbsp;</i></strong>HA_______ 
+							&nbsp;&nbsp;<strong><i>Name:Role:participation:Participation:&nbsp;</i></strong>informationReceived 
+							&nbsp;&nbsp;<strong><i>Sort:Role:participation:Participation:&nbsp;</i></strong>HA_______ 
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="REFB"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>REFB</strong><br /><i><font color="white">.&nbsp;.&nbsp;</font>
+						&nbsp;<i><a href="vs_ParticipationType.html#ParticipationReferredBy">v:ParticipationReferredBy</a></i></i></td>
+               <td>Referred By</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">A participant (e.g. provider) who has referred the subject of an act (e.g. patient).</p>
+                  <p class="vocDesc">Typically, a referred by participant will provide a report (e.g. referral).</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> IRCP
+                  </p>
+                  <p class="vocDesc"><strong>Concept Properties: </strong>
+							&nbsp;&nbsp;<strong><i>isDocumentCharacteristic:&nbsp;</i></strong>true 
+							&nbsp;&nbsp;<strong><i>Name:Act:participation:Participation:&nbsp;</i></strong>subjectReferrer 
+							&nbsp;&nbsp;<strong><i>Sort:Act:participation:Participation:&nbsp;</i></strong>HC_______ 
+							&nbsp;&nbsp;<strong><i>Name:Role:participation:Participation:&nbsp;</i></strong>subjectReferral 
+							&nbsp;&nbsp;<strong><i>Sort:Role:participation:Participation:&nbsp;</i></strong>HC_______ 
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="REFT"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>REFT</strong><br /><i><font color="white">.&nbsp;.&nbsp;</font>
+						&nbsp;<i><a href="vs_ParticipationType.html#ParticipationReferredTo">v:ParticipationReferredTo</a></i></i></td>
+               <td>Referred to</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">The person who receives the patient</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> IRCP
+                  </p>
+                  <p class="vocDesc"><strong>Concept Properties: </strong>
+							&nbsp;&nbsp;<strong><i>isDocumentCharacteristic:&nbsp;</i></strong>true 
+							&nbsp;&nbsp;<strong><i>Name:Act:participation:Participation:&nbsp;</i></strong>subjectReferredTo 
+							&nbsp;&nbsp;<strong><i>Sort:Act:participation:Participation:&nbsp;</i></strong>HD_______ 
+							&nbsp;&nbsp;<strong><i>Name:Role:participation:Participation:&nbsp;</i></strong>referral 
+							&nbsp;&nbsp;<strong><i>Sort:Role:participation:Participation:&nbsp;</i></strong>HD_______ 
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="TRC"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>TRC</strong><br /><i><font color="white">.&nbsp;.&nbsp;</font>
+						&nbsp;<i><a href="vs_ParticipationType.html#ParticipationTracker">v:ParticipationTracker</a></i></i></td>
+               <td>tracker</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">A secondary information recipient, who receives copies (e.g., a primary care provider receiving copies of results as ordered
+                     by specialist).
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> IRCP
+                  </p>
+                  <p class="vocDesc"><strong>Concept Properties: </strong>
+							&nbsp;&nbsp;<strong><i>isDocumentCharacteristic:&nbsp;</i></strong>true 
+							&nbsp;&nbsp;<strong><i>Name:Act:participation:Participation:&nbsp;</i></strong>tracker 
+							&nbsp;&nbsp;<strong><i>Sort:Act:participation:Participation:&nbsp;</i></strong>HB_______ 
+							&nbsp;&nbsp;<strong><i>Name:Role:participation:Participation:&nbsp;</i></strong>tracking 
+							&nbsp;&nbsp;<strong><i>Sort:Role:participation:Participation:&nbsp;</i></strong>HB_______ 
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="LOC"></a>1-<strong>S</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>LOC</strong><br /><i><font color="white">.&nbsp;</font>
+						&nbsp;<i><a href="vs_ParticipationType.html#ParticipationTargetLocation">v:ParticipationTargetLocation</a></i></i></td>
+               <td>location</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">The facility where the service is done.  May be a static building (or room therein) or a moving location (e.g., ambulance,
+                     helicopter, aircraft, train, truck, ship, etc.)
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> PART<br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> DST ELOC ORG RML VIA
+                  </p>
+                  <p class="vocDesc"><strong>Concept Properties: </strong>
+							&nbsp;&nbsp;<strong><i>conductible:&nbsp;</i></strong>true 
+							&nbsp;&nbsp;<strong><i>Name:Act:participation:Participation:&nbsp;</i></strong>location 
+							&nbsp;&nbsp;<strong><i>Sort:Act:participation:Participation:&nbsp;</i></strong>J________ 
+							&nbsp;&nbsp;<strong><i>Name:Role:participation:Participation:&nbsp;</i></strong>locationOf 
+							&nbsp;&nbsp;<strong><i>Sort:Role:participation:Participation:&nbsp;</i></strong>J________ 
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="DST"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>DST</strong><br /><i><font color="white">.&nbsp;.&nbsp;</font>
+						&nbsp;<i><a href="vs_ParticipationType.html#ParticipationDestination">v:ParticipationDestination</a></i></i></td>
+               <td>destination</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">The destination for services.  May be a static building (or room therein) or a movable facility (e.g., ship).</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> LOC
+                  </p>
+                  <p class="vocDesc"><strong>Concept Properties: </strong>
+							&nbsp;&nbsp;<strong><i>Name:Act:participation:Participation:&nbsp;</i></strong>destination 
+							&nbsp;&nbsp;<strong><i>Sort:Act:participation:Participation:&nbsp;</i></strong>JC_______ 
+							&nbsp;&nbsp;<strong><i>Name:Role:participation:Participation:&nbsp;</i></strong>destinationOf 
+							&nbsp;&nbsp;<strong><i>Sort:Role:participation:Participation:&nbsp;</i></strong>JC_______ 
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="ELOC"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>ELOC</strong><br /><i><font color="white">.&nbsp;.&nbsp;</font>
+						&nbsp;<i><a href="vs_ParticipationType.html#ParticipationEntryLocation">v:ParticipationEntryLocation</a></i></i></td>
+               <td>entry location</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">A location where data about an Act was entered.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> LOC
+                  </p>
+                  <p class="vocDesc"><strong>Concept Properties: </strong>
+							&nbsp;&nbsp;<strong><i>Name:Act:participation:Participation:&nbsp;</i></strong>dataEntryLocation 
+							&nbsp;&nbsp;<strong><i>Sort:Act:participation:Participation:&nbsp;</i></strong>JD_______ 
+							&nbsp;&nbsp;<strong><i>Name:Role:participation:Participation:&nbsp;</i></strong>dataEntryLocationOf 
+							&nbsp;&nbsp;<strong><i>Sort:Role:participation:Participation:&nbsp;</i></strong>JD_______ 
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="ORG"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>ORG</strong><br /><i><font color="white">.&nbsp;.&nbsp;</font>
+						&nbsp;<i><a href="vs_ParticipationType.html#ParticipationOrigin">v:ParticipationOrigin</a></i></i></td>
+               <td>origin</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">The location of origin for services.  May be a static building (or room therein) or a movable facility (e.g., ship).</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> LOC
+                  </p>
+                  <p class="vocDesc"><strong>Concept Properties: </strong>
+							&nbsp;&nbsp;<strong><i>Name:Act:participation:Participation:&nbsp;</i></strong>origin 
+							&nbsp;&nbsp;<strong><i>Sort:Act:participation:Participation:&nbsp;</i></strong>JA_______ 
+							&nbsp;&nbsp;<strong><i>Name:Role:participation:Participation:&nbsp;</i></strong>originOf 
+							&nbsp;&nbsp;<strong><i>Sort:Role:participation:Participation:&nbsp;</i></strong>JA_______ 
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="RML"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>RML</strong><br /><i><font color="white">.&nbsp;.&nbsp;</font>
+						&nbsp;<i><a href="vs_ParticipationType.html#ParticipationRemote">v:ParticipationRemote</a></i></i></td>
+               <td>remote</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Some services take place at multiple concurrent locations (e.g., telemedicine, telephone consultation).  The location where
+                     the principal performing actor is located is taken as the primary location (LOC) while the other location(s) are considered
+                     "remote."
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> LOC
+                  </p>
+                  <p class="vocDesc"><strong>Concept Properties: </strong>
+							&nbsp;&nbsp;<strong><i>Name:Act:participation:Participation:&nbsp;</i></strong>remoteLocation 
+							&nbsp;&nbsp;<strong><i>Sort:Act:participation:Participation:&nbsp;</i></strong>JE_______ 
+							&nbsp;&nbsp;<strong><i>Name:Role:participation:Participation:&nbsp;</i></strong>remoteLocationOf 
+							&nbsp;&nbsp;<strong><i>Sort:Role:participation:Participation:&nbsp;</i></strong>JE_______ 
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="VIA"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>VIA</strong><br /><i><font color="white">.&nbsp;.&nbsp;</font>
+						&nbsp;<i><a href="vs_ParticipationType.html#ParticipationVia">v:ParticipationVia</a></i></i></td>
+               <td>via</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">For services, an intermediate location that specifies a path between origin an destination.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> LOC
+                  </p>
+                  <p class="vocDesc"><strong>Concept Properties: </strong>
+							&nbsp;&nbsp;<strong><i>Name:Act:participation:Participation:&nbsp;</i></strong>via 
+							&nbsp;&nbsp;<strong><i>Sort:Act:participation:Participation:&nbsp;</i></strong>JB_______ 
+							&nbsp;&nbsp;<strong><i>Name:Role:participation:Participation:&nbsp;</i></strong>viaOf 
+							&nbsp;&nbsp;<strong><i>Sort:Role:participation:Participation:&nbsp;</i></strong>JB_______ 
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="PRF"></a>1-<strong>S</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>PRF</strong><br /><i><font color="white">.&nbsp;</font>
+						&nbsp;<i><a href="vs_ParticipationType.html#ParticipationPhysicalPerformer">v:ParticipationPhysicalPerformer</a></i></i></td>
+               <td>performer</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Definition:</b> A person, non-person living subject, organization or device that who actually and principally carries out the action. Device
+                     should only be assigned as a performer in circumstances where the device is performing independent of human intervention.
+                     Need not be the principal responsible actor.
+                  </p>
+                  <p class="vocDesc"><b class="vocDesc">Exampe:</b> A surgery resident operating under supervision of attending surgeon, a search and rescue dog locating survivors, an electronic
+                     laboratory analyzer or the laboratory discipline requested to perform a laboratory test. The performer may also be the patient
+                     in self-care, e.g. fingerstick blood sugar. The traditional order filler is a performer. This information should accompany
+                     every service event.
+                  </p>
+                  <p class="vocDesc"><b class="vocDesc">Note:</b> that existing HL7 designs assign an organization as the playing entity of the Role that is the performer.  These designs
+                     should be revised in subsequent releases to make this the scooping entity for the role involved.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> PART<br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> DIST PPRF SPRF
+                  </p>
+                  <p class="vocDesc"><strong>Concept Properties: </strong>
+							&nbsp;&nbsp;<strong><i>conductible:&nbsp;</i></strong>true 
+							&nbsp;&nbsp;<strong><i>Name:Act:participation:Participation:&nbsp;</i></strong>performer 
+							&nbsp;&nbsp;<strong><i>Sort:Act:participation:Participation:&nbsp;</i></strong>D________ 
+							&nbsp;&nbsp;<strong><i>Name:Role:participation:Participation:&nbsp;</i></strong>performance 
+							&nbsp;&nbsp;<strong><i>Sort:Role:participation:Participation:&nbsp;</i></strong>D________ 
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="DIST"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>DIST</strong><br /><i><font color="white">.&nbsp;.&nbsp;</font>
+						&nbsp;<i><a href="vs_ParticipationType.html#ParticipationDistributor">v:ParticipationDistributor</a></i></i></td>
+               <td>distributor</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Distributes material used in or generated during the act.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> PRF
+                  </p>
+                  <p class="vocDesc"><strong>Concept Properties: </strong>
+							&nbsp;&nbsp;<strong><i>Name:Act:participation:Participation:&nbsp;</i></strong>distributer 
+							&nbsp;&nbsp;<strong><i>Sort:Act:participation:Participation:&nbsp;</i></strong>DC_______ 
+							&nbsp;&nbsp;<strong><i>Name:Role:participation:Participation:&nbsp;</i></strong>distributed 
+							&nbsp;&nbsp;<strong><i>Sort:Role:participation:Participation:&nbsp;</i></strong>DC_______ 
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="PPRF"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>PPRF</strong><br /><i><font color="white">.&nbsp;.&nbsp;</font>
+						&nbsp;<i><a href="vs_ParticipationType.html#ParticipationPrimaryPerformer">v:ParticipationPrimaryPerformer</a></i></i></td>
+               <td>primary performer</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">The principal or primary performer of the act.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> PRF
+                  </p>
+                  <p class="vocDesc"><strong>Concept Properties: </strong>
+							&nbsp;&nbsp;<strong><i>Name:Act:participation:Participation:&nbsp;</i></strong>primaryPerformer 
+							&nbsp;&nbsp;<strong><i>Sort:Act:participation:Participation:&nbsp;</i></strong>DA_______ 
+							&nbsp;&nbsp;<strong><i>Name:Role:participation:Participation:&nbsp;</i></strong>performance 
+							&nbsp;&nbsp;<strong><i>Sort:Role:participation:Participation:&nbsp;</i></strong>DA_______ 
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="SPRF"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>SPRF</strong><br /><i><font color="white">.&nbsp;.&nbsp;</font>
+						&nbsp;<i><a href="vs_ParticipationType.html#ParticipationSecondaryPerformer">v:ParticipationSecondaryPerformer</a></i></i></td>
+               <td>secondary performer</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">A person assisting in an act through his substantial presence and involvement   This includes: assistants, technicians, associates,
+                     or whatever the job titles may be.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> PRF
+                  </p>
+                  <p class="vocDesc"><strong>Concept Properties: </strong>
+							&nbsp;&nbsp;<strong><i>Name:Act:participation:Participation:&nbsp;</i></strong>secondaryPerformer 
+							&nbsp;&nbsp;<strong><i>Sort:Act:participation:Participation:&nbsp;</i></strong>DB_______ 
+							&nbsp;&nbsp;<strong><i>Name:Role:participation:Participation:&nbsp;</i></strong>performance 
+							&nbsp;&nbsp;<strong><i>Sort:Role:participation:Participation:&nbsp;</i></strong>DB_______ 
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="RESP"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>RESP</strong><br /><i><font color="white">.&nbsp;</font>
+						&nbsp;<i><a href="vs_ParticipationType.html#ParticipationResponsibleParty">v:ParticipationResponsibleParty</a></i></i></td>
+               <td>responsible party</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">The person or organization that has primary responsibility for the act.  The responsible party is not necessarily present
+                     in an action, but is accountable for the action through the power to delegate, and the duty to review actions with the performing
+                     actor after the fact.  This responsibility may be ethical, legal, contractual, fiscal, or fiduciary in nature.
+                  </p>
+                  <p class="vocDesc"><i class="vocDesc">Example:</i> A person who is the head of a biochemical laboratory; a sponsor for a policy or government program.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> PART
+                  </p>
+                  <p class="vocDesc"><strong>Concept Properties: </strong>
+							&nbsp;&nbsp;<strong><i>conductible:&nbsp;</i></strong>true 
+							&nbsp;&nbsp;<strong><i>isDocumentCharacteristic:&nbsp;</i></strong>true 
+							&nbsp;&nbsp;<strong><i>Name:Act:participation:Participation:&nbsp;</i></strong>responsibleParty 
+							&nbsp;&nbsp;<strong><i>Sort:Act:participation:Participation:&nbsp;</i></strong>C________ 
+							&nbsp;&nbsp;<strong><i>Name:Role:participation:Participation:&nbsp;</i></strong>responsibleFor 
+							&nbsp;&nbsp;<strong><i>Sort:Role:participation:Participation:&nbsp;</i></strong>C________ 
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="VRF"></a>1-<strong>S</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>VRF</strong><br /><i><font color="white">.&nbsp;</font>
+						&nbsp;<i><a href="vs_ParticipationType.html#ParticipationVerifier">v:ParticipationVerifier</a></i></i></td>
+               <td>verifier</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">A person who verifies the correctness and appropriateness of the service (plan, order, event, etc.) and hence takes on accountability.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> PART<br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> AUTHEN LA
+                  </p>
+                  <p class="vocDesc"><strong>Concept Properties: </strong>
+							&nbsp;&nbsp;<strong><i>conductible:&nbsp;</i></strong>true 
+							&nbsp;&nbsp;<strong><i>isDocumentCharacteristic:&nbsp;</i></strong>true 
+							&nbsp;&nbsp;<strong><i>Name:Act:participation:Participation:&nbsp;</i></strong>verifier 
+							&nbsp;&nbsp;<strong><i>Sort:Act:participation:Participation:&nbsp;</i></strong>I________ 
+							&nbsp;&nbsp;<strong><i>Name:Role:participation:Participation:&nbsp;</i></strong>verification 
+							&nbsp;&nbsp;<strong><i>Sort:Role:participation:Participation:&nbsp;</i></strong>I________ 
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="AUTHEN"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>AUTHEN</strong><br /><i><font color="white">.&nbsp;.&nbsp;</font>
+						&nbsp;<i><a href="vs_ParticipationType.html#ParticipationAuthenticator">v:ParticipationAuthenticator</a></i></i></td>
+               <td>authenticator</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">A verifier who attests to the accuracy of an act, but who does not have privileges to legally authenticate the act. An example
+                     would be a resident physician who sees a patient and dictates a note, then later signs it. Their signature constitutes an
+                     authentication.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> VRF
+                  </p>
+                  <p class="vocDesc"><strong>Concept Properties: </strong>
+							&nbsp;&nbsp;<strong><i>isDocumentCharacteristic:&nbsp;</i></strong>true 
+							&nbsp;&nbsp;<strong><i>Name:Act:participation:Participation:&nbsp;</i></strong>authenticator 
+							&nbsp;&nbsp;<strong><i>Sort:Act:participation:Participation:&nbsp;</i></strong>IB_______ 
+							&nbsp;&nbsp;<strong><i>Name:Role:participation:Participation:&nbsp;</i></strong>authenticated 
+							&nbsp;&nbsp;<strong><i>Sort:Role:participation:Participation:&nbsp;</i></strong>IB_______ 
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="LA"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>LA</strong><br /><i><font color="white">.&nbsp;.&nbsp;</font>
+						&nbsp;<i><a href="vs_ParticipationType.html#ParticipationLegalAuthenticator">v:ParticipationLegalAuthenticator</a></i></i></td>
+               <td>legal authenticator</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">A verifier who legally authenticates the accuracy of an act. An example would be a staff physician who sees a patient and
+                     dictates a note, then later signs it. Their signature constitutes a legal authentication.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> VRF
+                  </p>
+                  <p class="vocDesc"><strong>Concept Properties: </strong>
+							&nbsp;&nbsp;<strong><i>isDocumentCharacteristic:&nbsp;</i></strong>true 
+							&nbsp;&nbsp;<strong><i>Name:Act:participation:Participation:&nbsp;</i></strong>legalAuthenticator 
+							&nbsp;&nbsp;<strong><i>Sort:Act:participation:Participation:&nbsp;</i></strong>IA_______ 
+							&nbsp;&nbsp;<strong><i>Name:Role:participation:Participation:&nbsp;</i></strong>legallyAuthenticated 
+							&nbsp;&nbsp;<strong><i>Sort:Role:participation:Participation:&nbsp;</i></strong>IA_______ 
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="_ParticipationAncillary"></a>1-<strong>A</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>_ParticipationAncillary</strong><br /><i><font color="white">.&nbsp;</font>
+						&nbsp;<i><a href="vs_ParticipationType.html#ParticipationAncillary">v:ParticipationAncillary</a></i></i></td>
+               <td>ParticipationAncillary</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Participations related, but not primary to an act. The Referring, Admitting, and Discharging practitioners must be the same
+                     person as those authoring the ControlAct event for their respective trigger events.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> PART<br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> ADM ATND CALLBCK CON DIS ESC REF
+                  </p>
+                  <p class="vocDesc"><strong>Concept Properties: </strong>
+							&nbsp;&nbsp;<strong><i>conductible:&nbsp;</i></strong>false 
+							&nbsp;&nbsp;<strong><i>Name:Act:participation:Participation:&nbsp;</i></strong>ancillaryRole 
+							&nbsp;&nbsp;<strong><i>Sort:Act:participation:Participation:&nbsp;</i></strong>F________ 
+							&nbsp;&nbsp;<strong><i>Name:Role:participation:Participation:&nbsp;</i></strong>participation 
+							&nbsp;&nbsp;<strong><i>Sort:Role:participation:Participation:&nbsp;</i></strong>F________ 
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="ADM"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>ADM</strong><br /><i><font color="white">.&nbsp;.&nbsp;</font>
+						&nbsp;<i><a href="vs_ParticipationType.html#ParticipationAdmitter">v:ParticipationAdmitter</a></i></i></td>
+               <td>admitter</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">The practitioner who is responsible for admitting a patient to a patient encounter.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _ParticipationAncillary
+                  </p>
+                  <p class="vocDesc"><strong>Concept Properties: </strong>
+							&nbsp;&nbsp;<strong><i>Name:Act:participation:Participation:&nbsp;</i></strong>admitter 
+							&nbsp;&nbsp;<strong><i>Sort:Act:participation:Participation:&nbsp;</i></strong>FA_______ 
+							&nbsp;&nbsp;<strong><i>Name:Role:participation:Participation:&nbsp;</i></strong>admission 
+							&nbsp;&nbsp;<strong><i>Sort:Role:participation:Participation:&nbsp;</i></strong>FA_______ 
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="ATND"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>ATND</strong><br /><i><font color="white">.&nbsp;.&nbsp;</font>
+						&nbsp;<i><a href="vs_ParticipationType.html#ParticipationAttender">v:ParticipationAttender</a></i></i></td>
+               <td>attender</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">The practitioner that has responsibility for overseeing a patient's care during a patient encounter.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _ParticipationAncillary
+                  </p>
+                  <p class="vocDesc"><strong>Concept Properties: </strong>
+							&nbsp;&nbsp;<strong><i>Name:Act:participation:Participation:&nbsp;</i></strong>attender 
+							&nbsp;&nbsp;<strong><i>Sort:Act:participation:Participation:&nbsp;</i></strong>FB_______ 
+							&nbsp;&nbsp;<strong><i>Name:Role:participation:Participation:&nbsp;</i></strong>attenderOf 
+							&nbsp;&nbsp;<strong><i>Sort:Role:participation:Participation:&nbsp;</i></strong>FB_______ 
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="CALLBCK"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>CALLBCK</strong><br /><i><font color="white">.&nbsp;.&nbsp;</font>
+						&nbsp;<i><a href="vs_ParticipationType.html#ParticipationCallbackContact">v:ParticipationCallbackContact</a></i></i></td>
+               <td>callback contact</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">A person or organization who should be contacted for follow-up questions about the act in place of the author.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _ParticipationAncillary
+                  </p>
+                  <p class="vocDesc"><strong>Concept Properties: </strong>
+							&nbsp;&nbsp;<strong><i>Name:Act:participation:Participation:&nbsp;</i></strong>callBackContact 
+							&nbsp;&nbsp;<strong><i>Sort:Act:participation:Participation:&nbsp;</i></strong>FF_______ 
+							&nbsp;&nbsp;<strong><i>Name:Role:participation:Participation:&nbsp;</i></strong>callBackAvailability 
+							&nbsp;&nbsp;<strong><i>Sort:Role:participation:Participation:&nbsp;</i></strong>FF_______ 
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="CON"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>CON</strong><br /><i><font color="white">.&nbsp;.&nbsp;</font>
+						&nbsp;<i><a href="vs_ParticipationType.html#ParticipationConsultant">v:ParticipationConsultant</a></i></i></td>
+               <td>consultant</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">An advisor participating in the service by performing evaluations and making recommendations.</p>
+                  <p class="vocDesc"><b>OpenIssue:</b></p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _ParticipationAncillary
+                  </p>
+                  <p class="vocDesc"><strong>Concept Properties: </strong>
+							&nbsp;&nbsp;<strong><i>Name:Act:participation:Participation:&nbsp;</i></strong>consultant 
+							&nbsp;&nbsp;<strong><i>Sort:Act:participation:Participation:&nbsp;</i></strong>FE_______ 
+							&nbsp;&nbsp;<strong><i>Name:Role:participation:Participation:&nbsp;</i></strong>consultation 
+							&nbsp;&nbsp;<strong><i>Sort:Role:participation:Participation:&nbsp;</i></strong>FE_______ 
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="DIS"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>DIS</strong><br /><i><font color="white">.&nbsp;.&nbsp;</font>
+						&nbsp;<i><a href="vs_ParticipationType.html#ParticipationDischarger">v:ParticipationDischarger</a></i></i></td>
+               <td>discharger</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">The practitioner who is responsible for the discharge of a patient from a patient encounter.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _ParticipationAncillary
+                  </p>
+                  <p class="vocDesc"><strong>Concept Properties: </strong>
+							&nbsp;&nbsp;<strong><i>Name:Act:participation:Participation:&nbsp;</i></strong>discharger 
+							&nbsp;&nbsp;<strong><i>Sort:Act:participation:Participation:&nbsp;</i></strong>FC_______ 
+							&nbsp;&nbsp;<strong><i>Name:Role:participation:Participation:&nbsp;</i></strong>discharge 
+							&nbsp;&nbsp;<strong><i>Sort:Role:participation:Participation:&nbsp;</i></strong>FC_______ 
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="ESC"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>ESC</strong><br /><i><font color="white">.&nbsp;.&nbsp;</font>
+						&nbsp;<i><a href="vs_ParticipationType.html#ParticipationEscort">v:ParticipationEscort</a></i></i></td>
+               <td>escort</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Only with Transportation services.  A person who escorts the patient.</p>
+                  <p class="vocDesc"><b>OpenIssue:</b></p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _ParticipationAncillary
+                  </p>
+                  <p class="vocDesc"><strong>Concept Properties: </strong>
+							&nbsp;&nbsp;<strong><i>Name:Act:participation:Participation:&nbsp;</i></strong>escort 
+							&nbsp;&nbsp;<strong><i>Sort:Act:participation:Participation:&nbsp;</i></strong>FG_______ 
+							&nbsp;&nbsp;<strong><i>Name:Role:participation:Participation:&nbsp;</i></strong>escort 
+							&nbsp;&nbsp;<strong><i>Sort:Role:participation:Participation:&nbsp;</i></strong>FG_______ 
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="REF"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>REF</strong><br /><i><font color="white">.&nbsp;.&nbsp;</font>
+						&nbsp;<i><a href="vs_ParticipationType.html#ParticipationReferrer">v:ParticipationReferrer</a></i></i></td>
+               <td>referrer</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">A person having referred the subject of the service to the performer (referring physician).  Typically, a referring physician
+                     will receive a report.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _ParticipationAncillary
+                  </p>
+                  <p class="vocDesc"><strong>Concept Properties: </strong>
+							&nbsp;&nbsp;<strong><i>Name:Act:participation:Participation:&nbsp;</i></strong>referrer 
+							&nbsp;&nbsp;<strong><i>Sort:Act:participation:Participation:&nbsp;</i></strong>FD_______ 
+							&nbsp;&nbsp;<strong><i>Name:Role:participation:Participation:&nbsp;</i></strong>referral 
+							&nbsp;&nbsp;<strong><i>Sort:Role:participation:Participation:&nbsp;</i></strong>FD_______ 
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="_ParticipationInformationGenerator"></a>1-<strong>A</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>_ParticipationInformationGenerator</strong><br /><i><font color="white">.&nbsp;</font>
+						&nbsp;<i><a href="vs_ParticipationType.html#ParticipationInformationGenerator">v:ParticipationInformationGenerator</a></i></i></td>
+               <td>ParticipationInformationGenerator</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Parties that may or should contribute or have contributed information to the Act. Such information includes information leading
+                     to the decision to perform the Act and how to perform the Act (e.g., consultant), information that the Act itself seeks to
+                     reveal (e.g., informant of clinical history), or information about what Act was performed (e.g., informant witness).
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> PART<br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> AUT INF TRANS WIT
+                  </p>
+                  <p class="vocDesc"><strong>Concept Properties: </strong>
+							&nbsp;&nbsp;<strong><i>conductible:&nbsp;</i></strong>true 
+							&nbsp;&nbsp;<strong><i>isDocumentCharacteristic:&nbsp;</i></strong>true 
+							&nbsp;&nbsp;<strong><i>Name:Act:participation:Participation:&nbsp;</i></strong>informationOriginator 
+							&nbsp;&nbsp;<strong><i>Sort:Act:participation:Participation:&nbsp;</i></strong>E________ 
+							&nbsp;&nbsp;<strong><i>Name:Role:participation:Participation:&nbsp;</i></strong>origination 
+							&nbsp;&nbsp;<strong><i>Sort:Role:participation:Participation:&nbsp;</i></strong>E________ 
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="AUT"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>AUT</strong><br /><i><font color="white">.&nbsp;.&nbsp;</font>
+						&nbsp;<i><a href="vs_ParticipationType.html#ParticipationAuthorOriginator">v:ParticipationAuthorOriginator</a></i></i></td>
+               <td>author (originator)</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Definition: </b>A party that originates the Act and therefore has responsibility for the information given in the Act and ownership of this
+                     Act.
+                  </p>
+                  <p class="vocDesc"><b class="vocDesc">Example: </b>the report writer, the person writing the act definition, the guideline author, the placer of an order, the EKG cart (device)
+                     creating a report etc. Every Act should have an author. Authorship is regardless of mood always actual authorship. 
+                  </p>
+                  <p class="vocDesc">Examples of such policies might include:</p>
+                  <ul class="vocDesc">
+                     <li class="vocDesc">
+                        <p class="vocDesc">The author and anyone they explicitly delegate may update the report;</p>
+                     </li>
+                     <li class="vocDesc">
+                        <p class="vocDesc">All administrators within the same clinic may cancel and reschedule appointments created by other administrators within that
+                           clinic;
+                        </p>
+                     </li>
+                  </ul>
+                  <p class="vocDesc">A party that is neither an author nor a party who is extended authorship maintenance rights by policy, may only amend, reverse,
+                     override, replace, or follow up in other ways on this Act, whereby the Act remains intact and is linked to another Act authored
+                     by that other party.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _ParticipationInformationGenerator
+                  </p>
+                  <p class="vocDesc"><strong>Concept Properties: </strong>
+							&nbsp;&nbsp;<strong><i>isDocumentCharacteristic:&nbsp;</i></strong>true 
+							&nbsp;&nbsp;<strong><i>Name:Act:participation:Participation:&nbsp;</i></strong>author 
+							&nbsp;&nbsp;<strong><i>Sort:Act:participation:Participation:&nbsp;</i></strong>EA_______ 
+							&nbsp;&nbsp;<strong><i>Name:Role:participation:Participation:&nbsp;</i></strong>origination 
+							&nbsp;&nbsp;<strong><i>Sort:Role:participation:Participation:&nbsp;</i></strong>EA_______ 
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="INF"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>INF</strong><br /><i><font color="white">.&nbsp;.&nbsp;</font>
+						&nbsp;<i><a href="vs_ParticipationType.html#ParticipationInformant">v:ParticipationInformant</a></i></i></td>
+               <td>informant</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">A source of reported information (e.g., a next of kin who answers questions about the patient's history).  For history questions,
+                     the patient is logically an informant, yet the informant of history questions is implicitly the subject.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _ParticipationInformationGenerator
+                  </p>
+                  <p class="vocDesc"><strong>Concept Properties: </strong>
+							&nbsp;&nbsp;<strong><i>isDocumentCharacteristic:&nbsp;</i></strong>true 
+							&nbsp;&nbsp;<strong><i>Name:Act:participation:Participation:&nbsp;</i></strong>informant 
+							&nbsp;&nbsp;<strong><i>Sort:Act:participation:Participation:&nbsp;</i></strong>EC_______ 
+							&nbsp;&nbsp;<strong><i>Name:Role:participation:Participation:&nbsp;</i></strong>informationGiven 
+							&nbsp;&nbsp;<strong><i>Sort:Role:participation:Participation:&nbsp;</i></strong>EC_______ 
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="TRANS"></a>2-<strong>S</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>TRANS</strong><br /><i><font color="white">.&nbsp;.&nbsp;</font>
+						&nbsp;<i><a href="vs_ParticipationType.html#ParticipationInformationTranscriber">v:ParticipationInformationTranscriber</a></i></i></td>
+               <td>Transcriber</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">An entity entering the data into the originating system. The data entry entity is collected optionally for internal quality
+                     control purposes. This includes the transcriptionist for dictated text transcribed into electronic form.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _ParticipationInformationGenerator<br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> ENT
+                  </p>
+                  <p class="vocDesc"><strong>Concept Properties: </strong>
+							&nbsp;&nbsp;<strong><i>isDocumentCharacteristic:&nbsp;</i></strong>true 
+							&nbsp;&nbsp;<strong><i>Name:Act:participation:Participation:&nbsp;</i></strong>transcriber 
+							&nbsp;&nbsp;<strong><i>Sort:Act:participation:Participation:&nbsp;</i></strong>EB_______ 
+							&nbsp;&nbsp;<strong><i>Name:Role:participation:Participation:&nbsp;</i></strong>transcription 
+							&nbsp;&nbsp;<strong><i>Sort:Role:participation:Participation:&nbsp;</i></strong>EB_______ 
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="ENT"></a>3-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;.&nbsp;</font><strong>ENT</strong><br /><i><font color="white">.&nbsp;.&nbsp;.&nbsp;</font>
+						&nbsp;<i><a href="vs_ParticipationType.html#ParticipationDataEntryPerson">v:ParticipationDataEntryPerson</a></i></i></td>
+               <td>data entry person</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">A person entering the data into the originating system.  The data entry person is collected optionally for internal quality
+                     control purposes.  This includes the transcriptionist for dictated text.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> TRANS
+                  </p>
+                  <p class="vocDesc"><strong>Concept Properties: </strong>
+							&nbsp;&nbsp;<strong><i>isDocumentCharacteristic:&nbsp;</i></strong>true 
+							&nbsp;&nbsp;<strong><i>Name:Act:participation:Participation:&nbsp;</i></strong>dataEnterer 
+							&nbsp;&nbsp;<strong><i>Sort:Act:participation:Participation:&nbsp;</i></strong>EBB______ 
+							&nbsp;&nbsp;<strong><i>Name:Role:participation:Participation:&nbsp;</i></strong>dataEntry 
+							&nbsp;&nbsp;<strong><i>Sort:Role:participation:Participation:&nbsp;</i></strong>EBB______ 
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="WIT"></a>2-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;.&nbsp;</font><strong>WIT</strong><br /><i><font color="white">.&nbsp;.&nbsp;</font>
+						&nbsp;<i><a href="vs_ParticipationType.html#ParticipationWitness">v:ParticipationWitness</a></i></i></td>
+               <td>witness</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Only with service events.  A person witnessing the action happening without doing anything.  A witness is not necessarily
+                     aware, much less approves of anything stated in the service event.  Example for a witness is students watching an operation
+                     or an advanced directive witness.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> _ParticipationInformationGenerator
+                  </p>
+                  <p class="vocDesc"><strong>Concept Properties: </strong>
+							&nbsp;&nbsp;<strong><i>isDocumentCharacteristic:&nbsp;</i></strong>true 
+							&nbsp;&nbsp;<strong><i>Name:Act:participation:Participation:&nbsp;</i></strong>witness 
+							&nbsp;&nbsp;<strong><i>Sort:Act:participation:Participation:&nbsp;</i></strong>ED_______ 
+							&nbsp;&nbsp;<strong><i>Name:Role:participation:Participation:&nbsp;</i></strong>witness 
+							&nbsp;&nbsp;<strong><i>Sort:Role:participation:Participation:&nbsp;</i></strong>ED_______ 
+                  </p>
+               </td>
+            </tr>
+         </tbody>
+      </table><br /><a href="vocabulary.html#voc-systems">Return to code system index</a><br /><br /><p class="copyright">Last Published:&nbsp;20190729&nbsp;12:04&nbsp;PM</p>
+      <p class="copyright">HL7 &reg; Version 3 Standard, &copy; 2019  Health Level Seven &reg; International. &nbsp;All Rights Reserved.</p>
+      <p class="copyright">HL7 and Health Level Seven are registered trademarks of Health Level Seven International Reg. U.S. Pat &amp; TM Off.<br />Use of these materials is governed by HL7 International's <a href="http://www.hl7.org/legal/ippolicy.cfm">IP Compliance Policy</a>.
+      </p>
+   </body>
+</html>

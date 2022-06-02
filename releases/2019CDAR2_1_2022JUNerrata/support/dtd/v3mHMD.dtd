@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XML Spy v4.2 U (http://www.xmlspy.com) by George W Beeler (Beeler Consulting LLC) -->
+<!-- Changes 20030205 by GWB to add an optional attribute to domainSpec that represents the RIM
+	table name for the term, to facilitate publication hyperlinks. -->
+<!--Author: Charles McCay  (SCHIN - University of Newcastle / Ramsey Systems Ltd ) -->
+<!--HL7 XML expression of HMD-->
+<!ENTITY % RowAttrib "HMDRowID ID #REQUIRED
+	ClassOrProperty CDATA #IMPLIED
+	RimSource CDATA #REQUIRED
+	RimSourceID NMTOKEN #IMPLIED
+	RimDestination CDATA #IMPLIED
+	ElementName CDATA #REQUIRED
+	ElementFormalName CDATA #REQUIRED
+	SortKey CDATA #IMPLIED
+	CollectionType (SET | LIST | BAG) #IMPLIED
+	inMetString CDATA #IMPLIED
+	ofMetString CDATA #IMPLIED">
+<!-- Attributes applied to each ROW in HMD
+	HMDRowID - Identifier of this specific row in the HMD. Used for internal refernces
+	ClassOrProperty - RMIM name of Class, attror assn.  For attributes and associations
+			 is also the  RIM attribute name
+	RimSource - The class in the RIM from which the property comes
+	RimSourceID - The id for this element in the RIM XML expression
+	ElementName - The full name of the element in the RMIM
+	ElementShortName - The short name of the element in the RMIM
+	CollectionType (SET | LIST | BAG) - The type of collection to be used for
+	        assembling multiple repeats of this row.  If null, then row
+	        represents a single element
+	        -->
+<!ENTITY % ConstAtt "minOccurs CDATA #REQUIRED
+	maxOccurs CDATA #REQUIRED
+	Mandatory (true | false) #IMPLIED
+	CodingStrength (CWE | CNE) #IMPLIED
+	DefaultCodeID NMTOKEN #IMPLIED
+	Conformance (R | NP) #IMPLIED
+ 	DefaultUpdateMode (D | I | K | R | V | ESA | ESAC | ESC | ESD) #IMPLIED
+	UpdateModeSet CDATA #IMPLIED">
+<!-- Attributes assigned to each Row/msg intersection in HMD
+	minOccurs - minimum cardinality
+	maxOccurs - Maximum cardinality
+	Mandatory (true | false) mandatory presence flag
+	CodingStrength (CWE | CNE) for coded rows
+	DefaultCodeID- If coded AND default is single term,
+		provides the id for term in Vocabulary files
+	Conformance (R | NP)
+ 	DefaultUpdateMode (D | I | K | R | V | ESA | ESAC | ESC | ESD) 
+	UpdateModeSet
+-->
+<!ELEMENT HMD (Legalese, Annotation*, RMIM, Message+, Class+)>
+<!ATTLIST HMD
+  ID ID #REQUIRED
+  CommitteeID NMTOKEN #REQUIRED
+  Name CDATA #IMPLIED
+  Flavor (Payload | Wrapper | CMET) "Payload"
+  DTDversionNum CDATA #FIXED "4"
+>
+<!ELEMENT Legalese EMPTY>
+<!ATTLIST Legalese
+  copyRightOwner CDATA #IMPLIED
+  copyRightDate CDATA #IMPLIED
+  copyRightNotation CDATA #IMPLIED
+  renderer CDATA #IMPLIED
+  renderNotation CDATA #IMPLIED
+  usageNote CDATA #IMPLIED
+>
+<!ELEMENT inMEType EMPTY>
+<!ATTLIST inMEType
+  name NMTOKEN #REQUIRED
+>
+<!-- Attributes in inMEType  -
+	InMET - One of the MET(s) (may be a choice) for which this row is provides an additional property
+-->
+<!ELEMENT ofMEType (MET)>
+<!ATTLIST ofMEType
+  isPrimaryRowType (true | false) #REQUIRED
+  isAbstract (true | false) #IMPLIED
+>
+<!-- Attributes in ofMEType -
+	IsPrimaryRowType (true | false) - Indicates that this the Primary (root) type for this row.  This will be true
+	    for all stand-alone rows, and will be false, only for those elements that are alternative type choices for
+	    this row, as represented by children of this row)
+	IsAbstract (true | false) - Designates this type (and/or its home row ) as abstract
+-->
+<!ELEMENT MET EMPTY>
+<!ATTLIST MET
+  name NMTOKEN #REQUIRED
+  ref NMTOKEN #IMPLIED
+  source (C | S | D | N | U | R) #REQUIRED
+>
+<!-- MET element defines the MET being used either as a part of row definition 
+	(in ofMEType) or as a constraint in a MsgConstraints.  Its attributes are:
+	name - the type 'code' for the MET
+	ref - a pointer to this type either in this HMD (U) or in v3DT (D)
+	source - The source of this type as: 
+    C- CMET, 
+    S- Stub, 
+    D- Data type,  
+    N- New, defined from this point on, 
+    U- Use a previously defined tyoe from this HMD, 
+    R- A recursive reference fo an MET in this HMD
+-->
+<!-- Row attributes related to METs as used in the July-2001 DTD -
+	OfMET - The MET(s) (may be a choice) for this ROW
+	OfMETID - The identifier of the MET row in this HMD (if source is U or R) 
+			or in the DT documents if source is D 	
+	METsource - The source of this type as: C- CMET, D- Data type,
+	                    N- New, defined from this point on, U- Use a previously defined
+	                    ofMet from this HMD, R- A recursive reference fo an MET in
+	                    this HMD. 
+-->
+<!ENTITY % genericRow.mdl "inMEType*, ofMEType+, MsgConstraints+ ">
+<!ELEMENT RMIM (Annotation*)>
+<!ATTLIST RMIM
+  ID ID #REQUIRED
+  Identifier CDATA #REQUIRED
+  Name CDATA #IMPLIED
+>
+<!ELEMENT Message (Annotation*)>
+<!ATTLIST Message
+  ID ID #REQUIRED
+  Identifier CDATA #REQUIRED
+  WrapperType (general | queryDef) "general"
+>
+<!ELEMENT MsgConstraints (MET*, DomainSpec?, Annotation*)>
+<!ATTLIST MsgConstraints
+  ID ID #REQUIRED
+  MessageID IDREF #REQUIRED
+  HMDrowID IDREF #REQUIRED
+  %ConstAtt; 
+>
+<!-- The two IDREFs point to the parent column and row, respectively for this constraint set. -->
+<!ELEMENT Assoc (%genericRow.mdl;, (Assoc | Attr)*)>
+<!ATTLIST Assoc
+  %RowAttrib; 
+  isGenSpec (true | false) #IMPLIED
+>
+<!ELEMENT Attr (%genericRow.mdl;, (Stc)*)>
+<!ATTLIST Attr
+  %RowAttrib; 
+>
+<!ELEMENT Class (%genericRow.mdl;, (Assoc | Attr)+)>
+<!ATTLIST Class
+  %RowAttrib; 
+>
+<!ELEMENT Stc (%genericRow.mdl;)>
+<!ATTLIST Stc
+  %RowAttrib; 
+>
+<!ELEMENT DomainSpec (DomainElement)*>
+<!ATTLIST DomainSpec
+  text CDATA #REQUIRED
+  realm CDATA #IMPLIED
+  rimTable NMTOKEN #IMPLIED
+>
+<!-- Attributes of DomainSpec-
+	text - Full text of the Domain as expressed in HMD & RMIM
+	realm the default realm applied to domain
+	rimTable gives the name of the HL7 table from which the elements are drawn. -->
+<!ELEMENT DomainElement EMPTY>
+<!-- DomainElements are determined by parsing the text in the DomainSpec -->
+<!ATTLIST DomainElement
+  text CDATA #REQUIRED
+  type (domain | code) #REQUIRED
+  ref NMTOKEN #IMPLIED
+>
+<!-- Attributes of DomainElement
+	text Either value (if code) or DomainName if domain
+	ref Reference to Element in Vocabulary tables, if known
+	type (domain | code) -Tells whether term is a single code
+		or a domain -->
+<!ELEMENT Annotation (p)*>
+<!ATTLIST Annotation
+  noteType (default | constraint | description | procRule | versionRef | designComment | cue | walkThrough) #REQUIRED
+  noteNumber CDATA #REQUIRED
+  noteID ID #REQUIRED
+  noteRef IDREF #IMPLIED
+>
+<!ELEMENT p (#PCDATA)>

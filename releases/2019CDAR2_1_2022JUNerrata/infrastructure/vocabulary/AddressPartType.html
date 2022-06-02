@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="iso-8859-1"?><!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+      <title>AddressPartType</title>
+      <link rel="stylesheet" type="text/css" href="../../support/css/V3m.css" /><style type="text/css">
+					td {font-family: Verdana,Arial; text-align: left; vertical-align: top; font-size: 11}
+					th {font-family: Verdana,Arial; FONT-WEIGHT: bold; text-align: left; font-size: 11}
+					</style></head>
+   <body><a href="vocabulary.html#voc-systems">Return to code system index</a><br /><br /><a name="AddressPartType"></a><table rules="all" border="1px" cellpadding="2" cellspacing="0" class="homepage">
+         <tbody>
+            <tr>
+               <td colspan="4"><font face="Arial" size="3"><strong>AddressPartType&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong> [2.16.840.1.113883.5.16]</font><br /><p class="vocDesc"><b>Description:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description:</b> Code that specifies whether an address part names the street, city, country, postal code, post box, etc.
+                  </p>
+                  <p class="vocDesc">Discussion: The hierarchical nature of these concepts shows composition.  E.g. "Street Name" is part of "Street Address Line"</p>
+               </td>
+            </tr>
+            <tr bgcolor="cornflowerblue">
+               <th>Lvl- Typ</th>
+               <th>Concept&nbsp;Code<br />&nbsp;&nbsp;<i>Head&nbsp;Code-defined&nbsp;Value&nbsp;Set</i></th>
+               <th>Print Name</th>
+               <th>Definition, Properties, Relationships</th>
+            </tr>
+            <tr>
+               <td><a name="ADL"></a>0-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black"></font><strong>ADL</strong><br /><i><font color="white"></font>
+						&nbsp;<i><a href="vs_AddressPartType.html#AdditionalLocator">v:AdditionalLocator</a></i></i></td>
+               <td>additional locator</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">This can be a unit designator, such as apartment number, suite number, or floor. There may be several unit designators in
+                     an address (e.g., "3rd floor, Appt. 342"). This can also be a designator pointing away from the location, rather than specifying
+                     a smaller location within some larger one (e.g., Dutch "t.o." means "opposite to" for house boats located across the street
+                     facing houses).
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>ComponentOf to: </strong>AL
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="AL"></a>0-<strong>S</strong></td>
+               <td nowrap="nowrap"><font color="black"></font><strong>AL</strong><br /><i><font color="white"></font>
+						&nbsp;<i><a href="vs_AddressPartType.html#AddressLine">v:AddressLine</a></i></i></td>
+               <td>address line</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description: </b>An address line is for either an additional locator, a delivery address or a street address.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> DAL SAL
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="DAL"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>DAL</strong><br /><i><font color="white">.&nbsp;</font>
+						&nbsp;<i><a href="vs_AddressPartType.html#DeliveryAddressLine">v:DeliveryAddressLine</a></i></i></td>
+               <td>delivery address line</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">A delivery address line is frequently used instead of breaking out delivery mode, delivery installation, etc.  An address
+                     generally has only a delivery address line or a street address line, but not both.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> AL
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="SAL"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>SAL</strong><br /><i><font color="white">.&nbsp;</font>
+						&nbsp;<i><a href="vs_AddressPartType.html#StreetAddressLine">v:StreetAddressLine</a></i></i></td>
+               <td>street address line</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description: </b>A street address line is frequently used instead of breaking out build number, street name, street type, etc. An address generally
+                     has only a delivery address line or a street address line, but not both.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> AL
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="BNN"></a>0-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black"></font><strong>BNN</strong></td>
+               <td>building number numeric</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">The numeric portion of a building number</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>ComponentOf to: </strong>BNR
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="BNR"></a>0-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black"></font><strong>BNR</strong><br /><i><font color="white"></font>
+						&nbsp;<i><a href="vs_AddressPartType.html#BuildingNumber">v:BuildingNumber</a></i></i></td>
+               <td>building number</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">The number of a building, house or lot alongside the street.  Also known as "primary street number".  This does not number
+                     the street but rather the building.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>ComponentOf to: </strong>SAL
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="BNS"></a>0-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black"></font><strong>BNS</strong></td>
+               <td>building number suffix</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Any alphabetic character, fraction or other text that may appear after the numeric portion of a building number</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>ComponentOf to: </strong>BNR
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="CAR"></a>0-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black"></font><strong>CAR</strong></td>
+               <td>care of</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">The name of the party who will take receipt at the specified address, and will take on responsibility for ensuring delivery
+                     to the target recipient
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="CEN"></a>0-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black"></font><strong>CEN</strong></td>
+               <td>census tract</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">A geographic sub-unit delineated for demographic purposes.</p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="CNT"></a>0-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black"></font><strong>CNT</strong></td>
+               <td>country</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Country</p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="CPA"></a>0-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black"></font><strong>CPA</strong></td>
+               <td>county or parish</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">A sub-unit of a state or province. (49 of the United States of America use the term "county;" Louisiana uses the term "parish".)</p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="CTY"></a>0-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black"></font><strong>CTY</strong></td>
+               <td>municipality</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">The name of the city, town, village, or other community or delivery center</p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="DEL"></a>0-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black"></font><strong>DEL</strong></td>
+               <td>delimiter</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Delimiters are printed without framing white space.  If no value component is provided, the delimiter appears as a line break.</p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="DINST"></a>0-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black"></font><strong>DINST</strong></td>
+               <td>delivery installation type</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Indicates the type of delivery installation (the facility to which the mail will be delivered prior to final shipping via
+                     the delivery mode.) Example: post office, letter carrier depot, community mail center, station, etc.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>ComponentOf to: </strong>DAL
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="DINSTA"></a>0-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black"></font><strong>DINSTA</strong></td>
+               <td>delivery installation area</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">The location of the delivery installation, usually a town or city, and is only required if the area is different from the
+                     municipality. Area to which mail delivery service is provided from any postal facility or service such as an individual letter
+                     carrier, rural route, or postal route.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>ComponentOf to: </strong>DAL
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="DINSTQ"></a>0-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black"></font><strong>DINSTQ</strong></td>
+               <td>delivery installation qualifier</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">A number, letter or name identifying a delivery installation.  E.g., for Station A, the delivery installation qualifier would
+                     be 'A'.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>ComponentOf to: </strong>DAL
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="DIR"></a>0-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black"></font><strong>DIR</strong></td>
+               <td>direction</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Direction (e.g., N, S, W, E)</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>ComponentOf to: </strong>SAL
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="DMOD"></a>0-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black"></font><strong>DMOD</strong></td>
+               <td>delivery mode</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Indicates the type of service offered, method of delivery.  For example: post office box, rural route, general delivery, etc.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>ComponentOf to: </strong>DAL
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="DMODID"></a>0-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black"></font><strong>DMODID</strong></td>
+               <td>delivery mode identifier</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Represents the routing information such as a letter carrier route number.  It is the identifying number of the designator
+                     (the box number or rural route number).
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>ComponentOf to: </strong>DAL
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="DPID"></a>0-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black"></font><strong>DPID</strong></td>
+               <td>delivery point identifier</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">A value that uniquely identifies the postal address.</p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="INT"></a>0-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black"></font><strong>INT</strong></td>
+               <td>intersection</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description:</b>An intersection denotes that the actual address is located AT or CLOSE TO the intersection OF two or more streets.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>ComponentOf to: </strong>AL
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="POB"></a>0-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black"></font><strong>POB</strong></td>
+               <td>post box</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">A numbered box located in a post station.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>ComponentOf to: </strong>DMODID
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="PRE"></a>0-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black"></font><strong>PRE</strong></td>
+               <td>precinct</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">A subsection of a municipality</p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="STA"></a>0-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black"></font><strong>STA</strong></td>
+               <td>state or province</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">A sub-unit of a country with limited sovereignty in a federally organized country.</p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="STB"></a>0-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black"></font><strong>STB</strong></td>
+               <td>street name base</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">The base name of a roadway or artery recognized by a municipality (excluding street type and direction)</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>ComponentOf to: </strong>STR
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="STR"></a>0-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black"></font><strong>STR</strong><br /><i><font color="white"></font>
+						&nbsp;<i><a href="vs_AddressPartType.html#StreetName">v:StreetName</a></i></i></td>
+               <td>street name</td>
+               <td>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>ComponentOf to: </strong>SAL
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="STTYP"></a>0-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black"></font><strong>STTYP</strong></td>
+               <td>street type</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">The designation given to the street.  (e.g. Street, Avenue, Crescent, etc.)</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>ComponentOf to: </strong>STR
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="UNID"></a>0-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black"></font><strong>UNID</strong></td>
+               <td>unit identifier</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">The number or name of a specific unit contained within a building or complex, as assigned by that building or complex.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>ComponentOf to: </strong>ADL
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="UNIT"></a>0-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black"></font><strong>UNIT</strong></td>
+               <td>unit designator</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Indicates the type of specific unit contained within a building or complex.  E.g. Appartment, Floor</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>ComponentOf to: </strong>ADL
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="ZIP"></a>0-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black"></font><strong>ZIP</strong></td>
+               <td>postal code</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">A postal code designating a region defined by the postal service.</p>
+               </td>
+            </tr>
+         </tbody>
+      </table><br /><a href="vocabulary.html#voc-systems">Return to code system index</a><br /><br /><p class="copyright">Last Published:&nbsp;20190729&nbsp;12:04&nbsp;PM</p>
+      <p class="copyright">HL7 &reg; Version 3 Standard, &copy; 2019  Health Level Seven &reg; International. &nbsp;All Rights Reserved.</p>
+      <p class="copyright">HL7 and Health Level Seven are registered trademarks of Health Level Seven International Reg. U.S. Pat &amp; TM Off.<br />Use of these materials is governed by HL7 International's <a href="http://www.hl7.org/legal/ippolicy.cfm">IP Compliance Policy</a>.
+      </p>
+   </body>
+</html>

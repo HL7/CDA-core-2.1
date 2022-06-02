@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="iso-8859-1"?><!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+      <title>ParticipationMode</title>
+      <link rel="stylesheet" type="text/css" href="../../support/css/V3m.css" /><style type="text/css">
+					td {font-family: Verdana,Arial; text-align: left; vertical-align: top; font-size: 11}
+					th {font-family: Verdana,Arial; FONT-WEIGHT: bold; text-align: left; font-size: 11}
+					</style></head>
+   <body><a href="vocabulary.html#voc-systems">Return to code system index</a><br /><br /><a name="ParticipationMode"></a><table rules="all" border="1px" cellpadding="2" cellspacing="0" class="homepage">
+         <tbody>
+            <tr>
+               <td colspan="4"><font face="Arial" size="3"><strong>ParticipationMode&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong> [2.16.840.1.113883.5.1064]</font><br /><p class="vocDesc"><b>Description:</b></p>
+                  <p class="vocDesc">A set of codes specifying the modality by which the Entity playing the Role is participating in the Act.</p>
+                  <p class="vocDesc"><i class="vocDesc">Examples:</i> Physically present, over the telephone, written communication. 
+                  </p>
+                  <p class="vocDesc"><i class="vocDesc">Rationale:</i> Particularly for author (originator) participants this is used to specify whether the information represented by the act
+                     was initially provided verbally, (hand-)written, or electronically.
+                  </p>
+               </td>
+            </tr>
+            <tr bgcolor="cornflowerblue">
+               <th>Lvl- Typ</th>
+               <th>Concept&nbsp;Code<br />&nbsp;&nbsp;<i>Head&nbsp;Code-defined&nbsp;Value&nbsp;Set</i></th>
+               <th>Print Name</th>
+               <th>Definition, Properties, Relationships</th>
+            </tr>
+            <tr>
+               <td><a name="ELECTRONIC"></a>0-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black"></font><strong>ELECTRONIC</strong><br /><i><font color="white"></font>
+						&nbsp;<i><a href="vs_ParticipationMode.html#ParticipationModeElectronicData">v:ParticipationModeElectronicData</a></i></i></td>
+               <td>electronic data</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Participation by non-human-languaged based electronic signal</p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="PHYSICAL"></a>0-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black"></font><strong>PHYSICAL</strong></td>
+               <td>physical presence</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Participation by direct action where subject and actor are in the same location. (The participation involves more than communication.)</p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="REMOTE"></a>0-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black"></font><strong>REMOTE</strong></td>
+               <td>remote presence</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Participation by direct action where subject and actor are in separate locations, and the actions of the actor are transmitted
+                     by electronic or mechanical means. (The participation involves more than communication.)
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="VERBAL"></a>0-<strong>S</strong></td>
+               <td nowrap="nowrap"><font color="black"></font><strong>VERBAL</strong><br /><i><font color="white"></font>
+						&nbsp;<i><a href="vs_ParticipationMode.html#ParticipationModeVerbal">v:ParticipationModeVerbal</a></i></i></td>
+               <td>verbal</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Participation by voice communication</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> DICTATE FACE PHONE VIDEOCONF
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="DICTATE"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>DICTATE</strong></td>
+               <td>dictated</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Participation by pre-recorded voice.  Communication is limited to one direction (from the recorder to recipient).</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> VERBAL
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="FACE"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>FACE</strong></td>
+               <td>face-to-face</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Participation by voice communication where parties speak to each other directly.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> VERBAL
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="PHONE"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>PHONE</strong></td>
+               <td>telephone</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Participation by voice communication where the voices of the communicating parties are transported over an electronic medium</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> VERBAL
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="VIDEOCONF"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>VIDEOCONF</strong></td>
+               <td>videoconferencing</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Participation by voice and visual communication where the voices and images of the communicating parties are transported over
+                     an electronic medium
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> VERBAL
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="WRITTEN"></a>0-<strong>S</strong></td>
+               <td nowrap="nowrap"><font color="black"></font><strong>WRITTEN</strong><br /><i><font color="white"></font>
+						&nbsp;<i><a href="vs_ParticipationMode.html#ParticipationModeWritten">v:ParticipationModeWritten</a></i></i></td>
+               <td>written</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Participation by human language recorded on a physical material</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> EMAILWRIT FAXWRIT HANDWRIT TYPEWRIT
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="EMAILWRIT"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>EMAILWRIT</strong></td>
+               <td>email</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Participation by text or diagrams transmitted over an electronic mail system.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> WRITTEN
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="FAXWRIT"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>FAXWRIT</strong></td>
+               <td>telefax</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Participation by text or diagrams printed on paper that have been transmitted over a fax device</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> WRITTEN
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="HANDWRIT"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>HANDWRIT</strong></td>
+               <td>handwritten</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Participation by text or diagrams printed on paper or other recording medium</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> WRITTEN
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="TYPEWRIT"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>TYPEWRIT</strong></td>
+               <td>typewritten</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">Participation by text or diagrams printed on paper or other recording medium where the recording was performed using a typewriter,
+                     typesetter, computer or similar mechanism.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> WRITTEN
+                  </p>
+               </td>
+            </tr>
+         </tbody>
+      </table><br /><a href="vocabulary.html#voc-systems">Return to code system index</a><br /><br /><p class="copyright">Last Published:&nbsp;20190729&nbsp;12:04&nbsp;PM</p>
+      <p class="copyright">HL7 &reg; Version 3 Standard, &copy; 2019  Health Level Seven &reg; International. &nbsp;All Rights Reserved.</p>
+      <p class="copyright">HL7 and Health Level Seven are registered trademarks of Health Level Seven International Reg. U.S. Pat &amp; TM Off.<br />Use of these materials is governed by HL7 International's <a href="http://www.hl7.org/legal/ippolicy.cfm">IP Compliance Policy</a>.
+      </p>
+   </body>
+</html>

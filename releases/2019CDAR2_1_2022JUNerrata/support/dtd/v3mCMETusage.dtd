@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XML Spy v4.3 U (http://www.xmlspy.com) by George W Beeler (Beeler Consulting LLC) -->
+<!--HL7 XML expression of CMET usage-->
+<!ELEMENT usage (cmetuse+)>
+<!ELEMENT cmetuse (hmdref, cmetref)>
+<!ATTLIST cmetuse
+	role (defines | uses) #REQUIRED
+>
+<!ELEMENT hmdref EMPTY>
+<!ATTLIST hmdref
+	ref NMTOKEN #REQUIRED
+	refname CDATA #REQUIRED
+	refidentifier CDATA #REQUIRED
+>
+<!ELEMENT cmetref EMPTY>
+<!ATTLIST cmetref
+	ref NMTOKEN #REQUIRED
+	refname CDATA #REQUIRED
+	refidentifier CDATA #REQUIRED
+>

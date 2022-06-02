@@ -1,0 +1,179 @@
+<validationOutput name="Validate MT for DT R2B Schemas">
+	<desc>
+		43 Schemas generated for MT models using DT r2B
+		
+		No validation errors
+	</desc>
+	<validateSchema outcome="success">
+		<validator version="Xerces-J 2.11.0">Xerces</validator>
+		<xsd>C:\Develop\BallotPrj\v3-editions\OutputFiles\SchemasR2b\COCT_MT050002UV08.xsd</xsd>
+	</validateSchema>
+	<validateSchema outcome="success">
+		<validator version="Xerces-J 2.11.0">Xerces</validator>
+		<xsd>C:\Develop\BallotPrj\v3-editions\OutputFiles\SchemasR2b\COCT_MT090108UV.xsd</xsd>
+	</validateSchema>
+	<validateSchema outcome="success">
+		<validator version="Xerces-J 2.11.0">Xerces</validator>
+		<xsd>C:\Develop\BallotPrj\v3-editions\OutputFiles\SchemasR2b\COCT_MT090303UV01.xsd</xsd>
+	</validateSchema>
+	<validateSchema outcome="success">
+		<validator version="Xerces-J 2.11.0">Xerces</validator>
+		<xsd>C:\Develop\BallotPrj\v3-editions\OutputFiles\SchemasR2b\COCT_MT150003UV03.xsd</xsd>
+	</validateSchema>
+	<validateSchema outcome="success">
+		<validator version="Xerces-J 2.11.0">Xerces</validator>
+		<xsd>C:\Develop\BallotPrj\v3-editions\OutputFiles\SchemasR2b\COCT_MT150007UV.xsd</xsd>
+	</validateSchema>
+	<validateSchema outcome="success">
+		<validator version="Xerces-J 2.11.0">Xerces</validator>
+		<xsd>C:\Develop\BallotPrj\v3-editions\OutputFiles\SchemasR2b\COCT_MT240003UV02.xsd</xsd>
+	</validateSchema>
+	<validateSchema outcome="success">
+		<validator version="Xerces-J 2.11.0">Xerces</validator>
+		<xsd>C:\Develop\BallotPrj\v3-editions\OutputFiles\SchemasR2b\COCT_MT440001UV09.xsd</xsd>
+	</validateSchema>
+	<validateSchema outcome="success">
+		<validator version="Xerces-J 2.11.0">Xerces</validator>
+		<xsd>C:\Develop\BallotPrj\v3-editions\OutputFiles\SchemasR2b\COCT_MT710000UV07.xsd</xsd>
+	</validateSchema>
+	<validateSchema outcome="success">
+		<validator version="Xerces-J 2.11.0">Xerces</validator>
+		<xsd>C:\Develop\BallotPrj\v3-editions\OutputFiles\SchemasR2b\COCT_MT710007UV07.xsd</xsd>
+	</validateSchema>
+	<validateSchema outcome="success">
+		<validator version="Xerces-J 2.11.0">Xerces</validator>
+		<xsd>C:\Develop\BallotPrj\v3-editions\OutputFiles\SchemasR2b\COCT_MT960000UV05.xsd</xsd>
+	</validateSchema>
+	<validateSchema outcome="success">
+		<validator version="Xerces-J 2.11.0">Xerces</validator>
+		<xsd>C:\Develop\BallotPrj\v3-editions\OutputFiles\SchemasR2b\POCP_MT000100UV.xsd</xsd>
+	</validateSchema>
+	<validateSchema outcome="success">
+		<validator version="Xerces-J 2.11.0">Xerces</validator>
+		<xsd>C:\Develop\BallotPrj\v3-editions\OutputFiles\SchemasR2b\POCP_MT010100UV.xsd</xsd>
+	</validateSchema>
+	<validateSchema outcome="success">
+		<validator version="Xerces-J 2.11.0">Xerces</validator>
+		<xsd>C:\Develop\BallotPrj\v3-editions\OutputFiles\SchemasR2b\POCP_MT010200UV.xsd</xsd>
+	</validateSchema>
+	<validateSchema outcome="success">
+		<validator version="Xerces-J 2.11.0">Xerces</validator>
+		<xsd>C:\Develop\BallotPrj\v3-editions\OutputFiles\SchemasR2b\POCP_MT010300UV.xsd</xsd>
+	</validateSchema>
+	<validateSchema outcome="success">
+		<validator version="Xerces-J 2.11.0">Xerces</validator>
+		<xsd>C:\Develop\BallotPrj\v3-editions\OutputFiles\SchemasR2b\POCP_MT010400UV.xsd</xsd>
+	</validateSchema>
+	<validateSchema outcome="success">
+		<validator version="Xerces-J 2.11.0">Xerces</validator>
+		<xsd>C:\Develop\BallotPrj\v3-editions\OutputFiles\SchemasR2b\POCP_MT010500UV.xsd</xsd>
+	</validateSchema>
+	<validateSchema outcome="success">
+		<validator version="Xerces-J 2.11.0">Xerces</validator>
+		<xsd>C:\Develop\BallotPrj\v3-editions\OutputFiles\SchemasR2b\POCP_MT010600UV.xsd</xsd>
+	</validateSchema>
+	<validateSchema outcome="success">
+		<validator version="Xerces-J 2.11.0">Xerces</validator>
+		<xsd>C:\Develop\BallotPrj\v3-editions\OutputFiles\SchemasR2b\POCP_MT020100UV.xsd</xsd>
+	</validateSchema>
+	<validateSchema outcome="success">
+		<validator version="Xerces-J 2.11.0">Xerces</validator>
+		<xsd>C:\Develop\BallotPrj\v3-editions\OutputFiles\SchemasR2b\POCP_MT020200UV.xsd</xsd>
+	</validateSchema>
+	<validateSchema outcome="success">
+		<validator version="Xerces-J 2.11.0">Xerces</validator>
+		<xsd>C:\Develop\BallotPrj\v3-editions\OutputFiles\SchemasR2b\POCP_MT030100UV.xsd</xsd>
+	</validateSchema>
+	<validateSchema outcome="success">
+		<validator version="Xerces-J 2.11.0">Xerces</validator>
+		<xsd>C:\Develop\BallotPrj\v3-editions\OutputFiles\SchemasR2b\POCP_MT030200UV.xsd</xsd>
+	</validateSchema>
+	<validateSchema outcome="success">
+		<validator version="Xerces-J 2.11.0">Xerces</validator>
+		<xsd>C:\Develop\BallotPrj\v3-editions\OutputFiles\SchemasR2b\POCP_MT030300UV.xsd</xsd>
+	</validateSchema>
+	<validateSchema outcome="success">
+		<validator version="Xerces-J 2.11.0">Xerces</validator>
+		<xsd>C:\Develop\BallotPrj\v3-editions\OutputFiles\SchemasR2b\POCP_MT040100UV.xsd</xsd>
+	</validateSchema>
+	<validateSchema outcome="success">
+		<validator version="Xerces-J 2.11.0">Xerces</validator>
+		<xsd>C:\Develop\BallotPrj\v3-editions\OutputFiles\SchemasR2b\POCP_MT050100UV.xsd</xsd>
+	</validateSchema>
+	<validateSchema outcome="success">
+		<validator version="Xerces-J 2.11.0">Xerces</validator>
+		<xsd>C:\Develop\BallotPrj\v3-editions\OutputFiles\SchemasR2b\POCP_MT050200UV.xsd</xsd>
+	</validateSchema>
+	<validateSchema outcome="success">
+		<validator version="Xerces-J 2.11.0">Xerces</validator>
+		<xsd>C:\Develop\BallotPrj\v3-editions\OutputFiles\SchemasR2b\POCP_MT050300UV.xsd</xsd>
+	</validateSchema>
+	<validateSchema outcome="success">
+		<validator version="Xerces-J 2.11.0">Xerces</validator>
+		<xsd>C:\Develop\BallotPrj\v3-editions\OutputFiles\SchemasR2b\POCP_MT050400UV.xsd</xsd>
+	</validateSchema>
+	<validateSchema outcome="success">
+		<validator version="Xerces-J 2.11.0">Xerces</validator>
+		<xsd>C:\Develop\BallotPrj\v3-editions\OutputFiles\SchemasR2b\POCP_MT050500UV.xsd</xsd>
+	</validateSchema>
+	<validateSchema outcome="success">
+		<validator version="Xerces-J 2.11.0">Xerces</validator>
+		<xsd>C:\Develop\BallotPrj\v3-editions\OutputFiles\SchemasR2b\POCP_MT050600UV.xsd</xsd>
+	</validateSchema>
+	<validateSchema outcome="success">
+		<validator version="Xerces-J 2.11.0">Xerces</validator>
+		<xsd>C:\Develop\BallotPrj\v3-editions\OutputFiles\SchemasR2b\POCP_MT050700UV.xsd</xsd>
+	</validateSchema>
+	<validateSchema outcome="success">
+		<validator version="Xerces-J 2.11.0">Xerces</validator>
+		<xsd>C:\Develop\BallotPrj\v3-editions\OutputFiles\SchemasR2b\POCP_MT060000UV.xsd</xsd>
+	</validateSchema>
+	<validateSchema outcome="success">
+		<validator version="Xerces-J 2.11.0">Xerces</validator>
+		<xsd>C:\Develop\BallotPrj\v3-editions\OutputFiles\SchemasR2b\POCP_MT060100UV.xsd</xsd>
+	</validateSchema>
+	<validateSchema outcome="success">
+		<validator version="Xerces-J 2.11.0">Xerces</validator>
+		<xsd>C:\Develop\BallotPrj\v3-editions\OutputFiles\SchemasR2b\POCP_MT060200UV.xsd</xsd>
+	</validateSchema>
+	<validateSchema outcome="success">
+		<validator version="Xerces-J 2.11.0">Xerces</validator>
+		<xsd>C:\Develop\BallotPrj\v3-editions\OutputFiles\SchemasR2b\POCP_MT070000UV.xsd</xsd>
+	</validateSchema>
+	<validateSchema outcome="success">
+		<validator version="Xerces-J 2.11.0">Xerces</validator>
+		<xsd>C:\Develop\BallotPrj\v3-editions\OutputFiles\SchemasR2b\POCP_MT070100UV.xsd</xsd>
+	</validateSchema>
+	<validateSchema outcome="success">
+		<validator version="Xerces-J 2.11.0">Xerces</validator>
+		<xsd>C:\Develop\BallotPrj\v3-editions\OutputFiles\SchemasR2b\POCP_MT070200UV.xsd</xsd>
+	</validateSchema>
+	<validateSchema outcome="success">
+		<validator version="Xerces-J 2.11.0">Xerces</validator>
+		<xsd>C:\Develop\BallotPrj\v3-editions\OutputFiles\SchemasR2b\POCP_MT080100UV.xsd</xsd>
+	</validateSchema>
+	<validateSchema outcome="success">
+		<validator version="Xerces-J 2.11.0">Xerces</validator>
+		<xsd>C:\Develop\BallotPrj\v3-editions\OutputFiles\SchemasR2b\POCP_MT080200UV.xsd</xsd>
+	</validateSchema>
+	<validateSchema outcome="success">
+		<validator version="Xerces-J 2.11.0">Xerces</validator>
+		<xsd>C:\Develop\BallotPrj\v3-editions\OutputFiles\SchemasR2b\POCP_MT080300UV.xsd</xsd>
+	</validateSchema>
+	<validateSchema outcome="success">
+		<validator version="Xerces-J 2.11.0">Xerces</validator>
+		<xsd>C:\Develop\BallotPrj\v3-editions\OutputFiles\SchemasR2b\POCP_MT081100UV.xsd</xsd>
+	</validateSchema>
+	<validateSchema outcome="success">
+		<validator version="Xerces-J 2.11.0">Xerces</validator>
+		<xsd>C:\Develop\BallotPrj\v3-editions\OutputFiles\SchemasR2b\POCP_MT082100UV.xsd</xsd>
+	</validateSchema>
+	<validateSchema outcome="success">
+		<validator version="Xerces-J 2.11.0">Xerces</validator>
+		<xsd>C:\Develop\BallotPrj\v3-editions\OutputFiles\SchemasR2b\POCP_MT090100UV.xsd</xsd>
+	</validateSchema>
+	<validateSchema outcome="success">
+		<validator version="Xerces-J 2.11.0">Xerces</validator>
+		<xsd>C:\Develop\BallotPrj\v3-editions\OutputFiles\SchemasR2b\PORP_MT050032UV05.xsd</xsd>
+	</validateSchema>
+</validationOutput>

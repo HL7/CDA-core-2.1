@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="iso-8859-1"?><!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+      <title>RoleLinkType</title>
+      <link rel="stylesheet" type="text/css" href="../../support/css/V3m.css" /><style type="text/css">
+					td {font-family: Verdana,Arial; text-align: left; vertical-align: top; font-size: 11}
+					th {font-family: Verdana,Arial; FONT-WEIGHT: bold; text-align: left; font-size: 11}
+					</style></head>
+   <body><a href="vocabulary.html#voc-systems">Return to code system index</a><br /><br /><a name="RoleLinkType"></a><table rules="all" border="1px" cellpadding="2" cellspacing="0" class="homepage">
+         <tbody>
+            <tr>
+               <td colspan="4"><font face="Arial" size="3"><strong>RoleLinkType&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</strong> [2.16.840.1.113883.5.107]</font><br /></td>
+            </tr>
+            <tr bgcolor="cornflowerblue">
+               <th>Lvl- Typ</th>
+               <th>Concept&nbsp;Code<br />&nbsp;&nbsp;<i>Head&nbsp;Code-defined&nbsp;Value&nbsp;Set</i></th>
+               <th>Print Name</th>
+               <th>Definition, Properties, Relationships</th>
+            </tr>
+            <tr>
+               <td><a name="REL"></a>0-<strong>S</strong></td>
+               <td nowrap="nowrap"><font color="black"></font><strong>REL</strong><br /><i><font color="white"></font>
+						&nbsp;<i><a href="vs_RoleLinkType.html#RoleLinkRelated">v:RoleLinkRelated</a></i></i></td>
+               <td>related</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">An action taken with respect to a subject Entity by a regulatory or authoritative body with supervisory capacity over that
+                     entity. The action is taken in response to behavior by the subject Entity that body finds to be undesirable.
+                  </p>
+                  <p class="vocDesc">Suspension, license restrictions, monetary fine, letter of reprimand, mandated training, mandated supervision, etc.<i class="vocDesc">Examples:</i></p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Generalizes (derived): </strong> BACKUP CONT DIRAUTH IDENT INDAUTH PART REPL
+                  </p>
+                  <p class="vocDesc"><strong>Concept Properties: </strong>
+							&nbsp;&nbsp;<strong><i>Name:Role:inboundLink:RoleLink:&nbsp;</i></strong>related 
+							&nbsp;&nbsp;<strong><i>Name:Role:outboundLink:RoleLink:&nbsp;</i></strong>relatedTo 
+							&nbsp;&nbsp;<strong><i>Sort:Role:inboundLink:RoleLink:&nbsp;</i></strong>A________ 
+							&nbsp;&nbsp;<strong><i>Sort:Role:outboundLink:RoleLink:&nbsp;</i></strong>A________ 
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="BACKUP"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>BACKUP</strong><br /><i><font color="white">.&nbsp;</font>
+						&nbsp;<i><a href="vs_RoleLinkType.html#RoleLinkIsBackupFor">v:RoleLinkIsBackupFor</a></i></i></td>
+               <td>is backup for</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">This relationship indicates the source Role is available to the target Role as a backup. An entity in a backup role will be
+                     available as a substitute or replacement in the event that the entity assigned the role is unavailable. In medical roles where
+                     it is critical that the function be performed and there is a possibility that the individual assigned may be ill or otherwise
+                     indisposed, another individual is assigned to cover for the individual originally assigned the role. A backup may be required
+                     to be identified, but unless the backup is actually used, he/she would not assume the assigned entity role.
+                  </p>
+                  <p class="vocDesc"><b>OpenIssue:</b></p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> REL
+                  </p>
+                  <p class="vocDesc"><strong>Concept Properties: </strong>
+							&nbsp;&nbsp;<strong><i>Name:Role:inboundLink:RoleLink:&nbsp;</i></strong>backup 
+							&nbsp;&nbsp;<strong><i>Name:Role:outboundLink:RoleLink:&nbsp;</i></strong>backupFor 
+							&nbsp;&nbsp;<strong><i>Sort:Role:inboundLink:RoleLink:&nbsp;</i></strong>AE_______ 
+							&nbsp;&nbsp;<strong><i>Sort:Role:outboundLink:RoleLink:&nbsp;</i></strong>AE_______ 
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="CONT"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>CONT</strong><br /><i><font color="white">.&nbsp;</font>
+						&nbsp;<i><a href="vs_RoleLinkType.html#RoleLinkHasContact">v:RoleLinkHasContact</a></i></i></td>
+               <td>has contact</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> REL
+                  </p>
+                  <p class="vocDesc"><strong>Concept Properties: </strong>
+							&nbsp;&nbsp;<strong><i>Name:Role:inboundLink:RoleLink:&nbsp;</i></strong>contactFor 
+							&nbsp;&nbsp;<strong><i>Name:Role:outboundLink:RoleLink:&nbsp;</i></strong>contact 
+							&nbsp;&nbsp;<strong><i>Sort:Role:inboundLink:RoleLink:&nbsp;</i></strong>AF_______ 
+							&nbsp;&nbsp;<strong><i>Sort:Role:outboundLink:RoleLink:&nbsp;</i></strong>AF_______ 
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="DIRAUTH"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>DIRAUTH</strong><br /><i><font color="white">.&nbsp;</font>
+						&nbsp;<i><a href="vs_RoleLinkType.html#RoleLinkHasDirectAuthorityOver">v:RoleLinkHasDirectAuthorityOver</a></i></i></td>
+               <td>has direct authority over</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">The source Role has direct authority over the target role in a chain of authority.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> REL
+                  </p>
+                  <p class="vocDesc"><strong>Concept Properties: </strong>
+							&nbsp;&nbsp;<strong><i>Name:Role:inboundLink:RoleLink:&nbsp;</i></strong>directAuthority 
+							&nbsp;&nbsp;<strong><i>Name:Role:outboundLink:RoleLink:&nbsp;</i></strong>directAuthorityOver 
+							&nbsp;&nbsp;<strong><i>Sort:Role:inboundLink:RoleLink:&nbsp;</i></strong>AA_______ 
+							&nbsp;&nbsp;<strong><i>Sort:Role:outboundLink:RoleLink:&nbsp;</i></strong>AA_______ 
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="IDENT"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>IDENT</strong><br /><i><font color="white">.&nbsp;</font>
+						&nbsp;<i><a href="vs_RoleLinkType.html#RoleLinkIdentification">v:RoleLinkIdentification</a></i></i></td>
+               <td>Identification</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc"><b class="vocDesc">Description: </b>The source role provides identification for the target role. The source role must be IDENT. The player entity of the source
+                     role is constrained to be the same as (i.e. the equivalent of, or equal to) the player of the target role if present. If the
+                     player is absent from the source role, then it is assumed to be the same as the player of the target role.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> REL
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="INDAUTH"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>INDAUTH</strong><br /><i><font color="white">.&nbsp;</font>
+						&nbsp;<i><a href="vs_RoleLinkType.html#RoleLinkHasIndirectAuthorityOver">v:RoleLinkHasIndirectAuthorityOver</a></i></i></td>
+               <td>has indirect authority over</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">The source Role has indirect authority over the target role in a chain of authority.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> REL
+                  </p>
+                  <p class="vocDesc"><strong>Concept Properties: </strong>
+							&nbsp;&nbsp;<strong><i>Name:Role:inboundLink:RoleLink:&nbsp;</i></strong>indirectAuthority 
+							&nbsp;&nbsp;<strong><i>Name:Role:outboundLink:RoleLink:&nbsp;</i></strong>indirectAuthorithyOver 
+							&nbsp;&nbsp;<strong><i>Sort:Role:inboundLink:RoleLink:&nbsp;</i></strong>AB_______ 
+							&nbsp;&nbsp;<strong><i>Sort:Role:outboundLink:RoleLink:&nbsp;</i></strong>AB_______ 
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="PART"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>PART</strong><br /><i><font color="white">.&nbsp;</font>
+						&nbsp;<i><a href="vs_RoleLinkType.html#RoleLinkHasPart">v:RoleLinkHasPart</a></i></i></td>
+               <td>has part</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">The target Role is part of the Source Role.</p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> REL
+                  </p>
+                  <p class="vocDesc"><strong>Concept Properties: </strong>
+							&nbsp;&nbsp;<strong><i>Name:Role:inboundLink:RoleLink:&nbsp;</i></strong>partOf 
+							&nbsp;&nbsp;<strong><i>Name:Role:outboundLink:RoleLink:&nbsp;</i></strong>part 
+							&nbsp;&nbsp;<strong><i>Sort:Role:inboundLink:RoleLink:&nbsp;</i></strong>AC_______ 
+							&nbsp;&nbsp;<strong><i>Sort:Role:outboundLink:RoleLink:&nbsp;</i></strong>AC_______ 
+                  </p>
+               </td>
+            </tr>
+            <tr>
+               <td><a name="REPL"></a>1-<strong>L</strong></td>
+               <td nowrap="nowrap"><font color="black">.&nbsp;</font><strong>REPL</strong><br /><i><font color="white">.&nbsp;</font>
+						&nbsp;<i><a href="vs_RoleLinkType.html#RoleLinkReplaces">v:RoleLinkReplaces</a></i></i></td>
+               <td>replaces</td>
+               <td>
+                  <p class="vocDesc"><b>Definition:</b></p>
+                  <p class="vocDesc">This relationship indicates that the source Role replaces (or subsumes) the target Role.  Allows for new identifiers and/or
+                     new effective time for a registry entry or a certification, etc.
+                  </p>
+                  <p class="vocDesc"><strong>Concept Relationships:</strong><br />&nbsp;&nbsp;<strong>Specializes: </strong> REL
+                  </p>
+                  <p class="vocDesc"><strong>Concept Properties: </strong>
+							&nbsp;&nbsp;<strong><i>Name:Role:inboundLink:RoleLink:&nbsp;</i></strong>replacedBy 
+							&nbsp;&nbsp;<strong><i>Name:Role:outboundLink:RoleLink:&nbsp;</i></strong>replacementOf 
+							&nbsp;&nbsp;<strong><i>Sort:Role:inboundLink:RoleLink:&nbsp;</i></strong>AD_______ 
+							&nbsp;&nbsp;<strong><i>Sort:Role:outboundLink:RoleLink:&nbsp;</i></strong>AD_______ 
+                  </p>
+               </td>
+            </tr>
+         </tbody>
+      </table><br /><a href="vocabulary.html#voc-systems">Return to code system index</a><br /><br /><p class="copyright">Last Published:&nbsp;20190729&nbsp;12:04&nbsp;PM</p>
+      <p class="copyright">HL7 &reg; Version 3 Standard, &copy; 2019  Health Level Seven &reg; International. &nbsp;All Rights Reserved.</p>
+      <p class="copyright">HL7 and Health Level Seven are registered trademarks of Health Level Seven International Reg. U.S. Pat &amp; TM Off.<br />Use of these materials is governed by HL7 International's <a href="http://www.hl7.org/legal/ippolicy.cfm">IP Compliance Policy</a>.
+      </p>
+   </body>
+</html>

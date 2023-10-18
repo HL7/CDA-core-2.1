@@ -1,5 +1,13 @@
 # cda-core-2.1
-CDA Schema and FHIR Logical model for CDA (supports the CCDA on FHIR guide, and other CDA/FHIR mapping projects)
+CDA Schema and FHIR Definition for CDA R2.1
+
+## IMPORTANT NOTICE - READ THIS BEFORE IMPLEMENTING CDA R2.1
+May 24, 2023. After consultation with implementers across the globe and with a recommendation from the CDA methodology group, Structured Document Work Group, CMG voted on 
+May 11, 2023 to NOT reaffirm HL7 base standard CDA R2.1 as an ANSI standard. The current plan will be to submit an HL7 Withdrawal ballot by September 2024. After withdrawal, the specification will remain on the HL7 product grid with a status of Retired.
+
+CMG expressed sincere appreciation for the hard work that went into creating CDA R2.1. This will continue to be a valuable reference to guide decisions about further sdtc extension design that may be made to CDA R2.0 in order to expand alignment with FHIR.
+
+CDA R2.0, an ISO recognized HL7 standard (ISO/HL7 27932:2009), will continue to be the base standard for Consolidated CDA (C-CDA) and other CDA implementation guides. Work is continuing on future versions of C-CDA (see http://hl7.org/cda/stds/ccda/draft1/).
 
 ## CDA Schema
 
@@ -42,9 +50,9 @@ The CDA Stylesheet is located [here](https://github.com/HL7/cda-core-xsl). It is
 
 **No extensions have been defined for CDA R2.1, yet.**
 
-## FHIR Logical Models for CDA
+## FHIR Definition for CDA R2.1
 
-**The FHIR Logical Model for CDA R2.1 has not been created, yet.**
+**The FHIR Definition for CDA R2.1 has not been created, yet.**
 
 ## Releases Folder
 
